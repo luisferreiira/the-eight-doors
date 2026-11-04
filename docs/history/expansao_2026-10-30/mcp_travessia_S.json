@@ -1,0 +1,35 @@
+{
+  "meta": null,
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"result\":{\"failures\":[],\"transitions\":[{\"direction\":\"S\",\"from\":\"S01\",\"ok\":true,\"ticks\":37.0,\"to\":\"S05\"},{\"direction\":\"N\",\"from\":\"S05\",\"ok\":true,\"ticks\":21.0,\"to\":\"S01\"}]},\"source\":\"game\"}",
+      "annotations": null,
+      "meta": null
+    }
+  ],
+  "structured_content": {
+    "result": {
+      "failures": [],
+      "transitions": [
+        {
+          "direction": "S",
+          "from": "S01",
+          "ok": true,
+          "ticks": 37.0,
+          "to": "S05"
+        },
+        {
+          "direction": "N",
+          "from": "S05",
+          "ok": true,
+          "ticks": 21.0,
+          "to": "S01"
+        }
+      ]
+    },
+    "source": "game"
+  },
+  "is_error": false,
+  "result_type": "complete"
+}

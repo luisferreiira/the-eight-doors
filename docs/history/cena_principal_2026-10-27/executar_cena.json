@@ -1,0 +1,42 @@
+{
+  "jsonrpc": "2.0",
+  "id": 4,
+  "result": {
+    "content": [
+      {
+        "text": "{\"autosave\":false,\"current_run_errors\":[],\"game_status\":{\"active\":true,\"editor_log_cursor\":0,\"elapsed_msec\":3479,\"helper_expected\":true,\"helper_live\":true,\"ready\":true,\"ready_wait_msec\":3000,\"run_started_msec\":2058511,\"run_token\":1,\"session_active\":true,\"status\":\"live\"},\"helper_live\":true,\"mode\":\"custom\",\"reason\":\"Game launched and the Godot AI game helper is live.\",\"recent_errors\":[],\"recent_errors_may_predate_run\":false,\"recent_errors_scope\":\"none\",\"recent_errors_truncated\":false,\"retained_errors\":[],\"scene\":\"res://scenes/world/environments/sala_central_jogavel.tscn\",\"session_active\":true,\"undoable\":false,\"was_already_running\":false}",
+        "type": "text"
+      }
+    ],
+    "isError": false,
+    "structuredContent": {
+      "autosave": false,
+      "current_run_errors": [],
+      "game_status": {
+        "active": true,
+        "editor_log_cursor": 0,
+        "elapsed_msec": 3479,
+        "helper_expected": true,
+        "helper_live": true,
+        "ready": true,
+        "ready_wait_msec": 3000,
+        "run_started_msec": 2058511,
+        "run_token": 1,
+        "session_active": true,
+        "status": "live"
+      },
+      "helper_live": true,
+      "mode": "custom",
+      "reason": "Game launched and the Godot AI game helper is live.",
+      "recent_errors": [],
+      "recent_errors_may_predate_run": false,
+      "recent_errors_scope": "none",
+      "recent_errors_truncated": false,
+      "retained_errors": [],
+      "scene": "res://scenes/world/environments/sala_central_jogavel.tscn",
+      "session_active": true,
+      "undoable": false,
+      "was_already_running": false
+    }
+  }
+}

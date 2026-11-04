@@ -1,0 +1,9 @@
+{
+  "old_sha256": "6531f73e068d884dc1d1814e6ce3bfb4c0af5b082c45e1902a5d26ad10db3cb4",
+  "new_sha256": "b34f69e487055ba6e88ed7e2c9355ca05fa265fbc3123bece378e264d0b37749",
+  "original_node_blocks_preserved": 51,
+  "modified_existing_node": "Portas/tile_map_data",
+  "new_texture_files": 0,
+  "new_atlas_source": "ComponentesEntradasLaterais (same PNG)",
+  "new_base_colliders": 4
+}

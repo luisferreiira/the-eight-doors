@@ -1,0 +1,9 @@
+{
+  "pixels_lajes_antes": 70144,
+  "pixels_lajes_depois": 192237,
+  "multiplicacao_lajes": 2.74,
+  "cobertura_da_camada_lajes_percentual": 30.5,
+  "pixels_piso_fora_perimetro": 0,
+  "celulas_manuais_alvenaria_reta_preservadas": 132,
+  "celulas_manuais_alvenaria_reta_originais": 132
+}

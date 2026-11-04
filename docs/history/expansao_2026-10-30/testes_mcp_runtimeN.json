@@ -1,0 +1,19 @@
+{
+	"failures": [],
+	"transitions": [
+		{
+			"direction": "N",
+			"from": "S01",
+			"ok": true,
+			"ticks": 21,
+			"to": "S02"
+		},
+		{
+			"direction": "S",
+			"from": "S02",
+			"ok": true,
+			"ticks": 37,
+			"to": "S01"
+		}
+	]
+}

@@ -1,0 +1,129 @@
+{
+  "meta": null,
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"has_more\":false,\"limit\":30,\"nodes\":[{\"children_count\":17,\"name\":\"MapaEditor\",\"path\":\"/MapaEditor\",\"type\":\"Node2D\"},{\"children_count\":18,\"name\":\"S01\",\"path\":\"/MapaEditor/S01\",\"type\":\"Node2D\"},{\"children_count\":0,\"name\":\"@Label@25319\",\"path\":\"/MapaEditor/@Label@25319\",\"type\":\"Label\"},{\"children_count\":0,\"name\":\"@Line2D@25320\",\"path\":\"/MapaEditor/@Line2D@25320\",\"type\":\"Line2D\"},{\"children_count\":0,\"name\":\"@Line2D@25321\",\"path\":\"/MapaEditor/@Line2D@25321\",\"type\":\"Line2D\"},{\"children_count\":0,\"name\":\"@Line2D@25322\",\"path\":\"/MapaEditor/@Line2D@25322\",\"type\":\"Line2D\"},{\"children_count\":0,\"name\":\"@Line2D@25323\",\"path\":\"/MapaEditor/@Line2D@25323\",\"type\":\"Line2D\"},{\"children_count\":0,\"name\":\"@Line2D@25324\",\"path\":\"/MapaEditor/@Line2D@25324\",\"type\":\"Line2D\"},{\"children_count\":18,\"name\":\"S02\",\"path\":\"/MapaEditor/S02\",\"type\":\"Node2D\"},{\"children_count\":0,\"name\":\"@Label@25325\",\"path\":\"/MapaEditor/@Label@25325\",\"type\":\"Label\"},{\"children_count\":18,\"name\":\"S03\",\"path\":\"/MapaEditor/S03\",\"type\":\"Node2D\"},{\"children_count\":0,\"name\":\"@Label@25326\",\"path\":\"/MapaEditor/@Label@25326\",\"type\":\"Label\"},{\"children_count\":18,\"name\":\"S04\",\"path\":\"/MapaEditor/S04\",\"type\":\"Node2D\"},{\"children_count\":0,\"name\":\"@Label@25327\",\"path\":\"/MapaEditor/@Label@25327\",\"type\":\"Label\"},{\"children_count\":18,\"name\":\"S05\",\"path\":\"/MapaEditor/S05\",\"type\":\"Node2D\"},{\"children_count\":0,\"name\":\"@Label@25328\",\"path\":\"/MapaEditor/@Label@25328\",\"type\":\"Label\"},{\"children_count\":18,\"name\":\"S06\",\"path\":\"/MapaEditor/S06\",\"type\":\"Node2D\"},{\"children_count\":0,\"name\":\"@Label@25329\",\"path\":\"/MapaEditor/@Label@25329\",\"type\":\"Label\"}],\"offset\":0,\"total_count\":18}",
+      "annotations": null,
+      "meta": null
+    }
+  ],
+  "structured_content": {
+    "has_more": false,
+    "limit": 30,
+    "nodes": [
+      {
+        "children_count": 17,
+        "name": "MapaEditor",
+        "path": "/MapaEditor",
+        "type": "Node2D"
+      },
+      {
+        "children_count": 18,
+        "name": "S01",
+        "path": "/MapaEditor/S01",
+        "type": "Node2D"
+      },
+      {
+        "children_count": 0,
+        "name": "@Label@25319",
+        "path": "/MapaEditor/@Label@25319",
+        "type": "Label"
+      },
+      {
+        "children_count": 0,
+        "name": "@Line2D@25320",
+        "path": "/MapaEditor/@Line2D@25320",
+        "type": "Line2D"
+      },
+      {
+        "children_count": 0,
+        "name": "@Line2D@25321",
+        "path": "/MapaEditor/@Line2D@25321",
+        "type": "Line2D"
+      },
+      {
+        "children_count": 0,
+        "name": "@Line2D@25322",
+        "path": "/MapaEditor/@Line2D@25322",
+        "type": "Line2D"
+      },
+      {
+        "children_count": 0,
+        "name": "@Line2D@25323",
+        "path": "/MapaEditor/@Line2D@25323",
+        "type": "Line2D"
+      },
+      {
+        "children_count": 0,
+        "name": "@Line2D@25324",
+        "path": "/MapaEditor/@Line2D@25324",
+        "type": "Line2D"
+      },
+      {
+        "children_count": 18,
+        "name": "S02",
+        "path": "/MapaEditor/S02",
+        "type": "Node2D"
+      },
+      {
+        "children_count": 0,
+        "name": "@Label@25325",
+        "path": "/MapaEditor/@Label@25325",
+        "type": "Label"
+      },
+      {
+        "children_count": 18,
+        "name": "S03",
+        "path": "/MapaEditor/S03",
+        "type": "Node2D"
+      },
+      {
+        "children_count": 0,
+        "name": "@Label@25326",
+        "path": "/MapaEditor/@Label@25326",
+        "type": "Label"
+      },
+      {
+        "children_count": 18,
+        "name": "S04",
+        "path": "/MapaEditor/S04",
+        "type": "Node2D"
+      },
+      {
+        "children_count": 0,
+        "name": "@Label@25327",
+        "path": "/MapaEditor/@Label@25327",
+        "type": "Label"
+      },
+      {
+        "children_count": 18,
+        "name": "S05",
+        "path": "/MapaEditor/S05",
+        "type": "Node2D"
+      },
+      {
+        "children_count": 0,
+        "name": "@Label@25328",
+        "path": "/MapaEditor/@Label@25328",
+        "type": "Label"
+      },
+      {
+        "children_count": 18,
+        "name": "S06",
+        "path": "/MapaEditor/S06",
+        "type": "Node2D"
+      },
+      {
+        "children_count": 0,
+        "name": "@Label@25329",
+        "path": "/MapaEditor/@Label@25329",
+        "type": "Label"
+      }
+    ],
+    "offset": 0,
+    "total_count": 18
+  },
+  "is_error": false,
+  "result_type": "complete"
+}

@@ -1,0 +1,19 @@
+{
+  "pixels_alterados": 45509,
+  "pixels_alterados_fora_das_duas_entradas": 0,
+  "regioes": [
+    [
+      85,
+      495,
+      243,
+      685
+    ],
+    [
+      1037,
+      495,
+      1195,
+      685
+    ]
+  ],
+  "captura_real_godot": "4.7.1"
+}

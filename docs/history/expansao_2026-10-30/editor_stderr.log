@@ -1,0 +1,4 @@
+ERROR: Failed to open 'C:/Users/luisg/Downloads/SI_2/desenvolvimento_jogos/theeightdoors/the-eight-doors/addons/ziva_agent/bin/windows_x86_64/~libziva_agent.windows.release.x86_64.dll'.
+   at: copy (core/io/dir_access.cpp:429)
+ERROR: Error copying library: C:/Users/luisg/Downloads/SI_2/desenvolvimento_jogos/theeightdoors/the-eight-doors/addons/ziva_agent/bin/windows_x86_64/libziva_agent.windows.release.x86_64.dll
+   at: open_dynamic_library (platform/windows/os_windows.cpp:502)

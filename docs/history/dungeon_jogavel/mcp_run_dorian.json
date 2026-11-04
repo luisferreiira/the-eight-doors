@@ -1,0 +1,42 @@
+{
+  "jsonrpc": "2.0",
+  "id": 5,
+  "result": {
+    "content": [
+      {
+        "text": "{\"autosave\":false,\"current_run_errors\":[],\"game_status\":{\"active\":true,\"editor_log_cursor\":0,\"elapsed_msec\":3000,\"helper_expected\":true,\"helper_live\":false,\"ready\":false,\"ready_wait_msec\":3000,\"run_started_msec\":39291890,\"run_token\":4,\"session_active\":false,\"status\":\"not_live\"},\"helper_live\":false,\"mode\":\"custom\",\"reason\":\"Game launched but did not become live before the helper-ready window elapsed. It may still be booting or may have failed silently; check logs_read(source='editor', include_details=true) and poll editor_state.\",\"recent_errors\":[],\"recent_errors_may_predate_run\":false,\"recent_errors_scope\":\"none\",\"recent_errors_truncated\":false,\"retained_errors\":[],\"scene\":\"res://tests/preview_dorian.tscn\",\"session_active\":false,\"undoable\":false,\"was_already_running\":false}",
+        "type": "text"
+      }
+    ],
+    "isError": false,
+    "structuredContent": {
+      "autosave": false,
+      "current_run_errors": [],
+      "game_status": {
+        "active": true,
+        "editor_log_cursor": 0,
+        "elapsed_msec": 3000,
+        "helper_expected": true,
+        "helper_live": false,
+        "ready": false,
+        "ready_wait_msec": 3000,
+        "run_started_msec": 39291890,
+        "run_token": 4,
+        "session_active": false,
+        "status": "not_live"
+      },
+      "helper_live": false,
+      "mode": "custom",
+      "reason": "Game launched but did not become live before the helper-ready window elapsed. It may still be booting or may have failed silently; check logs_read(source='editor', include_details=true) and poll editor_state.",
+      "recent_errors": [],
+      "recent_errors_may_predate_run": false,
+      "recent_errors_scope": "none",
+      "recent_errors_truncated": false,
+      "retained_errors": [],
+      "scene": "res://tests/preview_dorian.tscn",
+      "session_active": false,
+      "undoable": false,
+      "was_already_running": false
+    }
+  }
+}

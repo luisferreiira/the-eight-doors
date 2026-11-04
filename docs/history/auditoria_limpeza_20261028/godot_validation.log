@@ -1,0 +1,7 @@
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+LOADED res://scenes/players/aelin.tscn
+LOADED res://scenes/players/dorian.tscn
+LOADED res://scenes/dungeon/sala_central_jogavel.tscn
+CLEANUP_VALIDATION {"count":0,"failures":[]}

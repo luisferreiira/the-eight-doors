@@ -1,0 +1,14 @@
+--- project.godot antes
+
++++ project.godot depois
+
+@@ -11,7 +11,7 @@
+
+ [application]
+ 
+ config/name="TheEightDoors"
+-run/main_scene="res://scenes/dungeon/sala_central_jogavel.tscn"
++run/main_scene="res://scenes/labirinto/labirinto.tscn"
+ config/features=PackedStringArray("4.7", "GL Compatibility")
+ config/icon="res://icon.svg"
+ 

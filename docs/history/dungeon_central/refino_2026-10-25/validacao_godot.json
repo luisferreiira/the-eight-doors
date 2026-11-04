@@ -1,0 +1,48 @@
+{
+	"camera_manual_preservada": true,
+	"celulas_por_camada": {
+		"Elementos": 0,
+		"Entulho": 0,
+		"Molduras": 254,
+		"Paredes": 616,
+		"Piso": 2558,
+		"Portas": 372,
+		"SombrasElementos": 0,
+		"TransicoesPiso": 905,
+		"Tunel": 200
+	},
+	"falhas": [],
+	"godot": {
+		"build": "official",
+		"hash": "a13da4feb8d8aefc283c3763d33a2f170a18d541",
+		"hex": 263937,
+		"major": 4,
+		"minor": 7,
+		"patch": 1,
+		"status": "stable",
+		"string": "4.7.1-stable (official)",
+		"timestamp": 0
+	},
+	"owners_corretos": true,
+	"pintar_apagar_mover_salvar_reabrir": true,
+	"rotas_diametro16": {
+		"SaidaL": 32,
+		"SaidaN": 23,
+		"SaidaNE": 24,
+		"SaidaNO": 24,
+		"SaidaO": 32,
+		"SaidaS": 27,
+		"SaidaSE": 24,
+		"SaidaSO": 24
+	},
+	"rotas_diametro32": {
+		"SaidaL": 32,
+		"SaidaN": 23,
+		"SaidaNE": 24,
+		"SaidaNO": 24,
+		"SaidaO": 32,
+		"SaidaS": 27,
+		"SaidaSE": 24,
+		"SaidaSO": 24
+	}
+}

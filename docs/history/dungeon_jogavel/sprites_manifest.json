@@ -1,0 +1,594 @@
+[
+  {
+    "character": "aelin",
+    "original": "assets/characters/aelin/correndo/aelin_run_frente.png",
+    "sha256": "eb8f00aac821c67902359cf2b88cec5145bc892ce376d9e5ef38f4a684772e1b",
+    "original_size": [
+      1254,
+      290
+    ],
+    "cuts": [
+      [
+        47,
+        0,
+        292,
+        290
+      ],
+      [
+        341,
+        0,
+        600,
+        290
+      ],
+      [
+        658,
+        0,
+        907,
+        290
+      ],
+      [
+        958,
+        0,
+        1219,
+        290
+      ]
+    ],
+    "output": "assets/environments/generated/personagens/aelin/aelin_run_frente.png",
+    "scale": 0.18064516129032257
+  },
+  {
+    "character": "aelin",
+    "original": "assets/characters/aelin/correndo/aelin_run_costas.png",
+    "sha256": "c67f5ebbaae16ddb07f654c5e7ca061fed6b0498c99de54ad718f7a5fb7ba39c",
+    "original_size": [
+      1254,
+      311
+    ],
+    "cuts": [
+      [
+        47,
+        1,
+        292,
+        305
+      ],
+      [
+        358,
+        1,
+        608,
+        305
+      ],
+      [
+        645,
+        1,
+        892,
+        311
+      ],
+      [
+        960,
+        3,
+        1216,
+        310
+      ]
+    ],
+    "output": "assets/environments/generated/personagens/aelin/aelin_run_costas.png",
+    "scale": 0.18064516129032257
+  },
+  {
+    "character": "aelin",
+    "original": "assets/characters/aelin/correndo/aelin_run_direita.png",
+    "sha256": "2891d74da4c2f01ff27d809e58f8512b59f57ea130f17d65dae94bd687652fd1",
+    "original_size": [
+      1254,
+      288
+    ],
+    "cuts": [
+      [
+        22,
+        4,
+        276,
+        287
+      ],
+      [
+        318,
+        1,
+        566,
+        280
+      ],
+      [
+        627,
+        1,
+        881,
+        287
+      ],
+      [
+        932,
+        2,
+        1198,
+        287
+      ]
+    ],
+    "output": "assets/environments/generated/personagens/aelin/aelin_run_direita.png",
+    "scale": 0.18064516129032257
+  },
+  {
+    "character": "aelin",
+    "original": "assets/characters/aelin/correndo/aelin_run_esquerda.png",
+    "sha256": "d15a34268d954e53b877f9210b821f6a8caddc72fc0334b8b1d18d39a7ec1ca5",
+    "original_size": [
+      1254,
+      288
+    ],
+    "cuts": [
+      [
+        57,
+        0,
+        309,
+        286
+      ],
+      [
+        371,
+        1,
+        633,
+        283
+      ],
+      [
+        677,
+        1,
+        930,
+        287
+      ],
+      [
+        982,
+        4,
+        1235,
+        286
+      ]
+    ],
+    "output": "assets/environments/generated/personagens/aelin/aelin_run_esquerda.png",
+    "scale": 0.18064516129032257
+  },
+  {
+    "character": "aelin",
+    "original": "assets/characters/aelin/parada/aelin_parada_frente.png",
+    "sha256": "1ec951d6d85ef9f712ba07df0fb35a54c5971ac11b5d954eff2ea770c11027c4",
+    "original_size": [
+      1254,
+      288
+    ],
+    "cuts": [
+      [
+        43,
+        13,
+        275,
+        281
+      ],
+      [
+        353,
+        13,
+        595,
+        281
+      ],
+      [
+        664,
+        13,
+        901,
+        281
+      ],
+      [
+        976,
+        13,
+        1215,
+        281
+      ]
+    ],
+    "output": "assets/environments/generated/personagens/aelin/aelin_parada_frente.png",
+    "scale": 0.18064516129032257
+  },
+  {
+    "character": "aelin",
+    "original": "assets/characters/aelin/parada/aelin_parada_costas.png",
+    "sha256": "9a189e0b8428dfec81422f17eb6b23446ec71f86294bf0261fba14c8149edfd0",
+    "original_size": [
+      1254,
+      288
+    ],
+    "cuts": [
+      [
+        35,
+        0,
+        278,
+        284
+      ],
+      [
+        353,
+        0,
+        589,
+        288
+      ],
+      [
+        664,
+        0,
+        901,
+        284
+      ],
+      [
+        979,
+        0,
+        1219,
+        284
+      ]
+    ],
+    "output": "assets/environments/generated/personagens/aelin/aelin_parada_costas.png",
+    "scale": 0.18064516129032257
+  },
+  {
+    "character": "aelin",
+    "original": "assets/characters/aelin/parada/aelin_parada_direita.png",
+    "sha256": "b187a5e9c30e8ccaec21d40a1924010005bc54fe56bbf1a076eda1d5b185bed7",
+    "original_size": [
+      1254,
+      288
+    ],
+    "cuts": [
+      [
+        36,
+        8,
+        251,
+        271
+      ],
+      [
+        343,
+        8,
+        563,
+        271
+      ],
+      [
+        643,
+        8,
+        876,
+        271
+      ],
+      [
+        964,
+        8,
+        1193,
+        271
+      ]
+    ],
+    "output": "assets/environments/generated/personagens/aelin/aelin_parada_direita.png",
+    "scale": 0.18064516129032257
+  },
+  {
+    "character": "aelin",
+    "original": "assets/characters/aelin/parada/aelin_parada_esquerda.png",
+    "sha256": "615bdfe6a108c60b48ef74ad2080ac6b56c15847082e60ff5eec64b6be9fd6a4",
+    "original_size": [
+      1254,
+      288
+    ],
+    "cuts": [
+      [
+        52,
+        13,
+        290,
+        274
+      ],
+      [
+        372,
+        13,
+        610,
+        274
+      ],
+      [
+        674,
+        13,
+        920,
+        274
+      ],
+      [
+        996,
+        13,
+        1228,
+        274
+      ]
+    ],
+    "output": "assets/environments/generated/personagens/aelin/aelin_parada_esquerda.png",
+    "scale": 0.18064516129032257
+  },
+  {
+    "character": "dorian",
+    "original": "assets/characters/dorian/correndo/dorian_correndo_costas.png",
+    "sha256": "a02be3fc825036f7ac5d992115916f3f1776215729061ede2a75e18325252aa5",
+    "original_size": [
+      1254,
+      301
+    ],
+    "cuts": [
+      [
+        35,
+        1,
+        297,
+        299
+      ],
+      [
+        359,
+        1,
+        611,
+        298
+      ],
+      [
+        661,
+        1,
+        927,
+        299
+      ],
+      [
+        980,
+        1,
+        1238,
+        298
+      ]
+    ],
+    "output": "assets/environments/generated/personagens/dorian/dorian_correndo_costas.png",
+    "scale": 0.18122977346278318
+  },
+  {
+    "character": "dorian",
+    "original": "assets/characters/dorian/correndo/dorian_correndo_direita.png",
+    "sha256": "f51b086c1a9ca3a7d5e595d189f364fa893463c44274c199eb7dfd1418f3b368",
+    "original_size": [
+      1254,
+      294
+    ],
+    "cuts": [
+      [
+        23,
+        0,
+        266,
+        290
+      ],
+      [
+        315,
+        1,
+        578,
+        293
+      ],
+      [
+        646,
+        0,
+        902,
+        290
+      ],
+      [
+        962,
+        1,
+        1218,
+        292
+      ]
+    ],
+    "output": "assets/environments/generated/personagens/dorian/dorian_correndo_direita.png",
+    "scale": 0.18122977346278318
+  },
+  {
+    "character": "dorian",
+    "original": "assets/characters/dorian/correndo/dorian_correndo_esquerda.png",
+    "sha256": "8716323dec44c584dfaa0cc78e7d4cec50c264ce62f3928037c68dff46ef794d",
+    "original_size": [
+      1254,
+      290
+    ],
+    "cuts": [
+      [
+        50,
+        1,
+        304,
+        285
+      ],
+      [
+        370,
+        2,
+        622,
+        284
+      ],
+      [
+        687,
+        2,
+        944,
+        287
+      ],
+      [
+        1005,
+        2,
+        1241,
+        287
+      ]
+    ],
+    "output": "assets/environments/generated/personagens/dorian/dorian_correndo_esquerda.png",
+    "scale": 0.18122977346278318
+  },
+  {
+    "character": "dorian",
+    "original": "assets/characters/dorian/correndo/dorian_correndo_frente.png",
+    "sha256": "5b191b41388b6acb1a7a22ed8ba8be4bb0f7c65229607ceffb2698e9f98bcbce",
+    "original_size": [
+      1254,
+      306
+    ],
+    "cuts": [
+      [
+        28,
+        0,
+        298,
+        306
+      ],
+      [
+        347,
+        0,
+        610,
+        306
+      ],
+      [
+        659,
+        0,
+        922,
+        306
+      ],
+      [
+        969,
+        0,
+        1238,
+        306
+      ]
+    ],
+    "output": "assets/environments/generated/personagens/dorian/dorian_correndo_frente.png",
+    "scale": 0.18122977346278318
+  },
+  {
+    "character": "dorian",
+    "original": "assets/characters/dorian/parado/dorian_parado_costas.png",
+    "sha256": "b24398d55de1bd5b641dca96c1728a6d10f0ab125d86e74990e02cb5c5f17ed4",
+    "original_size": [
+      1254,
+      310
+    ],
+    "cuts": [
+      [
+        54,
+        0,
+        295,
+        309
+      ],
+      [
+        368,
+        0,
+        588,
+        309
+      ],
+      [
+        665,
+        0,
+        894,
+        309
+      ],
+      [
+        972,
+        0,
+        1214,
+        309
+      ]
+    ],
+    "output": "assets/environments/generated/personagens/dorian/dorian_parado_costas.png",
+    "scale": 0.18122977346278318
+  },
+  {
+    "character": "dorian",
+    "original": "assets/characters/dorian/parado/dorian_parado_direita.png",
+    "sha256": "c7f8d1dbb5233fae449a36140a89c56183855c2544e124cd96f7e2c7f3ffa9ab",
+    "original_size": [
+      1254,
+      264
+    ],
+    "cuts": [
+      [
+        16,
+        0,
+        244,
+        262
+      ],
+      [
+        337,
+        1,
+        567,
+        262
+      ],
+      [
+        629,
+        1,
+        866,
+        262
+      ],
+      [
+        964,
+        2,
+        1200,
+        262
+      ]
+    ],
+    "output": "assets/environments/generated/personagens/dorian/dorian_parado_direita.png",
+    "scale": 0.18122977346278318
+  },
+  {
+    "character": "dorian",
+    "original": "assets/characters/dorian/parado/dorian_parado_esquerda.png",
+    "sha256": "da741ca83a418ea6ba1ce35a3e12593c7e866b428b8adfb9cfd9a72fc81c93b5",
+    "original_size": [
+      1254,
+      284
+    ],
+    "cuts": [
+      [
+        68,
+        0,
+        298,
+        282
+      ],
+      [
+        381,
+        0,
+        619,
+        282
+      ],
+      [
+        692,
+        1,
+        935,
+        282
+      ],
+      [
+        1016,
+        0,
+        1238,
+        282
+      ]
+    ],
+    "output": "assets/environments/generated/personagens/dorian/dorian_parado_esquerda.png",
+    "scale": 0.18122977346278318
+  },
+  {
+    "character": "dorian",
+    "original": "assets/characters/dorian/parado/dorian_parado_frente.png",
+    "sha256": "edbb911a40c96797c93bf5529607538cb5556ab6c0a2f7376acc33fad425eb6e",
+    "original_size": [
+      1254,
+      308
+    ],
+    "cuts": [
+      [
+        51,
+        3,
+        278,
+        307
+      ],
+      [
+        367,
+        6,
+        593,
+        307
+      ],
+      [
+        667,
+        8,
+        889,
+        307
+      ],
+      [
+        986,
+        6,
+        1211,
+        307
+      ]
+    ],
+    "output": "assets/environments/generated/personagens/dorian/dorian_parado_frente.png",
+    "scale": 0.18122977346278318
+  }
+]

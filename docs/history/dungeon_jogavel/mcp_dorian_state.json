@@ -1,0 +1,36 @@
+{
+  "jsonrpc": "2.0",
+  "id": 6,
+  "result": {
+    "content": [
+      {
+        "text": "{\"current_scene\":\"res://scenes/characters/players/dorian.tscn\",\"game_capture_ready\":true,\"game_status\":{\"active\":true,\"editor_log_cursor\":0,\"elapsed_msec\":9016,\"helper_expected\":true,\"helper_live\":true,\"ready\":true,\"ready_wait_msec\":20000,\"run_started_msec\":39291890,\"run_token\":4,\"session_active\":true,\"status\":\"live\"},\"godot_version\":\"4.7.1-stable (official)\",\"helper_live\":true,\"is_playing\":true,\"project_name\":\"TheEightDoors\",\"readiness\":\"playing\",\"session_active\":true}",
+        "type": "text"
+      }
+    ],
+    "isError": false,
+    "structuredContent": {
+      "current_scene": "res://scenes/characters/players/dorian.tscn",
+      "game_capture_ready": true,
+      "game_status": {
+        "active": true,
+        "editor_log_cursor": 0,
+        "elapsed_msec": 9016,
+        "helper_expected": true,
+        "helper_live": true,
+        "ready": true,
+        "ready_wait_msec": 20000,
+        "run_started_msec": 39291890,
+        "run_token": 4,
+        "session_active": true,
+        "status": "live"
+      },
+      "godot_version": "4.7.1-stable (official)",
+      "helper_live": true,
+      "is_playing": true,
+      "project_name": "TheEightDoors",
+      "readiness": "playing",
+      "session_active": true
+    }
+  }
+}

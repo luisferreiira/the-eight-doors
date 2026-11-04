@@ -1,0 +1,39 @@
+{
+  "jsonrpc": "2.0",
+  "id": 4,
+  "result": {
+    "content": [
+      {
+        "text": "{\"has_more\":false,\"limit\":20,\"nodes\":[{\"children_count\":2,\"name\":\"Dorian\",\"path\":\"/Dorian\",\"type\":\"CharacterBody2D\"},{\"children_count\":0,\"name\":\"AnimatedSprite2D\",\"path\":\"/Dorian/AnimatedSprite2D\",\"type\":\"AnimatedSprite2D\"},{\"children_count\":0,\"name\":\"CollisionShape2D\",\"path\":\"/Dorian/CollisionShape2D\",\"type\":\"CollisionShape2D\"}],\"offset\":0,\"total_count\":3}",
+        "type": "text"
+      }
+    ],
+    "isError": false,
+    "structuredContent": {
+      "has_more": false,
+      "limit": 20,
+      "nodes": [
+        {
+          "children_count": 2,
+          "name": "Dorian",
+          "path": "/Dorian",
+          "type": "CharacterBody2D"
+        },
+        {
+          "children_count": 0,
+          "name": "AnimatedSprite2D",
+          "path": "/Dorian/AnimatedSprite2D",
+          "type": "AnimatedSprite2D"
+        },
+        {
+          "children_count": 0,
+          "name": "CollisionShape2D",
+          "path": "/Dorian/CollisionShape2D",
+          "type": "CollisionShape2D"
+        }
+      ],
+      "offset": 0,
+      "total_count": 3
+    }
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "preserved": [
+    {
+      "path": "scenes/dungeon/sala_central_referencia.tscn",
+      "unchanged": true,
+      "sha256": "6c5e25316659e66e474433d76bc09a710c5700df0cb3fdfa838059d855ff87c5"
+    },
+    {
+      "path": "scenes/characters/players/aelin.tscn",
+      "unchanged": true,
+      "sha256": "290214a7cbf3c82b73b2f7b5c60f8c6d6cc0d0884cc3e055f9ed3b9ba5adffb7"
+    },
+    {
+      "path": "scenes/characters/players/dorian.tscn",
+      "unchanged": true,
+      "sha256": "2d03a163184209d35bd560335a551fa7ab0b72401eab576d9bc63b942ec75da7"
+    },
+    {
+      "path": "scripts/characters/personagem_top_down.gd",
+      "unchanged": true,
+      "sha256": "edb56a02b7ceecb7f55aa2607162e93ad0ef24b8e0d23e200c1e1c9d8433cdc5"
+    },
+    {
+      "path": "scripts/camera/camera_sala_central.gd",
+      "unchanged": true,
+      "sha256": "121794d821e9c18be06bfbe19098f3099b2ea7ebbd57efd3f639bc1509806a91"
+    },
+    {
+      "path": "scripts/world/passagem_lateral.gd",
+      "unchanged": true,
+      "sha256": "3e0a64efb052c66df7c276957429f8f630161f333c410e7dc35545da30454325"
+    }
+  ],
+  "missing_scene_dependencies": [],
+  "modified": [
+    {
+      "path": "project.godot",
+      "sha256": "0218e9a018be08cb00d872b483e204f3848b3f77efee4288ba7d830e3d7940cd"
+    },
+    {
+      "path": "scenes/world/environments/sala_central_jogavel.tscn",
+      "sha256": "ecf169962dde447470ffc92680d40ef80b066cc9a19385ecd5db722bf242c6d8"
+    },
+    {
+      "path": "tools/dungeon_central/montar_jogavel.gd",
+      "sha256": "b6424ccea0813f5591cdc0d0c97a3230e4130bf041cfef42482b41c4b465b118"
+    },
+    {
+      "path": "tests/test_dungeon_jogavel.gd",
+      "sha256": "d193d58d832b5dd15031436320113890f282ee05275638c6c40c5797ecfabdb1"
+    }
+  ],
+  "added_implementation": [
+    {
+      "path": "scripts/camera/camera_exploracao.gd",
+      "sha256": "d44c9a876bca61ff549890605d4918f431b473228563d49249a9f327d84d489e"
+    },
+    {
+      "path": "scripts/world/passagem_preparada.gd",
+      "sha256": "8d82e3317b7873dc8fcde5f32746cdf7461cc81e6a11d92d7f65d6986c9aaa47"
+    },
+    {
+      "path": "assets/shaders/vinheta.gdshader",
+      "sha256": "86ed17a6286f4b5a51032f5f4c6185e79c70652f7e601d96e5ae8db37bfd19cc"
+    },
+    {
+      "path": "tools/dungeon_central/corrigir_cena_principal.gd",
+      "sha256": "0d5e4c103323369b63ac1ffd45ac474ae4e835ca24dce05e02ae3a4936e2d411"
+    },
+    {
+      "path": "tools/dungeon_central/capturar_principal.gd",
+      "sha256": "a530da9c26efeef544ef2159324ec3c01defc9541127457cf929047ee3b3eeb5"
+    },
+    {
+      "path": "tests/test_cena_principal.gd",
+      "sha256": "6dcff3d332ce53e9b87ac65bfbed0de9f855bffc5ed91da7b5aa9cafced0eb8b"
+    },
+    {
+      "path": "tests/test_resolucoes.gd",
+      "sha256": "dc0fc07604f9f571652c497c74d4a069f8ae3556d6f2d58c27f23301eba554e3"
+    },
+    {
+      "path": "tests/runtime_cena_principal.gd",
+      "sha256": "bc28e6b74b2c2fb704ee806437d7d29b078ce52d9fa0529c59000779aea697e3"
+    }
+  ],
+  "backups": [
+    {
+      "name": "project.godot.bak",
+      "bytes": 2241,
+      "sha256": "34744566c64d12b0a41afcad01ce4ca12b0202fc8e4348a039a3500ca39d2f42"
+    },
+    {
+      "name": "scenes__dungeon__camera_sala_central.gd.bak",
+      "bytes": 670,
+      "sha256": "121794d821e9c18be06bfbe19098f3099b2ea7ebbd57efd3f639bc1509806a91"
+    },
+    {
+      "name": "scenes__dungeon__passagem_lateral.gd.bak",
+      "bytes": 696,
+      "sha256": "3e0a64efb052c66df7c276957429f8f630161f333c410e7dc35545da30454325"
+    },
+    {
+      "name": "scenes__dungeon__sala_central_jogavel.tscn.bak",
+      "bytes": 226310,
+      "sha256": "4cc3af45adf4359a707e062bdc4cb100d60a73f6c14a654e088545d6c423869c"
+    },
+    {
+      "name": "scenes__dungeon__sala_central_referencia.tscn.bak",
+      "bytes": 222571,
+      "sha256": "6c5e25316659e66e474433d76bc09a710c5700df0cb3fdfa838059d855ff87c5"
+    },
+    {
+      "name": "scenes__players__aelin.tscn.bak",
+      "bytes": 8646,
+      "sha256": "290214a7cbf3c82b73b2f7b5c60f8c6d6cc0d0884cc3e055f9ed3b9ba5adffb7"
+    },
+    {
+      "name": "scenes__players__dorian.tscn.bak",
+      "bytes": 8681,
+      "sha256": "2d03a163184209d35bd560335a551fa7ab0b72401eab576d9bc63b942ec75da7"
+    },
+    {
+      "name": "scenes__shared__personagem_top_down.gd.bak",
+      "bytes": 1550,
+      "sha256": "edb56a02b7ceecb7f55aa2607162e93ad0ef24b8e0d23e200c1e1c9d8433cdc5"
+    },
+    {
+      "name": "tests__test_dungeon_jogavel.gd.bak",
+      "bytes": 5745,
+      "sha256": "78a1cbf8b42d89b18401513311bb8f2b4000cb0117246a6dab344d8b7091d56f"
+    },
+    {
+      "name": "tools__dungeon_central__montar_jogavel.gd.bak",
+      "bytes": 6778,
+      "sha256": "a040594283e7866f04ad6027a899404a75f96110d18378e1ec91a0725d6a8f1f"
+    }
+  ],
+  "evidence_files": [
+    "README.md",
+    "antes_editor.json",
+    "antes_hierarquia.json",
+    "antes_video_01.png",
+    "antes_video_01.png.import",
+    "antes_video_02.png",
+    "antes_video_02.png.import",
+    "antes_video_03.png",
+    "antes_video_03.png.import",
+    "antes_video_04.png",
+    "antes_video_04.png.import",
+    "antes_video_05.png",
+    "antes_video_05.png.import",
+    "auditoria_migracao.json",
+    "build_final_stderr.log",
+    "build_final_stdout.log",
+    "build_stderr.log",
+    "build_stdout.log",
+    "capturas_final_stderr.log",
+    "capturas_final_stdout.log",
+    "capturas_stderr.log",
+    "capturas_stdout.log",
+    "cena_principal_mcp.json",
+    "comparacao_sem_frente.png",
+    "comparacao_sem_frente.png.import",
+    "conexao_editor.json",
+    "configurar_plan.json",
+    "depois_centro.png",
+    "depois_centro.png.import",
+    "depois_leste.png",
+    "depois_leste.png.import",
+    "depois_nordeste.png",
+    "depois_nordeste.png.import",
+    "depois_norte.png",
+    "depois_norte.png.import",
+    "depois_oclusao_completa.png",
+    "depois_oclusao_completa.png.import",
+    "depois_oeste.png",
+    "depois_oeste.png.import",
+    "depois_profundidade.png",
+    "depois_profundidade.png.import",
+    "depois_sudoeste.png",
+    "depois_sudoeste.png.import",
+    "depois_sul.png",
+    "depois_sul.png.import",
+    "estado_final_mcp.json",
+    "executar_cena.json",
+    "executar_plan.json",
+    "executar_principal_fullscreen.json",
+    "fullscreen_config_mcp.json",
+    "inspecao_plan.json",
+    "logs_final_mcp.json",
+    "mcp_centro.png",
+    "mcp_leste.png",
+    "mcp_norte.png",
+    "mcp_oeste.png",
+    "mcp_profundidade.png",
+    "mcp_server_stderr.log",
+    "mcp_server_stdout.log",
+    "mcp_sul.png",
+    "parar_para_refino.json",
+    "parar_plan.json",
+    "reabrir_cena.json",
+    "reabrir_final_mcp.json",
+    "resolucoes_final_stderr.log",
+    "resolucoes_final_stdout.log",
+    "resolucoes_stderr.log",
+    "resolucoes_stdout.log",
+    "resultado_testes_mcp.json",
+    "run_main_plan.json",
+    "testes_final_stderr.log",
+    "testes_final_stdout.log",
+    "testes_funcionais.json",
+    "testes_mcp_plan.json",
+    "testes_mcp_runtime.json",
+    "testes_resolucoes.json",
+    "testes_stderr.log",
+    "testes_stdout.log",
+    "verificar_preservacao.py"
+  ]
+}

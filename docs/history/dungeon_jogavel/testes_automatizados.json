@@ -1,0 +1,204 @@
+{
+	"aelin": {
+		"animations": [
+			"correndo_costas",
+			"correndo_direita",
+			"correndo_esquerda",
+			"correndo_frente",
+			"parada_costas",
+			"parada_direita",
+			"parada_esquerda",
+			"parada_frente"
+		],
+		"capsule_radius": 8.0,
+		"movement": [
+			{
+				"actions": [
+					"move_up"
+				],
+				"distance": 48.00048828125,
+				"dx": 0.0,
+				"dy": -48.00048828125,
+				"idle": "parada_costas",
+				"speed": 144.0
+			},
+			{
+				"actions": [
+					"move_down"
+				],
+				"distance": 48.00048828125,
+				"dx": 0.0,
+				"dy": 48.00048828125,
+				"idle": "parada_frente",
+				"speed": 144.0
+			},
+			{
+				"actions": [
+					"move_left"
+				],
+				"distance": 48.0004577636719,
+				"dx": -48.0004577636719,
+				"dy": 0.0,
+				"idle": "parada_esquerda",
+				"speed": 144.0
+			},
+			{
+				"actions": [
+					"move_right"
+				],
+				"distance": 48.00048828125,
+				"dx": 48.00048828125,
+				"dy": 0.0,
+				"idle": "parada_direita",
+				"speed": 144.0
+			},
+			{
+				"actions": [
+					"move_up",
+					"move_left"
+				],
+				"distance": 48.0007438659668,
+				"dx": -33.941650390625,
+				"dy": -33.941650390625,
+				"idle": "parada_costas",
+				"speed": 144.0
+			},
+			{
+				"actions": [
+					"move_up",
+					"move_right"
+				],
+				"distance": 48.0007438659668,
+				"dx": 33.941650390625,
+				"dy": -33.941650390625,
+				"idle": "parada_costas",
+				"speed": 144.0
+			},
+			{
+				"actions": [
+					"move_down",
+					"move_left"
+				],
+				"distance": 48.0007438659668,
+				"dx": -33.941650390625,
+				"dy": 33.941650390625,
+				"idle": "parada_frente",
+				"speed": 144.0
+			},
+			{
+				"actions": [
+					"move_down",
+					"move_right"
+				],
+				"distance": 48.0007438659668,
+				"dx": 33.941650390625,
+				"dy": 33.941650390625,
+				"idle": "parada_frente",
+				"speed": 144.0
+			}
+		],
+		"opposite_keys_cancel": true
+	},
+	"dorian": {
+		"animations": [
+			"correndo_costas",
+			"correndo_direita",
+			"correndo_esquerda",
+			"correndo_frente",
+			"parado_costas",
+			"parado_direita",
+			"parado_esquerda",
+			"parado_frente"
+		],
+		"capsule_radius": 8.0,
+		"movement": [
+			{
+				"actions": [
+					"move_up"
+				],
+				"distance": 48.00048828125,
+				"dx": 0.0,
+				"dy": -48.00048828125,
+				"idle": "parado_costas",
+				"speed": 144.0
+			},
+			{
+				"actions": [
+					"move_down"
+				],
+				"distance": 48.00048828125,
+				"dx": 0.0,
+				"dy": 48.00048828125,
+				"idle": "parado_frente",
+				"speed": 144.0
+			},
+			{
+				"actions": [
+					"move_left"
+				],
+				"distance": 48.0004577636719,
+				"dx": -48.0004577636719,
+				"dy": 0.0,
+				"idle": "parado_esquerda",
+				"speed": 144.0
+			},
+			{
+				"actions": [
+					"move_right"
+				],
+				"distance": 48.00048828125,
+				"dx": 48.00048828125,
+				"dy": 0.0,
+				"idle": "parado_direita",
+				"speed": 144.0
+			},
+			{
+				"actions": [
+					"move_up",
+					"move_left"
+				],
+				"distance": 50.4007797241211,
+				"dx": -35.6387329101563,
+				"dy": -35.6387329101563,
+				"idle": "parado_costas",
+				"speed": 144.0
+			},
+			{
+				"actions": [
+					"move_up",
+					"move_right"
+				],
+				"distance": 48.0007438659668,
+				"dx": 33.941650390625,
+				"dy": -33.941650390625,
+				"idle": "parado_costas",
+				"speed": 144.0
+			},
+			{
+				"actions": [
+					"move_down",
+					"move_left"
+				],
+				"distance": 48.0007438659668,
+				"dx": -33.941650390625,
+				"dy": 33.941650390625,
+				"idle": "parado_frente",
+				"speed": 144.0
+			},
+			{
+				"actions": [
+					"move_down",
+					"move_right"
+				],
+				"distance": 48.0007438659668,
+				"dx": 33.941650390625,
+				"dy": 33.941650390625,
+				"idle": "parado_frente",
+				"speed": 144.0
+			}
+		],
+		"opposite_keys_cancel": true
+	},
+	"failures": [],
+	"godot": "4.7.1-stable (official)"
+}

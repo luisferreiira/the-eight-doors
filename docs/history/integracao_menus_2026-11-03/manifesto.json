@@ -1,0 +1,166 @@
+{
+  "projeto_origem": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\tela-de-inicio\\tela-de-inicio",
+  "projeto_unificado": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors",
+  "assets_preservados": [
+    {
+      "origem": "assets\\back.png",
+      "destino": "assets\\menus\\back.png",
+      "sha256": "53d05191ea30072e2dbced53fcf6aa85ec32089e3dc6a5ba834c42469c220cdf",
+      "identico": true
+    },
+    {
+      "origem": "assets\\backgrounds\\caverna_menu_1280x720.jpg",
+      "destino": "assets\\menus\\backgrounds\\caverna_menu_1280x720.jpg",
+      "sha256": "728c89590b8410afb8f51259940517b3c9b1326d45e97ae663abe03ffde2ede4",
+      "identico": true
+    },
+    {
+      "origem": "assets\\backgrounds\\fundoSelecao_sem_faixa.png",
+      "destino": "assets\\menus\\backgrounds\\fundoSelecao_sem_faixa.png",
+      "sha256": "4b1874a56c8de8b21cf5898331b91b98987b28aa2e85ffb4dce95af9f072f57c",
+      "identico": true
+    },
+    {
+      "origem": "assets\\botaoDepararevoltar.png",
+      "destino": "assets\\menus\\botaoDepararevoltar.png",
+      "sha256": "1494ea27ceee3c9c8167333480adbd02bb0c44a6aee30dcdcfbff482dc973dfe",
+      "identico": true
+    },
+    {
+      "origem": "assets\\characters\\personagem_1.png",
+      "destino": "assets\\menus\\characters\\personagem_1.png",
+      "sha256": "3f8438ed9ad42c7e8a11e4a053b029bc2ee8cee57ea43449107cabeec4bcc553",
+      "identico": true
+    },
+    {
+      "origem": "assets\\characters\\personagem_2.png",
+      "destino": "assets\\menus\\characters\\personagem_2.png",
+      "sha256": "ed0884c2ef3c04b34f8a234f2012461841ca6d005392699e692fe2d3c42d1109",
+      "identico": true
+    },
+    {
+      "origem": "assets\\fundoEscolha.png",
+      "destino": "assets\\menus\\fundoEscolha.png",
+      "sha256": "8777c57405578b971ce5d72069a76f3030d5b7af6a2fd26eae83f337eca75d62",
+      "identico": true
+    },
+    {
+      "origem": "assets\\next.png",
+      "destino": "assets\\menus\\next.png",
+      "sha256": "566e57ceaadf88a4cdc23d9fc5ac6bf181120c3648de01f7bf7d0ffc94c4e41d",
+      "identico": true
+    },
+    {
+      "origem": "assets\\pausar.png",
+      "destino": "assets\\menus\\pausar.png",
+      "sha256": "bf6b86934ca7931bf59b5a95e154e43ebea9650fed6724e8555211fc5a59f87d",
+      "identico": true
+    },
+    {
+      "origem": "assets\\personagem1.png",
+      "destino": "assets\\menus\\personagem1.png",
+      "sha256": "5e98588a4d5522e4a5d2cac8b404c75d581b4f57b06a23c9bf114e8b6cf385d2",
+      "identico": true
+    },
+    {
+      "origem": "assets\\personagem2.png",
+      "destino": "assets\\menus\\personagem2.png",
+      "sha256": "c19b38453faa0605e47aff2b8776eb255ee9e473bc3c7c0ea156c0ac224fff40",
+      "identico": true
+    },
+    {
+      "origem": "assets\\play.jpeg",
+      "destino": "assets\\menus\\play.jpeg",
+      "sha256": "7b23fe6d29009fd74d9cdbfab2e695c54c896572812d27b51502e465d9437a62",
+      "identico": true
+    },
+    {
+      "origem": "assets\\quit.png",
+      "destino": "assets\\menus\\quit.png",
+      "sha256": "9722d5c0c18edd232eaf09b372389f68b1330a6261df6ebef06d45b267e384e8",
+      "identico": true
+    },
+    {
+      "origem": "assets\\reiniciar.png",
+      "destino": "assets\\menus\\reiniciar.png",
+      "sha256": "1a3ad24b4eca01f53f25ee512cccb4a9eead4ed3a938f07de34d0f6107e09c61",
+      "identico": true
+    },
+    {
+      "origem": "assets\\sons\\botao.mp3",
+      "destino": "assets\\menus\\sons\\botao.mp3",
+      "sha256": "be92d2931ff4bb7928efabb83c2b2908c90d7e464cc4a288b2f87884fadffae2",
+      "identico": true
+    },
+    {
+      "origem": "assets\\sons\\trilhaSonora.mp3",
+      "destino": "assets\\menus\\sons\\trilhaSonora.mp3",
+      "sha256": "5583e5c521d5825eb1134d68c3cd170ac5d4aa3edba60bb4d6b1184e9f0f24f7",
+      "identico": true
+    },
+    {
+      "origem": "assets\\telaDeinicio.jpeg",
+      "destino": "assets\\menus\\telaDeinicio.jpeg",
+      "sha256": "5f0bcbc0d5715a7acecf4245aaebe0831b528c83e476545c052a353719b56758",
+      "identico": true
+    },
+    {
+      "origem": "assets\\ui\\next_button.png",
+      "destino": "assets\\menus\\ui\\next_button.png",
+      "sha256": "20996a018e0e8d79c0b976168142f104178b95c1c5a3d83e6bedc3cd3d4795c1",
+      "identico": true
+    },
+    {
+      "origem": "assets\\ui\\play_button.png",
+      "destino": "assets\\menus\\ui\\play_button.png",
+      "sha256": "e57f162c15abe418f7b905b3d8420349bca9a2a118e93688ea174b2c610e1f04",
+      "identico": true
+    },
+    {
+      "origem": "assets\\ui\\quit_button.png",
+      "destino": "assets\\menus\\ui\\quit_button.png",
+      "sha256": "432fbd6ce2239f8cba3d8da63e80146cef07f5cd019991ccae7102a50b71553e",
+      "identico": true
+    },
+    {
+      "origem": "assets\\voltar.png",
+      "destino": "assets\\menus\\voltar.png",
+      "sha256": "5e7fb600da9fc82484f15d2c361953c2964f5fb1eaa2125e94112dc8f504546e",
+      "identico": true
+    },
+    {
+      "origem": "assets\\volume.png",
+      "destino": "assets\\menus\\volume.png",
+      "sha256": "69949921b558d219b8588645513bd133e73c83773c2d0eed54ce5ec3df00d4af",
+      "identico": true
+    },
+    {
+      "origem": "assets\\volume_maximo.png",
+      "destino": "assets\\menus\\volume_maximo.png",
+      "sha256": "14ca723b8b34b00a9fdfee50eec4f74dcce229c2f9a6ccb1ee7b6f19bd439159",
+      "identico": true
+    },
+    {
+      "origem": "assets\\volume_medio.png",
+      "destino": "assets\\menus\\volume_medio.png",
+      "sha256": "fc6f5f360c37bc0ce24b49e9216ac0846bc0a88470215e7466e95c36c8c889c7",
+      "identico": true
+    },
+    {
+      "origem": "assets\\volume_mudo.png",
+      "destino": "assets\\menus\\volume_mudo.png",
+      "sha256": "d8acfe99d49a891ea559f9e63b9421312b9fd7b9a07b86f1aa3c4f433a483b80",
+      "identico": true
+    }
+  ],
+  "cenas_integradas": [
+    "scenes/ui/menus/MenuInicial.tscn",
+    "scenes/ui/menus/EscolhaPersonagem.tscn"
+  ],
+  "scripts_adaptados": [
+    "scripts\\ui\\escolha_personagem.gd",
+    "scripts\\ui\\estado_jogo.gd",
+    "scripts\\ui\\menu_inicial.gd",
+    "scripts\\ui\\pause_overlay.gd"
+  ]
+}

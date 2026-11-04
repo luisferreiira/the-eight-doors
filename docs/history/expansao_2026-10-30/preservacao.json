@@ -1,0 +1,43 @@
+{
+  "protected_files": 210,
+  "protected_changes": [],
+  "backed_up_originals": {
+    "project.godot": {
+      "unchanged": false,
+      "before": "C257381C5B94AD7DADF7EDBC2F96F0C5B9737122352022AD3F4D04214F31E1A3",
+      "after": "0696971CBF4B43195359B2ADD6A31CE3D64816B902D35A8DE25CEDEE198C34D7"
+    },
+    "scripts/camera/camera_exploracao.gd": {
+      "unchanged": true,
+      "before": "D44C9A876BCA61FF549890605D4918F431B473228563D49249A9F327D84D489E",
+      "after": "D44C9A876BCA61FF549890605D4918F431B473228563D49249A9F327D84D489E"
+    },
+    "scenes/world/environments/sala_central_jogavel.tscn": {
+      "unchanged": true,
+      "before": "1FEC693752D72B4F1A367E723EE520AF0432CBD5CA658C94A94B4F24ED6C057D",
+      "after": "1FEC693752D72B4F1A367E723EE520AF0432CBD5CA658C94A94B4F24ED6C057D"
+    },
+    "assets/shaders/vinheta.gdshader": {
+      "unchanged": true,
+      "before": "86ED17A6286F4B5A51032F5F4C6185E79C70652F7E601D96E5AE8DB37BFD19CC",
+      "after": "86ED17A6286F4B5A51032F5F4C6185E79C70652F7E601D96E5AE8DB37BFD19CC"
+    },
+    "scenes/characters/players/aelin.tscn": {
+      "unchanged": true,
+      "before": "42BE6DD3E43462F1B1BC582B9C6241881D4D5B6F527C209ADAE227B58D660CF7",
+      "after": "42BE6DD3E43462F1B1BC582B9C6241881D4D5B6F527C209ADAE227B58D660CF7"
+    },
+    "scenes/characters/players/dorian.tscn": {
+      "unchanged": true,
+      "before": "C5CCEAFF882D10953D7B028E6C33E66683EE8B1920205FE7957A56BDB6DF8402",
+      "after": "C5CCEAFF882D10953D7B028E6C33E66683EE8B1920205FE7957A56BDB6DF8402"
+    },
+    "scripts/characters/personagem_top_down.gd": {
+      "unchanged": true,
+      "before": "EDB56A02B7CEECB7F55AA2607162E93AD0EF24B8E0D23E200C1E1C9D8433CDC5",
+      "after": "EDB56A02B7CEECB7F55AA2607162E93AD0EF24B8E0D23E200C1E1C9D8433CDC5"
+    }
+  },
+  "missing_expansion_references": [],
+  "reference_scene_currently_exists": false
+}

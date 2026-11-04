@@ -1,0 +1,18 @@
+{
+  "jsonrpc": "2.0",
+  "id": 3,
+  "result": {
+    "content": [
+      {
+        "text": "{\"key\":\"display/window/size/mode\",\"type\":\"int\",\"value\":3}",
+        "type": "text"
+      }
+    ],
+    "isError": false,
+    "structuredContent": {
+      "key": "display/window/size/mode",
+      "type": "int",
+      "value": 3
+    }
+  }
+}

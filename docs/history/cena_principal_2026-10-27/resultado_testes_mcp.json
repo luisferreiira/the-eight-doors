@@ -1,0 +1,155 @@
+{
+  "jsonrpc": "2.0",
+  "id": 3,
+  "result": {
+    "content": [
+      {
+        "text": "{\"result\":{\"camera\":[{\"label\":\"centro\",\"player\":\"(560.0, 640.0)\",\"screen_center\":\"(560.0, 616.0)\",\"within_limits\":true},{\"label\":\"norte\",\"player\":\"(560.0, 222.0)\",\"screen_center\":\"(560.0, 198.0)\",\"within_limits\":true},{\"label\":\"sul\",\"player\":\"(560.0, 936.0)\",\"screen_center\":\"(560.0, 812.0)\",\"within_limits\":true},{\"label\":\"leste\",\"player\":\"(1020.0, 576.0)\",\"screen_center\":\"(768.0, 552.0)\",\"within_limits\":true},{\"label\":\"oeste\",\"player\":\"(100.0, 576.0)\",\"screen_center\":\"(352.0, 552.0)\",\"within_limits\":true},{\"label\":\"profundidade\",\"player\":\"(704.0, 904.0)\",\"screen_center\":\"(704.0, 812.0)\",\"within_limits\":true}],\"doors\":[{\"blocked\":true,\"detector_active\":false,\"name\":\"Porta_Norte\"},{\"blocked\":true,\"detector_active\":false,\"name\":\"Porta_Nordeste\"},{\"blocked\":true,\"detector_active\":false,\"name\":\"Porta_Leste\"},{\"blocked\":true,\"detector_active\":false,\"name\":\"Porta_Sudeste\"},{\"blocked\":true,\"detector_active\":false,\"name\":\"Porta_Sul\"},{\"blocked\":true,\"detector_active\":false,\"name\":\"Porta_Sudoeste\"},{\"blocked\":true,\"detector_active\":false,\"name\":\"Porta_Oeste\"},{\"blocked\":true,\"detector_active\":false,\"name\":\"Porta_Noroeste\"}],\"failures\":[],\"movement\":[{\"delta\":\"(0.0, -50.40051)\",\"keys\":\"[87]\",\"speed\":144.0,\"tracking_max_error\":0.0},{\"delta\":\"(0.0, 50.40051)\",\"keys\":\"[83]\",\"speed\":144.0,\"tracking_max_error\":0.0},{\"delta\":\"(-50.40045, 0.0)\",\"keys\":\"[65]\",\"speed\":144.0,\"tracking_max_error\":0.0},{\"delta\":\"(50.40051, 0.0)\",\"keys\":\"[68]\",\"speed\":144.0,\"tracking_max_error\":0.0},{\"delta\":\"(-35.63873, -35.63873)\",\"keys\":\"[87, 65]\",\"speed\":144.0,\"tracking_max_error\":0.0},{\"delta\":\"(35.63873, -35.63873)\",\"keys\":\"[87, 68]\",\"speed\":144.0,\"tracking_max_error\":0.0},{\"delta\":\"(-35.63873, 35.63873)\",\"keys\":\"[83, 65]\",\"speed\":144.0,\"tracking_max_error\":0.0},{\"delta\":\"(35.63873, 35.63873)\",\"keys\":\"[83, 68]\",\"speed\":144.0,\"tracking_max_error\":0.0}],\"physical_size\":\"(1920, 1080)\",\"scene\":\"res://scenes/world/environments/sala_central_jogavel.tscn\",\"stretch_aspect\":\"keep\",\"stretch_mode\":\"viewport\",\"viewport\":\"(640.0, 360.0)\",\"window_mode\":3.0},\"source\":\"game\"}",
+        "type": "text"
+      }
+    ],
+    "isError": false,
+    "structuredContent": {
+      "result": {
+        "camera": [
+          {
+            "label": "centro",
+            "player": "(560.0, 640.0)",
+            "screen_center": "(560.0, 616.0)",
+            "within_limits": true
+          },
+          {
+            "label": "norte",
+            "player": "(560.0, 222.0)",
+            "screen_center": "(560.0, 198.0)",
+            "within_limits": true
+          },
+          {
+            "label": "sul",
+            "player": "(560.0, 936.0)",
+            "screen_center": "(560.0, 812.0)",
+            "within_limits": true
+          },
+          {
+            "label": "leste",
+            "player": "(1020.0, 576.0)",
+            "screen_center": "(768.0, 552.0)",
+            "within_limits": true
+          },
+          {
+            "label": "oeste",
+            "player": "(100.0, 576.0)",
+            "screen_center": "(352.0, 552.0)",
+            "within_limits": true
+          },
+          {
+            "label": "profundidade",
+            "player": "(704.0, 904.0)",
+            "screen_center": "(704.0, 812.0)",
+            "within_limits": true
+          }
+        ],
+        "doors": [
+          {
+            "blocked": true,
+            "detector_active": false,
+            "name": "Porta_Norte"
+          },
+          {
+            "blocked": true,
+            "detector_active": false,
+            "name": "Porta_Nordeste"
+          },
+          {
+            "blocked": true,
+            "detector_active": false,
+            "name": "Porta_Leste"
+          },
+          {
+            "blocked": true,
+            "detector_active": false,
+            "name": "Porta_Sudeste"
+          },
+          {
+            "blocked": true,
+            "detector_active": false,
+            "name": "Porta_Sul"
+          },
+          {
+            "blocked": true,
+            "detector_active": false,
+            "name": "Porta_Sudoeste"
+          },
+          {
+            "blocked": true,
+            "detector_active": false,
+            "name": "Porta_Oeste"
+          },
+          {
+            "blocked": true,
+            "detector_active": false,
+            "name": "Porta_Noroeste"
+          }
+        ],
+        "failures": [],
+        "movement": [
+          {
+            "delta": "(0.0, -50.40051)",
+            "keys": "[87]",
+            "speed": 144.0,
+            "tracking_max_error": 0.0
+          },
+          {
+            "delta": "(0.0, 50.40051)",
+            "keys": "[83]",
+            "speed": 144.0,
+            "tracking_max_error": 0.0
+          },
+          {
+            "delta": "(-50.40045, 0.0)",
+            "keys": "[65]",
+            "speed": 144.0,
+            "tracking_max_error": 0.0
+          },
+          {
+            "delta": "(50.40051, 0.0)",
+            "keys": "[68]",
+            "speed": 144.0,
+            "tracking_max_error": 0.0
+          },
+          {
+            "delta": "(-35.63873, -35.63873)",
+            "keys": "[87, 65]",
+            "speed": 144.0,
+            "tracking_max_error": 0.0
+          },
+          {
+            "delta": "(35.63873, -35.63873)",
+            "keys": "[87, 68]",
+            "speed": 144.0,
+            "tracking_max_error": 0.0
+          },
+          {
+            "delta": "(-35.63873, 35.63873)",
+            "keys": "[83, 65]",
+            "speed": 144.0,
+            "tracking_max_error": 0.0
+          },
+          {
+            "delta": "(35.63873, 35.63873)",
+            "keys": "[83, 68]",
+            "speed": 144.0,
+            "tracking_max_error": 0.0
+          }
+        ],
+        "physical_size": "(1920, 1080)",
+        "scene": "res://scenes/world/environments/sala_central_jogavel.tscn",
+        "stretch_aspect": "keep",
+        "stretch_mode": "viewport",
+        "viewport": "(640.0, 360.0)",
+        "window_mode": 3.0
+      },
+      "source": "game"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "jsonrpc": "2.0",
+  "id": 4,
+  "result": {
+    "content": [
+      {
+        "text": "{\"actions\":[],\"count\":0}",
+        "type": "text"
+      }
+    ],
+    "isError": false,
+    "structuredContent": {
+      "actions": [],
+      "count": 0
+    }
+  }
+}

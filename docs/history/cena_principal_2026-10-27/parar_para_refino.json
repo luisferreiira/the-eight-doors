@@ -1,0 +1,20 @@
+{
+  "jsonrpc": "2.0",
+  "id": 2,
+  "result": {
+    "content": [
+      {
+        "text": "{\"readiness_after\":\"importing\",\"reason\":\"Play/stop is a runtime action\",\"stopped\":true,\"undoable\":false,\"was_running\":true}",
+        "type": "text"
+      }
+    ],
+    "isError": false,
+    "structuredContent": {
+      "readiness_after": "importing",
+      "reason": "Play/stop is a runtime action",
+      "stopped": true,
+      "undoable": false,
+      "was_running": true
+    }
+  }
+}

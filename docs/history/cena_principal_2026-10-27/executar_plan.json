@@ -1,0 +1,1 @@
+[{"name":"editor_state","args":{},"output":"conexao_editor.json"},{"name":"scene_open","args":{"path":"res://scenes/world/environments/sala_central_jogavel.tscn","force_reload":true},"output":"reabrir_cena.json"},{"name":"project_run","args":{"mode":"custom","scene":"res://scenes/world/environments/sala_central_jogavel.tscn","autosave":false},"output":"executar_cena.json"}]

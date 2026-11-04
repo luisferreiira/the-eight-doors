@@ -1,0 +1,107 @@
+{
+  "jsonrpc": "2.0",
+  "id": 2,
+  "result": {
+    "content": [
+      {
+        "text": "{\"result\":{\"character\":\"Dorian\",\"samples\":[{\"dx\":0.0,\"dy\":-47.9998779296875,\"idle\":\"parado_costas\",\"keys\":[87.0],\"speed\":144.0,\"walk\":\"correndo_costas\"},{\"dx\":0.0,\"dy\":47.9998779296875,\"idle\":\"parado_frente\",\"keys\":[83.0],\"speed\":144.0,\"walk\":\"correndo_frente\"},{\"dx\":-48.00048828125,\"dy\":0.0,\"idle\":\"parado_esquerda\",\"keys\":[65.0],\"speed\":144.0,\"walk\":\"correndo_esquerda\"},{\"dx\":48.00048828125,\"dy\":0.0,\"idle\":\"parado_direita\",\"keys\":[68.0],\"speed\":144.0,\"walk\":\"correndo_direita\"},{\"dx\":-33.941650390625,\"dy\":-33.9410400390625,\"idle\":\"parado_costas\",\"keys\":[87.0,65.0],\"speed\":144.0,\"walk\":\"correndo_costas\"},{\"dx\":33.941650390625,\"dy\":-33.9410400390625,\"idle\":\"parado_costas\",\"keys\":[87.0,68.0],\"speed\":144.0,\"walk\":\"correndo_costas\"},{\"dx\":-33.941650390625,\"dy\":33.9410400390625,\"idle\":\"parado_frente\",\"keys\":[83.0,65.0],\"speed\":144.0,\"walk\":\"correndo_frente\"},{\"dx\":33.941650390625,\"dy\":33.9410400390625,\"idle\":\"parado_frente\",\"keys\":[83.0,68.0],\"speed\":144.0,\"walk\":\"correndo_frente\"}],\"scene\":\"res://tests/preview_dorian.tscn\",\"tested_real_key_events\":true},\"source\":\"game\"}",
+        "type": "text"
+      }
+    ],
+    "isError": false,
+    "structuredContent": {
+      "result": {
+        "character": "Dorian",
+        "samples": [
+          {
+            "dx": 0.0,
+            "dy": -47.9998779296875,
+            "idle": "parado_costas",
+            "keys": [
+              87.0
+            ],
+            "speed": 144.0,
+            "walk": "correndo_costas"
+          },
+          {
+            "dx": 0.0,
+            "dy": 47.9998779296875,
+            "idle": "parado_frente",
+            "keys": [
+              83.0
+            ],
+            "speed": 144.0,
+            "walk": "correndo_frente"
+          },
+          {
+            "dx": -48.00048828125,
+            "dy": 0.0,
+            "idle": "parado_esquerda",
+            "keys": [
+              65.0
+            ],
+            "speed": 144.0,
+            "walk": "correndo_esquerda"
+          },
+          {
+            "dx": 48.00048828125,
+            "dy": 0.0,
+            "idle": "parado_direita",
+            "keys": [
+              68.0
+            ],
+            "speed": 144.0,
+            "walk": "correndo_direita"
+          },
+          {
+            "dx": -33.941650390625,
+            "dy": -33.9410400390625,
+            "idle": "parado_costas",
+            "keys": [
+              87.0,
+              65.0
+            ],
+            "speed": 144.0,
+            "walk": "correndo_costas"
+          },
+          {
+            "dx": 33.941650390625,
+            "dy": -33.9410400390625,
+            "idle": "parado_costas",
+            "keys": [
+              87.0,
+              68.0
+            ],
+            "speed": 144.0,
+            "walk": "correndo_costas"
+          },
+          {
+            "dx": -33.941650390625,
+            "dy": 33.9410400390625,
+            "idle": "parado_frente",
+            "keys": [
+              83.0,
+              65.0
+            ],
+            "speed": 144.0,
+            "walk": "correndo_frente"
+          },
+          {
+            "dx": 33.941650390625,
+            "dy": 33.9410400390625,
+            "idle": "parado_frente",
+            "keys": [
+              83.0,
+              68.0
+            ],
+            "speed": 144.0,
+            "walk": "correndo_frente"
+          }
+        ],
+        "scene": "res://tests/preview_dorian.tscn",
+        "tested_real_key_events": true
+      },
+      "source": "game"
+    }
+  }
+}

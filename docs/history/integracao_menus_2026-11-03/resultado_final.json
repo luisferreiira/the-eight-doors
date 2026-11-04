@@ -1,0 +1,18 @@
+{
+  "integracao": {
+    "characters": [
+      "Aelin",
+      "Dorian"
+    ],
+    "checks": 97,
+    "failures": []
+  },
+  "labirinto": {
+    "travessias": 20,
+    "portas_seladas": 38,
+    "perimetro": 1200,
+    "failures": []
+  },
+  "referencias_ausentes": [],
+  "assets_preservados": 25
+}

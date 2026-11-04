@@ -1,0 +1,103 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/menu_inicial.gd" id="1_menu"]
+[ext_resource type="Texture2D" path="res://assets/ui/backgrounds/caverna_menu_1280x720.jpg" id="2_bg"]
+[ext_resource type="Texture2D" path="res://assets/ui/ui/play_button.png" id="3_play"]
+[ext_resource type="Texture2D" path="res://assets/ui/ui/quit_button.png" id="4_quit"]
+
+[node name="MenuInicial" type="Control" unique_id=229377470]
+custom_minimum_size = Vector2(1280, 720)
+texture_filter = 2
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 1
+grow_vertical = 1
+script = ExtResource("1_menu")
+
+[node name="Fundo" type="TextureRect" parent="." unique_id=987294361]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_bg")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Sombra" type="ColorRect" parent="." unique_id=806912798]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.025, 0.012, 0.008, 0.24)
+
+[node name="EfeitosAmbiente" type="Node2D" parent="." unique_id=754182278]
+
+[node name="Brasas" type="CPUParticles2D" parent="EfeitosAmbiente" unique_id=1234673118]
+position = Vector2(640, 735)
+amount = 44
+lifetime = 4.5
+randomness = 0.8
+emission_shape = 3
+emission_rect_extents = Vector2(650, 12)
+direction = Vector2(-0.05, -1)
+spread = 22.0
+gravity = Vector2(0, -5)
+initial_velocity_min = 18.0
+initial_velocity_max = 48.0
+scale_amount_max = 3.0
+color = Color(1, 0.38, 0.08, 0.8)
+
+[node name="Interface" type="Control" parent="." unique_id=1572483240]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Botoes" type="VBoxContainer" parent="Interface" unique_id=653952595]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.69
+anchor_right = 0.5
+anchor_bottom = 0.98
+offset_left = -180.0
+offset_right = 180.0
+alignment = 1
+
+[node name="Play" type="TextureButton" parent="Interface/Botoes" unique_id=800023047]
+custom_minimum_size = Vector2(330, 102)
+layout_mode = 2
+tooltip_text = "Play"
+texture_normal = ExtResource("3_play")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Quit" type="TextureButton" parent="Interface/Botoes" unique_id=444632735]
+custom_minimum_size = Vector2(330, 102)
+layout_mode = 2
+tooltip_text = "Quit"
+texture_normal = ExtResource("4_quit")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Transicao" type="ColorRect" parent="." unique_id=2005772996]
+visible = false
+z_index = 100
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)

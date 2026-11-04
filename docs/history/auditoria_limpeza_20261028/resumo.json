@@ -1,0 +1,185 @@
+{
+  "root": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors",
+  "files": 1941,
+  "bytes": 313486878,
+  "categories": {
+    "A": {
+      "files": 781,
+      "bytes": 206176320
+    },
+    "B": {
+      "files": 95,
+      "bytes": 26334241
+    },
+    "C": {
+      "files": 1064,
+      "bytes": 80976317
+    },
+    "D": {
+      "files": 1,
+      "bytes": 0
+    }
+  },
+  "duplicate_groups": 243,
+  "extra_duplicate_copies": 285,
+  "largest": [
+    {
+      "path": "addons/ziva_agent/zivacode/windows_x86_64/zivacode.exe",
+      "bytes": 122850816,
+      "sha256": "ef6867cedb1a8372536bb2ec7122e5d8b8a21109e45e7e0003863722bf9ebd78",
+      "category": "A",
+      "reason": "Preservar: essencial ou conservadoramente necessario",
+      "references": []
+    },
+    {
+      "path": "assets/personagens/personagem.zip",
+      "bytes": 13452399,
+      "sha256": "dc02ee8b76f790475d85fb691c1599d88f2ea1cb39d6323f12fd459536ad5c6b",
+      "category": "B",
+      "reason": "Preservar: recurso futuro/original",
+      "references": []
+    },
+    {
+      "path": "addons/ziva_agent/bin-deps/windows_x86_64/ffmpeg.exe",
+      "bytes": 10090496,
+      "sha256": "e8893ee13f1f74447de824f8276502d32047f9d804186da14eac1d1167181608",
+      "category": "A",
+      "reason": "Preservar: essencial ou conservadoramente necessario",
+      "references": []
+    },
+    {
+      "path": "addons/ziva_agent/bin/windows_x86_64/libziva_agent.windows.release.x86_64.dll",
+      "bytes": 7907840,
+      "sha256": "bdc81596dc1bd618a1ad2f8fd24d325eac790d8a954f95005e85411cf39c1509",
+      "category": "A",
+      "reason": "Preservar: essencial ou conservadoramente necessario",
+      "references": []
+    },
+    {
+      "path": "addons/ziva_agent/bin/windows_x86_64/~libziva_agent.windows.release.x86_64.dll",
+      "bytes": 7907840,
+      "sha256": "bdc81596dc1bd618a1ad2f8fd24d325eac790d8a954f95005e85411cf39c1509",
+      "category": "A",
+      "reason": "Preservar: essencial ou conservadoramente necessario",
+      "references": []
+    },
+    {
+      "path": "addons/ziva_agent/bin/windows_x86_64/~libziva_agent.windows.release.x86_64.dll~RF53394f2.TMP",
+      "bytes": 7907840,
+      "sha256": "bdc81596dc1bd618a1ad2f8fd24d325eac790d8a954f95005e85411cf39c1509",
+      "category": "A",
+      "reason": "Preservar: essencial ou conservadoramente necessario",
+      "references": []
+    },
+    {
+      "path": "assets/environments/RPGW_Caves_v2.1/_PSD/MainLev2.0.psd",
+      "bytes": 4922331,
+      "sha256": "00c3efeb8c3ff194b103103489ddc90f4f9fe81c739222e807741e040c3c95f2",
+      "category": "B",
+      "reason": "Preservar: recurso futuro/original",
+      "references": []
+    },
+    {
+      "path": "addons/ziva_agent/bin-deps/windows_x86_64/git/git.exe",
+      "bytes": 4344704,
+      "sha256": "c115a66a1bede6694b513af420cc90f8775be03666a54d1ecb82d6196b929fe9",
+      "category": "A",
+      "reason": "Preservar: essencial ou conservadoramente necessario",
+      "references": []
+    },
+    {
+      "path": "addons/ziva_agent/bin-deps/windows_x86_64/rg.exe",
+      "bytes": 4266496,
+      "sha256": "decdd4992f3f1b9a5ef9898f1b40ab16886d579d6516b4efd3d5eaa19364e408",
+      "category": "A",
+      "reason": "Preservar: essencial ou conservadoramente necessario",
+      "references": []
+    },
+    {
+      "path": ".godot/imported/Gemini_Generated_Image_yc37sgyc37sgyc37.jpg-3ea3e0022920d167ade3b392436deaf1.ctex",
+      "bytes": 3309954,
+      "sha256": "422fc4d6a6a4817914f245b32aef2a3275e662e3c3804240448510b5b3789354",
+      "category": "C",
+      "reason": "Preservar: desenvolvimento/cache/historico",
+      "references": [
+        "assets/environments/mapa/Gemini_Generated_Image_yc37sgyc37sgyc37.jpg.import"
+      ]
+    },
+    {
+      "path": ".godot/imported/Gemini_Generated_Image_35353r35353r3535.jpg-a957422c6d317be587442667826302a3.ctex",
+      "bytes": 3245914,
+      "sha256": "91551884bbc5c925b5e5c6524a3648aa8156f07257db3cf8230dd89a2a2bef7b",
+      "category": "C",
+      "reason": "Preservar: desenvolvimento/cache/historico",
+      "references": [
+        "assets/environments/mapa/Gemini_Generated_Image_35353r35353r3535.jpg.import"
+      ]
+    },
+    {
+      "path": ".godot/imported/referencia_cena_base.jpg-2b1dc36e210b9eb1df68807234fabe2c.ctex",
+      "bytes": 3171804,
+      "sha256": "9f9e5bf42e53ea882c9d713f0ff77f159bb449d69283833c3e0886e472431afb",
+      "category": "C",
+      "reason": "Preservar: desenvolvimento/cache/historico",
+      "references": [
+        "assets/environments/mapa/referencia_cena_base.jpg.import"
+      ]
+    },
+    {
+      "path": "assets/environments/mapa/fase_caverna_base.png",
+      "bytes": 2889016,
+      "sha256": "b6d6f873114b12115b99d22593e25b28b5545c7983b9f93a9a08b4834c8f0003",
+      "category": "A",
+      "reason": "Preservar: essencial ou conservadoramente necessario",
+      "references": [
+        "assets/environments/mapa/fase_caverna_base.png.import",
+        "scenes/world/environments/fase_caverna.tscn"
+      ]
+    },
+    {
+      "path": "assets/environments/mapa/The_Eight_Doors_Tiles_Preparados/atlas_complementar_C.png",
+      "bytes": 2702138,
+      "sha256": "89fe7b6a5a8814ff706574aba5d33b3e9de318d44fd3b506cc4034d89f49475b",
+      "category": "A",
+      "reason": "Preservar: essencial ou conservadoramente necessario",
+      "references": [
+        "assets/environments/mapa/The_Eight_Doors_Tiles_Preparados/atlas_complementar_C.png.import",
+        "docs/history/dungeon_central/originais_preservados_sha256.json",
+        "scenes/world/environments/fase_caverna.tscn",
+        "scenes/world/environments/sala_central_jogavel.tscn",
+        "tools/dungeon_central/corrigir_cena_principal.gd"
+      ]
+    },
+    {
+      "path": "assets/RPGW_Caves_v2.1.zip",
+      "bytes": 2660749,
+      "sha256": "05b6c55bf430ef586f2e3cc518400a21bd0645be9c47291d4b63be8e4d9fcf98",
+      "category": "B",
+      "reason": "Preservar: recurso futuro/original",
+      "references": []
+    }
+  ],
+  "plugins": [
+    {
+      "path": "addons/.godot_ai_update/backup/3.2.1/plugin.cfg",
+      "enabled": false,
+      "config": "[plugin]\n\nname=\"Godot AI v4 Migration\"\ndescription=\"One-click signed migration from Godot AI v3 to v4\"\nauthor=\"Godot AI\"\nversion=\"4.3.1\"\nscript=\"plugin.gd\"\n"
+    },
+    {
+      "path": "addons/godot_ai/plugin.cfg",
+      "enabled": true,
+      "config": "[plugin]\n\nname=\"Godot AI\"\ndescription=\"MCP server and AI tools for Godot\"\nauthor=\"Godot AI\"\nversion=\"4.3.1\"\nscript=\"plugin.gd\"\n"
+    },
+    {
+      "path": "addons/godot_mcp/plugin.cfg",
+      "enabled": false,
+      "config": "[plugin]\n\nname=\"Godot MCP\"\ndescription=\"MCP server integration for AI assistants. Connects to the godot-mcp-server via WebSocket.\"\nauthor=\"Godot MCP\"\nversion=\"0.6.0\"\nscript=\"plugin.gd\"\n"
+    }
+  ],
+  "missing_references": [
+    {
+      "source": "scenes/world/environments/sala_central_jogavel.tscn",
+      "target": "scenes/dungeon/sala_central_referencia.tscn"
+    }
+  ]
+}

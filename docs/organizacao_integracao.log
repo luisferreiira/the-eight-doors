@@ -1,0 +1,82 @@
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+
+ERROR: Resource file not found: res://assets/generated/personagens/aelin/aelin_run_frente.png (expected type: Texture2D)
+   at: _load (core/io/resource_loader.cpp:325)
+ERROR: Resource file not found: res://assets/generated/personagens/aelin/aelin_run_costas.png (expected type: Texture2D)
+   at: _load (core/io/resource_loader.cpp:325)
+ERROR: Resource file not found: res://assets/generated/personagens/aelin/aelin_run_direita_alterado.png (expected type: Texture2D)
+   at: _load (core/io/resource_loader.cpp:325)
+ERROR: Resource file not found: res://assets/generated/personagens/aelin/aelin_run_esquerda_alterado.png (expected type: Texture2D)
+   at: _load (core/io/resource_loader.cpp:325)
+ERROR: Resource file not found: res://assets/generated/personagens/aelin/aelin_parada_frente.png (expected type: Texture2D)
+   at: _load (core/io/resource_loader.cpp:325)
+ERROR: Resource file not found: res://assets/generated/personagens/aelin/aelin_parada_costas.png (expected type: Texture2D)
+   at: _load (core/io/resource_loader.cpp:325)
+ERROR: Resource file not found: res://assets/generated/personagens/aelin/aelin_parada_direita.png (expected type: Texture2D)
+   at: _load (core/io/resource_loader.cpp:325)
+ERROR: Resource file not found: res://assets/generated/personagens/aelin/aelin_run_frente_invertido.png (expected type: Texture2D)
+   at: _load (core/io/resource_loader.cpp:325)
+ERROR: Resource file not found: res://assets/generated/personagens/aelin/aelin_parada_esquerda.png (expected type: Texture2D)
+   at: _load (core/io/resource_loader.cpp:325)
+ERROR: Attempt to open script 'res://scenes/shared/personagem_top_down.gd' resulted in error 'File not found'.
+   at: load_source_code (modules/gdscript/gdscript.cpp:1139)
+ERROR: Failed loading resource: res://scenes/shared/personagem_top_down.gd.
+   at: _load (core/io/resource_loader.cpp:317)
+ERROR: res://scenes/characters/players/aelin.tscn:15 - Parse Error: [ext_resource] referenced non-existent resource at: res://assets/generated/personagens/aelin/aelin_run_costas.png.
+   at: _printerr (scene/resources/resource_format_text.cpp:41)
+ERROR: res://scenes/characters/players/aelin.tscn:15 - Parse Error: [ext_resource] referenced non-existent resource at: res://assets/generated/personagens/aelin/aelin_run_costas.png.
+   at: _printerr (scene/resources/resource_format_text.cpp:41)
+ERROR: Failed loading resource: res://scenes/characters/players/aelin.tscn.
+   at: _load (core/io/resource_loader.cpp:317)
+ERROR: Resource file not found: res://assets/generated/personagens/dorian/dorian_correndo_costas.png (expected type: Texture2D)
+   at: _load (core/io/resource_loader.cpp:325)
+ERROR: Resource file not found: res://assets/generated/personagens/dorian/dorian_correndo_direita.png (expected type: Texture2D)
+   at: _load (core/io/resource_loader.cpp:325)
+ERROR: Resource file not found: res://assets/generated/personagens/dorian/dorian_correndo_esquerda.png (expected type: Texture2D)
+   at: _load (core/io/resource_loader.cpp:325)
+ERROR: Resource file not found: res://assets/generated/personagens/dorian/dorian_correndo_frente.png (expected type: Texture2D)
+   at: _load (core/io/resource_loader.cpp:325)
+ERROR: Resource file not found: res://assets/generated/personagens/dorian/dorian_parado_costas.png (expected type: Texture2D)
+   at: _load (core/io/resource_loader.cpp:325)
+ERROR: Resource file not found: res://assets/generated/personagens/dorian/dorian_parado_direita.png (expected type: Texture2D)
+   at: _load (core/io/resource_loader.cpp:325)
+ERROR: Resource file not found: res://assets/generated/personagens/dorian/dorian_parado_esquerda.png (expected type: Texture2D)
+   at: _load (core/io/resource_loader.cpp:325)
+ERROR: Resource file not found: res://assets/generated/personagens/dorian/dorian_parado_frente.png (expected type: Texture2D)
+   at: _load (core/io/resource_loader.cpp:325)
+ERROR: Attempt to open script 'res://scenes/shared/personagem_top_down.gd' resulted in error 'File not found'.
+   at: load_source_code (modules/gdscript/gdscript.cpp:1139)
+ERROR: Failed loading resource: res://scenes/shared/personagem_top_down.gd.
+   at: _load (core/io/resource_loader.cpp:317)
+ERROR: res://scenes/characters/players/dorian.tscn:14 - Parse Error: [ext_resource] referenced non-existent resource at: res://assets/generated/personagens/dorian/dorian_correndo_costas.png.
+   at: _printerr (scene/resources/resource_format_text.cpp:41)
+ERROR: res://scenes/characters/players/dorian.tscn:14 - Parse Error: [ext_resource] referenced non-existent resource at: res://assets/generated/personagens/dorian/dorian_correndo_costas.png.
+   at: _printerr (scene/resources/resource_format_text.cpp:41)
+ERROR: Failed loading resource: res://scenes/characters/players/dorian.tscn.
+   at: _load (core/io/resource_loader.cpp:317)
+SCRIPT ERROR: Parse Error: Could not preload resource file "res://scenes/characters/players/aelin.tscn".
+   at: GDScript::reload (res://scripts/autoload/estado_jogo.gd:5)
+SCRIPT ERROR: Parse Error: Could not preload resource file "res://scenes/characters/players/dorian.tscn".
+   at: GDScript::reload (res://scripts/autoload/estado_jogo.gd:6)
+ERROR: Failed to load script "res://scripts/autoload/estado_jogo.gd" with error "Parse error".
+   at: load (modules/gdscript/gdscript_resource_format.cpp:46)
+ERROR: Failed to instantiate an autoload, script 'res://scripts/autoload/estado_jogo.gd' does not inherit from 'Node'.
+   at: start (main/main.cpp:4535)
+SCRIPT ERROR: Invalid access to property or key 'play_button_sound' on a base object of type 'Nil'.
+   at: _build_ui (res://scripts/autoload/pause_overlay.gd:44)
+   GDScript backtrace (most recent call first):
+       [0] _build_ui (res://scripts/autoload/pause_overlay.gd:44)
+       [1] _ready (res://scripts/autoload/pause_overlay.gd:21)
+[godot_ai game_helper] registered mcp capture (debugger active=false, logger=true)
+ERROR: Node not found: "EstadoJogo" (relative to "/root").
+   at: get_node (scene/main/node.cpp:1975)
+   GDScript backtrace (most recent call first):
+       [0] run (res://tests/test_integracao_menus.gd:68)
+SCRIPT ERROR: Invalid assignment of property or key 'personagem_selecionado' with value of type 'String' on a base object of type 'null instance'.
+   at: run (res://tests/test_integracao_menus.gd:70)
+   GDScript backtrace (most recent call first):
+       [0] run (res://tests/test_integracao_menus.gd:70)
+SCRIPT ERROR: Invalid assignment of property or key 'visible' with value of type 'bool' on a base object of type 'Nil'.
+   at: _refresh_for_scene (res://scripts/autoload/pause_overlay.gd:133)
+   GDScript backtrace (most recent call first):
+       [0] _refresh_for_scene (res://scripts/autoload/pause_overlay.gd:133)

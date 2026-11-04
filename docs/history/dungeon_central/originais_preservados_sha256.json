@@ -1,0 +1,9 @@
+{
+  "project.godot": "3b0f5fa40212fa83e444e00c375596d53794e96c7623cc1def239282b06aa671",
+  "scenes/world/environments/fase_caverna.tscn": "8b330215506008138b08eb999e67aacdda774a600ad5e7296ed85c7b5889fcf3",
+  "assets/environments/RF_Catacombs_v1.0/mainlevbuild.png": "2b700915b11eeed91395677b7d8b387a01fe728c6a10506d31b16c3e9de7b33d",
+  "assets/environments/RF_Catacombs_v1.0/decorative.png": "b864e5285d2d01c3642e33db648dd3269f35f2af6d99c60e1f6d162986b8970f",
+  "assets/environments/mapa/The_Eight_Doors_Tiles_Preparados/atlas_complementar_A.png": "1f5e52261588f089e0c490aa7e9a913d867624ea8ac13e4018ea2d912c2c8430",
+  "assets/environments/mapa/The_Eight_Doors_Tiles_Preparados/atlas_complementar_B.png": "c8ee04f07c39ad4afdec1ad919bdbdf6f4bec62ad544be91d3d267e3006b9e01",
+  "assets/environments/mapa/The_Eight_Doors_Tiles_Preparados/atlas_complementar_C.png": "89fe7b6a5a8814ff706574aba5d33b3e9de318d44fd3b506cc4034d89f49475b"
+}

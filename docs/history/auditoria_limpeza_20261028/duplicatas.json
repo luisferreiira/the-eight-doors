@@ -1,0 +1,2231 @@
+[
+  {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "paths": [
+      ".godot/editor/favorites.Node",
+      ".godot/scene_groups_cache.cfg",
+      ".godot/ziva_test_stderr.log",
+      "addons/.godot_ai_update/.gdignore",
+      "addons/ziva_agent/bin-deps/windows_x86_64/.gdignore",
+      "addons/ziva_agent/scripts/.gdignore",
+      "art_reviews/regeneracao_historica/20261028_115641_199740/.gdignore",
+      "backups/animacoes_visual_20261027/.gdignore",
+      "backups/refino_sala_central_2026-10-25_11964424/.gdignore",
+      "docs/history/animacoes_visual_20261027/captura_erros.log",
+      "docs/history/cena_principal_2026-10-27/build_final_stderr.log",
+      "docs/history/cena_principal_2026-10-27/build_stderr.log",
+      "docs/history/cena_principal_2026-10-27/capturas_final_stderr.log",
+      "docs/history/cena_principal_2026-10-27/capturas_stderr.log",
+      "docs/history/cena_principal_2026-10-27/mcp_server_stdout.log",
+      "docs/history/cena_principal_2026-10-27/resolucoes_final_stderr.log",
+      "docs/history/cena_principal_2026-10-27/resolucoes_stderr.log",
+      "docs/history/cena_principal_2026-10-27/testes_final_stderr.log",
+      "docs/history/cena_principal_2026-10-27/testes_stderr.log",
+      "docs/history/dungeon_jogavel/build2_stderr.log",
+      "docs/history/dungeon_jogavel/build_final_stderr.log",
+      "docs/history/dungeon_jogavel/capture2_stderr.log",
+      "docs/history/dungeon_jogavel/capture_stderr.log",
+      "docs/history/dungeon_jogavel/characters_final_stderr.log",
+      "docs/history/dungeon_jogavel/characters_stderr.log",
+      "docs/history/dungeon_jogavel/import_stderr.log",
+      "docs/history/dungeon_jogavel/recuperacao_stderr.log",
+      "docs/history/dungeon_jogavel/tests_final_stderr.log",
+      "docs/history/dungeon_jogavel/tests_normalization_stderr.log"
+    ],
+    "bytes_each": 0,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "51202eb870fecdf3e0f322f735199319458ea81fcf2d70ba7ab1352b91ededbf",
+    "paths": [
+      ".godot/imported/aelin_idle.png-06ae42b90740c98dba8a921d4ef7e8ed.ctex",
+      ".godot/imported/aelin_idle.png-74b5a59919fad3d9587086e9d53680a8.ctex"
+    ],
+    "bytes_each": 1423342,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "85491edb0714d49a90108e3dac5f07bdf4c7917fcf0bf88f6cba2efcb5cc2502",
+    "paths": [
+      ".godot/imported/aelin_idle.png-06ae42b90740c98dba8a921d4ef7e8ed.md5",
+      ".godot/imported/aelin_idle.png-74b5a59919fad3d9587086e9d53680a8.md5"
+    ],
+    "bytes_each": 91,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "418b6573ab02c8864e6ba13ca97ff277c7aeab1d8c739d36435a1cfd0626ec8d",
+    "paths": [
+      ".godot/imported/aelin_parada_baixo.png-eb4d4e4a0ec6c333bbdf5a0f6e806fa1.md5",
+      ".godot/imported/aelin_parada_costas.png-0bc4c6902ee6e253747761231e59b93c.md5"
+    ],
+    "bytes_each": 91,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "a52a4ce49e16e2ceb5dc29078eccf8760f39ba2dd8452c66ce4ac1ec99c7de50",
+    "paths": [
+      ".godot/imported/aelin_parada_direita.png-54d2cef42a084029e353ab1c7725598d.ctex",
+      ".godot/imported/aelin_parada_direita.png-75ec7a4b3b6c58205ce239ab666a2dc6.ctex"
+    ],
+    "bytes_each": 340670,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "4a8973cc0cbe2151149cfcf447d72d40248a9e6f9d24b0a3f62aa1059f1f9ddc",
+    "paths": [
+      ".godot/imported/aelin_parada_direita.png-54d2cef42a084029e353ab1c7725598d.md5",
+      ".godot/imported/aelin_parada_direita.png-75ec7a4b3b6c58205ce239ab666a2dc6.md5"
+    ],
+    "bytes_each": 91,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "49d943945044f178dff3c6718eef0498bf6df8cfd3ece2cffc7cfdd8bd7d0e60",
+    "paths": [
+      ".godot/imported/aelin_parada_esquerda.png-87a8777c234f9cb1d6840e23f48649a7.ctex",
+      ".godot/imported/aelin_parada_esquerda.png-cdb9d7ba11a68a9143a78079ac481587.ctex"
+    ],
+    "bytes_each": 358616,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "48dd65a915e56e4997e65d5e2035910458975ca5517041a11f150a340f7eee68",
+    "paths": [
+      ".godot/imported/aelin_parada_esquerda.png-87a8777c234f9cb1d6840e23f48649a7.md5",
+      ".godot/imported/aelin_parada_esquerda.png-cdb9d7ba11a68a9143a78079ac481587.md5"
+    ],
+    "bytes_each": 91,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "9b6161256d78590349a43941870f151e2ac304e90a23c17371283d64b22b44bb",
+    "paths": [
+      ".godot/imported/aelin_run_frente.original.png-7b55a0a8d5074bc2003725e7db8fd582.ctex",
+      ".godot/imported/aelin_run_frente.original.png-b274ff5c818cfa9ab20483e4ac5b631a.ctex",
+      ".godot/imported/aelin_run_frente.png-a20030148868c4765820eeac7ccf0005.ctex"
+    ],
+    "bytes_each": 20258,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "606a5c3fd7e1bdcff28fac9ba59183bc5666f44d2e305fa886fd02af85725f49",
+    "paths": [
+      ".godot/imported/aelin_run_frente.original.png-7b55a0a8d5074bc2003725e7db8fd582.md5",
+      ".godot/imported/aelin_run_frente.original.png-b274ff5c818cfa9ab20483e4ac5b631a.md5",
+      ".godot/imported/aelin_run_frente.png-a20030148868c4765820eeac7ccf0005.md5"
+    ],
+    "bytes_each": 91,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "e4082c654775db4cccdda6d27eeaa0eab4f9f5201ce36ce303da289afb567780",
+    "paths": [
+      ".godot/imported/aelin_run_frente_1.png-ce04a8f15ea9f46dee8400fee64e84bd.ctex",
+      ".godot/imported/corrigido_frame_1.png-d85379b4e7ca43902b98b86320e75738.ctex",
+      ".godot/imported/original_frame_1.png-7afd903269ee363af4a04cac895aa274.ctex"
+    ],
+    "bytes_each": 5228,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "27a818fd0589e86431735e58f72123dc50214e9246462286ad60137bcff1ad6c",
+    "paths": [
+      ".godot/imported/aelin_run_frente_1.png-ce04a8f15ea9f46dee8400fee64e84bd.md5",
+      ".godot/imported/corrigido_frame_1.png-d85379b4e7ca43902b98b86320e75738.md5",
+      ".godot/imported/original_frame_1.png-7afd903269ee363af4a04cac895aa274.md5"
+    ],
+    "bytes_each": 91,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "d71f7764d2c7125cb6cc672ff4f20d6a630a6b13f1e77a3219cc54211e8a65b4",
+    "paths": [
+      ".godot/imported/aelin_run_frente_2.png-74d488fe59b3171685b2605a7fb78993.ctex",
+      ".godot/imported/corrigido_frame_2.png-13ee8207edd4627d113b391250392fa5.ctex",
+      ".godot/imported/original_frame_2.png-a1c9fc9f58e1ca380914f8d88249cc98.ctex"
+    ],
+    "bytes_each": 5344,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "c17e8b3d424c23e5f14afca21b1677d57d96a505d7083d933203d8c8239bc908",
+    "paths": [
+      ".godot/imported/aelin_run_frente_2.png-74d488fe59b3171685b2605a7fb78993.md5",
+      ".godot/imported/corrigido_frame_2.png-13ee8207edd4627d113b391250392fa5.md5",
+      ".godot/imported/original_frame_2.png-a1c9fc9f58e1ca380914f8d88249cc98.md5"
+    ],
+    "bytes_each": 91,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "51793026228e7b1d6dbe2dcb5687be16e35efdf7b75d6cc97b2f24f1788ba327",
+    "paths": [
+      ".godot/imported/aelin_run_frente_3.png-77959c25c81a0cb8e99cbd447a56fdea.ctex",
+      ".godot/imported/original_frame_3.png-c4ca942f345ec5bd2e0f168d99ddf7ff.ctex"
+    ],
+    "bytes_each": 5208,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "1da79e6282e9a9576e84c4e5db3c9ee1859d1d828f0caab9eddbd82882b8d761",
+    "paths": [
+      ".godot/imported/aelin_run_frente_3.png-77959c25c81a0cb8e99cbd447a56fdea.md5",
+      ".godot/imported/original_frame_3.png-c4ca942f345ec5bd2e0f168d99ddf7ff.md5"
+    ],
+    "bytes_each": 91,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "06d286c1d00a7c55d919fdccf80c154b39cb93225bcee449ac456e94ff004e75",
+    "paths": [
+      ".godot/imported/aelin_run_frente_4.png-f0b2693efd79b9c479685ad0b0e7aff6.ctex",
+      ".godot/imported/original_frame_4.png-ff1f79fc48c3dc60473f67d80db461f9.ctex"
+    ],
+    "bytes_each": 5326,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "a3d38fdf8e64c066d32511ba2af5a2e7cef365728a0b67e79eec09e163d7ba33",
+    "paths": [
+      ".godot/imported/aelin_run_frente_4.png-f0b2693efd79b9c479685ad0b0e7aff6.md5",
+      ".godot/imported/original_frame_4.png-ff1f79fc48c3dc60473f67d80db461f9.md5"
+    ],
+    "bytes_each": 91,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "7525ed2e1e9220cd1c83064e35365f992ef12464cba698a0473febee826bd79f",
+    "paths": [
+      ".godot/imported/decorative.png-97ac73157edf9d4068b2edf63785946a.ctex",
+      ".godot/imported/decorative_catacombs.png-7f6d78ea549d121789a2205b68ea568d.ctex"
+    ],
+    "bytes_each": 6506,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "dc980c0472f5e7950e6f529c88c23f8a67a626817e990e1c7d4a6dad9b733940",
+    "paths": [
+      ".godot/imported/decorative.png-97ac73157edf9d4068b2edf63785946a.md5",
+      ".godot/imported/decorative_catacombs.png-7f6d78ea549d121789a2205b68ea568d.md5"
+    ],
+    "bytes_each": 91,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "c5b5a0ebae9d112c4f141591a44ed968ec1f3d20e7fe93df3195e73d89eab985",
+    "paths": [
+      ".godot/imported/depois_centro.png-5302f94eaeb16ef4574d04cf38d10af3.ctex",
+      ".godot/imported/mcp_centro.png-ace7f60bafc47080386f078f34709e77.ctex"
+    ],
+    "bytes_each": 260918,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "3cc13bd875a87e7b3fdfb6f576a810c4537b8e6bef0dcf564c7b0770f7b75488",
+    "paths": [
+      ".godot/imported/depois_centro.png-5302f94eaeb16ef4574d04cf38d10af3.md5",
+      ".godot/imported/mcp_centro.png-ace7f60bafc47080386f078f34709e77.md5"
+    ],
+    "bytes_each": 91,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "c952b787ca353629a14661ae6fb28147462d8719a10b63285f4ff874e41cff9c",
+    "paths": [
+      ".godot/imported/depois_sul.png-81035f718d5c7d3081f032f33f57d9f7.ctex",
+      ".godot/imported/mcp_sul.png-0c90733c23e7ae482ffc58c2896e5644.ctex"
+    ],
+    "bytes_each": 245990,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "22485ddf4f83e065f7a19ace383d8a1b78db85c6669badfc4155403bd2a788c9",
+    "paths": [
+      ".godot/imported/depois_sul.png-81035f718d5c7d3081f032f33f57d9f7.md5",
+      ".godot/imported/mcp_sul.png-0c90733c23e7ae482ffc58c2896e5644.md5"
+    ],
+    "bytes_each": 91,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "a25e9e62fc4d49ce1d844d68e68a1a43d80109355ba6e3253e63561dcb713788",
+    "paths": [
+      ".godot/imported/entradas_laterais_antes.png-2198ed56bfcb310808cfbb0b0875d532.ctex",
+      ".godot/imported/sala_central_render_godot.png-a334bed1f97f79b92acd80e0a75fc1cd.ctex"
+    ],
+    "bytes_each": 741070,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "2baa24a729e25be1d459adc54c1da381c822125939a41f222cfbcd134e6019f7",
+    "paths": [
+      ".godot/imported/entradas_laterais_antes.png-2198ed56bfcb310808cfbb0b0875d532.md5",
+      ".godot/imported/sala_central_render_godot.png-a334bed1f97f79b92acd80e0a75fc1cd.md5"
+    ],
+    "bytes_each": 91,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "1b25c92cb5d69b425ff42b521d989cfd56a5235aeb6cc20a19a43e1df3e17f92",
+    "paths": [
+      ".godot/imported/murinho_recuperado.png-4b5fe5eca241c4b028da5d43f34a7d8e.ctex",
+      ".godot/imported/preview_murinho.png-8523b09794c5ce865ddbcafb86760485.ctex"
+    ],
+    "bytes_each": 249558,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "b11391096156780923df61e627d9241a691efd13330aaa0d69c44de3e91f9ccd",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/client_configurator.gd.uid",
+      "addons/godot_ai/client_configurator.gd.uid"
+    ],
+    "bytes_each": 19,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "69d170b100e1477dc969d937664bf32e9f1a41448fbddae997616e4d549f857b",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/clients/_atomic_write.gd.uid",
+      "addons/godot_ai/clients/_atomic_write.gd.uid"
+    ],
+    "bytes_each": 19,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "6ad5fd0be314b164e5a501aaf4afff8c17d3c406e4931b3d490fa55ed9399d75",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/clients/_base.gd.uid",
+      "addons/godot_ai/clients/_base.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "0a011c6ccf204f647bb410e812452397b8d9d3f82e98e9c8c43255e8a8db43be",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/clients/_cli_exec.gd.uid",
+      "addons/godot_ai/clients/_cli_exec.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "844ed9a1cb168c6fa4a2ad7369a0b9e2b317a8845780fa551f0ddeb31035d4c7",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/clients/_cli_finder.gd.uid",
+      "addons/godot_ai/clients/_cli_finder.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "7ea94aa0a18f18001abe6c039d3f9101a20211dafe616bde1171de42e8878188",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/clients/_cli_strategy.gd.uid",
+      "addons/godot_ai/clients/_cli_strategy.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "b603679cc9d3071b0029da2200a85ecbe367bc9f03fb1e352eceb544ebe1f4a1",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/clients/_dsh_strategy.gd.uid",
+      "addons/godot_ai/clients/_dsh_strategy.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "0d7613d1a25a2637491759c219cdad8610156f840258238df5728eb18523a49d",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/clients/_json_strategy.gd.uid",
+      "addons/godot_ai/clients/_json_strategy.gd.uid"
+    ],
+    "bytes_each": 19,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "323e682575c1bf3b1841ec517b59888bf304b3ada97dfd861ec317b8f714635a",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/clients/_manual_command.gd.uid",
+      "addons/godot_ai/clients/_manual_command.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "b110326fea223f45902def5a53b35522f269ad55848718b7ddd143cd63293b86",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/clients/_path_template.gd.uid",
+      "addons/godot_ai/clients/_path_template.gd.uid"
+    ],
+    "bytes_each": 19,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "0fb18ab129e0fba2eb85e7e5b784ce566c586b1711f76f8ab429610172a203ab",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/clients/_registry.gd.uid",
+      "addons/godot_ai/clients/_registry.gd.uid"
+    ],
+    "bytes_each": 19,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "3f581fce945ceabf62ce7397f0da3c9a64888f7d071fe59edeec9126735c9837",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/clients/_toml_strategy.gd.uid",
+      "addons/godot_ai/clients/_toml_strategy.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "bee0844c9cd2c399c1105d4f741e804ac433a0dd89c338a63da9d00b1b983885",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/clients/_yaml_strategy.gd.uid",
+      "addons/godot_ai/clients/_yaml_strategy.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "d247b7f9da8ed483178c3f12e207494060181af364ef829951a6de2dec8fb482",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/clients/antigravity.gd.uid",
+      "addons/godot_ai/clients/antigravity.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "18d1ebc89fe7cd71054545da54c04477465e69b8291d082f8c860abc77dd2c41",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/clients/claude_code.gd.uid",
+      "addons/godot_ai/clients/claude_code.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "25cd87161a8985273b5ad3954b397a95af64ab205ecd8359c63da09a0efbc020",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/clients/claude_desktop.gd",
+      "addons/godot_ai/clients/claude_desktop.gd"
+    ],
+    "bytes_each": 1634,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "e430bb213b5005f3182aca544fdade6c8a7e89128705907c11228f699eb27fc0",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/clients/claude_desktop.gd.uid",
+      "addons/godot_ai/clients/claude_desktop.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "c8d58f6b86221ef68289a090b836d31f4006d395c3f42ed3000fc027a020c06d",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/clients/cline.gd.uid",
+      "addons/godot_ai/clients/cline.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "4bdcaae2f5f0c2e850430a7cc275d64bb84b880df8076a1cd9710dfb9fdc17e2",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/clients/codex.gd.uid",
+      "addons/godot_ai/clients/codex.gd.uid"
+    ],
+    "bytes_each": 19,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "3625853ad9bb909b2668f94f22a592231612d216c384a9a19e59f295eece2314",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/clients/cursor.gd.uid",
+      "addons/godot_ai/clients/cursor.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "e9f7b2f0544a8c03f4e153af30e21a8c4e4a138814ea16e005416fdc127bc466",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/clients/deepseek_harness.gd.uid",
+      "addons/godot_ai/clients/deepseek_harness.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "7af07715d59b73f3e69173d39364eb4103f5d84eeee312e13ed04fae4c5279d6",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/clients/gemini_cli.gd.uid",
+      "addons/godot_ai/clients/gemini_cli.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "e911f4916e044eea03744e3a3e9920d53d18db876a515e0f9415be6f76d3b89b",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/clients/grok.gd.uid",
+      "addons/godot_ai/clients/grok.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "331b1b1d2699ddc02ed293d674dae6b2d5b69ed5e29a94ce7b6662de6ec24a1e",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/clients/hermes.gd.uid",
+      "addons/godot_ai/clients/hermes.gd.uid"
+    ],
+    "bytes_each": 19,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "73705b20213a8cdabde5c3207cbfd750acba3ecfdb12e5fc0ad2d32c861fdeee",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/clients/kilo_code.gd.uid",
+      "addons/godot_ai/clients/kilo_code.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "caeefab43e4177a581a0a527194db6580c308f640ff3755526b95602c7d284e1",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/clients/kimi_code.gd.uid",
+      "addons/godot_ai/clients/kimi_code.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "e36281df5685847acc757533d5ab4beb44391db897e123ebb0b377ce554e0ce5",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/clients/kiro.gd.uid",
+      "addons/godot_ai/clients/kiro.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "cebbf0729ea920db3266906f32279189520176bd10225ebbeec69882d97b9c09",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/clients/opencode.gd.uid",
+      "addons/godot_ai/clients/opencode.gd.uid"
+    ],
+    "bytes_each": 19,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "6ca88777d2a2a46d7ae8cb27c96650c24821c2db31efdaf14ec1c672770b13a7",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/clients/pi.gd.uid",
+      "addons/godot_ai/clients/pi.gd.uid"
+    ],
+    "bytes_each": 19,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "124a3efc1063037a79d1ef713b066808dff87f84b062779108e3df0dfe78c70a",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/clients/qwen_code.gd.uid",
+      "addons/godot_ai/clients/qwen_code.gd.uid"
+    ],
+    "bytes_each": 19,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "60128a673c0122f6cdc2562d2ad517805c4120b98ae24ebce02c5471a5a2b16b",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/clients/roo_code.gd.uid",
+      "addons/godot_ai/clients/roo_code.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "69409fe3a502dd271d2abddbd97ac31187034b3f8aa409226116e2f1bc7199b8",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/clients/trae.gd.uid",
+      "addons/godot_ai/clients/trae.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "738e01d95a248402eeca40d764030a4a4063a246904475b49145c6c159d55ddf",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/clients/vscode.gd.uid",
+      "addons/godot_ai/clients/vscode.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "4fd8b6a9a5e330f7428dac1adb0fd0e5406343febd8bafad0a7fe3e5d214cf88",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/clients/vscode_insiders.gd.uid",
+      "addons/godot_ai/clients/vscode_insiders.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "6b348d4a775be6af159c77bbc7ff5df86a921928f76a1920df97060c5f3c5901",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/clients/windsurf.gd.uid",
+      "addons/godot_ai/clients/windsurf.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "737f5044ffdf88b5d9f00a52e69108378b4bf4dd404fe240b8865a1e13bd45cf",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/clients/zed.gd.uid",
+      "addons/godot_ai/clients/zed.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "9000f73477a13428779c8e1db0631291275fde02913148ec0094ced66bc0080b",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/clients/zoo_code.gd.uid",
+      "addons/godot_ai/clients/zoo_code.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "5bd784acd459f5d89ce2290026030f9bac4586f2ab9fa2ce6f680acbba6cd7ec",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/connection.gd.uid",
+      "addons/godot_ai/connection.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "ce5f3ecfd8794eac6ae799df6b73ca6f9ee74637820e99e31eec831ff00bdf70",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/custom_tools/custom_tool_wrapper.gd.uid",
+      "addons/godot_ai/custom_tools/custom_tool_wrapper.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "229fa14a9257878dd3dd7ad2628195c09ac9068680498105551540864e55cbd6",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/custom_tools/mcp_call_context.gd",
+      "addons/godot_ai/custom_tools/mcp_call_context.gd"
+    ],
+    "bytes_each": 1498,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "197960618a07c1962b7ae9e2d6cffdfc7e38f66c3980be5f3922e5dbf8be55a2",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/custom_tools/mcp_call_context.gd.uid",
+      "addons/godot_ai/custom_tools/mcp_call_context.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "c9edada47c56e4aea1735b668d9212dae0420a75ffc66ca4e974962bc8351df2",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/custom_tools/mcp_custom_tool_spec.gd",
+      "addons/godot_ai/custom_tools/mcp_custom_tool_spec.gd"
+    ],
+    "bytes_each": 4400,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "7472166e686079f1054ca3365154fa4d05db5a7fed8f137ce05d2f268b48f3b3",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/custom_tools/mcp_custom_tool_spec.gd.uid",
+      "addons/godot_ai/custom_tools/mcp_custom_tool_spec.gd.uid"
+    ],
+    "bytes_each": 19,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "f329eac25097a201c3d00f342ccdb5c9e4cd5bd758bc5504726abe2a6c5b3069",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/custom_tools/mcp_service_locator.gd",
+      "addons/godot_ai/custom_tools/mcp_service_locator.gd"
+    ],
+    "bytes_each": 377,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "4b878baf63f39983325ac5435cb6fc456090a24610f5db7dfefe1d8aa344a9bf",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/custom_tools/mcp_service_locator.gd.uid",
+      "addons/godot_ai/custom_tools/mcp_service_locator.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "d9b69c3464dc09e4e1fa224f4cb8b4c928a9190d6d44bd2216c48e3026ea70dc",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/custom_tools/mcp_tool_registry.gd",
+      "addons/godot_ai/custom_tools/mcp_tool_registry.gd"
+    ],
+    "bytes_each": 10436,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "1c6f5521d3757f347c4cd4171541328008245c9423500f379c4c9bd9ed0cf0fd",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/custom_tools/mcp_tool_registry.gd.uid",
+      "addons/godot_ai/custom_tools/mcp_tool_registry.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "be3050234c07a27e62be35eb521fb48d37037de4beefe88cbea9e2232051d75c",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/debugger/mcp_debugger_plugin.gd.uid",
+      "addons/godot_ai/debugger/mcp_debugger_plugin.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "66d99fb65718903951361405e5f161cab7aa44636aa080c0bb4c7eef774a10c6",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/dispatcher.gd.uid",
+      "addons/godot_ai/dispatcher.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "0c49d5ca8c63cc2d29614dbc7cbc1dcdc046f4dd85ddfd46cda93c3b3246426c",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/dock_panels/log_viewer.gd.uid",
+      "addons/godot_ai/dock_panels/log_viewer.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "c4c8bfff382983add25baf1000e1214a6c6d227cb9ae4dd9c94e078513b74cd1",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/dock_panels/port_picker_panel.gd.uid",
+      "addons/godot_ai/dock_panels/port_picker_panel.gd.uid"
+    ],
+    "bytes_each": 19,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "e32fd58f473c4d9c974d866ada447058e1f71b933aadcf4b1ef6c6c4ad2a470a",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/export/mcp_export_plugin.gd",
+      "addons/godot_ai/export/mcp_export_plugin.gd"
+    ],
+    "bytes_each": 3039,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "35c878e5453ee13abf3955993de021f7cb71b3c50c30a2b3dc84236959eb7e6e",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/export/mcp_export_plugin.gd.uid",
+      "addons/godot_ai/export/mcp_export_plugin.gd.uid"
+    ],
+    "bytes_each": 19,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "f24931cfddfec7e0b311e9f53778a5ea7e75026c5a776a6ee75ef1d82050bb7d",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/handlers/_node_validator.gd",
+      "addons/godot_ai/handlers/_node_validator.gd"
+    ],
+    "bytes_each": 2864,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "3d293beeb180ea1e5ed05a17655a9ba61498d49ddd3ade61608cd56613cc27bb",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/handlers/_node_validator.gd.uid",
+      "addons/godot_ai/handlers/_node_validator.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "d9104c864b375304cf54d7d8825376bae3f606c7ab0956c302b8714968036a33",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/handlers/_param_validators.gd",
+      "addons/godot_ai/handlers/_param_validators.gd"
+    ],
+    "bytes_each": 1397,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "f77bead393cdf61b23131c5151bd75b08f6671a2457cff7ea3c7cfe38278eb66",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/handlers/_param_validators.gd.uid",
+      "addons/godot_ai/handlers/_param_validators.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "92ddc1dfd433a4aae7d4088a53a0cff36b0b196aaca9d0488e43b7f2614bbd97",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/handlers/_property_errors.gd",
+      "addons/godot_ai/handlers/_property_errors.gd"
+    ],
+    "bytes_each": 2837,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "2b49d3d85542c5e0af947ab114fbb7f71885d0310f35a026411323df007c0a2c",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/handlers/_property_errors.gd.uid",
+      "addons/godot_ai/handlers/_property_errors.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "47b49982ea7e09cddf957ab596d401b28b8838190a434e07c2afd02ad5381567",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/handlers/animation_handler.gd.uid",
+      "addons/godot_ai/handlers/animation_handler.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "39cdcfb12975d194b6cd58c75d5aa4eb08d31aaa36558cb68c9e45198625f47b",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/handlers/animation_presets.gd",
+      "addons/godot_ai/handlers/animation_presets.gd"
+    ],
+    "bytes_each": 20151,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "8678c72d4d8d9883c7f0282a80058f0d19c41aaf82d32e17215cf3378171c1bd",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/handlers/animation_presets.gd.uid",
+      "addons/godot_ai/handlers/animation_presets.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "d251c65c53fa71891d10e420ed8ca06ac1ca308f853b6a758badad17acc90aa9",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/handlers/animation_values.gd.uid",
+      "addons/godot_ai/handlers/animation_values.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "b22ddf4e5b697aab7099ce15d47c2086624997f8e86d2e93c92a585fe23eb5b8",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/handlers/api_handler.gd.uid",
+      "addons/godot_ai/handlers/api_handler.gd.uid"
+    ],
+    "bytes_each": 19,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "64b5a9af05623f153e788733749516412509423eb57b945146b0778cd867b146",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/handlers/audio_handler.gd.uid",
+      "addons/godot_ai/handlers/audio_handler.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "aa05d871c5800e244428010f2a19dc357f0f29b8a025b8c64614357c4db31956",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/handlers/autoload_handler.gd.uid",
+      "addons/godot_ai/handlers/autoload_handler.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "e506e0940373f6e8dbf2c775e1bb690cb7c75b1d877f6e1a0d2493b2d364ce05",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/handlers/batch_handler.gd.uid",
+      "addons/godot_ai/handlers/batch_handler.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "bd89c9cdb3c8834e74b6a8e2fcbf233b516f1c471309f28c21f0b020b9c31792",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/handlers/camera_handler.gd.uid",
+      "addons/godot_ai/handlers/camera_handler.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "b9a3f6814f183ea15cfba625742496fdc6fc26f0952294cf89f526fab653085d",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/handlers/camera_presets.gd",
+      "addons/godot_ai/handlers/camera_presets.gd"
+    ],
+    "bytes_each": 2208,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "68ef1f3fe020a144155eabe99b2c2c17feb113c095a41b3af57442dc5d36c471",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/handlers/camera_presets.gd.uid",
+      "addons/godot_ai/handlers/camera_presets.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "fa6f2ea8c1bb70167d06426cb01dd29ecd47d8b3cdfe9efa034cfdc16d95427a",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/handlers/camera_values.gd.uid",
+      "addons/godot_ai/handlers/camera_values.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "2599d215b73e6a60b767aba1083a68da6203674c13bb131d29179e98eef029cf",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/handlers/client_handler.gd.uid",
+      "addons/godot_ai/handlers/client_handler.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "ccb3400c75d59519bdcc4da1931831bae093ce327a9c5fd39938cb3710e37cf3",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/handlers/control_draw_recipe_handler.gd.uid",
+      "addons/godot_ai/handlers/control_draw_recipe_handler.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "a593088c8622b9ac81d8a4790eccb1630e79ce57568a87b2c2f87edb6ba25aba",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/handlers/csg_handler.gd.uid",
+      "addons/godot_ai/handlers/csg_handler.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "7fec875de89cf7a634b5fa787d139c601face5e123df6134dc13eecd9e3f3285",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/handlers/curve_handler.gd.uid",
+      "addons/godot_ai/handlers/curve_handler.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "d36224d3a7b803805c0e80ce017ea7dcdd395c360ccce81a102edf9b264cc499",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/handlers/editor_handler.gd.uid",
+      "addons/godot_ai/handlers/editor_handler.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "88f573289f80073f1b7556c25c0c235762e9454c38973a71d57a3319e34da63e",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/handlers/environment_handler.gd.uid",
+      "addons/godot_ai/handlers/environment_handler.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "3156268e89d4c2df4d58027620252304ade3622dfffa63621c9cdfa9ea4d8676",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/handlers/filesystem_handler.gd.uid",
+      "addons/godot_ai/handlers/filesystem_handler.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "2d7826639c1a23d5b6b2949b4349200b11d4ebd633e1f3fb22b1207cccfab4c0",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/handlers/gridmap_handler.gd.uid",
+      "addons/godot_ai/handlers/gridmap_handler.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "33ec35e4bfce00cf0af9bb186a89b6d489690418209d6b3fccdd2d3e5e5a1fce",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/handlers/input_handler.gd.uid",
+      "addons/godot_ai/handlers/input_handler.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "2ce5a5847745f8992c75e6634fa8292ad145bac78e97a75df6bc3ec5ff4f3c01",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/handlers/material_handler.gd.uid",
+      "addons/godot_ai/handlers/material_handler.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "cbcff9a52cd25d36e7f462f9b81e85df04d7570afc340f5f741d6a04d80c06b8",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/handlers/material_presets.gd",
+      "addons/godot_ai/handlers/material_presets.gd"
+    ],
+    "bytes_each": 2217,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "25ef884fb537b484f3509bd84558598661ed2f48cd1121893b18203aea55f114",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/handlers/material_presets.gd.uid",
+      "addons/godot_ai/handlers/material_presets.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "c610639c2977ceea714b5c0f9dd97251fd2a4b5b3a500d8ca34cff0b65f502ec",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/handlers/material_values.gd.uid",
+      "addons/godot_ai/handlers/material_values.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "8a6a204c9cc207814aac0a20f3c2837c174dd8b7d0ba452f2a8694bceb8370bc",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/handlers/node_handler.gd.uid",
+      "addons/godot_ai/handlers/node_handler.gd.uid"
+    ],
+    "bytes_each": 19,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "e01cc4640e7f68f31ce6a709f5da2b00e1e14fb93d970101bd4df72be351890e",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/handlers/particle_handler.gd.uid",
+      "addons/godot_ai/handlers/particle_handler.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "6a9d93719af847462f057a8ab58dfef61965dbc360f60f045093f4c30187267c",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/handlers/particle_presets.gd",
+      "addons/godot_ai/handlers/particle_presets.gd"
+    ],
+    "bytes_each": 8261,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "67e6d4b02f715fdbc8abc9df4667176b7638658f46049d4c040d7ea5b6118b00",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/handlers/particle_presets.gd.uid",
+      "addons/godot_ai/handlers/particle_presets.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "dc5d00ec054b1aaa4c7c6db2de82f5f18047e2b13bbe5f93ba27c83427ca722e",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/handlers/particle_values.gd",
+      "addons/godot_ai/handlers/particle_values.gd"
+    ],
+    "bytes_each": 8356,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "7843a953959bd04557fa586070f376ff1f9fb6ad6452d53fa6602dad80ff2059",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/handlers/particle_values.gd.uid",
+      "addons/godot_ai/handlers/particle_values.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "c338b89967011e02e6f143c3115da1c25793dcd2394a2e286f5a9f787f8c0d19",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/handlers/physics_shape_handler.gd.uid",
+      "addons/godot_ai/handlers/physics_shape_handler.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "d2de31aa9f55873f21af809e8933555f5975d208e4555f3e1b788e5d9aad53ca",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/handlers/project_handler.gd.uid",
+      "addons/godot_ai/handlers/project_handler.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "e57815d98359fcc777f4b5c05c0561299da4aff4c1ccf14add572e068dc53daf",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/handlers/resource_handler.gd.uid",
+      "addons/godot_ai/handlers/resource_handler.gd.uid"
+    ],
+    "bytes_each": 19,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "7905d18048c92df68d4ad37c176ec366ffaff0f108d8aca733c48142a8f8aae1",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/handlers/scene_handler.gd.uid",
+      "addons/godot_ai/handlers/scene_handler.gd.uid"
+    ],
+    "bytes_each": 19,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "4105d57bc4d5524fa01d0a38a227f03ce5ddf0944206c21f72169b030c33a56d",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/handlers/script_handler.gd.uid",
+      "addons/godot_ai/handlers/script_handler.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "81475e35a53bccfb598d9679652169729ea2fa69f365f78005454bd1dd762210",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/handlers/signal_handler.gd.uid",
+      "addons/godot_ai/handlers/signal_handler.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "e92068b687252be24be2b95b3b93eabf906282214b583059c2ec6a45f69fa29c",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/handlers/test_handler.gd.uid",
+      "addons/godot_ai/handlers/test_handler.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "3bdeafe73069a8f04b9486d8b6697e63c4971bb01f7bab619eaedded39722bf7",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/handlers/texture_handler.gd.uid",
+      "addons/godot_ai/handlers/texture_handler.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "e1c87aa079ad87e7624994e2539414bddf2caadd180458fd49dafd0109982004",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/handlers/theme_handler.gd.uid",
+      "addons/godot_ai/handlers/theme_handler.gd.uid"
+    ],
+    "bytes_each": 19,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "3c688fd5b5f2929b092a9d59c7a55c0878834287a78e18b333654c1f4c2421f2",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/handlers/tilemap_handler.gd.uid",
+      "addons/godot_ai/handlers/tilemap_handler.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "44eedb2ff0845c76c196b498a020e9aeb667cdb1b45e4da5813ea87a0b9b9ec7",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/handlers/tileset_handler.gd.uid",
+      "addons/godot_ai/handlers/tileset_handler.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "a0e5f401b82ea94d81b4ec3b7a2a8905d47258335f728932c01bab75476b84ea",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/handlers/ui_handler.gd.uid",
+      "addons/godot_ai/handlers/ui_handler.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "f2afe4af4ec80c453ca34704bc61d5d24a9bd948d365ca22699cabb8b4a18308",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/LICENSE",
+      "addons/godot_ai/LICENSE"
+    ],
+    "bytes_each": 1078,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "62248eebd93ecd7e65fae56ddb14ca23ec0b85989079a6e999bfd60c314712db",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/mcp_dock.gd.uid",
+      "addons/godot_ai/mcp_dock.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "81cfb331c7aca2fde909e025312caf3dca2b52499e6aa7e95510c6bc01d24eec",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/migration_bridge.gd.uid",
+      "addons/godot_ai/migration_bridge.gd.uid"
+    ],
+    "bytes_each": 19,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "098e70726396f27526b26ec4f4ed115d7f81ae1a63a9eae736bdffd5c63988a8",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/migration_coordinator.gd.uid",
+      "addons/godot_ai/migration_coordinator.gd.uid"
+    ],
+    "bytes_each": 19,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "6c8781f55e5d61deae64832a79c30273ea73b95857d2b847d354bd72c46bf42e",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/migration_fallback.gd.uid",
+      "addons/godot_ai/migration_fallback.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "51ca515c420abb816991c5a730e9ee166b5296086cfad98c89c7abce68a0edff",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/runtime/draw_recipe.gd",
+      "addons/godot_ai/runtime/draw_recipe.gd"
+    ],
+    "bytes_each": 2131,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "7ae9a6fc4fe77482b2189b7421f024a35cb544e8b1368107e7f0f26598a778c8",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/runtime/draw_recipe.gd.uid",
+      "addons/godot_ai/runtime/draw_recipe.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "d4093bea61f6a8275ff752e85b2265e6f0834f420bbf08c3a59b62b57e7a06af",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/runtime/editor_logger.gd",
+      "addons/godot_ai/runtime/editor_logger.gd"
+    ],
+    "bytes_each": 5510,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "587fd5ccabfe31b6a3c78742cb37fcfa696b6e6b9e27746f455a5e3547508542",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/runtime/editor_logger.gd.uid",
+      "addons/godot_ai/runtime/editor_logger.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "2bb2be95830555d56ff38ad2bcfd69ef29b4a55348f879a9cb61b97b727558ff",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/runtime/game_helper.gd.uid",
+      "addons/godot_ai/runtime/game_helper.gd.uid"
+    ],
+    "bytes_each": 19,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "e012598e90decb26fe0acee8a5c722e83ab52760470e74f13a91989c3a0f11b6",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/runtime/game_logger.gd.uid",
+      "addons/godot_ai/runtime/game_logger.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "cc1254c56343d69bd531610b25f99b57f4437fb5b10b1c64312247005bcc2c1d",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/runtime/validation_logger.gd",
+      "addons/godot_ai/runtime/validation_logger.gd"
+    ],
+    "bytes_each": 1065,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "e1ec736f74292480f977c54421dcafb68c5def09ec2bf4b78569521b37bfd816",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/runtime/validation_logger.gd.uid",
+      "addons/godot_ai/runtime/validation_logger.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "641f5ee47d5f74c0591652a500324a81b03b8bd152d874caabceab1489d78920",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/telemetry.gd.uid",
+      "addons/godot_ai/telemetry.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "47363f95b07cff8d2dde46956a7dc46d1721ae5c4b5679633c0038ca0b0ea5cb",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/testing/script_error_capture.gd",
+      "addons/godot_ai/testing/script_error_capture.gd"
+    ],
+    "bytes_each": 1102,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "99acfa0494027479551559fb293ad0770cf463042bf4c6974703b873916990f5",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/testing/script_error_capture.gd.uid",
+      "addons/godot_ai/testing/script_error_capture.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "73f1a3efd4024bf6214128c5229c4307f6ee04532a0980defedcf5b3b46301fc",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/testing/test_runner.gd",
+      "addons/godot_ai/testing/test_runner.gd"
+    ],
+    "bytes_each": 14841,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "af6daba585151379f5275a4dca4418521df77249d71f82050ba44135fd04650e",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/testing/test_runner.gd.uid",
+      "addons/godot_ai/testing/test_runner.gd.uid"
+    ],
+    "bytes_each": 19,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "20d26aae67a6df5b2c40d0f3bd513d1257d4adc8320d9f559f8a87c85cd19744",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/testing/test_suite.gd.uid",
+      "addons/godot_ai/testing/test_suite.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "a5067a52ef97b89d8c9d587679d661d0c5ca7d550e0eef3c3b8a18bb56f31f68",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/tool_catalog.gd.uid",
+      "addons/godot_ai/tool_catalog.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "6c02022e576afca8d8487f87481b8618543df37030d9e0f19bfdf5d9d9c7b373",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/utils/allow_hosts.gd.uid",
+      "addons/godot_ai/utils/allow_hosts.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "f0708952ed838349630efe705f70dcc878c86073ddb1d8f37aacd7b5c5b5eca7",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/utils/class_introspection.gd",
+      "addons/godot_ai/utils/class_introspection.gd"
+    ],
+    "bytes_each": 9452,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "f4cf97e1f9676bb5bfe0c3af123ef61678a7881b176cf4cd68114c5642ffe3a9",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/utils/class_introspection.gd.uid",
+      "addons/godot_ai/utils/class_introspection.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "0eaa9aa3e00274405091cb6d74dc1042341efe88048b6bf168955c5c1b873530",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/utils/diagnostics_capture.gd",
+      "addons/godot_ai/utils/diagnostics_capture.gd"
+    ],
+    "bytes_each": 2386,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "811bc51627303add74eec6dcc72f85dc61aef633c0dc3231442d8eb4b7130fe9",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/utils/diagnostics_capture.gd.uid",
+      "addons/godot_ai/utils/diagnostics_capture.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "f21b0a767b05bd1763f03d1b81e63ad36212071529c1e415b88d874deda0ad43",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/utils/editor_log_buffer.gd",
+      "addons/godot_ai/utils/editor_log_buffer.gd"
+    ],
+    "bytes_each": 3395,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "acfbe64271596c496835b86f4b4c2642cd8675e85d456d4ea5e6a8422da5cd29",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/utils/editor_log_buffer.gd.uid",
+      "addons/godot_ai/utils/editor_log_buffer.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "df7b436601e68a12ecc38acbad7543bfe0fe6cb152c716b8f9dc7f70a417fe80",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/utils/error_codes.gd.uid",
+      "addons/godot_ai/utils/error_codes.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "bc2306f4b27d5ae3d8b9a76a00a773382a943ec3df4ce412f92d10bdac336308",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/utils/fuzzy_suggestions.gd",
+      "addons/godot_ai/utils/fuzzy_suggestions.gd"
+    ],
+    "bytes_each": 1072,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "07f5f545e8c14bd19b4fad4bc5d683fcf4268bb6adfc1eda5d30a1603bc36459",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/utils/fuzzy_suggestions.gd.uid",
+      "addons/godot_ai/utils/fuzzy_suggestions.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "c3f9e9247ec8b70032bca8ce309c90c938238e859b82f11a7679ce736da55a52",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/utils/game_log_buffer.gd",
+      "addons/godot_ai/utils/game_log_buffer.gd"
+    ],
+    "bytes_each": 3080,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "2d288c2000132251bc1b969c654ca3b9b7593ffb8e32aabe5faa81c0a7d8303b",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/utils/game_log_buffer.gd.uid",
+      "addons/godot_ai/utils/game_log_buffer.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "c52c80ff8b4fc6120879a598831139a5971fc98551aaac1aaf542f74ec8fed55",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/utils/json_values.gd.uid",
+      "addons/godot_ai/utils/json_values.gd.uid"
+    ],
+    "bytes_each": 19,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "996f0c23324023a8c14a0a5912397af20e77966d81a55c23c71f9459124507d3",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/utils/linux_proc.gd",
+      "addons/godot_ai/utils/linux_proc.gd"
+    ],
+    "bytes_each": 6103,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "3b16b4be0ddbb495972e6338186445808d7dbcc1e1f22c8641733bbc87edb1d1",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/utils/linux_proc.gd.uid",
+      "addons/godot_ai/utils/linux_proc.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "d7df786a4437991f403715e6bbdd20bbc396009dc5baf48f7dfeacf75ab2b27b",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/utils/log_backtrace.gd",
+      "addons/godot_ai/utils/log_backtrace.gd"
+    ],
+    "bytes_each": 3887,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "450dc80371aac8d4d974f042ecdedc15e0766a2442e8765fa298cb3dd18b6a20",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/utils/log_backtrace.gd.uid",
+      "addons/godot_ai/utils/log_backtrace.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "81d8a9e24c73b745b3dc90b6b7990f4babada9687189bcffa4379d84f94fb919",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/utils/log_buffer.gd",
+      "addons/godot_ai/utils/log_buffer.gd"
+    ],
+    "bytes_each": 2569,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "cdbbcffb78756e9d9b68d19412110fd6e8fb7a8b2dcfe02d9490b2dd1151d1e1",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/utils/log_buffer.gd.uid",
+      "addons/godot_ai/utils/log_buffer.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "6720efd543a8f55ed448f5e2a8216a9950adca1942714958932b1149920509cd",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/utils/mcp_adoption_label.gd.uid",
+      "addons/godot_ai/utils/mcp_adoption_label.gd.uid"
+    ],
+    "bytes_each": 19,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "509aec8279aced0e854c8e766e9719cd8a436d945e96ee2e1d223d9f16ea4c3d",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/utils/mcp_client_refresh_state.gd.uid",
+      "addons/godot_ai/utils/mcp_client_refresh_state.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "0454bc89b123487b8a90927318fa4ec91315971ff0e798395191bc5d225e6f8a",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/utils/mcp_server_state.gd.uid",
+      "addons/godot_ai/utils/mcp_server_state.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "570bec0886f6787fd3a74de10f76df90840b284a02f2edf4f4dfff956d7b2933",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/utils/mcp_startup_path.gd.uid",
+      "addons/godot_ai/utils/mcp_startup_path.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "dbbce00244442b32cc776f39d815a4c09c5ce840f3da001d5aa5db37dd1fa0ef",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/utils/path_validator.gd.uid",
+      "addons/godot_ai/utils/path_validator.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "814a673d817631280ed5aa988034d0386e67eba4bc67db2d1f16f9d07c577ef3",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/utils/port_resolver.gd",
+      "addons/godot_ai/utils/port_resolver.gd"
+    ],
+    "bytes_each": 35665,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "4f386419a069705d93a56b64395add29e23e9f74745934a515813c119eb96c70",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/utils/port_resolver.gd.uid",
+      "addons/godot_ai/utils/port_resolver.gd.uid"
+    ],
+    "bytes_each": 19,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "23ed32925d8d6d73874b78b2fa5dbda1f20e57ee3cc433b4bcf25aab96cd1528",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/utils/release_verifier.gd",
+      "addons/godot_ai/utils/release_verifier.gd"
+    ],
+    "bytes_each": 32268,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "dc0b8903879c85733a651a06cd702bd3d3c10922c8e3ee7436d49cccafd8964a",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/utils/release_verifier.gd.uid",
+      "addons/godot_ai/utils/release_verifier.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "1759b54639494e1fd14b97a87cae668500555e0141148a9e2aea04d3d1d2b48e",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/utils/resource_io.gd.uid",
+      "addons/godot_ai/utils/resource_io.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "ab457ce39833897d7448a01e4fe397e44cab022eb407c0b3384bf5bc2bbec7fd",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/utils/scene_path.gd",
+      "addons/godot_ai/utils/scene_path.gd"
+    ],
+    "bytes_each": 7545,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "1d74b073f8cbc0778b3facbba2a7039553a657710f93899c2514104b221a6560",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/utils/scene_path.gd.uid",
+      "addons/godot_ai/utils/scene_path.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "010f223143d099028ccafba428f9cdb40c05d59b0a949dae49eab339bfb8b006",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/utils/screenshot_encode.gd.uid",
+      "addons/godot_ai/utils/screenshot_encode.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "546899b3a5d4024aac3b001ca634e8e74d74343faba27e491ac03af2c3fd6bb1",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/utils/server_lifecycle.gd.uid",
+      "addons/godot_ai/utils/server_lifecycle.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "b71827a9383a60c02e26d59c19530cfc65a2df0d523220780e5283a9a8573f82",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/utils/server_version_check.gd.uid",
+      "addons/godot_ai/utils/server_version_check.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "8e7409077186eeb15a4a88eeaceb79bacb01d9cfb72bbee4bae745e5c8bcce2f",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/utils/settings.gd",
+      "addons/godot_ai/utils/settings.gd"
+    ],
+    "bytes_each": 6074,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "99e66f1dfe502b81097d3d83819bc211e42ef3b3a97bff4ffd3d672bf21b26dc",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/utils/settings.gd.uid",
+      "addons/godot_ai/utils/settings.gd.uid"
+    ],
+    "bytes_each": 19,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "7bb5b56f3b5ec3ba4427b44ac5867005c01ac8a3d84735afd38479993e1f4d7f",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/utils/structured_log_ring.gd",
+      "addons/godot_ai/utils/structured_log_ring.gd"
+    ],
+    "bytes_each": 5282,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "5ff3dab0db39995b662e5aea73ae0223ba92f6a219a283141d29ef9bce6667a1",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/utils/structured_log_ring.gd.uid",
+      "addons/godot_ai/utils/structured_log_ring.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "a7e6fc7f4525aa64ceec15a7ab3eab6188f32f744fdd714ad1f4a819e9ede236",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/utils/surfaced_error_tracker.gd",
+      "addons/godot_ai/utils/surfaced_error_tracker.gd"
+    ],
+    "bytes_each": 23645,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "09b485e56fdd3a69a42d9b74400816bd36943fe15d0781da3aefe4b51be0dc6b",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/utils/surfaced_error_tracker.gd.uid",
+      "addons/godot_ai/utils/surfaced_error_tracker.gd.uid"
+    ],
+    "bytes_each": 19,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "75f1b393c0ae5d9085db5ac10ec24f9ba5cdc93e779d01fbc5dca23882e6edc4",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/utils/update_activation_runner.gd",
+      "addons/godot_ai/utils/update_activation_runner.gd"
+    ],
+    "bytes_each": 16766,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "6cbd1c1da3fe5addb3144e517eeee7d8ba775f2806bf822f60d87dacfca03cd4",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/utils/update_activation_runner.gd.uid",
+      "addons/godot_ai/utils/update_activation_runner.gd.uid"
+    ],
+    "bytes_each": 19,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "d0abd539eda13b8d3b6a00f3b4db8534cf242872a0772853115d5e16f6786d0a",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/utils/update_installer.gd",
+      "addons/godot_ai/utils/update_installer.gd"
+    ],
+    "bytes_each": 22372,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "100a3707894816165ab33e7cadbb07ec9d7346dcde22ff89eebbced7a82f018e",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/utils/update_installer.gd.uid",
+      "addons/godot_ai/utils/update_installer.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "2a2e8422a89307dc7c57711daa1aab0629b5a54ec7f108097a36c2273a0735d0",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/utils/update_manager.gd.uid",
+      "addons/godot_ai/utils/update_manager.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "ed8d5d6740f1bcc183897ec4407487bea769160573353887d7811a8decf8ca3f",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/utils/update_mixed_state.gd.uid",
+      "addons/godot_ai/utils/update_mixed_state.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "2f75771088514910b48ff26269e64064a37984f50ba91284185cf3955985269b",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/utils/uv_cache_cleanup.gd",
+      "addons/godot_ai/utils/uv_cache_cleanup.gd"
+    ],
+    "bytes_each": 6444,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "d209b2b5de32eb6cfeb7b18c8e785f26011d44326b43794478967da7705eace4",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/utils/uv_cache_cleanup.gd.uid",
+      "addons/godot_ai/utils/uv_cache_cleanup.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "3954570c851e2a1c908b24dfe1e542c622feb5efb1ee5137bdf1a201cadafbbc",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/utils/variant_serializer.gd.uid",
+      "addons/godot_ai/utils/variant_serializer.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "fbf0060529259bb97dbeb8a0a0f4dce8bbf0ab6a140b9e62170b67908763d14d",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/utils/windows_port_reservation.gd",
+      "addons/godot_ai/utils/windows_port_reservation.gd"
+    ],
+    "bytes_each": 5248,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "f369812cbcfa0201ed23ca05081ad8981a0200f53a8ef7e4ba690d722bf13abb",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/utils/windows_port_reservation.gd.uid",
+      "addons/godot_ai/utils/windows_port_reservation.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "47ddab7fc353d2a49c3dcf4bbaa5e0e9f05116f7c7fc6bc5ece12246ad0a1494",
+    "paths": [
+      "addons/.godot_ai_update/backup/3.2.1/vision_routing.gd.uid",
+      "addons/godot_ai/vision_routing.gd.uid"
+    ],
+    "bytes_each": 20,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "bdc81596dc1bd618a1ad2f8fd24d325eac790d8a954f95005e85411cf39c1509",
+    "paths": [
+      "addons/ziva_agent/bin/windows_x86_64/libziva_agent.windows.release.x86_64.dll",
+      "addons/ziva_agent/bin/windows_x86_64/~libziva_agent.windows.release.x86_64.dll",
+      "addons/ziva_agent/bin/windows_x86_64/~libziva_agent.windows.release.x86_64.dll~RF53394f2.TMP"
+    ],
+    "bytes_each": 7907840,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "48d7288854c212a895f9f2c249ae4f93fe246450316034cb2d43d60b25a82e53",
+    "paths": [
+      "art_reviews/aelin_front_v1/aelin_run_frente.original.png",
+      "art_reviews/regeneracao_historica/20261028_115641_199740/assets/aelin/aelin_run_frente.png",
+      "art_reviews/run_cycles_v2/aelin_run_frente.original.png",
+      "assets/environments/generated/personagens/aelin/aelin_run_frente.png"
+    ],
+    "bytes_each": 20352,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "ec33cc0bab1b80488a30f5659ce5e61b56c3bb9f69678d342bd21aa6a05bd7a7",
+    "paths": [
+      "art_reviews/aelin_front_v1/corrigido_frame_1.png",
+      "art_reviews/aelin_front_v1/original_frame_1.png",
+      "art_reviews/run_cycles_v2/aelin_run_frente_1.png"
+    ],
+    "bytes_each": 5172,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "c272f70012d289e293d75c3f5aadb0d54472ea35eba875d46b1acc569ecefb9f",
+    "paths": [
+      "art_reviews/aelin_front_v1/corrigido_frame_2.png",
+      "art_reviews/aelin_front_v1/original_frame_2.png",
+      "art_reviews/run_cycles_v2/aelin_run_frente_2.png"
+    ],
+    "bytes_each": 5301,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "a72fc7e9486456699f0490ba83affb31f1538f0659c9c692e7d4255be01df8f1",
+    "paths": [
+      "art_reviews/aelin_front_v1/original_frame_3.png",
+      "art_reviews/run_cycles_v2/aelin_run_frente_3.png"
+    ],
+    "bytes_each": 5246,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "87a9ef059563630125217fe98e1b158cac52c3dfd97c1f6b6e750af330dbe0c6",
+    "paths": [
+      "art_reviews/aelin_front_v1/original_frame_4.png",
+      "art_reviews/run_cycles_v2/aelin_run_frente_4.png"
+    ],
+    "bytes_each": 5291,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "1c26bfeab50085ef988124cf026c3b8a0d969baaf35d5eb7d85cd846af6112d9",
+    "paths": [
+      "art_reviews/regeneracao_historica/20261028_115641_199740/assets/aelin/aelin_parada_costas.png",
+      "assets/environments/generated/personagens/aelin/aelin_parada_costas.png"
+    ],
+    "bytes_each": 21426,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "f27fb56838f6fc2cb2363c955a44827cf63b47aa2391c9bc41efddf1c4df3fd5",
+    "paths": [
+      "art_reviews/regeneracao_historica/20261028_115641_199740/assets/aelin/aelin_parada_direita.png",
+      "assets/environments/generated/personagens/aelin/aelin_parada_direita.png"
+    ],
+    "bytes_each": 20250,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "6e45774cd93d2a5c1f43bec669219128eea8eeee5acbcfb925e4913da56c80b3",
+    "paths": [
+      "art_reviews/regeneracao_historica/20261028_115641_199740/assets/aelin/aelin_parada_esquerda.png",
+      "assets/environments/generated/personagens/aelin/aelin_parada_esquerda.png"
+    ],
+    "bytes_each": 20537,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "c1b028d8588a3bd39dd65e573d26885e5df316b95e0ece0d769909004d53e77a",
+    "paths": [
+      "art_reviews/regeneracao_historica/20261028_115641_199740/assets/aelin/aelin_parada_frente.png",
+      "assets/environments/generated/personagens/aelin/aelin_parada_frente.png"
+    ],
+    "bytes_each": 20984,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "d3da354c5748e3575e8f49ef166d472ae11b658bd900ea90e820cb01c3699414",
+    "paths": [
+      "art_reviews/regeneracao_historica/20261028_115641_199740/assets/aelin/aelin_run_costas.png",
+      "assets/environments/generated/personagens/aelin/aelin_run_costas.png"
+    ],
+    "bytes_each": 22069,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "bb69fa76eccc5d9f8470053dae0dbc0310df130b49937a0ad6fd4aab045df5a7",
+    "paths": [
+      "art_reviews/regeneracao_historica/20261028_115641_199740/assets/aelin/aelin_run_direita.png",
+      "assets/environments/generated/personagens/aelin/aelin_run_direita.png"
+    ],
+    "bytes_each": 20360,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "60774ee8b9560a03b28e2a9e3a5a3f780acbbfcbbd53b5b6b895c083758918f5",
+    "paths": [
+      "art_reviews/regeneracao_historica/20261028_115641_199740/assets/aelin/aelin_run_esquerda.png",
+      "assets/environments/generated/personagens/aelin/aelin_run_esquerda.png"
+    ],
+    "bytes_each": 21924,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "4f47bb725fb88251d786729c6d6c06fd81ab2d7321637259c3cccb1a2d1109e7",
+    "paths": [
+      "art_reviews/regeneracao_historica/20261028_115641_199740/assets/dorian/dorian_correndo_costas.png",
+      "assets/environments/generated/personagens/dorian/dorian_correndo_costas.png"
+    ],
+    "bytes_each": 18969,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "1bfe4bbd64abcbfae5739487e25887eeef4b65cd6f7884c666a68ea60bf303d1",
+    "paths": [
+      "art_reviews/regeneracao_historica/20261028_115641_199740/assets/dorian/dorian_correndo_direita.png",
+      "assets/environments/generated/personagens/dorian/dorian_correndo_direita.png"
+    ],
+    "bytes_each": 19032,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "7078336de3efe6512fa231307c969a6f96a664c06057df39e1b7fe820d0e8e2c",
+    "paths": [
+      "art_reviews/regeneracao_historica/20261028_115641_199740/assets/dorian/dorian_correndo_esquerda.png",
+      "assets/environments/generated/personagens/dorian/dorian_correndo_esquerda.png"
+    ],
+    "bytes_each": 18161,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "05bbbe8cec7a0a55ed3345e5ac8e8ebe8d933a21938adde9f8efb1b6a3b20b11",
+    "paths": [
+      "art_reviews/regeneracao_historica/20261028_115641_199740/assets/dorian/dorian_correndo_frente.png",
+      "assets/environments/generated/personagens/dorian/dorian_correndo_frente.png"
+    ],
+    "bytes_each": 20259,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "6f683bbde82ecc047a222832949b04df0c883443897a63c318aa38155a4e0ef1",
+    "paths": [
+      "art_reviews/regeneracao_historica/20261028_115641_199740/assets/dorian/dorian_parado_costas.png",
+      "assets/environments/generated/personagens/dorian/dorian_parado_costas.png"
+    ],
+    "bytes_each": 17921,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "3f75632a59940af8667a65c4b242596c3e790800d9350124a2b1f3b72480f366",
+    "paths": [
+      "art_reviews/regeneracao_historica/20261028_115641_199740/assets/dorian/dorian_parado_direita.png",
+      "assets/environments/generated/personagens/dorian/dorian_parado_direita.png"
+    ],
+    "bytes_each": 16183,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "5a9ae77933dab7f16c709cdffb2b440508b04b0e12b4abd4cac7e9f48ce664a6",
+    "paths": [
+      "art_reviews/regeneracao_historica/20261028_115641_199740/assets/dorian/dorian_parado_esquerda.png",
+      "assets/environments/generated/personagens/dorian/dorian_parado_esquerda.png"
+    ],
+    "bytes_each": 17325,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "4c5e6efc01267f0329a079508ea595adef24f56c6ab9f1c8e4138fe16e0bedad",
+    "paths": [
+      "art_reviews/regeneracao_historica/20261028_115641_199740/assets/dorian/dorian_parado_frente.png",
+      "assets/environments/generated/personagens/dorian/dorian_parado_frente.png"
+    ],
+    "bytes_each": 18776,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "b864e5285d2d01c3642e33db648dd3269f35f2af6d99c60e1f6d162986b8970f",
+    "paths": [
+      "assets/environments/RF_Catacombs_v1.0/decorative.png",
+      "assets/environments/RF_Catacombs_v1.0/decorative_catacombs.png"
+    ],
+    "bytes_each": 17292,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "5a59104c3f8e34768d2c4c1cbf31fa1e3c051c576a8e02fe3191a028a7ecfa05",
+    "paths": [
+      "backups/animacao_integracao_20261028/aelin.tscn.bak",
+      "backups/animacoes_visual_20261027/scenes__players__aelin.tscn.bak",
+      "scenes/characters/players/aelin.tscn"
+    ],
+    "bytes_each": 8539,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "2d03a163184209d35bd560335a551fa7ab0b72401eab576d9bc63b942ec75da7",
+    "paths": [
+      "backups/animacoes_visual_20261027/scenes__players__dorian.tscn.bak",
+      "backups/cena_principal_2026-10-27/scenes__players__dorian.tscn.bak"
+    ],
+    "bytes_each": 8681,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "edb56a02b7ceecb7f55aa2607162e93ad0ef24b8e0d23e200c1e1c9d8433cdc5",
+    "paths": [
+      "backups/animacoes_visual_20261027/scenes__shared__personagem_top_down.gd.bak",
+      "backups/cena_principal_2026-10-27/scenes__shared__personagem_top_down.gd.bak",
+      "scripts/characters/personagem_top_down.gd"
+    ],
+    "bytes_each": 1550,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+    "paths": [
+      "backups/cena_principal_2026-10-27/.gdignore",
+      "backups/dungeon_personagens_2026-10-26/.gdignore",
+      "backups/laterais_2026-10-26/.gdignore"
+    ],
+    "bytes_each": 2,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "121794d821e9c18be06bfbe19098f3099b2ea7ebbd57efd3f639bc1509806a91",
+    "paths": [
+      "backups/cena_principal_2026-10-27/scenes__dungeon__camera_sala_central.gd.bak",
+      "scripts/camera/camera_sala_central.gd"
+    ],
+    "bytes_each": 670,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "3e0a64efb052c66df7c276957429f8f630161f333c410e7dc35545da30454325",
+    "paths": [
+      "backups/cena_principal_2026-10-27/scenes__dungeon__passagem_lateral.gd.bak",
+      "scripts/world/passagem_lateral.gd"
+    ],
+    "bytes_each": 696,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "6f0d29d33a5a46d67120bd461fdcd137396195713558c85b3c0b41564f8f6692",
+    "paths": [
+      "docs/history/animacoes_visual_20261027/captura.log",
+      "docs/history/cena_principal_2026-10-27/capturas_final_stdout.log",
+      "docs/history/cena_principal_2026-10-27/capturas_stdout.log"
+    ],
+    "bytes_each": 274,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "e0093b8667301c5ba479ca3f0574a98701922c6d276d4bbffa5f517996ae4831",
+    "paths": [
+      "docs/history/animacoes_visual_20261027/estado_mcp.json",
+      "docs/history/cena_principal_2026-10-27/antes_editor.json"
+    ],
+    "bytes_each": 3017,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "06218209fbfdf7aa7cdd1ab808f00baca9150f9836f02d1cb3a3b707ab858fdd",
+    "paths": [
+      "docs/history/animacoes_visual_20261027/testes_funcionais.json",
+      "docs/history/cena_principal_2026-10-27/testes_funcionais.json"
+    ],
+    "bytes_each": 14220,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "176aad528999cee5b7b58304def6a3d94b2e61c558cc38a47ba10c42162c155a",
+    "paths": [
+      "docs/history/cena_principal_2026-10-27/build_final_stdout.log",
+      "docs/history/cena_principal_2026-10-27/build_stdout.log"
+    ],
+    "bytes_each": 1315,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "c7140a2721ba11fde901b99ef4f3892b7bc1b57385f9ed6aeca6c87541147e1a",
+    "paths": [
+      "docs/history/cena_principal_2026-10-27/depois_centro.png",
+      "docs/history/cena_principal_2026-10-27/mcp_centro.png"
+    ],
+    "bytes_each": 357853,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "be47e90f8145a3f64108fb1016ffd8db8668981ead1a466d941eef920a9431c5",
+    "paths": [
+      "docs/history/cena_principal_2026-10-27/depois_sul.png",
+      "docs/history/cena_principal_2026-10-27/mcp_sul.png"
+    ],
+    "bytes_each": 343326,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "08696525f217b1f064ee76eb366b84ab5a754edfad087bbc237b523b110f7374",
+    "paths": [
+      "docs/history/cena_principal_2026-10-27/reabrir_cena.json",
+      "docs/history/dungeon_jogavel/mcp_reload_jogavel.json"
+    ],
+    "bytes_each": 872,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "c4fe36cfef4089399a2dfbedbdd85f298f16bf49ac1e8f153d4aad1598ccf80e",
+    "paths": [
+      "docs/history/cena_principal_2026-10-27/resolucoes_final_stdout.log",
+      "docs/history/cena_principal_2026-10-27/resolucoes_stdout.log"
+    ],
+    "bytes_each": 981,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "f7f3ab7b1b6b86e0824f149cd0d91b353992b2a4c9158fea32a3d10081e6f7eb",
+    "paths": [
+      "docs/history/cena_principal_2026-10-27/testes_final_stdout.log",
+      "docs/history/cena_principal_2026-10-27/testes_stdout.log"
+    ],
+    "bytes_each": 220,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "2e5204bc4759de2697df2499ba45eb17739d6236412f10d8e1a4ef2c7d62bbb3",
+    "paths": [
+      "docs/history/dungeon_central/entradas_laterais_antes.png",
+      "docs/history/dungeon_central/sala_central_render_godot.png"
+    ],
+    "bytes_each": 979627,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "88b64059c09668f8328f448e89293d8c2b2da93ea304ee407cada3a77976078d",
+    "paths": [
+      "docs/history/dungeon_central/validacao_entradas_laterais.json",
+      "docs/history/dungeon_central/validacao_godot.json"
+    ],
+    "bytes_each": 500,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "54f0c51b3872da22e0b65da5725c2e66e5e15265db08251c1ed734e9f0f97048",
+    "paths": [
+      "docs/history/dungeon_jogavel/build2_stdout.log",
+      "docs/history/dungeon_jogavel/build_final_stdout.log"
+    ],
+    "bytes_each": 204,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "97cf6494a607d06be3010ef5c225b32d0ad4f06c1507341d8c58a4c84d03de14",
+    "paths": [
+      "docs/history/dungeon_jogavel/capture2_stdout.log",
+      "docs/history/dungeon_jogavel/capture_stdout.log"
+    ],
+    "bytes_each": 272,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  },
+  {
+    "sha256": "e1e850a34edb88c54eecd51c3748a4da52317ac94831e6f8d0db0fdf1f5a69c8",
+    "paths": [
+      "docs/history/dungeon_jogavel/characters_final_stdout.log",
+      "docs/history/dungeon_jogavel/characters_stdout.log"
+    ],
+    "bytes_each": 284,
+    "action": "Preservar; identidade de conteudo nao prova papel dispensavel"
+  }
+]

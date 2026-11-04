@@ -1,0 +1,12 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+
+# Local editor tooling and updater backups
+/addons/ziva_agent/zivacode/windows_x86_64/zivacode.exe
+/addons/.godot_ai_update/
+
+# Local credentials
+.env
+.env.*
+!.env.example

@@ -1,0 +1,23 @@
+{
+  "meta": null,
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"force_reload\":false,\"path\":\"res://scenes/world/labyrinth/mapa_editor.tscn\",\"previous_scene_path\":\"res://scenes/world/labyrinth/mapa_editor.tscn\",\"reason\":\"Scene navigation cannot be undone via editor undo\",\"reloaded_from_disk\":false,\"settle\":\"already_current\",\"switched\":true,\"undoable\":false}",
+      "annotations": null,
+      "meta": null
+    }
+  ],
+  "structured_content": {
+    "force_reload": false,
+    "path": "res://scenes/world/labyrinth/mapa_editor.tscn",
+    "previous_scene_path": "res://scenes/world/labyrinth/mapa_editor.tscn",
+    "reason": "Scene navigation cannot be undone via editor undo",
+    "reloaded_from_disk": false,
+    "settle": "already_current",
+    "switched": true,
+    "undoable": false
+  },
+  "is_error": false,
+  "result_type": "complete"
+}

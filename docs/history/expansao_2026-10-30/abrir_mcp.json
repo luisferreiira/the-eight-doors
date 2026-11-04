@@ -1,0 +1,6 @@
+[
+  {"name":"scene_open","arguments":{"path":"res://scenes/world/labyrinth/labirinto.tscn"}},
+  {"name":"project_run","arguments":{"mode":"custom","scene":"res://scenes/world/labyrinth/labirinto.tscn","autosave":false}},
+  {"name":"editor_state","label":"estado_jogo","arguments":{}},
+  {"name":"logs_read","label":"logs_iniciais","arguments":{"source":"game","include_details":true}}
+]

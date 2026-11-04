@@ -1,0 +1,19 @@
+[gd_scene format=3]
+[ext_resource type="Shader" uid="uid://yoy8ram27asd" path="res://assets/shaders/vinheta.gdshader" id="10_vi4lx"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ruge2"]
+shader = ExtResource("10_vi4lx")
+shader_parameter/intensidade = 0.4
+shader_parameter/raio = 0.32
+shader_parameter/suavidade = 0.58
+
+[node name="Atmosfera" type="CanvasLayer"]
+layer = 10
+
+[node name="Vinheta" type="ColorRect" parent="."]
+material = SubResource("ShaderMaterial_ruge2")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2

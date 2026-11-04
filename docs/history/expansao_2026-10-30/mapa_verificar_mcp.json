@@ -1,0 +1,1 @@
+[{"name":"scene_get_hierarchy","label":"mapa_hierarquia","arguments":{"depth":1,"limit":30}},{"name":"logs_read","label":"mapa_logs","arguments":{"source":"editor"}}]

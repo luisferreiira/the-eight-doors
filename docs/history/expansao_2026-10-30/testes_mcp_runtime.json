@@ -1,0 +1,75 @@
+{
+	"failures": [],
+	"transitions": [
+		{
+			"direction": "N",
+			"from": "S01",
+			"ok": true,
+			"ticks": 21,
+			"to": "S02"
+		},
+		{
+			"direction": "S",
+			"from": "S02",
+			"ok": true,
+			"ticks": 37,
+			"to": "S01"
+		},
+		{
+			"direction": "NE",
+			"from": "S01",
+			"ok": true,
+			"ticks": 26,
+			"to": "S03"
+		},
+		{
+			"direction": "SO",
+			"from": "S03",
+			"ok": true,
+			"ticks": 40,
+			"to": "S01"
+		},
+		{
+			"direction": "L",
+			"from": "S01",
+			"ok": true,
+			"ticks": 36,
+			"to": "S04"
+		},
+		{
+			"direction": "O",
+			"from": "S04",
+			"ok": true,
+			"ticks": 36,
+			"to": "S01"
+		},
+		{
+			"direction": "S",
+			"from": "S01",
+			"ok": true,
+			"ticks": 37,
+			"to": "S05"
+		},
+		{
+			"direction": "N",
+			"from": "S05",
+			"ok": true,
+			"ticks": 21,
+			"to": "S01"
+		},
+		{
+			"direction": "SO",
+			"from": "S01",
+			"ok": true,
+			"ticks": 40,
+			"to": "S06"
+		},
+		{
+			"direction": "NE",
+			"from": "S06",
+			"ok": true,
+			"ticks": 26,
+			"to": "S01"
+		}
+	]
+}

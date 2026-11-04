@@ -1,0 +1,107 @@
+{
+  "meta": null,
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"source\":\"editor\",\"lines\":[{\"details\":{\"children\":[{\"label\":\"<Erro GDScript>\",\"line\":30,\"path\":\"res://tests/runtime_labirinto.gd\",\"text\":\"INT_AS_ENUM_WITHOUT_CAST\"},{\"label\":\"<Fonte em GDScript>\",\"line\":30,\"path\":\"res://tests/runtime_labirinto.gd\",\"text\":\"runtime_labirinto.gd:30 @ GDScript::reload()\"}],\"debugger_tab\":\"Errors\",\"error_type_name\":\"warning\",\"frames\":[],\"message\":\"GDScript::reload: Integer used when an enum value is expected. If this is intended, cast the integer to the enum type using the \\\"as\\\" keyword.\",\"resolved\":{\"function\":\"GDScript::reload\",\"line\":30,\"path\":\"res://tests/runtime_labirinto.gd\"},\"source\":{\"function\":\"GDScript::reload\",\"line\":30,\"path\":\"res://tests/runtime_labirinto.gd\"},\"time\":\"0:02:49:836\"},\"function\":\"GDScript::reload\",\"level\":\"warn\",\"line\":30,\"path\":\"res://tests/runtime_labirinto.gd\",\"source\":\"editor\",\"text\":\"GDScript::reload: Integer used when an enum value is expected. If this is intended, cast the integer to the enum type using the \\\"as\\\" keyword.\"},{\"details\":{\"children\":[{\"label\":\"<Erro GDScript>\",\"line\":39,\"path\":\"res://tests/runtime_labirinto.gd\",\"text\":\"INT_AS_ENUM_WITHOUT_CAST\"},{\"label\":\"<Fonte em GDScript>\",\"line\":39,\"path\":\"res://tests/runtime_labirinto.gd\",\"text\":\"runtime_labirinto.gd:39 @ GDScript::reload()\"}],\"debugger_tab\":\"Errors\",\"error_type_name\":\"warning\",\"frames\":[],\"message\":\"GDScript::reload: Integer used when an enum value is expected. If this is intended, cast the integer to the enum type using the \\\"as\\\" keyword.\",\"resolved\":{\"function\":\"GDScript::reload\",\"line\":39,\"path\":\"res://tests/runtime_labirinto.gd\"},\"source\":{\"function\":\"GDScript::reload\",\"line\":39,\"path\":\"res://tests/runtime_labirinto.gd\"},\"time\":\"0:02:49:836\"},\"function\":\"GDScript::reload\",\"level\":\"warn\",\"line\":39,\"path\":\"res://tests/runtime_labirinto.gd\",\"source\":\"editor\",\"text\":\"GDScript::reload: Integer used when an enum value is expected. If this is intended, cast the integer to the enum type using the \\\"as\\\" keyword.\"}],\"total_count\":2,\"returned_count\":2,\"offset\":0,\"limit\":50,\"has_more\":false,\"run_id\":\"\",\"is_running\":false,\"dropped_count\":0,\"stale_run_id\":false,\"next_cursor\":0,\"appended_total\":0}",
+      "annotations": null,
+      "meta": null
+    }
+  ],
+  "structured_content": {
+    "source": "editor",
+    "lines": [
+      {
+        "details": {
+          "children": [
+            {
+              "label": "<Erro GDScript>",
+              "line": 30,
+              "path": "res://tests/runtime_labirinto.gd",
+              "text": "INT_AS_ENUM_WITHOUT_CAST"
+            },
+            {
+              "label": "<Fonte em GDScript>",
+              "line": 30,
+              "path": "res://tests/runtime_labirinto.gd",
+              "text": "runtime_labirinto.gd:30 @ GDScript::reload()"
+            }
+          ],
+          "debugger_tab": "Errors",
+          "error_type_name": "warning",
+          "frames": [],
+          "message": "GDScript::reload: Integer used when an enum value is expected. If this is intended, cast the integer to the enum type using the \"as\" keyword.",
+          "resolved": {
+            "function": "GDScript::reload",
+            "line": 30,
+            "path": "res://tests/runtime_labirinto.gd"
+          },
+          "source": {
+            "function": "GDScript::reload",
+            "line": 30,
+            "path": "res://tests/runtime_labirinto.gd"
+          },
+          "time": "0:02:49:836"
+        },
+        "function": "GDScript::reload",
+        "level": "warn",
+        "line": 30,
+        "path": "res://tests/runtime_labirinto.gd",
+        "source": "editor",
+        "text": "GDScript::reload: Integer used when an enum value is expected. If this is intended, cast the integer to the enum type using the \"as\" keyword."
+      },
+      {
+        "details": {
+          "children": [
+            {
+              "label": "<Erro GDScript>",
+              "line": 39,
+              "path": "res://tests/runtime_labirinto.gd",
+              "text": "INT_AS_ENUM_WITHOUT_CAST"
+            },
+            {
+              "label": "<Fonte em GDScript>",
+              "line": 39,
+              "path": "res://tests/runtime_labirinto.gd",
+              "text": "runtime_labirinto.gd:39 @ GDScript::reload()"
+            }
+          ],
+          "debugger_tab": "Errors",
+          "error_type_name": "warning",
+          "frames": [],
+          "message": "GDScript::reload: Integer used when an enum value is expected. If this is intended, cast the integer to the enum type using the \"as\" keyword.",
+          "resolved": {
+            "function": "GDScript::reload",
+            "line": 39,
+            "path": "res://tests/runtime_labirinto.gd"
+          },
+          "source": {
+            "function": "GDScript::reload",
+            "line": 39,
+            "path": "res://tests/runtime_labirinto.gd"
+          },
+          "time": "0:02:49:836"
+        },
+        "function": "GDScript::reload",
+        "level": "warn",
+        "line": 39,
+        "path": "res://tests/runtime_labirinto.gd",
+        "source": "editor",
+        "text": "GDScript::reload: Integer used when an enum value is expected. If this is intended, cast the integer to the enum type using the \"as\" keyword."
+      }
+    ],
+    "total_count": 2,
+    "returned_count": 2,
+    "offset": 0,
+    "limit": 50,
+    "has_more": false,
+    "run_id": "",
+    "is_running": false,
+    "dropped_count": 0,
+    "stale_run_id": false,
+    "next_cursor": 0,
+    "appended_total": 0
+  },
+  "is_error": false,
+  "result_type": "complete"
+}

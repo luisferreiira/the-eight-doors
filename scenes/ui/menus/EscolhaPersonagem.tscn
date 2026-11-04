@@ -1,0 +1,197 @@
+[gd_scene load_steps=10 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/escolha_personagem.gd" id="1_choice"]
+[ext_resource type="Texture2D" path="res://assets/ui/fundoEscolha.png" id="2_bg"]
+[ext_resource type="Texture2D" path="res://assets/ui/personagem1.png" id="3_char1"]
+[ext_resource type="Texture2D" path="res://assets/ui/personagem2.png" id="4_char2"]
+[ext_resource type="Texture2D" path="res://assets/ui/ui/next_button.png" id="5_next"]
+[ext_resource type="Texture2D" path="res://assets/ui/back.png" id="6_back"]
+[ext_resource type="Texture2D" path="res://assets/ui/backgrounds/fundoSelecao_sem_faixa.png" id="7_bg_patch"]
+
+[sub_resource type="AtlasTexture" id="BackButtonTexture"]
+atlas = ExtResource("6_back")
+region = Rect2(240, 224, 1295, 413)
+
+[sub_resource type="AtlasTexture" id="SectionBackgroundPatch"]
+atlas = ExtResource("7_bg_patch")
+region = Rect2(390, 304, 790, 101)
+
+[node name="EscolhaPersonagem" type="Control"]
+custom_minimum_size = Vector2(1280, 720)
+texture_filter = 2
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 1
+grow_vertical = 1
+script = ExtResource("1_choice")
+
+[node name="Fundo" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = 75.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_bg")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="PatchFaixaIntegrada" type="TextureRect" parent="Fundo"]
+offset_left = 319.59026888604353
+offset_top = 234.01728553137002
+offset_right = 966.9654289372598
+offset_bottom = 316.7829705505762
+layout_mode = 1
+mouse_filter = 2
+texture = SubResource("SectionBackgroundPatch")
+expand_mode = 1
+
+[node name="Sombra" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.015, 0.01, 0.008, 0.42)
+mouse_filter = 2
+
+[node name="Interface" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PersonagensArea" type="ScrollContainer" parent="Interface"]
+layout_mode = 1
+anchor_left = 0.04
+anchor_top = 0.39
+anchor_right = 0.96
+anchor_bottom = 0.70
+horizontal_scroll_mode = 1
+vertical_scroll_mode = 1
+
+[node name="Personagens" type="HBoxContainer" parent="Interface/PersonagensArea"]
+custom_minimum_size = Vector2(960, 0)
+size_flags_horizontal = 3
+layout_mode = 2
+theme_override_constants/separation = 52
+alignment = 1
+
+[node name="Personagem1" type="Control" parent="Interface/PersonagensArea/Personagens"]
+custom_minimum_size = Vector2(440, 210)
+layout_mode = 2
+
+[node name="Conteudo" type="VBoxContainer" parent="Interface/PersonagensArea/Personagens/Personagem1"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Representacao" type="TextureButton" parent="Interface/PersonagensArea/Personagens/Personagem1/Conteudo"]
+custom_minimum_size = Vector2(440, 210)
+layout_mode = 2
+texture_normal = ExtResource("3_char1")
+ignore_texture_size = true
+stretch_mode = 5
+focus_mode = 2
+mouse_default_cursor_shape = 2
+
+[node name="Personagem2" type="Control" parent="Interface/PersonagensArea/Personagens"]
+custom_minimum_size = Vector2(440, 210)
+layout_mode = 2
+
+[node name="Conteudo" type="VBoxContainer" parent="Interface/PersonagensArea/Personagens/Personagem2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Representacao" type="TextureButton" parent="Interface/PersonagensArea/Personagens/Personagem2/Conteudo"]
+custom_minimum_size = Vector2(440, 210)
+layout_mode = 2
+texture_normal = ExtResource("4_char2")
+ignore_texture_size = true
+stretch_mode = 5
+focus_mode = 2
+mouse_default_cursor_shape = 2
+
+[node name="Status" type="Label" parent="Interface"]
+layout_mode = 1
+anchor_left = 0.12
+anchor_top = 0.70
+anchor_right = 0.88
+anchor_bottom = 0.75
+theme_override_colors/font_color = Color(1, 0.72, 0.38, 1)
+theme_override_font_sizes/font_size = 17
+horizontal_alignment = 1
+vertical_alignment = 1
+mouse_filter = 2
+
+[node name="Next" type="TextureButton" parent="Interface"]
+custom_minimum_size = Vector2(320, 102)
+layout_mode = 1
+anchor_left = 0.5
+anchor_top = 0.75
+anchor_right = 0.5
+anchor_bottom = 0.75
+offset_left = -160.0
+offset_top = 0.0
+offset_right = 160.0
+offset_bottom = 102.0
+texture_normal = ExtResource("5_next")
+texture_hover = ExtResource("5_next")
+texture_pressed = ExtResource("5_next")
+ignore_texture_size = true
+stretch_mode = 5
+focus_mode = 2
+mouse_default_cursor_shape = 2
+
+[node name="Back" type="TextureButton" parent="Interface"]
+custom_minimum_size = Vector2(190, 61)
+layout_mode = 1
+anchor_left = 0.5
+anchor_top = 0.90
+anchor_right = 0.5
+anchor_bottom = 0.90
+offset_left = -95.0
+offset_top = 0.0
+offset_right = 95.0
+offset_bottom = 61.0
+focus_mode = 2
+texture_normal = SubResource("BackButtonTexture")
+texture_hover = SubResource("BackButtonTexture")
+texture_pressed = SubResource("BackButtonTexture")
+ignore_texture_size = true
+stretch_mode = 5
+mouse_default_cursor_shape = 2
+
+[node name="Transicao" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+mouse_filter = 2
+z_index = 100
+visible = false
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,20 @@
+{
+  "jsonrpc": "2.0",
+  "id": 2,
+  "result": {
+    "content": [
+      {
+        "text": "{\"key\":\"application/run/main_scene\",\"old_value\":\"res://scenes/world/environments/sala_central_jogavel.tscn\",\"path\":\"res://scenes/world/environments/sala_central_jogavel.tscn\",\"reason\":\"ProjectSettings changes are saved to disk\",\"undoable\":false}",
+        "type": "text"
+      }
+    ],
+    "isError": false,
+    "structuredContent": {
+      "key": "application/run/main_scene",
+      "old_value": "res://scenes/world/environments/sala_central_jogavel.tscn",
+      "path": "res://scenes/world/environments/sala_central_jogavel.tscn",
+      "reason": "ProjectSettings changes are saved to disk",
+      "undoable": false
+    }
+  }
+}

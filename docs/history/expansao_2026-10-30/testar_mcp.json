@@ -1,0 +1,5 @@
+[
+  {"name":"editor_manage","label":"testes_ao_vivo","arguments":{"op":"game_eval","params":{"code":"var game = get_tree().current_scene\nvar suite = load(\"res://tests/runtime_labirinto.gd\").new()\nreturn await suite.run(game)"}}},
+  {"name":"logs_read","label":"logs_jogo","arguments":{"source":"game","include_details":true}},
+  {"name":"logs_read","label":"logs_editor","arguments":{"source":"editor","include_details":true}}
+]

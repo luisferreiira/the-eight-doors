@@ -1,0 +1,36 @@
+{
+  "meta": null,
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"current_scene\":\"res://scenes/world/labyrinth/labirinto.tscn\",\"game_capture_ready\":true,\"game_status\":{\"active\":true,\"editor_log_cursor\":0,\"elapsed_msec\":8967,\"helper_expected\":true,\"helper_live\":true,\"ready\":true,\"ready_wait_msec\":20000,\"run_started_msec\":40490926,\"run_token\":1,\"session_active\":true,\"status\":\"live\"},\"godot_version\":\"4.7.1-stable (official)\",\"helper_live\":true,\"is_playing\":true,\"project_name\":\"TheEightDoors\",\"readiness\":\"playing\",\"session_active\":true}",
+      "annotations": null,
+      "meta": null
+    }
+  ],
+  "structured_content": {
+    "current_scene": "res://scenes/world/labyrinth/labirinto.tscn",
+    "game_capture_ready": true,
+    "game_status": {
+      "active": true,
+      "editor_log_cursor": 0,
+      "elapsed_msec": 8967,
+      "helper_expected": true,
+      "helper_live": true,
+      "ready": true,
+      "ready_wait_msec": 20000,
+      "run_started_msec": 40490926,
+      "run_token": 1,
+      "session_active": true,
+      "status": "live"
+    },
+    "godot_version": "4.7.1-stable (official)",
+    "helper_live": true,
+    "is_playing": true,
+    "project_name": "TheEightDoors",
+    "readiness": "playing",
+    "session_active": true
+  },
+  "is_error": false,
+  "result_type": "complete"
+}

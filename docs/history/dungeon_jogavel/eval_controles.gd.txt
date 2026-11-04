@@ -1,0 +1,33 @@
+extends Node
+func execute():
+	var tree = get_tree()
+	var room = tree.current_scene
+	var player = room.get_node("Aelin")
+	var saved_position = player.position
+	var results = []
+	var directions = [[KEY_W],[KEY_S],[KEY_A],[KEY_D],[KEY_W,KEY_A],[KEY_W,KEY_D],[KEY_S,KEY_A],[KEY_S,KEY_D]]
+	for keys in directions:
+		player.position = Vector2(560,672)
+		player.velocity = Vector2.ZERO
+		for i in 2: await tree.physics_frame
+		for key in keys:
+			var event = InputEventKey.new()
+			event.keycode = key
+			event.pressed = true
+			Input.parse_input_event(event)
+		Input.flush_buffered_events()
+		for i in 20: await tree.physics_frame
+		var speed = player.velocity.length()
+		var animation = str(player.get_node("AnimatedSprite2D").animation)
+		for key in keys:
+			var event = InputEventKey.new()
+			event.keycode = key
+			event.pressed = false
+			Input.parse_input_event(event)
+		Input.flush_buffered_events()
+		var displacement = player.position - Vector2(560,672)
+		for i in 2: await tree.physics_frame
+		results.append({"keys":keys,"speed":speed,"dx":displacement.x,"dy":displacement.y,"walk":animation,"idle":str(player.get_node("AnimatedSprite2D").animation)})
+	player.position = saved_position
+	player.velocity = Vector2.ZERO
+	return {"scene":room.scene_file_path,"character":"Aelin","samples":results,"tested_real_key_events":true}

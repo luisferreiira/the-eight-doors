@@ -1,0 +1,98 @@
+[
+  {
+    "name": "project_manage",
+    "label": "parar_teste",
+    "arguments": {
+      "op": "stop"
+    }
+  },
+  {
+    "name": "project_manage",
+    "label": "principal",
+    "arguments": {
+      "op": "set_main_scene",
+      "params": {
+        "path": "res://scenes/world/labyrinth/labirinto.tscn"
+      }
+    }
+  },
+  {
+    "name": "project_run",
+    "label": "execucao_final",
+    "arguments": {
+      "mode": "main",
+      "autosave": false
+    }
+  },
+  {
+    "name": "editor_manage",
+    "label": "travessia_N",
+    "arguments": {
+      "op": "game_eval",
+      "params": {
+        "code": "var game = get_tree().current_scene\nvar suite = load(\"res://tests/runtime_labirinto.gd\").new()\nreturn await suite.run(game, \"N\")"
+      }
+    }
+  },
+  {
+    "name": "editor_manage",
+    "label": "travessia_NE",
+    "arguments": {
+      "op": "game_eval",
+      "params": {
+        "code": "var game = get_tree().current_scene\nvar suite = load(\"res://tests/runtime_labirinto.gd\").new()\nreturn await suite.run(game, \"NE\")"
+      }
+    }
+  },
+  {
+    "name": "editor_manage",
+    "label": "travessia_L",
+    "arguments": {
+      "op": "game_eval",
+      "params": {
+        "code": "var game = get_tree().current_scene\nvar suite = load(\"res://tests/runtime_labirinto.gd\").new()\nreturn await suite.run(game, \"L\")"
+      }
+    }
+  },
+  {
+    "name": "editor_manage",
+    "label": "travessia_S",
+    "arguments": {
+      "op": "game_eval",
+      "params": {
+        "code": "var game = get_tree().current_scene\nvar suite = load(\"res://tests/runtime_labirinto.gd\").new()\nreturn await suite.run(game, \"S\")"
+      }
+    }
+  },
+  {
+    "name": "editor_manage",
+    "label": "travessia_SO",
+    "arguments": {
+      "op": "game_eval",
+      "params": {
+        "code": "var game = get_tree().current_scene\nvar suite = load(\"res://tests/runtime_labirinto.gd\").new()\nreturn await suite.run(game, \"SO\")"
+      }
+    }
+  },
+  {
+    "name": "editor_state",
+    "label": "estado_final",
+    "arguments": {}
+  },
+  {
+    "name": "logs_read",
+    "label": "logs_finais_jogo",
+    "arguments": {
+      "source": "game",
+      "include_details": true
+    }
+  },
+  {
+    "name": "logs_read",
+    "label": "logs_finais_editor",
+    "arguments": {
+      "source": "editor",
+      "include_details": true
+    }
+  }
+]

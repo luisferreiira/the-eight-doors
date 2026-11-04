@@ -1,0 +1,20 @@
+{
+  "meta": null,
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"key\":\"application/run/main_scene\",\"old_value\":\"res://scenes/world/environments/sala_central_jogavel.tscn\",\"path\":\"res://scenes/world/labyrinth/labirinto.tscn\",\"reason\":\"ProjectSettings changes are saved to disk\",\"undoable\":false}",
+      "annotations": null,
+      "meta": null
+    }
+  ],
+  "structured_content": {
+    "key": "application/run/main_scene",
+    "old_value": "res://scenes/world/environments/sala_central_jogavel.tscn",
+    "path": "res://scenes/world/labyrinth/labirinto.tscn",
+    "reason": "ProjectSettings changes are saved to disk",
+    "undoable": false
+  },
+  "is_error": false,
+  "result_type": "complete"
+}

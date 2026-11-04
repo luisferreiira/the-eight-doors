@@ -1,0 +1,842 @@
+[
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\scenes\\players\\aelin.tscn",
+    "Hash": "42BE6DD3E43462F1B1BC582B9C6241881D4D5B6F527C209ADAE227B58D660CF7"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\scenes\\players\\dorian.tscn",
+    "Hash": "C5CCEAFF882D10953D7B028E6C33E66683EE8B1920205FE7957A56BDB6DF8402"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\scenes\\shared\\personagem_top_down.gd",
+    "Hash": "EDB56A02B7CEECB7F55AA2607162E93AD0EF24B8E0D23E200C1E1C9D8433CDC5"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\scenes\\shared\\personagem_top_down.gd.uid",
+    "Hash": "E1C50A748E99231D73B37DC8FF7CD4933C5F27B9CCFC7B9CD39C644E2305A285"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\generated\\dungeon_central\\atlas_manifesto.json",
+    "Hash": "7FFEEE2903C2EF0CE96706BA1627E5958B69C19CF84365D0A306A29209BD2A02"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\generated\\dungeon_central\\atlas_sala_central.png",
+    "Hash": "D5800660EB4ED2612E7A2A3A0A6DC02BCE69D7C328E29ECA8D46362FEE38FB5C"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\generated\\dungeon_central\\sala_central_tileset.tres",
+    "Hash": "221EE5D9EDDCCB25EF6C36C001F341816403A86A06D1280528119D5747ACC3EE"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\generated\\dungeon_central\\refino\\bordas_piso_16.png",
+    "Hash": "D25C17CCFDC144A40232608BE1C5A26F82030738C63A430E26FA2AF7E5603B77"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\generated\\dungeon_central\\refino\\murinho_recuperado.png",
+    "Hash": "77E41D21659B5CDDE0DC3BD2005447ACDFE5C0D76DE2EE460FA089A62BF5AE4D"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\generated\\dungeon_central\\refino\\muro_diagonal_16.png",
+    "Hash": "07A72E7728A4CCD7CC228BD99877BEF18DB8D3400621079E1F42BDCEA75CB85F"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\generated\\dungeon_central\\refino\\muro_diagonal_manifesto.json",
+    "Hash": "7B90B6D174C0892678981FF994D39FD09972C3F871CBACB09345EDAB5DB11D16"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\generated\\personagens\\aelin\\aelin_parada_costas.png",
+    "Hash": "1C26BFEAB50085EF988124CF026C3B8A0D969BAAF35D5EB7D85CD846AF6112D9"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\generated\\personagens\\aelin\\aelin_parada_direita.png",
+    "Hash": "F27FB56838F6FC2CB2363C955A44827CF63B47AA2391C9BC41EFDDF1C4DF3FD5"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\generated\\personagens\\aelin\\aelin_parada_esquerda.png",
+    "Hash": "6E45774CD93D2A5C1F43BEC669219128EEA8EEEE5ACBCFB925E4913DA56C80B3"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\generated\\personagens\\aelin\\aelin_parada_frente.png",
+    "Hash": "C1B028D8588A3BD39DD65E573D26885E5DF316B95E0ECE0D769909004D53E77A"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\generated\\personagens\\aelin\\aelin_run_costas.png",
+    "Hash": "D3DA354C5748E3575E8F49EF166D472AE11B658BD900EA90E820CB01C3699414"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\generated\\personagens\\aelin\\aelin_run_direita_alterado.png",
+    "Hash": "BAA7F23D3DC0FA7936EC7E9C2346D7703AC9D77C6AE208A57810EA7C12CC6016"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\generated\\personagens\\aelin\\aelin_run_direita.png",
+    "Hash": "BB69FA76ECCC5D9F8470053DAE0DBC0310DF130B49937A0AD6FD4AAB045DF5A7"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\generated\\personagens\\aelin\\aelin_run_esquerda_alterado.png",
+    "Hash": "8717998D6CC7B56C1A2BA52291948EEBFB4DA596AE46D022BBB942649E3A7772"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\generated\\personagens\\aelin\\aelin_run_esquerda_v1.png",
+    "Hash": "9018CB761723F563F850E3DC601F3BC393B7F5220FD508847F288D098119F95B"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\generated\\personagens\\aelin\\aelin_run_esquerda.png",
+    "Hash": "60774EE8B9560A03B28E2A9E3A5A3F780ACBBFCBBD53B5B6B895C083758918F5"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\generated\\personagens\\aelin\\aelin_run_frente_invertido.png",
+    "Hash": "68917104B003A1661081988BEFEC50CCFF30E9D80433CEAF23056A078FCC05AC"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\generated\\personagens\\aelin\\aelin_run_frente.png",
+    "Hash": "48D7288854C212A895F9F2C249AE4F93FE246450316034CB2D43D60B25A82E53"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\generated\\personagens\\aelin\\aelin_sprites_run.png",
+    "Hash": "E313BB35C1085136D6BBE0B0C63A554E00D59B4950E879CB2C60CAE7E4792B7F"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\generated\\personagens\\dorian\\dorian_correndo_costas.png",
+    "Hash": "4F47BB725FB88251D786729C6D6C06FD81AB2D7321637259C3CCCB1A2D1109E7"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\generated\\personagens\\dorian\\dorian_correndo_direita.png",
+    "Hash": "1BFE4BBD64ABCBFAE5739487E25887EEEF4B65CD6F7884C666A68EA60BF303D1"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\generated\\personagens\\dorian\\dorian_correndo_esquerda.png",
+    "Hash": "7078336DE3EFE6512FA231307C969A6F96A664C06057DF39E1B7FE820D0E8E2C"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\generated\\personagens\\dorian\\dorian_correndo_frente.png",
+    "Hash": "05BBBE8CEC7A0A55ED3345E5AC8E8EBE8D933A21938ADDE9F8EFB1B6A3B20B11"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\generated\\personagens\\dorian\\dorian_parado_costas.png",
+    "Hash": "6F683BBDE82ECC047A222832949B04DF0C883443897A63C318AA38155A4E0EF1"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\generated\\personagens\\dorian\\dorian_parado_direita.png",
+    "Hash": "3F75632A59940AF8667A65C4B242596C3E790800D9350124A2B1F3B72480F366"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\generated\\personagens\\dorian\\dorian_parado_esquerda.png",
+    "Hash": "5A9AE77933DAB7F16C709CDFFB2B440508B04B0E12B4ABD4CAC7E9F48CE664A6"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\generated\\personagens\\dorian\\dorian_parado_frente.png",
+    "Hash": "4C5E6EFC01267F0329A079508EA595ADEF24F56C6AB9F1C8E4138FE16E0BEDAD"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\mapa\\fase_caverna_base.png",
+    "Hash": "B6D6F873114B12115B99D22593E25B28B5545C7983B9F93A9A08B4834C8F0003"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\mapa\\The_Eight_Doors_Tiles_Preparados\\atlas_complementar_A.png",
+    "Hash": "1F5E52261588F089E0C490AA7E9A913D867624EA8AC13E4018EA2D912C2C8430"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\mapa\\The_Eight_Doors_Tiles_Preparados\\atlas_complementar_B.png",
+    "Hash": "C8EE04F07C39AD4AFDEC1AD919BDBDF6F4BEC62AD544BE91D3D267E3006B9E01"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\mapa\\The_Eight_Doors_Tiles_Preparados\\atlas_complementar_C.png",
+    "Hash": "89FE7B6A5A8814FF706574ABA5D33B3E9DE318D44FD3B506CC4034D89F49475B"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\mapa\\The_Eight_Doors_Tiles_Preparados\\atlas_complementar_D.png",
+    "Hash": "EB20EA4F91B2FF0862AE0C3E63616C71001DB7D8250EADCFA5A2CA8F81CF0D69"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\mapa\\The_Eight_Doors_Tiles_Preparados\\atlas_info.json",
+    "Hash": "8D764B05137B03F37157F5698BD48AC8B01E88B1A0ABB4B7F1709688352D6A11"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\mapa\\The_Eight_Doors_Tiles_Preparados\\preview_transparencia.jpg",
+    "Hash": "B4B6DE0CFE252C858B90BAD211F490489C593B37E530454D0A10482A6AB062AA"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\mapa\\The_Eight_Doors_Tiles_Preparados\\README_IMPORTACAO.txt",
+    "Hash": "6D69203ADD4ADBFAB05615E68209557FCACCE1E9F5D421457AB285E7F2182069"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\personagens\\aelin\\correndo\\aelin_run_costas.png",
+    "Hash": "C67F5EBBAAE16DDB07F654C5E7CA061FED6B0498C99DE54AD718F7A5FB7BA39C"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\personagens\\aelin\\correndo\\aelin_run_direita.png",
+    "Hash": "2891D74DA4C2F01FF27D809E58F8512B59F57EA130F17D65DAE94BD687652FD1"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\personagens\\aelin\\correndo\\aelin_run_esquerda.png",
+    "Hash": "D15A34268D954E53B877F9210B821F6A8CADDC72FC0334B8B1D18D39A7EC1CA5"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\personagens\\aelin\\correndo\\aelin_run_frente.png",
+    "Hash": "EB8F00AAC821C67902359CF2B88CEC5145BC892CE376D9E5EF38F4A684772E1B"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\personagens\\aelin\\correndo\\aelin_run.png",
+    "Hash": "CFA2B157CA8FAAB96370AD2E9D09DD131EE3921C17386C41C87F86C3EF66661A"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\personagens\\aelin\\parada\\aelin_idle.png",
+    "Hash": "D0879C9FC2B90BF413343240A5DFAD7CC341930E075445EE02A9D2D302633213"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\personagens\\aelin\\parada\\aelin_parada_costas.png",
+    "Hash": "9A189E0B8428DFEC81422F17EB6B23446EC71F86294BF0261FBA14C8149EDFD0"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\personagens\\aelin\\parada\\aelin_parada_direita.png",
+    "Hash": "B187A5E9C30E8CCAEC21D40A1924010005BC54FE56BBF1A076EDA1D5B185BED7"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\personagens\\aelin\\parada\\aelin_parada_esquerda.png",
+    "Hash": "615BDFE6A108C60B48EF74AD2080AC6B56C15847082E60FF5EEC64B6BE9FD6A4"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\personagens\\aelin\\parada\\aelin_parada_frente.png",
+    "Hash": "1EC951D6D85EF9F712BA07DF0FB35A54C5971AC11B5D954EFF2EA770C11027C4"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\personagens\\dorian\\correndo\\dorian_correndo_costas.png",
+    "Hash": "A02BE3FC825036F7AC5D992115916F3F1776215729061EDE2A75E18325252AA5"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\personagens\\dorian\\correndo\\dorian_correndo_direita.png",
+    "Hash": "F51B086C1A9CA3A7D5E595D189F364FA893463C44274C199EB7DFD1418F3B368"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\personagens\\dorian\\correndo\\dorian_correndo_esquerda.png",
+    "Hash": "8716323DEC44C584DFAA0CC78E7D4CEC50C264CE62F3928037C68DFF46EF794D"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\personagens\\dorian\\correndo\\dorian_correndo_frente.png",
+    "Hash": "5B191B41388B6ACB1A7A22ED8BA8BE4BB0F7C65229607CEFFB2698E9F98BCBCE"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\personagens\\dorian\\correndo\\dorian_correndo.png",
+    "Hash": "A078441E9093AD67E6FED94FB90AC1F4677C32C408E962364ACD3BC522491298"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\personagens\\dorian\\parado\\dorian_parado_costas.png",
+    "Hash": "B24398D55DE1BD5B641DCA96C1728A6D10F0AB125D86E74990E02CB5C5F17ED4"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\personagens\\dorian\\parado\\dorian_parado_direita.png",
+    "Hash": "C7F8D1DBB5233FAE449A36140A89C56183855C2544E124CD96F7E2C7F3FFA9AB"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\personagens\\dorian\\parado\\dorian_parado_esquerda.png",
+    "Hash": "DA741CA83A418EA6BA1CE35A3E12593C7E866B428B8ADFB9CFD9A72FC81C93B5"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\personagens\\dorian\\parado\\dorian_parado_frente.png",
+    "Hash": "EDBB911A40C96797C93BF5529607538CB5556AB6C0A2F7376ACC33FAD425EB6E"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\personagens\\dorian\\parado\\dorian_parado.png",
+    "Hash": "BE612DEDCEA3B4D7968AA21513290B4C07E28414A3A51C3E744DF28A78C795B2"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\poderes\\03.png",
+    "Hash": "3108A73C7F0CB8C6226F95BA248063EA08CC6CAD9196030758C06C87A14277F6"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\poderes\\04.png",
+    "Hash": "007D33BEE4C992C60B4264B34B0E8577A3CEE0FB3EF36B7A6ADFECCE7C774073"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\poderes\\05.png",
+    "Hash": "69CB522B9567316A54C553E0FEDFD8F8A5CD0E1008836E16DC6195AC955E3859"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\poderes\\06.png",
+    "Hash": "15E202EC4FA7C38EC7ED7B85B6A64FBE0871AAE784EEC3872EFA01F9A6398D1B"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\poderes\\13.png",
+    "Hash": "8CE2B0E8DF821EA8C197FFBBB4F43B716D4A8298019DE9E3808524B1D385FD52"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\poderes\\14.png",
+    "Hash": "D1CB93052B9736981B589FDB5F9B20976BF9EEDD1F7BCB123FB8A947794BC0E4"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\poderes\\15.png",
+    "Hash": "06D2E02A698C16E99A5D18D8ED90C34A95280980A9303638B8CFD71A19387FBF"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\poderes\\16.png",
+    "Hash": "49ADF08F4738694E3AE19066CF00E435B877247669C3B00FF9A52E092E5CF7BA"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\poderes\\23.png",
+    "Hash": "FD904E34CC8AD6720CF4088AA97522CE1647EA760C8F05B79858C31DCFE8B2D1"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\poderes\\24.png",
+    "Hash": "8A7FB66756B3915570005828B0B90D577EFCFC37977D8A5227360C2CD123129C"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\poderes\\25.png",
+    "Hash": "6FAAD43EFAFA01EEC0960C1880BBCE6DDDBA4F01B40A3006E0A64A6A0596083C"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\poderes\\26.png",
+    "Hash": "B1554750A51F10D4A62C3B3D925A06A92A9DB578777A45953422684119162855"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\poderes\\Free Preview.gif",
+    "Hash": "A06E4560E6237DE13DE7A16DB9ADF493E31FD765832A74B2AD5D4D53E7626F58"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\RF_Catacombs_v1.0\\candleA_01.png",
+    "Hash": "15972D2A583DFFE55476EFBDB2BF6772F2E43FE257DEDB3829B2C1C2711C5071"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\RF_Catacombs_v1.0\\candleA_02.png",
+    "Hash": "E384027BC88E32291A47443B7EAFBDD39ECEEE9932DA649791E2DA9B2B5D1BBB"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\RF_Catacombs_v1.0\\candleA_03.png",
+    "Hash": "13E5DB6E2519AF482F3252FED115ED6A8E4D0C3EEEA2E3E686BC699AF0EA54F6"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\RF_Catacombs_v1.0\\candleA_04.png",
+    "Hash": "BC5840CEDE294F751F46EDDA396E6EB8F180D9A97290FA16B3849A54C01C89C2"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\RF_Catacombs_v1.0\\candleB_01.png",
+    "Hash": "35D66A343DC8EE1D7F8A777F96F05666CFD421E681AD3F749A9F45AE70FC0048"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\RF_Catacombs_v1.0\\candleB_02.png",
+    "Hash": "D3775CCAD996B6F70951D89D49384452458869BA341A8B0B8602A841E7409A6B"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\RF_Catacombs_v1.0\\candleB_03.png",
+    "Hash": "ACE0E2B29400B637115F0BE466574C63DF8E0A93742AD289430EF174F25CC7E3"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\RF_Catacombs_v1.0\\candleB_04.png",
+    "Hash": "8B8410B00705229C8DFA1265A4A66DF4493D0AFF22B6F21FCE30E9B8219DCEC1"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\RF_Catacombs_v1.0\\decorative_catacombs.png",
+    "Hash": "B864E5285D2D01C3642E33DB648DD3269F35F2AF6D99C60E1F6D162986B8970F"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\RF_Catacombs_v1.0\\decorative.png",
+    "Hash": "B864E5285D2D01C3642E33DB648DD3269F35F2AF6D99C60E1F6D162986B8970F"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\RF_Catacombs_v1.0\\mainlevbuild.png",
+    "Hash": "2B700915B11EEED91395677B7D8B387A01FE728C6A10506D31B16C3E9DE7B33D"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\RF_Catacombs_v1.0\\public-license.txt",
+    "Hash": "D6BEA4C79CC8AE0E99C819B1971DE77205C06BDBC64FFF26FAC3CB37EB67103C"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\RF_Catacombs_v1.0\\spike_0.png",
+    "Hash": "450776744B07BB1E3419608BA763F593FD4B69AF7A23DA14E363BFA40BB9F883"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\RF_Catacombs_v1.0\\spike_1.png",
+    "Hash": "1AB9222E0864828D0D781A8D0283F9576917B931B00D2BE29B0A4FF040C2E8F5"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\RF_Catacombs_v1.0\\spike_2.png",
+    "Hash": "26929B47D2678DBCE3693382B369C66FC67B38FD2A63A1515EF371AC3B067CE2"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\RF_Catacombs_v1.0\\spike_3.png",
+    "Hash": "679F8C76ED04C1970157A66DC8AC99CFEE1EA584ED39B13B42142439DFD15055"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\RF_Catacombs_v1.0\\spike_4.png",
+    "Hash": "E5E5E09A8A53AFB231EF42B4C38F0462149B9BC7054C17B23EB18C0435677B1F"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\RF_Catacombs_v1.0\\torch_1.png",
+    "Hash": "D1D2F6FE8EC10FA7801DC537F0F95301CAE8A03A5483FDB9156F33B13E2C0780"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\RF_Catacombs_v1.0\\torch_2.png",
+    "Hash": "54A4182D73DDBAF4DA3F778D2A5C122A34834994779BC689583CF3C54E937124"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\RF_Catacombs_v1.0\\torch_3.png",
+    "Hash": "F86D8D6C77BAC0AB9F69389973184EB7A905643C25455016C049B5D06BBF81D3"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\RF_Catacombs_v1.0\\torch_4.png",
+    "Hash": "C73D3860945D1BBC331A470906C51941BF3CE8B34A80188FED2A11CA48F78642"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\RF_Catacombs_v1.0\\PSD\\decorative.psd",
+    "Hash": "962FE80B39DDC0A2CA901E4D8AC660F927E48E35B1482A94D477EC2C6611C9DD"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\RF_Catacombs_v1.0\\PSD\\mainlevbuild.psd",
+    "Hash": "28FD1CDBB21BC465F0D3EAC9D88629FD14E2A3C61CA970D077A13DCF13EE5F33"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\RF_Catacombs_v1.0\\PSD\\Anim\\candleA.psd",
+    "Hash": "C9140B1CAF2D081B231854644D72CE1A8B50E630DD5D0E616B300B48EB1A2845"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\RF_Catacombs_v1.0\\PSD\\Anim\\candleB.psd",
+    "Hash": "CC478DA038E7125DC880E0193AB45122FEB8017B3BBD9E1F926DE74C1A3D5AE5"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\RF_Catacombs_v1.0\\PSD\\Anim\\spike.psd",
+    "Hash": "7E1A61BD24010ACF69F085E1A45B71CB21359A1CEA705A0BC36E8C640B695C3E"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\RF_Catacombs_v1.0\\PSD\\Anim\\torch.psd",
+    "Hash": "C87E548DDA06DE69F857BE69604108EA4F7172497E6E1796DB2E37F0A9DE3055"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\RPGW_Caves_v2.1\\_license.txt",
+    "Hash": "9CB13F5277B58CFE2F7D496A5255EA55EC547A437C94FDD18ADA2698E11E373A"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\RPGW_Caves_v2.1\\decorative.png",
+    "Hash": "B8B3A3C2AFB0CC1D0D3C186C1C84C666A0FEDBC6D0ED759C66ADA03AD3FE909B"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\RPGW_Caves_v2.1\\MainLev2.0.png",
+    "Hash": "6F7DBDC36A908A0180150B73BB626EA2A072D82E18D761ABAA965021F4513576"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\RPGW_Caves_v2.1\\Anim\\LedA.png",
+    "Hash": "28BAD58BBF98974CDFCD83CCC872230DA4783ABACDC55139DD3172E46DE482B0"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\RPGW_Caves_v2.1\\Anim\\LedB.png",
+    "Hash": "3E0327D73C23BE04E89626ABF7C642CC6B89F361436CCE1A40D30F95B1A93318"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\RPGW_Caves_v2.1\\Anim\\LedC.png",
+    "Hash": "CBB232A502B50FE64179D8662FFBD31DC34DD041B1B28B2A9924CF71B3005D22"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\RPGW_Caves_v2.1\\Anim\\LedD.png",
+    "Hash": "0B88B41CB27D592D17D4138922E341EF5DB8E977D2F12577F837AE0F8297A198"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\RPGW_Caves_v2.1\\_PSD\\decorative.psd",
+    "Hash": "4464C536A2EF251988655B69A06A88FEF5F2A2ED80ECC719FF9BD1F1D4C65237"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\RPGW_Caves_v2.1\\_PSD\\MainLev2.0.psd",
+    "Hash": "00C3EFEB8C3FF194B103103489DDC90F4F9FE81C739222E807741E040C3C95F2"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\RPGW_Caves_v2.1\\_PSD\\Anim\\LedA.psd",
+    "Hash": "0984808407BCE70989DC904B48AAE78BE945E8D286E10DB8CFAF2199BB6C3960"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\RPGW_Caves_v2.1\\_PSD\\Anim\\LedB.psd",
+    "Hash": "9D7A2038223EFC4F5C394C133E61EF1D0C8FE4EDE3242927C20094C07227371C"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\RPGW_Caves_v2.1\\_PSD\\Anim\\LedC.psd",
+    "Hash": "E41DAEF00E2EE330DC11A763E3732DD532FC33D1D707F928992D5A9943DF3DB0"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\assets\\RPGW_Caves_v2.1\\_PSD\\Anim\\LedD.psd",
+    "Hash": "8B1BF4BBB058145A5C9BBBA309E8807D5E37A40F267CCE9D6C2477F7A41F1089"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\aelin_front_reference_edit\\aelin_frente_reprovado.png",
+    "Hash": "16D97AD7FD7D999877CC303B2467CE53FBD8FF92F8E1B523FB5FE68F2EBDD909"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\aelin_front_reference_edit\\loop_reprovado.gif",
+    "Hash": "91AFE0ED025D787BE09072F457631C1679DEE56DBB4D5D8265E8AA6835E267F1"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\aelin_front_reference_edit\\validacao.json",
+    "Hash": "6EF7F0CD3E833A5BB565FDF73DF6BD80CEBC082F440787726EDA59233158BD1E"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\aelin_front_v1\\aelin_run_frente.candidato.png",
+    "Hash": "005DECFBD610648DB8B99E65A015ED27838DD50553DA06F8DC778EF2FB021DD5"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\aelin_front_v1\\aelin_run_frente.original.png",
+    "Hash": "48D7288854C212A895F9F2C249AE4F93FE246450316034CB2D43D60B25A82E53"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\aelin_front_v1\\comparacao_animada.gif",
+    "Hash": "894E999F0A981F88746860A14CE2A01A37E3FA63FB41EC6BAC22035444830A0D"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\aelin_front_v1\\comparacao_quadros.png",
+    "Hash": "6DDF3224E0BC5CF8757763798B4BD9C867321397B9CF8D30225103ECEACD34CB"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\aelin_front_v1\\corrigido_frame_1.png",
+    "Hash": "EC33CC0BAB1B80488A30F5659CE5E61B56C3BB9F69678D342BD21AA6A05BD7A7"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\aelin_front_v1\\corrigido_frame_2.png",
+    "Hash": "C272F70012D289E293D75C3F5AADB0D54472EA35EBA875D46B1ACC569ECEFB9F"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\aelin_front_v1\\corrigido_frame_3.png",
+    "Hash": "B934A6BE613F994C972E91AE13BB2A155AB82CDBE46ECC68942FD8E2A33F9156"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\aelin_front_v1\\corrigido_frame_4.png",
+    "Hash": "423E82FD45B1BEE9710BF1AD9DA96716AD3F727C64B588C7CA58527130377EF4"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\aelin_front_v1\\original_ampliado.png",
+    "Hash": "E866B64CE4E435C96121A26DFF2AA87476798212AA440318B3A30BD91D6C72E6"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\aelin_front_v1\\original_frame_1.png",
+    "Hash": "EC33CC0BAB1B80488A30F5659CE5E61B56C3BB9F69678D342BD21AA6A05BD7A7"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\aelin_front_v1\\original_frame_2.png",
+    "Hash": "C272F70012D289E293D75C3F5AADB0D54472EA35EBA875D46B1ACC569ECEFB9F"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\aelin_front_v1\\original_frame_3.png",
+    "Hash": "A72FC7E9486456699F0490BA83AFFB31F1538F0659C9C692E7D4255BE01DF8F1"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\aelin_front_v1\\original_frame_4.png",
+    "Hash": "87A9EF059563630125217FE98E1B158CAC52C3DFD97C1F6B6E750AF330DBE0C6"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\integracao_20261028\\aelin_correndo_costas_atual.gif",
+    "Hash": "561B1341A05A4E0CB05E789F30C8B97BEC1609B1423EB2092435F65B572F4720"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\integracao_20261028\\aelin_correndo_costas_fonte.png",
+    "Hash": "F7C1EA406BD21F6A509E20DD3A242774619880BD40D0E3F6A99D1747F79B3749"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\integracao_20261028\\aelin_correndo_direita_atual.gif",
+    "Hash": "FBFDF0CE3E408AD0E7F2F54844B74212AC17DAA3D098A2D8E667F218AD47617E"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\integracao_20261028\\aelin_correndo_direita_fonte.png",
+    "Hash": "580A5DF1B2EF602CDD064293C400E439E7110D3050D055BB6871EE4C2805C6B8"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\integracao_20261028\\aelin_correndo_esquerda_atual.gif",
+    "Hash": "657DA391509364AD8B4A13995C32E8BAACDB25624AEA43E910FCDC1F7525AFB1"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\integracao_20261028\\aelin_correndo_esquerda_fonte.png",
+    "Hash": "BBCC188640FF665C80EEB54ADA8F584F0E2B313339BDF539A82E26078BBF6679"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\integracao_20261028\\aelin_correndo_frente_atual.gif",
+    "Hash": "F836406A959150F490EE761B46EA747CAEA6396F401CF9DB2B7BF0B9618197C3"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\integracao_20261028\\aelin_correndo_frente_fonte.png",
+    "Hash": "456224BF27EEDFDEA6325E97459DDE5F56FA55E3A09541DB97386D37661B38A0"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\integracao_20261028\\auditoria.json",
+    "Hash": "FDDEEA2DC8C8021696AF14DC50A7CA0C30C564131C3CE66E0E64D15BE8545A11"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\integracao_20261028\\corridas_atuais.png",
+    "Hash": "B8115AC514EA093302A5D1DD52C82AEB793F49690CEC46A6BFB167F30C4CCA80"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\integracao_20261028\\dorian_correndo_costas_atual.gif",
+    "Hash": "B3800AA3F83748AB66562B58346D442855098998676242890F18B3A123B2DC1D"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\integracao_20261028\\dorian_correndo_costas_fonte.png",
+    "Hash": "3E36B281F4B3F3ECACB29FC95A9773ECB55D800E9458AFE2A77AC2F08CE204E1"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\integracao_20261028\\dorian_correndo_direita_atual.gif",
+    "Hash": "D3BE7501152AB5D12813BEC4B16C5DEE74011881C5ED46D333ACCB59B7CF8E68"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\integracao_20261028\\dorian_correndo_direita_fonte.png",
+    "Hash": "A9A488BBAF655CCC62D11563126C697100907BA883B538F42254D3152258F2DB"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\integracao_20261028\\dorian_correndo_esquerda_atual.gif",
+    "Hash": "7AC878E7AACB550F3566A492B54557B7BA7BCFF5E0B200936125AA703611DE90"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\integracao_20261028\\dorian_correndo_esquerda_fonte.png",
+    "Hash": "72D57209B3A9E84EEDE5CB6DF559743964313B5DBB69193ECCBFB75DD4509601"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\integracao_20261028\\dorian_correndo_frente_atual.gif",
+    "Hash": "C32C81B1F4E97877F4CC1091C75CAE527367342F5E4F2C463D435DDACDB951AF"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\integracao_20261028\\dorian_correndo_frente_fonte.png",
+    "Hash": "1E9913638B25CC352AA402036D4E3466363E6CA92E76A9AA280E0365621FB259"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\integracao_20261028\\plano_limpeza.md",
+    "Hash": "CDDB2930A250F044811BA9D5E8B5FE608F4DCF51FA7BE969FB9C4CC03B7732E9"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\integracao_20261028\\resultado.md",
+    "Hash": "4481D1CB49A8B406568534BEAF70831D0149B4564B88A1555B682C3C7940A170"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\regeneracao_historica\\20261028_115641_199740\\.gdignore",
+    "Hash": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\regeneracao_historica\\20261028_115641_199740\\aelin.tscn.preview.txt",
+    "Hash": "A23903479DA18EED763243C34CFA039796CCE696AEBC4F195BF482381C7D8851"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\regeneracao_historica\\20261028_115641_199740\\dorian.tscn.preview.txt",
+    "Hash": "4E6DFE3F8B84B484CAFAC709DDC77E0353090D5F3F43F9D723407ACE81A63C3E"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\regeneracao_historica\\20261028_115641_199740\\sprites_manifest.json",
+    "Hash": "9AF7EC1B05E74F16892C0A39089650181DF93C5F6305CDA15F58B4D63537C8BC"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\regeneracao_historica\\20261028_115641_199740\\assets\\aelin\\aelin_parada_costas.png",
+    "Hash": "1C26BFEAB50085EF988124CF026C3B8A0D969BAAF35D5EB7D85CD846AF6112D9"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\regeneracao_historica\\20261028_115641_199740\\assets\\aelin\\aelin_parada_direita.png",
+    "Hash": "F27FB56838F6FC2CB2363C955A44827CF63B47AA2391C9BC41EFDDF1C4DF3FD5"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\regeneracao_historica\\20261028_115641_199740\\assets\\aelin\\aelin_parada_esquerda.png",
+    "Hash": "6E45774CD93D2A5C1F43BEC669219128EEA8EEEE5ACBCFB925E4913DA56C80B3"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\regeneracao_historica\\20261028_115641_199740\\assets\\aelin\\aelin_parada_frente.png",
+    "Hash": "C1B028D8588A3BD39DD65E573D26885E5DF316B95E0ECE0D769909004D53E77A"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\regeneracao_historica\\20261028_115641_199740\\assets\\aelin\\aelin_run_costas.png",
+    "Hash": "D3DA354C5748E3575E8F49EF166D472AE11B658BD900EA90E820CB01C3699414"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\regeneracao_historica\\20261028_115641_199740\\assets\\aelin\\aelin_run_direita.png",
+    "Hash": "BB69FA76ECCC5D9F8470053DAE0DBC0310DF130B49937A0AD6FD4AAB045DF5A7"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\regeneracao_historica\\20261028_115641_199740\\assets\\aelin\\aelin_run_esquerda.png",
+    "Hash": "60774EE8B9560A03B28E2A9E3A5A3F780ACBBFCBBD53B5B6B895C083758918F5"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\regeneracao_historica\\20261028_115641_199740\\assets\\aelin\\aelin_run_frente.png",
+    "Hash": "48D7288854C212A895F9F2C249AE4F93FE246450316034CB2D43D60B25A82E53"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\regeneracao_historica\\20261028_115641_199740\\assets\\dorian\\dorian_correndo_costas.png",
+    "Hash": "4F47BB725FB88251D786729C6D6C06FD81AB2D7321637259C3CCCB1A2D1109E7"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\regeneracao_historica\\20261028_115641_199740\\assets\\dorian\\dorian_correndo_direita.png",
+    "Hash": "1BFE4BBD64ABCBFAE5739487E25887EEEF4B65CD6F7884C666A68EA60BF303D1"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\regeneracao_historica\\20261028_115641_199740\\assets\\dorian\\dorian_correndo_esquerda.png",
+    "Hash": "7078336DE3EFE6512FA231307C969A6F96A664C06057DF39E1B7FE820D0E8E2C"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\regeneracao_historica\\20261028_115641_199740\\assets\\dorian\\dorian_correndo_frente.png",
+    "Hash": "05BBBE8CEC7A0A55ED3345E5AC8E8EBE8D933A21938ADDE9F8EFB1B6A3B20B11"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\regeneracao_historica\\20261028_115641_199740\\assets\\dorian\\dorian_parado_costas.png",
+    "Hash": "6F683BBDE82ECC047A222832949B04DF0C883443897A63C318AA38155A4E0EF1"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\regeneracao_historica\\20261028_115641_199740\\assets\\dorian\\dorian_parado_direita.png",
+    "Hash": "3F75632A59940AF8667A65C4B242596C3E790800D9350124A2B1F3B72480F366"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\regeneracao_historica\\20261028_115641_199740\\assets\\dorian\\dorian_parado_esquerda.png",
+    "Hash": "5A9AE77933DAB7F16C709CDFFB2B440508B04B0E12B4ABD4CAC7E9F48CE664A6"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\regeneracao_historica\\20261028_115641_199740\\assets\\dorian\\dorian_parado_frente.png",
+    "Hash": "4C5E6EFC01267F0329A079508EA595ADEF24F56C6AB9F1C8E4138FE16E0BEDAD"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\run_cycles_v2\\aelin_front_comparacao.png",
+    "Hash": "0678BC3589807324D610D11488BBDF9E9DDE020C1C47E63AC4090B6ED5B903E8"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\run_cycles_v2\\aelin_front_loop.gif",
+    "Hash": "AFE2CF64C2E8F00F41FD7E9F813EF669CD7884C14A0EA7DAAA8B1C7857F46EF1"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\run_cycles_v2\\aelin_front_pose_1.png",
+    "Hash": "D3AE379AC589BAE7E5880150A6667CD33B7F2EEE3A30BDFFD8ED7C863B09B5CD"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\run_cycles_v2\\aelin_front_pose_2.png",
+    "Hash": "B52A3CE1C80668C410693D40175F90D43C616A078B78B6E489E250CD682FA48A"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\run_cycles_v2\\aelin_front_pose_3.png",
+    "Hash": "6F7C4CBA82CFCA8169B8BCCDC3C80527DE1EEE8BCB5FF67C7456DD0723560D46"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\run_cycles_v2\\aelin_front_pose_4.png",
+    "Hash": "62E44603D12A8175C1643796F0B410015C9916777553CE58C97E2EFC9066A172"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\run_cycles_v2\\aelin_run_costas_1.png",
+    "Hash": "A4C4A3FA2DDBA028A664FB8188193325C00242DA949095E27A99A6010D7DDDA9"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\run_cycles_v2\\aelin_run_costas_2.png",
+    "Hash": "34B40355EC53DFAEECF9619FD8C2209702E012FDAC164B56AC5FB1B13727C18D"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\run_cycles_v2\\aelin_run_costas_3.png",
+    "Hash": "57A8E04A7ABAE579F7AC95B388D0A7E8E5A2D1811107E59F64E12190EB525662"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\run_cycles_v2\\aelin_run_costas_4.png",
+    "Hash": "F09850B5689D58107B7325FD8D432C631B96D8C7192114E4C3A0BF24E92DAB52"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\run_cycles_v2\\aelin_run_direita_1.png",
+    "Hash": "3AAFC091FF819ACE70FFEB1FD9EC8E4A4B94AD4D5DA4B3A9A09E8658D0C90978"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\run_cycles_v2\\aelin_run_direita_2.png",
+    "Hash": "59E7A83B883B53683C8DA5C5A4EB0E5A78118C8AF6537431AB8328BC4B08FA39"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\run_cycles_v2\\aelin_run_direita_3.png",
+    "Hash": "74B4AE19222C885B9320E4B5F7E94D8411A975B91BB5C9D77CE17EA11574BCFF"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\run_cycles_v2\\aelin_run_direita_4.png",
+    "Hash": "9CCDD334262176A945BFBB2637423F89024F0B94220A821FF605DC4DF242A6D0"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\run_cycles_v2\\aelin_run_esquerda_1.png",
+    "Hash": "43138A91652C7FE1ABDC876A62D5267772246472573FEF3C2CD3B48023B202FA"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\run_cycles_v2\\aelin_run_esquerda_2.png",
+    "Hash": "46C170264320E4C0DD792921E6DD14C32086D4F6945B6C450E0EA048290BED2F"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\run_cycles_v2\\aelin_run_esquerda_3.png",
+    "Hash": "DD545E8741130F23EF6FDA0B36CF189FDB1EF42EB15B66D57EF3BDABD0319C09"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\run_cycles_v2\\aelin_run_esquerda_4.png",
+    "Hash": "4A20A5993A3F72FBE0A2177FAD91B272049FDA116BEDE671C88E8D09E88B697D"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\run_cycles_v2\\aelin_run_frente_1.png",
+    "Hash": "EC33CC0BAB1B80488A30F5659CE5E61B56C3BB9F69678D342BD21AA6A05BD7A7"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\run_cycles_v2\\aelin_run_frente_2.png",
+    "Hash": "C272F70012D289E293D75C3F5AADB0D54472EA35EBA875D46B1ACC569ECEFB9F"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\run_cycles_v2\\aelin_run_frente_3.png",
+    "Hash": "A72FC7E9486456699F0490BA83AFFB31F1538F0659C9C692E7D4255BE01DF8F1"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\run_cycles_v2\\aelin_run_frente_4.png",
+    "Hash": "87A9EF059563630125217FE98E1B158CAC52C3DFD97C1F6B6E750AF330DBE0C6"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\run_cycles_v2\\aelin_run_frente_estudo.png",
+    "Hash": "A59B2B7CE526856EA795E8F39798D90195441816C1E20257BADCE33999458A78"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\run_cycles_v2\\aelin_run_frente.original.png",
+    "Hash": "48D7288854C212A895F9F2C249AE4F93FE246450316034CB2D43D60B25A82E53"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\run_cycles_v2\\dorian_correndo_costas_1.png",
+    "Hash": "9522DFB55D647ED939233CD1E59187F419BF7C9911614DD00E1D497D71867C6C"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\run_cycles_v2\\dorian_correndo_costas_2.png",
+    "Hash": "8322BA926466EF074B364374D186532C0F5E59067FAFD582E9ABA49796C3081E"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\run_cycles_v2\\dorian_correndo_costas_3.png",
+    "Hash": "932CB03E07AB9BCA86603B3A2268EA9895085032F66B4965C7ABC4963535E691"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\run_cycles_v2\\dorian_correndo_costas_4.png",
+    "Hash": "FFF073EAB01DAF93A89AB766808F65D6FC2963E3957F40827BEC68E327F0F622"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\run_cycles_v2\\dorian_correndo_direita_1.png",
+    "Hash": "DC8BE3CEE36BA46382020FFECB2B1B3C78B2F4C860C887BF49B6B5DFDF237FAE"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\run_cycles_v2\\dorian_correndo_direita_2.png",
+    "Hash": "F84D9C68AF1EA47B81F168C9716BE1DD183B9D008C51DBECB2F2BBEB6BA675C6"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\run_cycles_v2\\dorian_correndo_direita_3.png",
+    "Hash": "A2D476CB0AE28420CC482E407221B9405CD071258F5F1D0C57D5D31D2939249A"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\run_cycles_v2\\dorian_correndo_direita_4.png",
+    "Hash": "2B9CEF3665B46B76165F5E745215F29705198E5744680130FEC2E7D3BC98ED4A"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\run_cycles_v2\\dorian_correndo_esquerda_1.png",
+    "Hash": "516E245BC06085C81A086603B29A90C9FA114D305B9655BEF5FF35455A5C95C3"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\run_cycles_v2\\dorian_correndo_esquerda_2.png",
+    "Hash": "C93E186A3793852AD788CFC3D8BBD57E35DEA03816932C16F9ECE2F318403E18"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\run_cycles_v2\\dorian_correndo_esquerda_3.png",
+    "Hash": "480984A5B15906BCFE8EB2F55727EBC40B51ABCB8DFED1C7B4B6312C7F75E41D"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\run_cycles_v2\\dorian_correndo_esquerda_4.png",
+    "Hash": "AAA9E7194DC9BBFE549423D6652F439817C7BBF87E32E9726A20464F11CB1EF5"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\run_cycles_v2\\dorian_correndo_frente_1.png",
+    "Hash": "1B051F16B980DFF7EAB885B54B7823D1F88E2F6AF8F0017F7900EE828B9C7197"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\run_cycles_v2\\dorian_correndo_frente_2.png",
+    "Hash": "1E004130EB16E6A7190E5ACA48908DB483F00FB8F78DF5A40D36798F5269E797"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\run_cycles_v2\\dorian_correndo_frente_3.png",
+    "Hash": "D63EFF8C4C25CB2F5F05FA8E05687949A9168F8BC70DC707A57D314F65F4D15E"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\run_cycles_v2\\dorian_correndo_frente_4.png",
+    "Hash": "A7D6BC51E7714BF48F92BB576ABD22A247EAB0CF8DC68C2B24EE6C6831216F8F"
+  },
+  {
+    "Path": "C:\\Users\\luisg\\Downloads\\SI_2\\desenvolvimento_jogos\\theeightdoors\\the-eight-doors\\art_reviews\\run_cycles_v2\\originals.png",
+    "Hash": "42D016EAD6128756C258B45D56AA2DBA33ED149CE76C64220CDCCE9AFA8234C9"
+  }
+]

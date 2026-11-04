@@ -1,0 +1,45 @@
+{
+	"failures": [],
+	"samples": [
+		{
+			"actual_window": "(1280, 720)",
+			"logical": "(640.0, 360.0)",
+			"proportional": true,
+			"requested": "(1280, 720)",
+			"stretch_x": 1.0,
+			"stretch_y": 1.0
+		},
+		{
+			"actual_window": "(1600, 900)",
+			"logical": "(640.0, 360.0)",
+			"proportional": true,
+			"requested": "(1600, 900)",
+			"stretch_x": 1.0,
+			"stretch_y": 1.0
+		},
+		{
+			"actual_window": "(1920, 1080)",
+			"logical": "(640.0, 360.0)",
+			"proportional": true,
+			"requested": "(1920, 1080)",
+			"stretch_x": 1.0,
+			"stretch_y": 1.0
+		},
+		{
+			"actual_window": "(1366, 768)",
+			"logical": "(640.0, 360.0)",
+			"proportional": true,
+			"requested": "(1366, 768)",
+			"stretch_x": 1.0,
+			"stretch_y": 1.0
+		},
+		{
+			"actual_window": "(1280, 1024)",
+			"logical": "(640.0, 360.0)",
+			"proportional": true,
+			"requested": "(1280, 1024)",
+			"stretch_x": 1.0,
+			"stretch_y": 1.0
+		}
+	]
+}

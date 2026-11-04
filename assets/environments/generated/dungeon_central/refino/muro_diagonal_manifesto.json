@@ -1,0 +1,29 @@
+{
+  "size": [
+    160,
+    160
+  ],
+  "grid": 16,
+  "modules": {
+    "sobe": [
+      0,
+      0,
+      4,
+      10
+    ],
+    "desce": [
+      4,
+      0,
+      4,
+      10
+    ],
+    "apoio_lateral": [
+      8,
+      0,
+      2,
+      7
+    ]
+  },
+  "source": "atlas_sala_central.png: parede_sobe/parede_desce e face do capitel",
+  "method": "Recomposição de texels nativos: capeamento 16px, tijolos 64px e rodapé 8px; apoios com juntas a cada 32px. Nenhuma escala ou alteração dos originais."
+}

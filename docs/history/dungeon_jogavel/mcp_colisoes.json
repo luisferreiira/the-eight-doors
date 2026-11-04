@@ -1,0 +1,63 @@
+{
+  "jsonrpc": "2.0",
+  "id": 2,
+  "result": {
+    "content": [
+      {
+        "text": "{\"result\":{\"scene\":\"res://scenes/world/environments/sala_central_jogavel.tscn\",\"tests\":[{\"distance\":143.999984741211,\"end_x\":16.000020980835,\"end_y\":576.0,\"test\":\"oeste_aberta\"},{\"distance\":144.00146484375,\"end_x\":1104.00146484375,\"end_y\":576.0,\"test\":\"leste_aberta\"},{\"distance\":73.9978942871094,\"end_x\":86.0759811401367,\"end_y\":480.0,\"test\":\"parede_oeste\"},{\"distance\":73.9979248046875,\"end_x\":1033.92407226563,\"end_y\":480.0,\"test\":\"parede_leste\"},{\"distance\":44.9993896484375,\"end_x\":400.0,\"end_y\":445.074737548828,\"test\":\"coluna\"},{\"distance\":73.9978942871094,\"end_x\":86.0759811401367,\"end_y\":576.0,\"test\":\"oeste_fechada\"},{\"distance\":73.9979248046875,\"end_x\":1033.92407226563,\"end_y\":576.0,\"test\":\"leste_fechada\"}]},\"source\":\"game\"}",
+        "type": "text"
+      }
+    ],
+    "isError": false,
+    "structuredContent": {
+      "result": {
+        "scene": "res://scenes/world/environments/sala_central_jogavel.tscn",
+        "tests": [
+          {
+            "distance": 143.999984741211,
+            "end_x": 16.000020980835,
+            "end_y": 576.0,
+            "test": "oeste_aberta"
+          },
+          {
+            "distance": 144.00146484375,
+            "end_x": 1104.00146484375,
+            "end_y": 576.0,
+            "test": "leste_aberta"
+          },
+          {
+            "distance": 73.9978942871094,
+            "end_x": 86.0759811401367,
+            "end_y": 480.0,
+            "test": "parede_oeste"
+          },
+          {
+            "distance": 73.9979248046875,
+            "end_x": 1033.92407226563,
+            "end_y": 480.0,
+            "test": "parede_leste"
+          },
+          {
+            "distance": 44.9993896484375,
+            "end_x": 400.0,
+            "end_y": 445.074737548828,
+            "test": "coluna"
+          },
+          {
+            "distance": 73.9978942871094,
+            "end_x": 86.0759811401367,
+            "end_y": 576.0,
+            "test": "oeste_fechada"
+          },
+          {
+            "distance": 73.9979248046875,
+            "end_x": 1033.92407226563,
+            "end_y": 576.0,
+            "test": "leste_fechada"
+          }
+        ]
+      },
+      "source": "game"
+    }
+  }
+}

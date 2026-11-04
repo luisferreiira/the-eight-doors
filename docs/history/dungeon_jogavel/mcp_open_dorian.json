@@ -1,0 +1,23 @@
+{
+  "jsonrpc": "2.0",
+  "id": 3,
+  "result": {
+    "content": [
+      {
+        "text": "{\"force_reload\":true,\"path\":\"res://scenes/characters/players/dorian.tscn\",\"previous_scene_path\":\"res://scenes/world/environments/sala_central_jogavel.tscn\",\"reason\":\"Scene navigation cannot be undone via editor undo\",\"reloaded_from_disk\":false,\"settle\":\"settled\",\"switched\":true,\"undoable\":false}",
+        "type": "text"
+      }
+    ],
+    "isError": false,
+    "structuredContent": {
+      "force_reload": true,
+      "path": "res://scenes/characters/players/dorian.tscn",
+      "previous_scene_path": "res://scenes/world/environments/sala_central_jogavel.tscn",
+      "reason": "Scene navigation cannot be undone via editor undo",
+      "reloaded_from_disk": false,
+      "settle": "settled",
+      "switched": true,
+      "undoable": false
+    }
+  }
+}

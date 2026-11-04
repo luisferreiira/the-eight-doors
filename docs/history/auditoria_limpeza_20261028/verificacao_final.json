@@ -1,0 +1,11 @@
+{
+  "removed": [
+    "docs/history/animacoes_visual_20261027/captura_erros.log"
+  ],
+  "changed": [],
+  "protected_files_unchanged": true,
+  "recovered_bytes": 0,
+  "restoration": "New-Item -ItemType File -Path docs/history/animacoes_visual_20261027/captura_erros.log",
+  "files_after": 1947,
+  "bytes_after": 314562822
+}

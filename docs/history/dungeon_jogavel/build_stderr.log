@@ -1,0 +1,20 @@
+ERROR: No loader found for resource: res://assets/generated/dungeon_central/refino/murinho_recuperado.png (expected type: Texture2D)
+   at: _load (core/io/resource_loader.cpp:332)
+   GDScript backtrace (most recent call first):
+       [0] _build (res://tools/dungeon_central/montar_jogavel.gd:12)
+ERROR: res://scenes/dungeon/sala_central_jogavel.tscn:5756 - Parse Error: [ext_resource] referenced non-existent resource at: res://assets/generated/dungeon_central/refino/murinho_recuperado.png.
+   at: _printerr (scene/resources/resource_format_text.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _build (res://tools/dungeon_central/montar_jogavel.gd:12)
+ERROR: res://scenes/dungeon/sala_central_jogavel.tscn:5756 - Parse Error: [ext_resource] referenced non-existent resource at: res://assets/generated/dungeon_central/refino/murinho_recuperado.png.
+   at: _printerr (scene/resources/resource_format_text.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _build (res://tools/dungeon_central/montar_jogavel.gd:12)
+ERROR: Failed loading resource: res://scenes/dungeon/sala_central_jogavel.tscn.
+   at: _load (core/io/resource_loader.cpp:317)
+   GDScript backtrace (most recent call first):
+       [0] _build (res://tools/dungeon_central/montar_jogavel.gd:12)
+SCRIPT ERROR: Cannot call method 'instantiate' on a null value.
+   at: _build (res://tools/dungeon_central/montar_jogavel.gd:13)
+   GDScript backtrace (most recent call first):
+       [0] _build (res://tools/dungeon_central/montar_jogavel.gd:13)

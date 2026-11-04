@@ -1,0 +1,177 @@
+httpx2 | HTTP Request: GET https://pypi.org/pypi/fastmcp/json "HTTP/1.1 200 OK"
+
+
++-----------------------------------------------------------------------------+
+|                                                                             |
+|                                                                             |
+|                        \u2584\u2580\u2580 \u2584\u2580\u2588 \u2588\u2580\u2580 \u2580\u2588\u2580 \u2588\u2580\u2584\u2580\u2588 \u2588\u2580\u2580 \u2588\u2580\u2588                        |
+|                        \u2588\u2580  \u2588\u2580\u2588 \u2584\u2584\u2588  \u2588  \u2588 \u2580 \u2588 \u2588\u2584\u2584 \u2588\u2580\u2580                        |
+|                                                                             |
+|                                                                             |
+|                                                                             |
+|                                FastMCP 4.1.3                                |
+|                            https://gofastmcp.com                            |
+|                                                                             |
+|                 \U0001f5a5  Server:      Godot AI, 4.3.1                             |
+|                 \U0001f680 Deploy free: https://horizon.prefect.io                  |
+|                                                                             |
++-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+|                         \U0001f389 Update available: 4.1.4                          |
+|                     Run: pip install --upgrade fastmcp                      |
++-----------------------------------------------------------------------------+
+
+
+godot_ai.server | WebSocket server starting on port 8002
+godot_ai.transport.websocket | Starting WebSocket server on port 8002
+websockets.server | server listening on 127.0.0.1:8002
+godot_ai.server | Owner editor pid 8636 supplied but orphan reaper is disabled on this platform; relying on clean editor shutdown.
+[10/27/26 07:23:49] INFO     Starting MCP server 'Godot AI'    transport.py:358
+                             with transport 'streamable-http'                  
+                             on http://127.0.0.1:8001/mcp                      
+INFO:     Started server process [27700]
+INFO:     Waiting for application startup.
+mcp.server.streamable_http_manager | StreamableHTTP session manager started
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8001 (Press CTRL+C to quit)
+godot-ai-telemetry | Telemetry enabled
+websockets.server | connection open
+godot_ai.transport.websocket | Session connected: the-eight-doors@a32949e1e04d28c9 (pid=8636, Godot 4.7.1-stable (official), C:/Users/luisg/Downloads/SI_2/desenvolvimento_jogos/theeightdoors/the-eight-doors/)
+godot_ai.transport.websocket | Session the-eigh: custom tools -> 0 registered (0 enabled)
+godot_ai.transport.websocket | Session the-eigh: scene changed to res://scenes/dungeon/sala_central_jogavel.tscn
+mcp.server.streamable_http_manager | Created new transport with session ID: 0f3214fe48bc4f4a9341826c207e72e1
+mcp.server.streamable_http | Terminating session: 0f3214fe48bc4f4a9341826c207e72e1
+mcp.server.streamable_http_manager | Rejected request with unknown or expired session ID: 0f3214fe48bc4f4a9341826c207e72e1
+mcp.server.streamable_http_manager | Rejected request with unknown or expired session ID: 0f3214fe48bc4f4a9341826c207e72e1
+mcp.server.streamable_http_manager | Created new transport with session ID: 4a40c54f126e4c10b39be675463fba27
+mcp.server.streamable_http | Terminating session: 4a40c54f126e4c10b39be675463fba27
+mcp.server.streamable_http_manager | Rejected request with unknown or expired session ID: 4a40c54f126e4c10b39be675463fba27
+mcp.server.streamable_http_manager | Rejected request with unknown or expired session ID: 4a40c54f126e4c10b39be675463fba27
+mcp.server.streamable_http_manager | Created new transport with session ID: 866f58db2be04f6c8b7212b03beb2ffe
+mcp.server.streamable_http | Terminating session: 866f58db2be04f6c8b7212b03beb2ffe
+mcp.server.streamable_http_manager | Rejected request with unknown or expired session ID: 866f58db2be04f6c8b7212b03beb2ffe
+mcp.server.streamable_http_manager | Rejected request with unknown or expired session ID: 866f58db2be04f6c8b7212b03beb2ffe
+mcp.server.streamable_http_manager | Created new transport with session ID: 250f6468c47546429cf707c631d1b795
+godot_ai.transport.websocket | Session the-eigh: play state -> playing
+godot_ai.transport.websocket | Session the-eigh: readiness -> importing
+godot_ai.transport.websocket | Session the-eigh: readiness -> playing
+mcp.server.streamable_http | Terminating session: 250f6468c47546429cf707c631d1b795
+mcp.server.streamable_http_manager | Rejected request with unknown or expired session ID: 250f6468c47546429cf707c631d1b795
+mcp.server.streamable_http_manager | Rejected request with unknown or expired session ID: 250f6468c47546429cf707c631d1b795
+godot_ai.transport.websocket | Session the-eigh: readiness -> importing
+godot_ai.transport.websocket | Session the-eigh: readiness -> playing
+mcp.server.streamable_http_manager | Created new transport with session ID: 7bd0b1c559c54f83b578ddb2fbdd1a85
+mcp.server.streamable_http | Terminating session: 7bd0b1c559c54f83b578ddb2fbdd1a85
+mcp.server.streamable_http_manager | Rejected request with unknown or expired session ID: 7bd0b1c559c54f83b578ddb2fbdd1a85
+mcp.server.streamable_http_manager | Rejected request with unknown or expired session ID: 7bd0b1c559c54f83b578ddb2fbdd1a85
+mcp.server.streamable_http_manager | Created new transport with session ID: 247dc0e650fc4d65a4b5c3ddf723698f
+godot_ai.transport.websocket | Session the-eigh: play state -> stopped
+godot_ai.transport.websocket | Session the-eigh: readiness -> importing
+godot_ai.transport.websocket | Session the-eigh: readiness -> ready
+mcp.server.streamable_http | Terminating session: 247dc0e650fc4d65a4b5c3ddf723698f
+mcp.server.streamable_http_manager | Rejected request with unknown or expired session ID: 247dc0e650fc4d65a4b5c3ddf723698f
+mcp.server.streamable_http_manager | Rejected request with unknown or expired session ID: 247dc0e650fc4d65a4b5c3ddf723698f
+godot_ai.transport.websocket | Session the-eigh: readiness -> importing
+godot_ai.transport.websocket | Session the-eigh: readiness -> ready
+godot_ai.transport.websocket | Session the-eigh: readiness -> importing
+godot_ai.transport.websocket | Session the-eigh: readiness -> ready
+godot_ai.transport.websocket | Session the-eigh: readiness -> importing
+godot_ai.transport.websocket | Session the-eigh: readiness -> ready
+mcp.server.streamable_http_manager | Created new transport with session ID: 4a8cdb2d07fc45fba702e7a04694d16f
+mcp.server.streamable_http | Terminating session: 4a8cdb2d07fc45fba702e7a04694d16f
+mcp.server.streamable_http_manager | Rejected request with unknown or expired session ID: 4a8cdb2d07fc45fba702e7a04694d16f
+mcp.server.streamable_http_manager | Rejected request with unknown or expired session ID: 4a8cdb2d07fc45fba702e7a04694d16f
+mcp.server.streamable_http_manager | Created new transport with session ID: 4227bdf0fde44bf38e897c39e890d19e
+mcp.server.streamable_http | Terminating session: 4227bdf0fde44bf38e897c39e890d19e
+mcp.server.streamable_http_manager | Rejected request with unknown or expired session ID: 4227bdf0fde44bf38e897c39e890d19e
+mcp.server.streamable_http_manager | Rejected request with unknown or expired session ID: 4227bdf0fde44bf38e897c39e890d19e
+mcp.server.streamable_http_manager | Created new transport with session ID: 6b957fc84e7a40ba9b3ea967ed7d0765
+mcp.server.streamable_http | Terminating session: 6b957fc84e7a40ba9b3ea967ed7d0765
+mcp.server.streamable_http_manager | Rejected request with unknown or expired session ID: 6b957fc84e7a40ba9b3ea967ed7d0765
+mcp.server.streamable_http_manager | Rejected request with unknown or expired session ID: 6b957fc84e7a40ba9b3ea967ed7d0765
+mcp.server.streamable_http_manager | Created new transport with session ID: 8216784286ec4a0a97f5260da768b3f4
+mcp.server.streamable_http | Terminating session: 8216784286ec4a0a97f5260da768b3f4
+mcp.server.streamable_http_manager | Rejected request with unknown or expired session ID: 8216784286ec4a0a97f5260da768b3f4
+mcp.server.streamable_http_manager | Rejected request with unknown or expired session ID: 8216784286ec4a0a97f5260da768b3f4
+mcp.server.streamable_http_manager | Created new transport with session ID: 5d08ccf295c0433eb9699bb25a908f26
+mcp.server.streamable_http | Terminating session: 5d08ccf295c0433eb9699bb25a908f26
+mcp.server.streamable_http_manager | Rejected request with unknown or expired session ID: 5d08ccf295c0433eb9699bb25a908f26
+mcp.server.streamable_http_manager | Rejected request with unknown or expired session ID: 5d08ccf295c0433eb9699bb25a908f26
+mcp.server.streamable_http_manager | Created new transport with session ID: 4f8ddd0561b14a21bb39cace361f1f15
+godot_ai.transport.websocket | Session the-eigh: play state -> playing
+godot_ai.transport.websocket | Session the-eigh: readiness -> playing
+mcp.server.streamable_http | Terminating session: 4f8ddd0561b14a21bb39cace361f1f15
+mcp.server.streamable_http_manager | Rejected request with unknown or expired session ID: 4f8ddd0561b14a21bb39cace361f1f15
+mcp.server.streamable_http_manager | Rejected request with unknown or expired session ID: 4f8ddd0561b14a21bb39cace361f1f15
+mcp.server.streamable_http_manager | Created new transport with session ID: 2e00120819764e509b20f6a54ce42d4c
+mcp.server.streamable_http | Terminating session: 2e00120819764e509b20f6a54ce42d4c
+mcp.server.streamable_http_manager | Rejected request with unknown or expired session ID: 2e00120819764e509b20f6a54ce42d4c
+mcp.server.streamable_http_manager | Rejected request with unknown or expired session ID: 2e00120819764e509b20f6a54ce42d4c
+mcp.server.streamable_http_manager | Created new transport with session ID: aef7eb97bec4478ea1a120826d0e1df9
+mcp.server.streamable_http | Terminating session: aef7eb97bec4478ea1a120826d0e1df9
+mcp.server.streamable_http_manager | Rejected request with unknown or expired session ID: aef7eb97bec4478ea1a120826d0e1df9
+mcp.server.streamable_http_manager | Rejected request with unknown or expired session ID: aef7eb97bec4478ea1a120826d0e1df9
+mcp.server.streamable_http_manager | Created new transport with session ID: 54282df41cf14258a788e4557087e6f8
+mcp.server.streamable_http | Terminating session: 54282df41cf14258a788e4557087e6f8
+mcp.server.streamable_http_manager | Rejected request with unknown or expired session ID: 54282df41cf14258a788e4557087e6f8
+mcp.server.streamable_http_manager | Rejected request with unknown or expired session ID: 54282df41cf14258a788e4557087e6f8
+mcp.server.streamable_http_manager | Created new transport with session ID: 380e920558204251b78741e036b2c8eb
+mcp.server.streamable_http | Terminating session: 380e920558204251b78741e036b2c8eb
+mcp.server.streamable_http_manager | Rejected request with unknown or expired session ID: 380e920558204251b78741e036b2c8eb
+mcp.server.streamable_http_manager | Rejected request with unknown or expired session ID: 380e920558204251b78741e036b2c8eb
+godot_ai.transport.websocket | Session the-eigh: readiness -> importing
+godot_ai.transport.websocket | Session the-eigh: readiness -> playing
+godot_ai.transport.websocket | Session the-eigh: play state -> stopped
+godot_ai.transport.websocket | Session the-eigh: readiness -> ready
+godot_ai.transport.websocket | Session the-eigh: play state -> playing
+godot_ai.transport.websocket | Session the-eigh: readiness -> playing
+godot_ai.transport.websocket | Session the-eigh: play state -> stopped
+godot_ai.transport.websocket | Session the-eigh: readiness -> ready
+godot_ai.transport.websocket | Session the-eigh: readiness -> importing
+godot_ai.transport.websocket | Session the-eigh: readiness -> ready
+godot_ai.transport.websocket | Session the-eigh: readiness -> importing
+godot_ai.transport.websocket | Session the-eigh: readiness -> ready
+godot_ai.transport.websocket | Session the-eigh: readiness -> importing
+godot_ai.transport.websocket | Session the-eigh: readiness -> ready
+godot_ai.transport.websocket | Session the-eigh: readiness -> importing
+godot_ai.transport.websocket | Session the-eigh: readiness -> ready
+godot_ai.transport.websocket | Session the-eigh: readiness -> importing
+godot_ai.transport.websocket | Session the-eigh: readiness -> ready
+godot_ai.transport.websocket | Session the-eigh: readiness -> importing
+godot_ai.transport.websocket | Session the-eigh: readiness -> ready
+godot_ai.transport.websocket | Session the-eigh: readiness -> importing
+godot_ai.transport.websocket | Session the-eigh: readiness -> ready
+godot_ai.transport.websocket | Session the-eigh: readiness -> importing
+godot_ai.transport.websocket | Session the-eigh: readiness -> ready
+godot_ai.transport.websocket | Session the-eigh: play state -> playing
+godot_ai.transport.websocket | Session the-eigh: readiness -> playing
+godot_ai.transport.websocket | Session the-eigh: play state -> stopped
+godot_ai.transport.websocket | Session the-eigh: readiness -> ready
+godot_ai.transport.websocket | Session the-eigh: readiness -> importing
+godot_ai.transport.websocket | Session the-eigh: readiness -> ready
+godot_ai.transport.websocket | Session the-eigh: readiness -> importing
+godot_ai.transport.websocket | Session the-eigh: readiness -> ready
+websockets.server | connection closed
+godot_ai.sessions.registry | Active session the-eigh disconnected; no active session until next register/activate
+websockets.server | connection open
+godot_ai.transport.websocket | Session connected: the-eight-doors@ce33886831babf29 (pid=24980, Godot 4.7.1-stable (official), C:/Users/luisg/Downloads/SI_2/desenvolvimento_jogos/theeightdoors/the-eight-doors/)
+godot_ai.transport.websocket | Session the-eigh: custom tools -> 0 registered (0 enabled)
+godot_ai.transport.websocket | Session the-eigh: readiness -> no_scene
+godot_ai.transport.websocket | Session the-eigh: scene changed to res://scenes/dungeon/sala_central_jogavel.tscn
+godot_ai.transport.websocket | Session the-eigh: readiness -> ready
+godot_ai.transport.websocket | Session the-eigh: scene changed to res://scenes/players/aelin.tscn
+godot_ai.transport.websocket | Session the-eigh: readiness -> importing
+godot_ai.transport.websocket | Session the-eigh: readiness -> ready
+godot_ai.transport.websocket | Session the-eigh: scene changed to res://scenes/dungeon/sala_central_jogavel.tscn
+godot_ai.transport.websocket | Session the-eigh: play state -> playing
+godot_ai.transport.websocket | Session the-eigh: readiness -> playing
+godot_ai.transport.websocket | Session the-eigh: readiness -> importing
+godot_ai.transport.websocket | Session the-eigh: readiness -> playing
+godot_ai.transport.websocket | Session the-eigh: play state -> stopped
+godot_ai.transport.websocket | Session the-eigh: readiness -> ready
+godot_ai.transport.websocket | Session the-eigh: readiness -> importing
+godot_ai.transport.websocket | Session the-eigh: readiness -> ready
+godot_ai.transport.websocket | Session the-eigh: readiness -> importing
+godot_ai.transport.websocket | Session the-eigh: readiness -> ready
+websockets.server | connection closed
+godot_ai.sessions.registry | Active session the-eigh disconnected; no active session until next register/activate

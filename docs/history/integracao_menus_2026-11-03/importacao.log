@@ -1,0 +1,134 @@
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+ERROR: Could not create editor data directory: C:/Users/luisg/AppData/Roaming/Godot
+   at: EditorPaths (editor/file_system/editor_paths.cpp:201)
+ERROR: Could not create editor config directory: C:/Users/luisg/AppData/Roaming/Godot
+   at: EditorPaths (editor/file_system/editor_paths.cpp:216)
+
+ERROR: Could not open 'user://' directory: 'user://'.
+   at: _get_and_create_snapshot_storage_dir (modules/objectdb_profiler/editor/objectdb_profiler_panel.cpp:157)
+ERROR: Safe save failed. This may be a permissions problem, but also may happen because you are running a paranoid antivirus. If this is the case, please switch to Windows Defender or disable the 'safe save' option in editor settings. This makes it work, but increases the risk of file corruption in a crash.
+   at: _close (drivers/windows/file_access_windows.cpp:277)
+ERROR: Cannot open directory 'C:/Users/luisg/AppData/Roaming/Godot/feature_profiles'.
+   at: _update_profile_list (editor/settings/editor_feature_profile.cpp:392)
+[   0% ] first_scan_filesystem | Started Inicialização do Projeto (5 steps)
+[   0% ] first_scan_filesystem | Escaneando estrutura de arquivos...
+[  16% ] first_scan_filesystem | Carregando nomes de classe globais...
+[  33% ] first_scan_filesystem | Verificando GDExtensions...
+[  50% ] first_scan_filesystem | Criando scripts autoload...
+[  66% ] first_scan_filesystem | Inicializando plugins...
+MCP | plugin disabled in headless mode
+[  83% ] first_scan_filesystem | Iniciando escaneamento de arquivos...
+[ DONE ] first_scan_filesystem
+
+ERROR: Safe save failed. This may be a permissions problem, but also may happen because you are running a paranoid antivirus. If this is the case, please switch to Windows Defender or disable the 'safe save' option in editor settings. This makes it work, but increases the risk of file corruption in a crash.
+   at: _close (drivers/windows/file_access_windows.cpp:277)
+ERROR: Attempting to parent and popup a dialog that already has a parent.
+   at: _try_parent_dialog (scene/main/window.cpp:2297)
+[   0% ] update_scripts_classes | Started Registrando classes globais... (5 steps)
+[   0% ] update_scripts_classes | 
+[  16% ] update_scripts_classes | 
+[  33% ] update_scripts_classes | 
+[  50% ] update_scripts_classes | 
+[  66% ] update_scripts_classes | 
+[ DONE ] update_scripts_classes
+
+[   0% ] _update_scan_actions | Started Escaneando ações... (25 steps)
+[   0% ] _update_scan_actions | caverna_menu_1280x720.jpg
+[   3% ] _update_scan_actions | fundoSelecao_sem_faixa.png
+[   7% ] _update_scan_actions | personagem_1.png
+[  11% ] _update_scan_actions | personagem_2.png
+[  15% ] _update_scan_actions | botao.mp3
+[  19% ] _update_scan_actions | trilhaSonora.mp3
+[  23% ] _update_scan_actions | next_button.png
+[  26% ] _update_scan_actions | play_button.png
+[  30% ] _update_scan_actions | quit_button.png
+[  34% ] _update_scan_actions | back.png
+[  38% ] _update_scan_actions | botaoDepararevoltar.png
+[  42% ] _update_scan_actions | fundoEscolha.png
+[  46% ] _update_scan_actions | next.png
+[  50% ] _update_scan_actions | pausar.png
+[  53% ] _update_scan_actions | personagem1.png
+[  57% ] _update_scan_actions | personagem2.png
+[  61% ] _update_scan_actions | play.jpeg
+[  65% ] _update_scan_actions | quit.png
+[  69% ] _update_scan_actions | reiniciar.png
+[  73% ] _update_scan_actions | telaDeinicio.jpeg
+[  76% ] _update_scan_actions | voltar.png
+[  80% ] _update_scan_actions | volume.png
+[  84% ] _update_scan_actions | volume_maximo.png
+[  88% ] _update_scan_actions | volume_medio.png
+[  92% ] _update_scan_actions | volume_mudo.png
+[ DONE ] _update_scan_actions
+
+[   0% ] reimport | Started (Re)Importando Recursos (25 steps)
+[   0% ] reimport | Preparando arquivos para reimportação...
+[   3% ] reimport | Preparando arquivos para reimportação...
+[   7% ] reimport | Preparando arquivos para reimportação...
+[  11% ] reimport | Preparando arquivos para reimportação...
+[  15% ] reimport | Preparando arquivos para reimportação...
+[  19% ] reimport | Preparando arquivos para reimportação...
+[  23% ] reimport | Preparando arquivos para reimportação...
+[  26% ] reimport | Preparando arquivos para reimportação...
+[  30% ] reimport | Preparando arquivos para reimportação...
+[  34% ] reimport | Preparando arquivos para reimportação...
+[  38% ] reimport | Preparando arquivos para reimportação...
+[  42% ] reimport | Preparando arquivos para reimportação...
+[  46% ] reimport | Preparando arquivos para reimportação...
+[  50% ] reimport | Preparando arquivos para reimportação...
+[  53% ] reimport | Preparando arquivos para reimportação...
+[  57% ] reimport | Preparando arquivos para reimportação...
+[  61% ] reimport | Preparando arquivos para reimportação...
+[  65% ] reimport | Preparando arquivos para reimportação...
+[  69% ] reimport | Preparando arquivos para reimportação...
+[  73% ] reimport | Preparando arquivos para reimportação...
+[  76% ] reimport | Preparando arquivos para reimportação...
+[  80% ] reimport | Preparando arquivos para reimportação...
+[  84% ] reimport | Preparando arquivos para reimportação...
+[  88% ] reimport | Preparando arquivos para reimportação...
+[  92% ] reimport | Preparando arquivos para reimportação...
+[   0% ] reimport | Executando operações pré-reimportação...
+[   0% ] reimport | botao.mp3
+[   3% ] reimport | trilhaSonora.mp3
+[   7% ] reimport | botao.mp3
+[  11% ] reimport | trilhaSonora.mp3
+[  15% ] reimport | volume_mudo.png
+[  19% ] reimport | volume_medio.png
+[  23% ] reimport | volume_maximo.png
+[  26% ] reimport | volume.png
+[  30% ] reimport | voltar.png
+[  34% ] reimport | telaDeinicio.jpeg
+[  38% ] reimport | reiniciar.png
+[  42% ] reimport | quit.png
+[  46% ] reimport | play.jpeg
+[  50% ] reimport | personagem2.png
+[  53% ] reimport | personagem1.png
+[  57% ] reimport | pausar.png
+[  61% ] reimport | next.png
+[  65% ] reimport | fundoEscolha.png
+[  69% ] reimport | botaoDepararevoltar.png
+[  73% ] reimport | back.png
+[  76% ] reimport | quit_button.png
+[  80% ] reimport | play_button.png
+[  84% ] reimport | next_button.png
+[  88% ] reimport | personagem_2.png
+[  92% ] reimport | personagem_1.png
+[  96% ] reimport | Finalizando Importação de Recursos...
+[ DONE ] reimport
+
+[   0% ] reimport | Started (Re)Importando Recursos (25 steps)
+[   0% ] reimport | Executando operações pós-reimportação...
+[ DONE ] reimport
+
+[   0% ] loading_editor_layout | Started Carregando editor (5 steps)
+[   0% ] loading_editor_layout | Carregando layout do editor...
+[  16% ] loading_editor_layout | Carregando abas...
+[  33% ] loading_editor_layout | Reabrindo cenas...
+[  50% ] loading_editor_layout | Carregando layout do editor central...
+[  66% ] loading_editor_layout | Carregando layout da janela de plugins...
+[  83% ] loading_editor_layout | Layout do editor pronto.
+[ DONE ] loading_editor_layout
+
+ERROR: Can't save resource to empty path. Provide non-empty path or a Resource with non-empty resource_path.
+   at: save (core/io/resource_saver.cpp:108)
+ERROR: Error saving editor settings to 
+   at: save (editor/settings/editor_settings.cpp:1525)
