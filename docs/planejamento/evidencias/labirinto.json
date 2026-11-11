@@ -1,0 +1,652 @@
+{
+	"camera": [
+		{
+			"center": "(560.0, 616.0)",
+			"room": "S01"
+		},
+		{
+			"center": "(560.0, 232.0)",
+			"room": "S01"
+		},
+		{
+			"center": "(560.0, 812.0)",
+			"room": "S01"
+		},
+		{
+			"center": "(352.0, 552.0)",
+			"room": "S01"
+		},
+		{
+			"center": "(768.0, 552.0)",
+			"room": "S01"
+		},
+		{
+			"center": "(768.0, 346.0)",
+			"room": "S01"
+		},
+		{
+			"center": "(560.0, -600.0)",
+			"room": "S02"
+		},
+		{
+			"center": "(560.0, -984.0)",
+			"room": "S02"
+		},
+		{
+			"center": "(560.0, -404.0)",
+			"room": "S02"
+		},
+		{
+			"center": "(352.0, -664.0)",
+			"room": "S02"
+		},
+		{
+			"center": "(768.0, -664.0)",
+			"room": "S02"
+		},
+		{
+			"center": "(768.0, -870.0)",
+			"room": "S02"
+		},
+		{
+			"center": "(2000.0, -600.0)",
+			"room": "S03"
+		},
+		{
+			"center": "(2000.0, -984.0)",
+			"room": "S03"
+		},
+		{
+			"center": "(2000.0, -404.0)",
+			"room": "S03"
+		},
+		{
+			"center": "(1792.0, -664.0)",
+			"room": "S03"
+		},
+		{
+			"center": "(2208.0, -664.0)",
+			"room": "S03"
+		},
+		{
+			"center": "(2208.0, -870.0)",
+			"room": "S03"
+		},
+		{
+			"center": "(2000.0, 616.0)",
+			"room": "S04"
+		},
+		{
+			"center": "(2000.0, 232.0)",
+			"room": "S04"
+		},
+		{
+			"center": "(2000.0, 812.0)",
+			"room": "S04"
+		},
+		{
+			"center": "(1792.0, 552.0)",
+			"room": "S04"
+		},
+		{
+			"center": "(2208.0, 552.0)",
+			"room": "S04"
+		},
+		{
+			"center": "(2208.0, 346.0)",
+			"room": "S04"
+		},
+		{
+			"center": "(560.0, 1832.0)",
+			"room": "S05"
+		},
+		{
+			"center": "(560.0, 1448.0)",
+			"room": "S05"
+		},
+		{
+			"center": "(560.0, 2028.0)",
+			"room": "S05"
+		},
+		{
+			"center": "(352.0, 1768.0)",
+			"room": "S05"
+		},
+		{
+			"center": "(768.0, 1768.0)",
+			"room": "S05"
+		},
+		{
+			"center": "(768.0, 1562.0)",
+			"room": "S05"
+		},
+		{
+			"center": "(-880.0, 1832.0)",
+			"room": "S06"
+		},
+		{
+			"center": "(-880.0, 1448.0)",
+			"room": "S06"
+		},
+		{
+			"center": "(-880.0, 2028.0)",
+			"room": "S06"
+		},
+		{
+			"center": "(-1088.0, 1768.0)",
+			"room": "S06"
+		},
+		{
+			"center": "(-672.0, 1768.0)",
+			"room": "S06"
+		},
+		{
+			"center": "(-672.0, 1562.0)",
+			"room": "S06"
+		}
+	],
+	"fade_seconds": [
+		2.002,
+		2.018,
+		2.025,
+		2.012,
+		1.95,
+		2.069,
+		2.011,
+		2.013,
+		2.014,
+		1.996,
+		2.008,
+		2.008,
+		2.009,
+		1.932,
+		2.002,
+		2.004,
+		2.011,
+		2.018,
+		2.015,
+		2.014
+	],
+	"failures": [],
+	"invalid_maps": 5,
+	"movement": [
+		{
+			"direction": "(0, -1)",
+			"speed": 144.0
+		},
+		{
+			"direction": "(1, -1)",
+			"speed": 144.0
+		},
+		{
+			"direction": "(1, 0)",
+			"speed": 144.0
+		},
+		{
+			"direction": "(1, 1)",
+			"speed": 144.0
+		},
+		{
+			"direction": "(0, 1)",
+			"speed": 144.0
+		},
+		{
+			"direction": "(-1, 1)",
+			"speed": 144.0
+		},
+		{
+			"direction": "(-1, 0)",
+			"speed": 144.0
+		},
+		{
+			"direction": "(-1, -1)",
+			"speed": 144.0
+		}
+	],
+	"perimeter": 1200,
+	"random_spawn": "S06",
+	"sealed": [
+		{
+			"blocked": true,
+			"direction": "SE",
+			"distance": 62.4999694824219,
+			"room": "S01"
+		},
+		{
+			"blocked": true,
+			"direction": "O",
+			"distance": 51.875,
+			"room": "S01"
+		},
+		{
+			"blocked": true,
+			"direction": "NO",
+			"distance": 26.8749885559082,
+			"room": "S01"
+		},
+		{
+			"blocked": true,
+			"direction": "N",
+			"distance": 33.4375,
+			"room": "S02"
+		},
+		{
+			"blocked": true,
+			"direction": "NE",
+			"distance": 26.8749771118164,
+			"room": "S02"
+		},
+		{
+			"blocked": true,
+			"direction": "L",
+			"distance": 51.875,
+			"room": "S02"
+		},
+		{
+			"blocked": true,
+			"direction": "SE",
+			"distance": 62.4999694824219,
+			"room": "S02"
+		},
+		{
+			"blocked": true,
+			"direction": "SO",
+			"distance": 62.4999809265137,
+			"room": "S02"
+		},
+		{
+			"blocked": true,
+			"direction": "O",
+			"distance": 51.875,
+			"room": "S02"
+		},
+		{
+			"blocked": true,
+			"direction": "NO",
+			"distance": 26.8749885559082,
+			"room": "S02"
+		},
+		{
+			"blocked": true,
+			"direction": "N",
+			"distance": 33.4375,
+			"room": "S03"
+		},
+		{
+			"blocked": true,
+			"direction": "NE",
+			"distance": 26.8749332427979,
+			"room": "S03"
+		},
+		{
+			"blocked": true,
+			"direction": "L",
+			"distance": 51.875,
+			"room": "S03"
+		},
+		{
+			"blocked": true,
+			"direction": "SE",
+			"distance": 62.499927520752,
+			"room": "S03"
+		},
+		{
+			"blocked": true,
+			"direction": "S",
+			"distance": 64.375,
+			"room": "S03"
+		},
+		{
+			"blocked": true,
+			"direction": "O",
+			"distance": 51.875,
+			"room": "S03"
+		},
+		{
+			"blocked": true,
+			"direction": "NO",
+			"distance": 26.875020980835,
+			"room": "S03"
+		},
+		{
+			"blocked": true,
+			"direction": "N",
+			"distance": 33.4375,
+			"room": "S04"
+		},
+		{
+			"blocked": true,
+			"direction": "NE",
+			"distance": 26.8749332427979,
+			"room": "S04"
+		},
+		{
+			"blocked": true,
+			"direction": "L",
+			"distance": 51.875,
+			"room": "S04"
+		},
+		{
+			"blocked": true,
+			"direction": "SE",
+			"distance": 62.499927520752,
+			"room": "S04"
+		},
+		{
+			"blocked": true,
+			"direction": "S",
+			"distance": 64.375,
+			"room": "S04"
+		},
+		{
+			"blocked": true,
+			"direction": "SO",
+			"distance": 62.5000152587891,
+			"room": "S04"
+		},
+		{
+			"blocked": true,
+			"direction": "NO",
+			"distance": 26.875020980835,
+			"room": "S04"
+		},
+		{
+			"blocked": true,
+			"direction": "NE",
+			"distance": 26.875020980835,
+			"room": "S05"
+		},
+		{
+			"blocked": true,
+			"direction": "L",
+			"distance": 51.875,
+			"room": "S05"
+		},
+		{
+			"blocked": true,
+			"direction": "SE",
+			"distance": 62.5000152587891,
+			"room": "S05"
+		},
+		{
+			"blocked": true,
+			"direction": "S",
+			"distance": 64.375,
+			"room": "S05"
+		},
+		{
+			"blocked": true,
+			"direction": "SO",
+			"distance": 62.5000228881836,
+			"room": "S05"
+		},
+		{
+			"blocked": true,
+			"direction": "O",
+			"distance": 51.875,
+			"room": "S05"
+		},
+		{
+			"blocked": true,
+			"direction": "NO",
+			"distance": 26.8750324249268,
+			"room": "S05"
+		},
+		{
+			"blocked": true,
+			"direction": "N",
+			"distance": 33.4375,
+			"room": "S06"
+		},
+		{
+			"blocked": true,
+			"direction": "L",
+			"distance": 51.875,
+			"room": "S06"
+		},
+		{
+			"blocked": true,
+			"direction": "SE",
+			"distance": 62.5000152587891,
+			"room": "S06"
+		},
+		{
+			"blocked": true,
+			"direction": "S",
+			"distance": 64.375,
+			"room": "S06"
+		},
+		{
+			"blocked": true,
+			"direction": "SO",
+			"distance": 62.500057220459,
+			"room": "S06"
+		},
+		{
+			"blocked": true,
+			"direction": "O",
+			"distance": 51.875,
+			"room": "S06"
+		},
+		{
+			"blocked": true,
+			"direction": "NO",
+			"distance": 26.8750629425049,
+			"room": "S06"
+		}
+	],
+	"spawns": [
+		{
+			"free": true,
+			"point": "(560.0, 640.0)",
+			"room": "S01"
+		},
+		{
+			"free": true,
+			"point": "(560.0, -576.0)",
+			"room": "S02"
+		},
+		{
+			"free": true,
+			"point": "(2000.0, -576.0)",
+			"room": "S03"
+		},
+		{
+			"free": true,
+			"point": "(2000.0, 640.0)",
+			"room": "S04"
+		},
+		{
+			"free": true,
+			"point": "(560.0, 1856.0)",
+			"room": "S05"
+		},
+		{
+			"free": true,
+			"point": "(-880.0, 1856.0)",
+			"room": "S06"
+		}
+	],
+	"transitions": [
+		{
+			"character": "Aelin",
+			"direction": "N",
+			"entry": "S",
+			"free": true,
+			"from": "S01",
+			"ticks": 162,
+			"to": "S02"
+		},
+		{
+			"character": "Aelin",
+			"direction": "S",
+			"entry": "N",
+			"free": true,
+			"from": "S02",
+			"ticks": 133,
+			"to": "S01"
+		},
+		{
+			"character": "Aelin",
+			"direction": "NE",
+			"entry": "SO",
+			"free": true,
+			"from": "S01",
+			"ticks": 157,
+			"to": "S03"
+		},
+		{
+			"character": "Aelin",
+			"direction": "SO",
+			"entry": "NE",
+			"free": true,
+			"from": "S03",
+			"ticks": 159,
+			"to": "S01"
+		},
+		{
+			"character": "Aelin",
+			"direction": "L",
+			"entry": "O",
+			"free": true,
+			"from": "S01",
+			"ticks": 168,
+			"to": "S04"
+		},
+		{
+			"character": "Aelin",
+			"direction": "O",
+			"entry": "L",
+			"free": true,
+			"from": "S04",
+			"ticks": 169,
+			"to": "S01"
+		},
+		{
+			"character": "Aelin",
+			"direction": "S",
+			"entry": "N",
+			"free": true,
+			"from": "S01",
+			"ticks": 132,
+			"to": "S05"
+		},
+		{
+			"character": "Aelin",
+			"direction": "N",
+			"entry": "S",
+			"free": true,
+			"from": "S05",
+			"ticks": 162,
+			"to": "S01"
+		},
+		{
+			"character": "Aelin",
+			"direction": "SO",
+			"entry": "NE",
+			"free": true,
+			"from": "S01",
+			"ticks": 160,
+			"to": "S06"
+		},
+		{
+			"character": "Aelin",
+			"direction": "NE",
+			"entry": "SO",
+			"free": true,
+			"from": "S06",
+			"ticks": 156,
+			"to": "S01"
+		},
+		{
+			"character": "Dorian",
+			"direction": "N",
+			"entry": "S",
+			"free": true,
+			"from": "S01",
+			"ticks": 160,
+			"to": "S02"
+		},
+		{
+			"character": "Dorian",
+			"direction": "S",
+			"entry": "N",
+			"free": true,
+			"from": "S02",
+			"ticks": 133,
+			"to": "S01"
+		},
+		{
+			"character": "Dorian",
+			"direction": "NE",
+			"entry": "SO",
+			"free": true,
+			"from": "S01",
+			"ticks": 155,
+			"to": "S03"
+		},
+		{
+			"character": "Dorian",
+			"direction": "SO",
+			"entry": "NE",
+			"free": true,
+			"from": "S03",
+			"ticks": 160,
+			"to": "S01"
+		},
+		{
+			"character": "Dorian",
+			"direction": "L",
+			"entry": "O",
+			"free": true,
+			"from": "S01",
+			"ticks": 168,
+			"to": "S04"
+		},
+		{
+			"character": "Dorian",
+			"direction": "O",
+			"entry": "L",
+			"free": true,
+			"from": "S04",
+			"ticks": 170,
+			"to": "S01"
+		},
+		{
+			"character": "Dorian",
+			"direction": "S",
+			"entry": "N",
+			"free": true,
+			"from": "S01",
+			"ticks": 133,
+			"to": "S05"
+		},
+		{
+			"character": "Dorian",
+			"direction": "N",
+			"entry": "S",
+			"free": true,
+			"from": "S05",
+			"ticks": 160,
+			"to": "S01"
+		},
+		{
+			"character": "Dorian",
+			"direction": "SO",
+			"entry": "NE",
+			"free": true,
+			"from": "S01",
+			"ticks": 161,
+			"to": "S06"
+		},
+		{
+			"character": "Dorian",
+			"direction": "NE",
+			"entry": "SO",
+			"free": true,
+			"from": "S06",
+			"ticks": 156,
+			"to": "S01"
+		}
+	]
+}

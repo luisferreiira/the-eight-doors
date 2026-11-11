@@ -1,0 +1,45 @@
+[gd_scene load_steps=7 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/environments/generated/dungeon_central/atlas_sala_central.png" id="1_kb8nc"]
+[ext_resource type="Texture2D" path="res://assets/environments/mapa/The_Eight_Doors_Tiles_Preparados/atlas_complementar_C.png" id="2_se0ep"]
+[ext_resource type="Material" path="res://assets/materials/doors/vinho.tres" id="cor"]
+
+[sub_resource type="AtlasTexture" id="gate"]
+atlas = ExtResource("1_kb8nc")
+region = Rect2(816, 16, 96, 96)
+
+[sub_resource type="AtlasTexture" id="frame"]
+atlas = ExtResource("2_se0ep")
+region = Rect2(16, 48, 36, 92)
+
+[sub_resource type="AtlasTexture" id="base_pedra"]
+atlas = ExtResource("1_kb8nc")
+region = Rect2(784, 384, 32, 32)
+
+; Sobreposição editável: origem coincide com o centro da Area2D da porta.
+[node name="VisualEspecial" type="Node2D"]
+texture_filter = 1
+material = ExtResource("cor")
+
+[node name="Moldura" type="Sprite2D" parent="."]
+use_parent_material = true
+z_index = 5
+position = Vector2(-21, -129)
+texture = SubResource("frame")
+centered = false
+
+
+
+[node name="Grade" type="Sprite2D" parent="."]
+use_parent_material = true
+z_index = 5
+position = Vector2(-2.0000002, -14.920019)
+scale = Vector2(0.2708333, 0.6858329)
+texture = SubResource("gate")
+
+; Pedra inferior alinhada ao tile original, sem pintar o restante da parede.
+[node name="BasePedra" type="Sprite2D" parent="."]
+use_parent_material = true
+z_index = 4
+position = Vector2(0, 32)
+texture = SubResource("base_pedra")

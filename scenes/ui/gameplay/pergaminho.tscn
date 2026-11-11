@@ -1,0 +1,25 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" path="res://assets/ui/pergaminho_horizontal.svg" id="1_xw63u"]
+
+[node name="Pergaminho" type="TextureRect" unique_id=2129297997]
+offset_left = 135.0
+offset_top = 301.0
+offset_right = 505.0
+offset_bottom = 356.0
+mouse_filter = 2
+texture = ExtResource("1_xw63u")
+expand_mode = 1
+
+[node name="Texto" type="Label" parent="." unique_id=1079239304]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 9.0
+offset_right = 346.0
+offset_bottom = 45.0
+theme_override_colors/font_color = Color(0.22352941, 0.15294118, 0.105882354, 1)
+theme_override_font_sizes/font_size = 12
+text = "Pista: siga a nordeste. Na próxima sala, procure a passagem ao sul."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3

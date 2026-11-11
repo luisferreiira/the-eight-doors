@@ -1,7 +1,7 @@
-## Adição: catálogo compartilhado pelo jogo e pela visão geral do editor.
-## Ao expandir, registre a cena aqui e as conexões em mapa.gd.
+## Catálogo das 30 cenas editáveis usadas pelo jogo e pela visão geral.
 extends RefCounted
 
+## Expansão: editar uma sala aqui registrada altera a mesma cena carregada no jogo.
 const SCENES = {
 	"S01": preload("res://scenes/world/rooms/sala_s01.tscn"),
 	"S02": preload("res://scenes/world/rooms/sala_s02.tscn"),
@@ -9,4 +9,28 @@ const SCENES = {
 	"S04": preload("res://scenes/world/rooms/sala_s04.tscn"),
 	"S05": preload("res://scenes/world/rooms/sala_s05.tscn"),
 	"S06": preload("res://scenes/world/rooms/sala_s06.tscn"),
+	"S07": preload("res://scenes/world/rooms/sala_s07.tscn"),
+	"S08": preload("res://scenes/world/rooms/sala_s08.tscn"),
+	"S09": preload("res://scenes/world/rooms/sala_s09.tscn"),
+	"S10": preload("res://scenes/world/rooms/sala_s10.tscn"),
+	"S11": preload("res://scenes/world/rooms/sala_s11.tscn"),
+	"S12": preload("res://scenes/world/rooms/sala_s12.tscn"),
+	"S13": preload("res://scenes/world/rooms/sala_s13.tscn"),
+	"S14": preload("res://scenes/world/rooms/sala_s14.tscn"),
+	"S15": preload("res://scenes/world/rooms/sala_s15.tscn"),
+	"S16": preload("res://scenes/world/rooms/sala_s16.tscn"),
+	"S17": preload("res://scenes/world/rooms/sala_s17.tscn"),
+	"S18": preload("res://scenes/world/rooms/sala_s18.tscn"),
+	"S19": preload("res://scenes/world/rooms/sala_s19.tscn"),
+	"S20": preload("res://scenes/world/rooms/sala_s20.tscn"),
+	"S21": preload("res://scenes/world/rooms/sala_s21.tscn"),
+	"S22": preload("res://scenes/world/rooms/sala_s22.tscn"),
+	"S23": preload("res://scenes/world/rooms/sala_s23.tscn"),
+	"S24": preload("res://scenes/world/rooms/sala_s24.tscn"),
+	"S25": preload("res://scenes/world/rooms/sala_s25.tscn"),
+	"S26": preload("res://scenes/world/rooms/sala_s26.tscn"),
+	"S27": preload("res://scenes/world/rooms/sala_s27.tscn"),
+	"S28": preload("res://scenes/world/rooms/sala_s28.tscn"),
+	"S29": preload("res://scenes/world/rooms/sala_s29.tscn"),
+	"S30": preload("res://scenes/world/rooms/sala_s30.tscn"),
 }

@@ -1,0 +1,213 @@
+[gd_scene load_steps=11 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/world/doors/visuais/porta_n.tscn" id="n"]
+[ext_resource type="PackedScene" path="res://scenes/world/doors/visuais/porta_ne.tscn" id="ne"]
+[ext_resource type="PackedScene" path="res://scenes/world/doors/visuais/porta_l.tscn" id="l"]
+[ext_resource type="PackedScene" path="res://scenes/world/doors/visuais/porta_se.tscn" id="se"]
+[ext_resource type="PackedScene" path="res://scenes/world/doors/visuais/porta_s.tscn" id="s"]
+[ext_resource type="PackedScene" path="res://scenes/world/doors/visuais/porta_so.tscn" id="so"]
+[ext_resource type="PackedScene" path="res://scenes/world/doors/visuais/porta_o.tscn" id="o"]
+[ext_resource type="PackedScene" path="res://scenes/world/doors/visuais/porta_no.tscn" id="no"]
+[ext_resource type="Material" path="res://assets/materials/doors/ouro.tres" id="ouro"]
+[ext_resource type="Material" path="res://assets/materials/doors/vinho.tres" id="vinho"]
+
+; Galeria de assets nativos: cenas e materiais compartilhados com as salas do jogo.
+[node name="CatalogoPortas" type="Node2D"]
+
+[node name="Fundo" type="ColorRect" parent="."]
+offset_right = 1600.0
+offset_bottom = 660.0
+color = Color(0.045, 0.04, 0.055, 1)
+mouse_filter = 2
+
+[node name="Titulo" type="Label" parent="."]
+offset_left = 28.0
+offset_top = 18.0
+theme_override_font_sizes/font_size = 26
+text = "THE EIGHT DOORS · Portas reutilizáveis"
+
+[node name="Titulo_ouro" type="Label" parent="."]
+offset_left = 28.0
+offset_top = 68.0
+text = "DOURADO · Saídas"
+
+[node name="ouro_n" parent="." instance=ExtResource("n")]
+position = Vector2(110, 260)
+material = ExtResource("ouro")
+
+[node name="Nome_ouro_n" type="Label" parent="."]
+offset_left = 40.0
+offset_right = 180.0
+offset_top = 326.0
+horizontal_alignment = 1
+text = "Norte"
+
+[node name="ouro_ne" parent="." instance=ExtResource("ne")]
+position = Vector2(305, 260)
+material = ExtResource("ouro")
+
+[node name="Nome_ouro_ne" type="Label" parent="."]
+offset_left = 235.0
+offset_right = 375.0
+offset_top = 326.0
+horizontal_alignment = 1
+text = "Nordeste"
+
+[node name="ouro_l" parent="." instance=ExtResource("l")]
+position = Vector2(500, 260)
+material = ExtResource("ouro")
+
+[node name="Nome_ouro_l" type="Label" parent="."]
+offset_left = 430.0
+offset_right = 570.0
+offset_top = 326.0
+horizontal_alignment = 1
+text = "Leste"
+
+[node name="ouro_se" parent="." instance=ExtResource("se")]
+position = Vector2(695, 260)
+material = ExtResource("ouro")
+
+[node name="Nome_ouro_se" type="Label" parent="."]
+offset_left = 625.0
+offset_right = 765.0
+offset_top = 326.0
+horizontal_alignment = 1
+text = "Sudeste"
+
+[node name="ouro_s" parent="." instance=ExtResource("s")]
+position = Vector2(890, 260)
+material = ExtResource("ouro")
+
+[node name="Nome_ouro_s" type="Label" parent="."]
+offset_left = 820.0
+offset_right = 960.0
+offset_top = 326.0
+horizontal_alignment = 1
+text = "Sul"
+
+[node name="ouro_so" parent="." instance=ExtResource("so")]
+position = Vector2(1085, 260)
+material = ExtResource("ouro")
+
+[node name="Nome_ouro_so" type="Label" parent="."]
+offset_left = 1015.0
+offset_right = 1155.0
+offset_top = 326.0
+horizontal_alignment = 1
+text = "Sudoeste"
+
+[node name="ouro_o" parent="." instance=ExtResource("o")]
+position = Vector2(1280, 260)
+material = ExtResource("ouro")
+
+[node name="Nome_ouro_o" type="Label" parent="."]
+offset_left = 1210.0
+offset_right = 1350.0
+offset_top = 326.0
+horizontal_alignment = 1
+text = "Oeste"
+
+[node name="ouro_no" parent="." instance=ExtResource("no")]
+position = Vector2(1475, 260)
+material = ExtResource("ouro")
+
+[node name="Nome_ouro_no" type="Label" parent="."]
+offset_left = 1405.0
+offset_right = 1545.0
+offset_top = 326.0
+horizontal_alignment = 1
+text = "Noroeste"
+
+[node name="Titulo_vinho" type="Label" parent="."]
+offset_left = 28.0
+offset_top = 368.0
+text = "VINHO · Passagens com desafios"
+
+[node name="vinho_n" parent="." instance=ExtResource("n")]
+position = Vector2(110, 560)
+material = ExtResource("vinho")
+
+[node name="Nome_vinho_n" type="Label" parent="."]
+offset_left = 40.0
+offset_right = 180.0
+offset_top = 626.0
+horizontal_alignment = 1
+text = "Norte"
+
+[node name="vinho_ne" parent="." instance=ExtResource("ne")]
+position = Vector2(305, 560)
+material = ExtResource("vinho")
+
+[node name="Nome_vinho_ne" type="Label" parent="."]
+offset_left = 235.0
+offset_right = 375.0
+offset_top = 626.0
+horizontal_alignment = 1
+text = "Nordeste"
+
+[node name="vinho_l" parent="." instance=ExtResource("l")]
+position = Vector2(500, 560)
+material = ExtResource("vinho")
+
+[node name="Nome_vinho_l" type="Label" parent="."]
+offset_left = 430.0
+offset_right = 570.0
+offset_top = 626.0
+horizontal_alignment = 1
+text = "Leste"
+
+[node name="vinho_se" parent="." instance=ExtResource("se")]
+position = Vector2(695, 560)
+material = ExtResource("vinho")
+
+[node name="Nome_vinho_se" type="Label" parent="."]
+offset_left = 625.0
+offset_right = 765.0
+offset_top = 626.0
+horizontal_alignment = 1
+text = "Sudeste"
+
+[node name="vinho_s" parent="." instance=ExtResource("s")]
+position = Vector2(890, 560)
+material = ExtResource("vinho")
+
+[node name="Nome_vinho_s" type="Label" parent="."]
+offset_left = 820.0
+offset_right = 960.0
+offset_top = 626.0
+horizontal_alignment = 1
+text = "Sul"
+
+[node name="vinho_so" parent="." instance=ExtResource("so")]
+position = Vector2(1085, 560)
+material = ExtResource("vinho")
+
+[node name="Nome_vinho_so" type="Label" parent="."]
+offset_left = 1015.0
+offset_right = 1155.0
+offset_top = 626.0
+horizontal_alignment = 1
+text = "Sudoeste"
+
+[node name="vinho_o" parent="." instance=ExtResource("o")]
+position = Vector2(1280, 560)
+material = ExtResource("vinho")
+
+[node name="Nome_vinho_o" type="Label" parent="."]
+offset_left = 1210.0
+offset_right = 1350.0
+offset_top = 626.0
+horizontal_alignment = 1
+text = "Oeste"
+
+[node name="vinho_no" parent="." instance=ExtResource("no")]
+position = Vector2(1475, 560)
+material = ExtResource("vinho")
+
+[node name="Nome_vinho_no" type="Label" parent="."]
+offset_left = 1405.0
+offset_right = 1545.0
+offset_top = 626.0
+horizontal_alignment = 1
+text = "Noroeste"

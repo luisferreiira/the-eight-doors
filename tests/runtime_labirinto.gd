@@ -10,7 +10,8 @@ func run(game: Node2D, selected: String = "") -> Dictionary:
 	game.load_room("S01")
 	await tree.create_timer(0.1).timeout
 	await capture(game,"centro")
-	for direction: String in ["N","NE","L","S","SO"]:
+	## Expansão: E0 segue fechado; inclui as novas conexões oeste e noroeste.
+	for direction: String in ["N","NE","S","SO","O","NO"]:
 		if not selected.is_empty() and direction != selected: continue
 		var target: String = game.rooms.S01.links[direction]
 		for step in 2:
@@ -34,7 +35,7 @@ func run(game: Node2D, selected: String = "") -> Dictionary:
 				event.pressed = true
 				Input.parse_input_event(event)
 			var ticks := 0
-			while game.current_room==previous and ticks<120:
+			while (game.current_room==previous or game.transitioning) and ticks<240:
 				await tree.physics_frame
 				ticks += 1
 			for key: int in keys:
@@ -49,9 +50,9 @@ func run(game: Node2D, selected: String = "") -> Dictionary:
 				return results
 			if step==0: await capture(game,"entrada_"+target)
 	game.load_room("S01")
-	game.player.position = Vector2(208,576)
+	game.player.position = Vector2(992,576)
 	await tree.create_timer(0.1).timeout
-	await capture(game,"porta_selada_O")
+	await capture(game,"porta_fechada_L")
 	game.player.position = Map.CENTER_SPAWN
 	game.entry_lock = null
 	FileAccess.open(OUT+"testes_mcp_runtime"+selected+".json",FileAccess.WRITE).store_string(JSON.stringify(results,"\t"))

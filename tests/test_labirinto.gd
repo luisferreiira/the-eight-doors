@@ -1,7 +1,8 @@
 extends SceneTree
 const Map = preload("res://scripts/world/mapa.gd")
 const Game = preload("res://scenes/world/labyrinth/labirinto.tscn")
-const OUT := "res://docs/history/expansao_2026-10-30/"
+## Relatório desta expansão fica no cache local, sem sobrescrever auditorias antigas.
+const OUT := "res://.godot/"
 var game: Node2D
 var failures: Array[String] = []
 var report := {"transitions":[],"sealed":[],"movement":[],"spawns":[],"camera":[],"perimeter":0,"invalid_maps":0}
@@ -17,6 +18,8 @@ func frames(count: int) -> void:
 	for i in count: await physics_frame
 
 func keys_for(direction: Vector2) -> Array:
+	# O navegador de teste pede direção no mundo, compensando o efeito da sala.
+	if is_instance_valid(game) and game.player.inverted_controls: direction = -direction
 	var keys := []
 	if direction.x < -0.1: keys.append(KEY_A)
 	if direction.x > 0.1: keys.append(KEY_D)
@@ -83,6 +86,8 @@ func traverse(direction: String, expected: String, character: String) -> void:
 	await frames(2)
 	check(game.transition_count==count,"Bounced immediately after arrival")
 	# Move into the room with real controls; the lock must release itself.
+	# A chegada pode ativar ou remover a inversão: recalcula as teclas.
+	keys = keys_for(normal)
 	input_keys(keys,true)
 	# Mede passos de física, não tempo de parede sob carga do editor.
 	for attempt in 90:
@@ -93,9 +98,66 @@ func traverse(direction: String, expected: String, character: String) -> void:
 	check(game.entry_lock==null,"Arrival lock did not release after moving inside %s/%s at %s" % [expected, entry, game.player.global_position])
 	report.transitions.append({"character":character,"from":from,"direction":direction,"to":expected,"entry":entry,"ticks":ticks,"free":free_at(game.player.global_position)})
 
+## Envia a mesma ação E usada no jogo para testar o painel e a saída.
+func interact() -> void:
+	var event := InputEventAction.new()
+	event.action = &"interact"
+	event.pressed = true
+	root.push_input(event)
+	await frames(2)
+	event = InputEventAction.new()
+	event.action = &"interact"
+	root.push_input(event)
+
+## Expansão: mede acessibilidade pelas conexões abertas, sem resolver desafios.
+func distances(start: String, rooms: Dictionary) -> Dictionary:
+	var result := {start: 0}
+	var pending: Array[String] = [start]
+	while not pending.is_empty():
+		var id: String = pending.pop_front()
+		for direction: String in rooms[id].links:
+			if rooms[id].get("blocked", {}).has(direction): continue
+			var target: String = rooms[id].links[direction]
+			if result.has(target): continue
+			result[target] = result[id] + 1
+			pending.append(target)
+	return result
+
+## Verifica tamanho, simetria, distâncias aprovadas e estados persistidos nas cenas.
+func check_expansion() -> void:
+	var rooms := Map.create_rooms()
+	check(rooms.size() == 30, "Expected 30 rooms")
+	var links := 0
+	var blocked := 0
+	for id: String in rooms:
+		links += rooms[id].links.size()
+		blocked += rooms[id].get("blocked", {}).size()
+		var preview: Node2D = game.RoomScenes.SCENES[id].instantiate()
+		for direction: String in Map.NAMES:
+			var door := preview.get_node("Passagens/Porta_" + Map.NAMES[direction])
+			var open: bool = rooms[id].links.has(direction) and not rooms[id].get("blocked", {}).has(direction)
+			check(door.get_node("GradeFechada").visible == not open, "Editor preview mismatch: " + id + direction)
+			check(door.get_node("PlanoDaPorta/BloqueioFechado/Forma").disabled == open, "Editor collision mismatch: " + id + direction)
+			check(not door.get_node("Runas").visible, "Runes visible in preview: " + id + direction)
+		check(preview.has_node("Saida") == Map.EXITS.has(id), "Exit in wrong scene: " + id)
+		preview.free()
+	check(links == 106 and blocked == 16, "Expected 45 open and 8 closed connections")
+	for start: String in ["S01", "S22", "S23", "S29"]:
+		check(distances(start, rooms).size() == 30, "Unreachable room from " + start)
+	for start: String in ["S22", "S23", "S29"]:
+		var distance := distances(start, rooms)
+		var expected: Array = {"S22":[8,6], "S23":[8,6], "S29":[6,7]}[start]
+		check(distance.S14 == expected[0] and distance.S21 == expected[1], "Exit route changed: " + start)
+	var overview: Node2D = load("res://scenes/world/labyrinth/mapa_editor.tscn").instantiate()
+	check(overview.get_node("Salas").get_child_count() == 30, "Overview rooms not persisted")
+	check(overview.get_node("Guias").get_child_count() == 53, "Overview connections not persisted")
+	check(overview.get_node("Rotulos").get_child_count() == 30, "Overview labels not persisted")
+	overview.free()
+
 func run() -> void:
 	check(Map.validate(Map.create_rooms()).is_empty(),"Initial spatial map invalid")
-	for mutation in ["missing","return","direction","duplicate","overlap"]:
+	## Expansão: rejeita também uma grade que bloqueia apenas uma face.
+	for mutation in ["missing","return","direction","duplicate","overlap","blocked"]:
 		var bad := Map.create_rooms()
 		match mutation:
 			"missing": bad.S01.links.N = "absent"
@@ -103,19 +165,30 @@ func run() -> void:
 			"direction": bad.S01.links.SE = "S02"
 			"duplicate": bad.S02.coord = Vector2i.ZERO
 			"overlap": bad.S03.coord = Vector2i.ZERO
+			"blocked": bad.S01.blocked.clear()
 		check(not Map.validate(bad).is_empty(),"Validator accepted " + mutation)
 		report.invalid_maps += 1
 	game = Game.instantiate()
+	# Cenário fixo para testar navegação e E0; nascimentos têm teste próprio.
+	game.random_spawn = false
 	root.add_child(game)
 	await frames(4)
 	check(game.current_room=="S01","Default fixed spawn changed")
+	# Expansão: valida o esboço e percorre portas abertas em ambos os sentidos.
+	check_expansion()
+	check(not game.hint_scroll.visible, "Old navigation hint still visible")
 	var original_id: int = game.player.get_instance_id()
-	for direction: String in ["N","NE","L","S","SO"]:
+	for direction: String in ["N","NE","S","SO","O","NO"]:
 		var target: String = game.rooms.S01.links[direction]
-		await traverse(direction,target,"Aelin")
-		if game.current_room == target: await traverse(Map.OPPOSITE[direction],"S01","Aelin")
-		check(game.player.get_instance_id()==original_id,"Player recreated during transition")
+		await traverse(direction, target, "Aelin")
+		if game.current_room == target: await traverse(Map.OPPOSITE[direction], "S01", "Aelin")
+		check(game.player.get_instance_id() == original_id, "Player recreated during transition")
 		if game.current_room != "S01": game.load_room("S01")
+	# Cobre também a diagonal sudeste nova e seu retorno noroeste.
+	game.load_room("S05")
+	await frames(3)
+	await traverse("SE", "S28", "Aelin")
+	await traverse("NO", "S05", "Aelin")
 	# Inspect every configured room, not just the initial one.
 	game.player.set_physics_process(false)
 	game.transitioning = true
@@ -132,7 +205,10 @@ func run() -> void:
 		check(game.room.doors.size()==8,"Door missing " + id)
 		for direction: String in game.room.doors:
 			var door: Area2D = game.room.doors[direction]
-			check(door.opened==not door.destination.is_empty(),"Door state mismatch " + id + direction)
+			# Expansão: destino existente não abre uma conexão marcada como bloqueada.
+			var expected_open: bool = not door.destination.is_empty() and door.blocked_id.is_empty()
+			check(door.opened == expected_open, "Door state mismatch " + id + direction)
+			check(not door.get_node("Runas").is_visible_in_tree(), "Runes visible at runtime")
 			check(door.get_node("PlanoDaPorta/BloqueioFechado/Forma").disabled==door.opened,"Gate collision mismatch")
 			check(free_at(door.spawn_position()),"Door spawn blocked " + id + direction)
 			if not door.opened:
@@ -176,24 +252,30 @@ func run() -> void:
 		report.movement.append({"direction":str(direction),"speed":speed})
 	check(game.get_node("Atmosfera/Vinheta").size==Vector2(640,360),"Vignette not covering viewport")
 	check(game.camera.zoom==Vector2.ONE,"Zoom changed")
-	# Dorian uses the same exported scene slot without any edits to his scene.
+	# Expansão: ambas as saídas encerram a partida; S04 perdeu sua saída antiga.
+	for id: String in ["S14", "S21"]:
+		game.load_room(id)
+		await frames(3)
+		game.player.global_position = game.room.get_node("Saida/Interacao").global_position
+		await interact()
+		check(game.escaped and game.seal_panel.visible, "Exit did not reach victory: " + id)
+		game.free()
+		game = Game.instantiate()
+		# Mantém a nova partida dentro do laço de verificação das saídas.
+		game.random_spawn = false
+		root.add_child(game)
+		await frames(4)
+	# Dorian percorre também uma ligação nova, mantendo a escolha do personagem.
 	game.free()
 	game = Game.instantiate()
+	# Cenário fixo para testar navegação e E0; nascimentos têm teste próprio.
+	game.random_spawn = false
 	game.character_scene = load("res://scenes/characters/players/dorian.tscn")
-	game.random_spawn = true
-	game.spawn_seed = 42
 	root.add_child(game)
 	await frames(4)
-	check(game.rooms[game.current_room].safe and free_at(game.player.global_position),"Random safe spawn failed")
-	report["random_spawn"] = game.current_room
-	game.load_room("S01")
-	await frames(3)
-	for direction: String in ["N","NE","L","S","SO"]:
-		var target: String = game.rooms.S01.links[direction]
-		await traverse(direction,target,"Dorian")
-		if game.current_room==target: await traverse(Map.OPPOSITE[direction],"S01","Dorian")
-		if game.current_room!="S01": game.load_room("S01")
+	await traverse("O", "S10", "Dorian")
+	await traverse("L", "S01", "Dorian")
 	report["failures"] = failures
-	FileAccess.open(OUT+"testes.json",FileAccess.WRITE).store_string(JSON.stringify(report,"\t"))
+	FileAccess.open(OUT+"testes_expansao.json",FileAccess.WRITE).store_string(JSON.stringify(report,"\t"))
 	print("LABIRINTO_RESULT transitions=%s sealed=%s perimeter=%s failures=%s" % [report.transitions.size(),report.sealed.size(),report.perimeter,failures])
 	quit(0 if failures.is_empty() else 1)

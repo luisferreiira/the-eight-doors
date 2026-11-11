@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://omvjii81q6bx"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_3b0vi"]
+light_mode = 1
+
+[node name="Runas" type="Node2D" unique_id=1095165168]
+
+[node name="Selo" type="Line2D" parent="." unique_id=413871848]
+z_index = 6
+material = SubResource("CanvasItemMaterial_3b0vi")
+points = PackedVector2Array(12, -38, 12, 38)
+width = 3.0
+default_color = Color(0.45882353, 0.6509804, 1, 0)
+
+[node name="Simbolos" type="Label" parent="." unique_id=1584282031]
+z_index = 7
+material = SubResource("CanvasItemMaterial_3b0vi")
+offset_left = 12.0
+offset_top = -30.0
+offset_right = 12.0
+offset_bottom = -30.0
+rotation = 1.5707964
+theme_override_colors/font_color = Color(1, 0.79, 0.37, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+text = "✦  ☾  ☀"

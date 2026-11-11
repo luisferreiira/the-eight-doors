@@ -1,4 +1,813 @@
-[gd_scene load_steps=2 format=3]
-[ext_resource type="Script" path="res://tools/editor/mapa_editor.gd" id="1"]
-[node name="MapaEditor" type="Node2D"]
-script = ExtResource("1")
+[gd_scene format=3 uid="uid://b4dxnuvod852f"]
+
+[ext_resource type="PackedScene" path="res://scenes/world/rooms/sala_s01.tscn" id="S01"]
+[ext_resource type="PackedScene" path="res://scenes/world/rooms/sala_s02.tscn" id="S02"]
+[ext_resource type="PackedScene" path="res://scenes/world/rooms/sala_s03.tscn" id="S03"]
+[ext_resource type="PackedScene" path="res://scenes/world/rooms/sala_s04.tscn" id="S04"]
+[ext_resource type="PackedScene" path="res://scenes/world/rooms/sala_s05.tscn" id="S05"]
+[ext_resource type="PackedScene" path="res://scenes/world/rooms/sala_s06.tscn" id="S06"]
+[ext_resource type="PackedScene" path="res://scenes/world/rooms/sala_s07.tscn" id="S07"]
+[ext_resource type="PackedScene" path="res://scenes/world/rooms/sala_s08.tscn" id="S08"]
+[ext_resource type="PackedScene" path="res://scenes/world/rooms/sala_s09.tscn" id="S09"]
+[ext_resource type="PackedScene" path="res://scenes/world/rooms/sala_s10.tscn" id="S10"]
+[ext_resource type="PackedScene" path="res://scenes/world/rooms/sala_s11.tscn" id="S11"]
+[ext_resource type="PackedScene" path="res://scenes/world/rooms/sala_s12.tscn" id="S12"]
+[ext_resource type="PackedScene" path="res://scenes/world/rooms/sala_s13.tscn" id="S13"]
+[ext_resource type="PackedScene" path="res://scenes/world/rooms/sala_s14.tscn" id="S14"]
+[ext_resource type="PackedScene" path="res://scenes/world/rooms/sala_s15.tscn" id="S15"]
+[ext_resource type="PackedScene" path="res://scenes/world/rooms/sala_s16.tscn" id="S16"]
+[ext_resource type="PackedScene" path="res://scenes/world/rooms/sala_s17.tscn" id="S17"]
+[ext_resource type="PackedScene" path="res://scenes/world/rooms/sala_s18.tscn" id="S18"]
+[ext_resource type="PackedScene" path="res://scenes/world/rooms/sala_s19.tscn" id="S19"]
+[ext_resource type="PackedScene" path="res://scenes/world/rooms/sala_s20.tscn" id="S20"]
+[ext_resource type="PackedScene" path="res://scenes/world/rooms/sala_s21.tscn" id="S21"]
+[ext_resource type="PackedScene" path="res://scenes/world/rooms/sala_s22.tscn" id="S22"]
+[ext_resource type="PackedScene" path="res://scenes/world/rooms/sala_s23.tscn" id="S23"]
+[ext_resource type="PackedScene" path="res://scenes/world/rooms/sala_s24.tscn" id="S24"]
+[ext_resource type="PackedScene" path="res://scenes/world/rooms/sala_s25.tscn" id="S25"]
+[ext_resource type="PackedScene" path="res://scenes/world/rooms/sala_s26.tscn" id="S26"]
+[ext_resource type="PackedScene" path="res://scenes/world/rooms/sala_s27.tscn" id="S27"]
+[ext_resource type="PackedScene" path="res://scenes/world/rooms/sala_s28.tscn" id="S28"]
+[ext_resource type="PackedScene" path="res://scenes/world/rooms/sala_s29.tscn" id="S29"]
+[ext_resource type="PackedScene" path="res://scenes/world/rooms/sala_s30.tscn" id="S30"]
+[ext_resource type="Script" uid="uid://c5hjalyoag6ne" path="res://tools/editor/mapa_editor.gd" id="tool"]
+
+[node name="MapaEditor" type="Node2D" unique_id=241831335]
+script = ExtResource("tool")
+
+[node name="Salas" type="Node2D" parent="." unique_id=2095788313]
+
+[node name="S01" parent="Salas" unique_id=213673556 instance=ExtResource("S01")]
+
+[node name="Fundo" parent="Salas/S01" index="0" unique_id=1378643228]
+visible = false
+
+[node name="Base" parent="Salas/S01/Entulho/Pedras02/CorpoSolido" index="0"]
+position = Vector2(-1, -6)
+polygon = PackedVector2Array(-28, -21, -28, -29, -20, -44, -14, -48, 12, -38, 19, -33, 24, -18, 20, -2, -3, 3, -19, 0, -24, -6)
+
+[node name="Base" parent="Salas/S01/Entulho/Pedras04/CorpoSolido" index="0"]
+polygon = PackedVector2Array(-28, -21, -20, -42, -1, -56, 16, -41, 30, -17, 20, -2, -3, 3, -28, -2)
+
+[node name="Base" parent="Salas/S01/Entulho/Tijolos10/CorpoSolido" index="0"]
+polygon = PackedVector2Array(-37, -30, -19, -53, 15, -55, 28, -35, 32, -14, 20, 2, -38, -7)
+
+[node name="Base" parent="Salas/S01/Entulho/PedraIsolada14/CorpoSolido" index="0"]
+position = Vector2(-1, 0)
+polygon = PackedVector2Array(10, -15, 3.9, -9.64, -6, -7, -15.9, -9.64, -22, -16, -21, -33, -7, -39, 9, -33)
+
+[node name="BasePilar2" parent="Salas/S01/Elementos/Colunas/ColunaNE" parent_id_path=PackedInt32Array(213673556, 728808968) index="2" unique_id=204685741]
+position = Vector2(2, -8)
+
+[node name="Iluminacao" parent="Salas/S01" index="13" unique_id=144129373]
+visible = false
+
+[node name="S02" parent="Salas" unique_id=1540853040 instance=ExtResource("S02")]
+position = Vector2(0, -1216)
+
+[node name="Fundo" parent="Salas/S02" index="0" unique_id=1378643228]
+visible = false
+
+[node name="Iluminacao" parent="Salas/S02" index="13" unique_id=144129373]
+visible = false
+
+[node name="S03" parent="Salas" unique_id=1265828002 instance=ExtResource("S03")]
+position = Vector2(1440, -1216)
+
+[node name="Fundo" parent="Salas/S03" index="0" unique_id=1378643228]
+visible = false
+
+[node name="Iluminacao" parent="Salas/S03" index="13" unique_id=144129373]
+visible = false
+
+[node name="S04" parent="Salas" unique_id=381294754 instance=ExtResource("S04")]
+position = Vector2(1440, 0)
+
+[node name="Fundo" parent="Salas/S04" index="0" unique_id=1378643228]
+visible = false
+
+[node name="Iluminacao" parent="Salas/S04" index="13" unique_id=144129373]
+visible = false
+
+[node name="S05" parent="Salas" unique_id=1052258607 instance=ExtResource("S05")]
+position = Vector2(0, 1216)
+
+[node name="Fundo" parent="Salas/S05" index="0" unique_id=1378643228]
+visible = false
+
+[node name="Iluminacao" parent="Salas/S05" index="13" unique_id=144129373]
+visible = false
+
+[node name="S06" parent="Salas" unique_id=766287365 instance=ExtResource("S06")]
+position = Vector2(-1440, 1216)
+
+[node name="Fundo" parent="Salas/S06" index="0" unique_id=1378643228]
+visible = false
+
+[node name="Iluminacao" parent="Salas/S06" index="13" unique_id=144129373]
+visible = false
+
+[node name="S07" parent="Salas" unique_id=1040486930 instance=ExtResource("S07")]
+position = Vector2(-1440, -1216)
+
+[node name="Fundo" parent="Salas/S07" index="0" unique_id=1378643228]
+visible = false
+
+[node name="Iluminacao" parent="Salas/S07" index="13" unique_id=144129373]
+visible = false
+
+[node name="S08" parent="Salas" unique_id=2031196480 instance=ExtResource("S08")]
+position = Vector2(-2880, -1216)
+
+[node name="Fundo" parent="Salas/S08" index="0" unique_id=1378643228]
+visible = false
+
+[node name="Iluminacao" parent="Salas/S08" index="13" unique_id=144129373]
+visible = false
+
+[node name="S09" parent="Salas" unique_id=1273287868 instance=ExtResource("S09")]
+position = Vector2(-2880, 0)
+
+[node name="Fundo" parent="Salas/S09" index="0" unique_id=1378643228]
+visible = false
+
+[node name="Iluminacao" parent="Salas/S09" index="13" unique_id=144129373]
+visible = false
+
+[node name="S10" parent="Salas" unique_id=1553807473 instance=ExtResource("S10")]
+position = Vector2(-1440, 0)
+
+[node name="Fundo" parent="Salas/S10" index="0" unique_id=1378643228]
+visible = false
+
+[node name="Iluminacao" parent="Salas/S10" index="13" unique_id=144129373]
+visible = false
+
+[node name="S11" parent="Salas" unique_id=37254131 instance=ExtResource("S11")]
+position = Vector2(-2880, 1216)
+
+[node name="Fundo" parent="Salas/S11" index="0" unique_id=1378643228]
+visible = false
+
+[node name="Iluminacao" parent="Salas/S11" index="13" unique_id=144129373]
+visible = false
+
+[node name="S12" parent="Salas" unique_id=2005120913 instance=ExtResource("S12")]
+position = Vector2(-4320, 1216)
+
+[node name="Fundo" parent="Salas/S12" index="0" unique_id=1378643228]
+visible = false
+
+[node name="Iluminacao" parent="Salas/S12" index="13" unique_id=144129373]
+visible = false
+
+[node name="S13" parent="Salas" unique_id=1332194412 instance=ExtResource("S13")]
+position = Vector2(-4320, 0)
+
+[node name="Fundo" parent="Salas/S13" index="0" unique_id=1378643228]
+visible = false
+
+[node name="Iluminacao" parent="Salas/S13" index="13" unique_id=144129373]
+visible = false
+
+[node name="S14" parent="Salas" unique_id=1365310615 instance=ExtResource("S14")]
+position = Vector2(-4320, -1216)
+
+[node name="Fundo" parent="Salas/S14" index="0" unique_id=1378643228]
+visible = false
+
+[node name="Iluminacao" parent="Salas/S14" index="13" unique_id=144129373]
+visible = false
+
+[node name="S15" parent="Salas" unique_id=1495626565 instance=ExtResource("S15")]
+position = Vector2(0, -2432)
+
+[node name="Fundo" parent="Salas/S15" index="0" unique_id=1378643228]
+visible = false
+
+[node name="Iluminacao" parent="Salas/S15" index="13" unique_id=144129373]
+visible = false
+
+[node name="S16" parent="Salas" unique_id=723782684 instance=ExtResource("S16")]
+position = Vector2(1440, -2432)
+
+[node name="Fundo" parent="Salas/S16" index="0" unique_id=1378643228]
+visible = false
+
+[node name="Iluminacao" parent="Salas/S16" index="13" unique_id=144129373]
+visible = false
+
+[node name="S17" parent="Salas" unique_id=1154180854 instance=ExtResource("S17")]
+position = Vector2(2880, -2432)
+
+[node name="Fundo" parent="Salas/S17" index="0" unique_id=1378643228]
+visible = false
+
+[node name="Iluminacao" parent="Salas/S17" index="13" unique_id=144129373]
+visible = false
+
+[node name="S18" parent="Salas" unique_id=855613310 instance=ExtResource("S18")]
+position = Vector2(2880, -1216)
+
+[node name="Fundo" parent="Salas/S18" index="0" unique_id=1378643228]
+visible = false
+
+[node name="Iluminacao" parent="Salas/S18" index="13" unique_id=144129373]
+visible = false
+
+[node name="S19" parent="Salas" unique_id=80654605 instance=ExtResource("S19")]
+position = Vector2(4320, -1216)
+
+[node name="Fundo" parent="Salas/S19" index="0" unique_id=1378643228]
+visible = false
+
+[node name="Iluminacao" parent="Salas/S19" index="13" unique_id=144129373]
+visible = false
+
+[node name="S20" parent="Salas" unique_id=1984792202 instance=ExtResource("S20")]
+position = Vector2(4320, -2432)
+
+[node name="Fundo" parent="Salas/S20" index="0" unique_id=1378643228]
+visible = false
+
+[node name="Iluminacao" parent="Salas/S20" index="13" unique_id=144129373]
+visible = false
+
+[node name="S21" parent="Salas" unique_id=1773139026 instance=ExtResource("S21")]
+position = Vector2(4320, -3648)
+
+[node name="Fundo" parent="Salas/S21" index="0" unique_id=1378643228]
+visible = false
+
+[node name="Iluminacao" parent="Salas/S21" index="13" unique_id=144129373]
+visible = false
+
+[node name="S22" parent="Salas" unique_id=226197181 instance=ExtResource("S22")]
+position = Vector2(1440, -3648)
+
+[node name="Fundo" parent="Salas/S22" index="0" unique_id=1378643228]
+visible = false
+
+[node name="Iluminacao" parent="Salas/S22" index="13" unique_id=144129373]
+visible = false
+
+[node name="S23" parent="Salas" unique_id=2038692215 instance=ExtResource("S23")]
+position = Vector2(2880, 0)
+
+[node name="Fundo" parent="Salas/S23" index="0" unique_id=1378643228]
+visible = false
+
+[node name="Iluminacao" parent="Salas/S23" index="13" unique_id=144129373]
+visible = false
+
+[node name="S24" parent="Salas" unique_id=1639591777 instance=ExtResource("S24")]
+position = Vector2(4320, 0)
+
+[node name="Fundo" parent="Salas/S24" index="0" unique_id=1378643228]
+visible = false
+
+[node name="Iluminacao" parent="Salas/S24" index="13" unique_id=144129373]
+visible = false
+
+[node name="S25" parent="Salas" unique_id=1748313384 instance=ExtResource("S25")]
+position = Vector2(4320, 1216)
+
+[node name="Fundo" parent="Salas/S25" index="0" unique_id=1378643228]
+visible = false
+
+[node name="Iluminacao" parent="Salas/S25" index="13" unique_id=144129373]
+visible = false
+
+[node name="S26" parent="Salas" unique_id=604455892 instance=ExtResource("S26")]
+position = Vector2(2880, 1216)
+
+[node name="Fundo" parent="Salas/S26" index="0" unique_id=1378643228]
+visible = false
+
+[node name="Iluminacao" parent="Salas/S26" index="13" unique_id=144129373]
+visible = false
+
+[node name="S27" parent="Salas" unique_id=1767586787 instance=ExtResource("S27")]
+position = Vector2(2880, 2432)
+
+[node name="Fundo" parent="Salas/S27" index="0" unique_id=1378643228]
+visible = false
+
+[node name="Iluminacao" parent="Salas/S27" index="13" unique_id=144129373]
+visible = false
+
+[node name="S28" parent="Salas" unique_id=616147836 instance=ExtResource("S28")]
+position = Vector2(1440, 2432)
+
+[node name="Fundo" parent="Salas/S28" index="0" unique_id=1378643228]
+visible = false
+
+[node name="Iluminacao" parent="Salas/S28" index="13" unique_id=144129373]
+visible = false
+
+[node name="S29" parent="Salas" unique_id=1874587667 instance=ExtResource("S29")]
+position = Vector2(0, 2432)
+
+[node name="Fundo" parent="Salas/S29" index="0" unique_id=1378643228]
+visible = false
+
+[node name="Iluminacao" parent="Salas/S29" index="13" unique_id=144129373]
+visible = false
+
+[node name="S30" parent="Salas" unique_id=1632349921 instance=ExtResource("S30")]
+position = Vector2(-1440, 2432)
+
+[node name="Fundo" parent="Salas/S30" index="0" unique_id=1378643228]
+visible = false
+
+[node name="Iluminacao" parent="Salas/S30" index="13" unique_id=144129373]
+visible = false
+
+[node name="Guias" type="Node2D" parent="." unique_id=153288371]
+z_index = 100
+
+[node name="S01_S02" type="Line2D" parent="Guias" unique_id=310721909]
+points = PackedVector2Array(560, 192, 560, -256)
+default_color = Color(0.45, 0.84, 0.93, 1)
+
+[node name="S01_S03" type="Line2D" parent="Guias" unique_id=829398516]
+points = PackedVector2Array(928, 320, 1632, -384)
+default_color = Color(0.45, 0.84, 0.93, 1)
+
+[node name="S01_S04" type="Line2D" parent="Guias" unique_id=1345330021]
+points = PackedVector2Array(1056, 576, 1504, 576)
+default_color = Color(1, 0.7, 0.3, 1)
+
+[node name="S01_S05" type="Line2D" parent="Guias" unique_id=297128237]
+points = PackedVector2Array(560, 960, 560, 1408)
+default_color = Color(0.45, 0.84, 0.93, 1)
+
+[node name="S01_S06" type="Line2D" parent="Guias" unique_id=323444119]
+points = PackedVector2Array(192, 832, -512, 1536)
+default_color = Color(0.45, 0.84, 0.93, 1)
+
+[node name="S01_S10" type="Line2D" parent="Guias" unique_id=365554113]
+points = PackedVector2Array(64, 576, -384, 576)
+default_color = Color(0.45, 0.84, 0.93, 1)
+
+[node name="S01_S07" type="Line2D" parent="Guias" unique_id=737015275]
+points = PackedVector2Array(192, 320, -512, -384)
+default_color = Color(0.45, 0.84, 0.93, 1)
+
+[node name="S02_S07" type="Line2D" parent="Guias" unique_id=22656068]
+points = PackedVector2Array(64, -640, -384, -640)
+default_color = Color(0.45, 0.84, 0.93, 1)
+
+[node name="S02_S15" type="Line2D" parent="Guias" unique_id=24819884]
+points = PackedVector2Array(560, -1024, 560, -1472)
+default_color = Color(0.45, 0.84, 0.93, 1)
+
+[node name="S02_S03" type="Line2D" parent="Guias" unique_id=2113062115]
+points = PackedVector2Array(1056, -640, 1504, -640)
+default_color = Color(0.45, 0.84, 0.93, 1)
+
+[node name="S02_S16" type="Line2D" parent="Guias" unique_id=1564310968]
+points = PackedVector2Array(928, -896, 1632, -1600)
+default_color = Color(1, 0.7, 0.3, 1)
+
+[node name="S03_S04" type="Line2D" parent="Guias" unique_id=1513587776]
+points = PackedVector2Array(2000, -256, 2000, 192)
+default_color = Color(0.45, 0.84, 0.93, 1)
+
+[node name="S03_S18" type="Line2D" parent="Guias" unique_id=2121327574]
+points = PackedVector2Array(2496, -640, 2944, -640)
+default_color = Color(0.45, 0.84, 0.93, 1)
+
+[node name="S03_S16" type="Line2D" parent="Guias" unique_id=2046682576]
+points = PackedVector2Array(2000, -1024, 2000, -1472)
+default_color = Color(0.45, 0.84, 0.93, 1)
+
+[node name="S03_S17" type="Line2D" parent="Guias" unique_id=105249011]
+points = PackedVector2Array(2368, -896, 3072, -1600)
+default_color = Color(1, 0.7, 0.3, 1)
+
+[node name="S04_S23" type="Line2D" parent="Guias" unique_id=1597952689]
+points = PackedVector2Array(2496, 576, 2944, 576)
+default_color = Color(0.45, 0.84, 0.93, 1)
+
+[node name="S04_S26" type="Line2D" parent="Guias" unique_id=27376045]
+points = PackedVector2Array(2368, 832, 3072, 1536)
+default_color = Color(1, 0.7, 0.3, 1)
+
+[node name="S05_S29" type="Line2D" parent="Guias" unique_id=77570508]
+points = PackedVector2Array(560, 2176, 560, 2624)
+default_color = Color(0.45, 0.84, 0.93, 1)
+
+[node name="S05_S28" type="Line2D" parent="Guias" unique_id=2098212287]
+points = PackedVector2Array(928, 2048, 1632, 2752)
+default_color = Color(0.45, 0.84, 0.93, 1)
+
+[node name="S05_S06" type="Line2D" parent="Guias" unique_id=2135009127]
+points = PackedVector2Array(64, 1792, -384, 1792)
+default_color = Color(0.45, 0.84, 0.93, 1)
+
+[node name="S05_S30" type="Line2D" parent="Guias" unique_id=1593730270]
+points = PackedVector2Array(192, 2048, -512, 2752)
+default_color = Color(0.45, 0.84, 0.93, 1)
+
+[node name="S06_S11" type="Line2D" parent="Guias" unique_id=1383889413]
+points = PackedVector2Array(-1376, 1792, -1824, 1792)
+default_color = Color(0.45, 0.84, 0.93, 1)
+
+[node name="S06_S10" type="Line2D" parent="Guias" unique_id=1592566696]
+points = PackedVector2Array(-880, 1408, -880, 960)
+default_color = Color(0.45, 0.84, 0.93, 1)
+
+[node name="S06_S30" type="Line2D" parent="Guias" unique_id=96782681]
+points = PackedVector2Array(-880, 2176, -880, 2624)
+default_color = Color(1, 0.7, 0.3, 1)
+
+[node name="S06_S09" type="Line2D" parent="Guias" unique_id=1872103049]
+points = PackedVector2Array(-1248, 1536, -1952, 832)
+default_color = Color(0.45, 0.84, 0.93, 1)
+
+[node name="S07_S08" type="Line2D" parent="Guias" unique_id=1304468562]
+points = PackedVector2Array(-1376, -640, -1824, -640)
+default_color = Color(0.45, 0.84, 0.93, 1)
+
+[node name="S07_S10" type="Line2D" parent="Guias" unique_id=1991301297]
+points = PackedVector2Array(-880, -256, -880, 192)
+default_color = Color(0.45, 0.84, 0.93, 1)
+
+[node name="S07_S09" type="Line2D" parent="Guias" unique_id=667792234]
+points = PackedVector2Array(-1248, -384, -1952, 320)
+default_color = Color(1, 0.7, 0.3, 1)
+
+[node name="S07_S15" type="Line2D" parent="Guias" unique_id=416893905]
+points = PackedVector2Array(-512, -896, 192, -1600)
+default_color = Color(0.45, 0.84, 0.93, 1)
+
+[node name="S08_S09" type="Line2D" parent="Guias" unique_id=1795783093]
+points = PackedVector2Array(-2320, -256, -2320, 192)
+default_color = Color(0.45, 0.84, 0.93, 1)
+
+[node name="S09_S10" type="Line2D" parent="Guias" unique_id=71089054]
+points = PackedVector2Array(-1824, 576, -1376, 576)
+default_color = Color(0.45, 0.84, 0.93, 1)
+
+[node name="S09_S11" type="Line2D" parent="Guias" unique_id=1128769184]
+points = PackedVector2Array(-2320, 960, -2320, 1408)
+default_color = Color(0.45, 0.84, 0.93, 1)
+
+[node name="S09_S12" type="Line2D" parent="Guias" unique_id=1023725751]
+points = PackedVector2Array(-2688, 832, -3392, 1536)
+default_color = Color(0.45, 0.84, 0.93, 1)
+
+[node name="S11_S12" type="Line2D" parent="Guias" unique_id=1355969743]
+points = PackedVector2Array(-2816, 1792, -3264, 1792)
+default_color = Color(0.45, 0.84, 0.93, 1)
+
+[node name="S12_S13" type="Line2D" parent="Guias" unique_id=448397382]
+points = PackedVector2Array(-3760, 1408, -3760, 960)
+default_color = Color(0.45, 0.84, 0.93, 1)
+
+[node name="S13_S14" type="Line2D" parent="Guias" unique_id=1790383007]
+points = PackedVector2Array(-3760, 192, -3760, -256)
+default_color = Color(0.45, 0.84, 0.93, 1)
+
+[node name="S15_S16" type="Line2D" parent="Guias" unique_id=2084335425]
+points = PackedVector2Array(1056, -1856, 1504, -1856)
+default_color = Color(0.45, 0.84, 0.93, 1)
+
+[node name="S16_S17" type="Line2D" parent="Guias" unique_id=905129202]
+points = PackedVector2Array(2496, -1856, 2944, -1856)
+default_color = Color(0.45, 0.84, 0.93, 1)
+
+[node name="S16_S22" type="Line2D" parent="Guias" unique_id=2021525774]
+points = PackedVector2Array(2000, -2240, 2000, -2688)
+default_color = Color(0.45, 0.84, 0.93, 1)
+
+[node name="S17_S18" type="Line2D" parent="Guias" unique_id=133356510]
+points = PackedVector2Array(3440, -1472, 3440, -1024)
+default_color = Color(0.45, 0.84, 0.93, 1)
+
+[node name="S18_S19" type="Line2D" parent="Guias" unique_id=1419968714]
+points = PackedVector2Array(3936, -640, 4384, -640)
+default_color = Color(0.45, 0.84, 0.93, 1)
+
+[node name="S19_S20" type="Line2D" parent="Guias" unique_id=642232200]
+points = PackedVector2Array(4880, -1024, 4880, -1472)
+default_color = Color(0.45, 0.84, 0.93, 1)
+
+[node name="S20_S21" type="Line2D" parent="Guias" unique_id=2034826647]
+points = PackedVector2Array(4880, -2240, 4880, -2688)
+default_color = Color(0.45, 0.84, 0.93, 1)
+
+[node name="S23_S24" type="Line2D" parent="Guias" unique_id=111033750]
+points = PackedVector2Array(3936, 576, 4384, 576)
+default_color = Color(0.45, 0.84, 0.93, 1)
+
+[node name="S23_S26" type="Line2D" parent="Guias" unique_id=1202373343]
+points = PackedVector2Array(3440, 960, 3440, 1408)
+default_color = Color(1, 0.7, 0.3, 1)
+
+[node name="S24_S25" type="Line2D" parent="Guias" unique_id=1891078867]
+points = PackedVector2Array(4880, 960, 4880, 1408)
+default_color = Color(0.45, 0.84, 0.93, 1)
+
+[node name="S24_S26" type="Line2D" parent="Guias" unique_id=1477758113]
+points = PackedVector2Array(4512, 832, 3808, 1536)
+default_color = Color(0.45, 0.84, 0.93, 1)
+
+[node name="S25_S26" type="Line2D" parent="Guias" unique_id=487739717]
+points = PackedVector2Array(4384, 1792, 3936, 1792)
+default_color = Color(0.45, 0.84, 0.93, 1)
+
+[node name="S25_S27" type="Line2D" parent="Guias" unique_id=1063411926]
+points = PackedVector2Array(4512, 2048, 3808, 2752)
+default_color = Color(1, 0.7, 0.3, 1)
+
+[node name="S26_S27" type="Line2D" parent="Guias" unique_id=1547673542]
+points = PackedVector2Array(3440, 2176, 3440, 2624)
+default_color = Color(0.45, 0.84, 0.93, 1)
+
+[node name="S27_S28" type="Line2D" parent="Guias" unique_id=974560673]
+points = PackedVector2Array(2944, 3008, 2496, 3008)
+default_color = Color(0.45, 0.84, 0.93, 1)
+
+[node name="S28_S29" type="Line2D" parent="Guias" unique_id=495621202]
+points = PackedVector2Array(1504, 3008, 1056, 3008)
+default_color = Color(0.45, 0.84, 0.93, 1)
+
+[node name="S29_S30" type="Line2D" parent="Guias" unique_id=1977663664]
+points = PackedVector2Array(64, 3008, -384, 3008)
+default_color = Color(0.45, 0.84, 0.93, 1)
+
+[node name="Rotulos" type="Node2D" parent="." unique_id=934645792]
+z_index = 101
+
+[node name="S01" type="Label" parent="Rotulos" unique_id=1418355678]
+offset_left = 420.0
+offset_top = 520.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 64
+text = "S01"
+
+[node name="S02" type="Label" parent="Rotulos" unique_id=1564253948]
+offset_left = 420.0
+offset_top = -696.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 64
+text = "S02"
+
+[node name="S03" type="Label" parent="Rotulos" unique_id=1361370107]
+offset_left = 1860.0
+offset_top = -696.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 64
+text = "S03"
+
+[node name="S04" type="Label" parent="Rotulos" unique_id=1084843946]
+offset_left = 1860.0
+offset_top = 520.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 64
+text = "S04"
+
+[node name="S05" type="Label" parent="Rotulos" unique_id=1971285461]
+offset_left = 420.0
+offset_top = 1736.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 64
+text = "S05"
+
+[node name="S06" type="Label" parent="Rotulos" unique_id=571565806]
+offset_left = -1020.0
+offset_top = 1736.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 64
+text = "S06"
+
+[node name="S07" type="Label" parent="Rotulos" unique_id=1264096930]
+offset_left = -1020.0
+offset_top = -696.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 64
+text = "S07"
+
+[node name="S08" type="Label" parent="Rotulos" unique_id=1965068721]
+offset_left = -2460.0
+offset_top = -696.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 64
+text = "S08"
+
+[node name="S09" type="Label" parent="Rotulos" unique_id=1102663053]
+offset_left = -2460.0
+offset_top = 520.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 64
+text = "S09"
+
+[node name="S10" type="Label" parent="Rotulos" unique_id=1186471225]
+offset_left = -1020.0
+offset_top = 520.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 64
+text = "S10"
+
+[node name="S11" type="Label" parent="Rotulos" unique_id=2121116896]
+offset_left = -2460.0
+offset_top = 1736.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 64
+text = "S11"
+
+[node name="S12" type="Label" parent="Rotulos" unique_id=1453696750]
+offset_left = -3900.0
+offset_top = 1736.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 64
+text = "S12"
+
+[node name="S13" type="Label" parent="Rotulos" unique_id=695921983]
+offset_left = -3900.0
+offset_top = 520.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 64
+text = "S13"
+
+[node name="S14" type="Label" parent="Rotulos" unique_id=879466412]
+offset_left = -3900.0
+offset_top = -696.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 64
+text = "S14"
+
+[node name="S15" type="Label" parent="Rotulos" unique_id=1370856580]
+offset_left = 420.0
+offset_top = -1912.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 64
+text = "S15"
+
+[node name="S16" type="Label" parent="Rotulos" unique_id=1005706222]
+offset_left = 1860.0
+offset_top = -1912.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 64
+text = "S16"
+
+[node name="S17" type="Label" parent="Rotulos" unique_id=575638198]
+offset_left = 3300.0
+offset_top = -1912.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 64
+text = "S17"
+
+[node name="S18" type="Label" parent="Rotulos" unique_id=1804264328]
+offset_left = 3300.0
+offset_top = -696.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 64
+text = "S18"
+
+[node name="S19" type="Label" parent="Rotulos" unique_id=1688007394]
+offset_left = 4740.0
+offset_top = -696.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 64
+text = "S19"
+
+[node name="S20" type="Label" parent="Rotulos" unique_id=2071067367]
+offset_left = 4740.0
+offset_top = -1912.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 64
+text = "S20"
+
+[node name="S21" type="Label" parent="Rotulos" unique_id=787063650]
+offset_left = 4740.0
+offset_top = -3128.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 64
+text = "S21"
+
+[node name="S22" type="Label" parent="Rotulos" unique_id=2024755562]
+offset_left = 1860.0
+offset_top = -3128.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 64
+text = "S22"
+
+[node name="S23" type="Label" parent="Rotulos" unique_id=1468029337]
+offset_left = 3300.0
+offset_top = 520.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 64
+text = "S23"
+
+[node name="S24" type="Label" parent="Rotulos" unique_id=2049621570]
+offset_left = 4740.0
+offset_top = 520.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 64
+text = "S24"
+
+[node name="S25" type="Label" parent="Rotulos" unique_id=721033542]
+offset_left = 4740.0
+offset_top = 1736.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 64
+text = "S25"
+
+[node name="S26" type="Label" parent="Rotulos" unique_id=421452656]
+offset_left = 3300.0
+offset_top = 1736.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 64
+text = "S26"
+
+[node name="S27" type="Label" parent="Rotulos" unique_id=467602351]
+offset_left = 3300.0
+offset_top = 2952.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 64
+text = "S27"
+
+[node name="S28" type="Label" parent="Rotulos" unique_id=24747564]
+offset_left = 1860.0
+offset_top = 2952.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 64
+text = "S28"
+
+[node name="S29" type="Label" parent="Rotulos" unique_id=1916064581]
+offset_left = 420.0
+offset_top = 2952.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 64
+text = "S29"
+
+[node name="S30" type="Label" parent="Rotulos" unique_id=373386382]
+offset_left = -1020.0
+offset_top = 2952.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 64
+text = "S30"
+
+[editable path="Salas/S01"]
+[editable path="Salas/S02"]
+[editable path="Salas/S03"]
+[editable path="Salas/S04"]
+[editable path="Salas/S05"]
+[editable path="Salas/S06"]
+[editable path="Salas/S07"]
+[editable path="Salas/S08"]
+[editable path="Salas/S09"]
+[editable path="Salas/S10"]
+[editable path="Salas/S11"]
+[editable path="Salas/S12"]
+[editable path="Salas/S13"]
+[editable path="Salas/S14"]
+[editable path="Salas/S15"]
+[editable path="Salas/S16"]
+[editable path="Salas/S17"]
+[editable path="Salas/S18"]
+[editable path="Salas/S19"]
+[editable path="Salas/S20"]
+[editable path="Salas/S21"]
+[editable path="Salas/S22"]
+[editable path="Salas/S23"]
+[editable path="Salas/S24"]
+[editable path="Salas/S25"]
+[editable path="Salas/S26"]
+[editable path="Salas/S27"]
+[editable path="Salas/S28"]
+[editable path="Salas/S29"]
+[editable path="Salas/S30"]

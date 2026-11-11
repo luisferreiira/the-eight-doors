@@ -1,0 +1,10 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3]
+
+[ext_resource type="Shader" path="res://assets/shaders/porta_tingida.gdshader" id="shader"]
+
+; Vinho envelhecido para desafios. Material compartilhado: cor ajustável no Inspector, textura original preservada.
+[resource]
+shader = ExtResource("shader")
+shader_parameter/tonalidade = Color(0.54, 0.25, 0.29, 1)
+shader_parameter/ganho = 1.8
+shader_parameter/mistura = 0.92

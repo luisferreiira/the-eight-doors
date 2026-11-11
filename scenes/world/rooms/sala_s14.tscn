@@ -1,0 +1,42 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/world/labyrinth/sala_octogonal_base.tscn" id="1_base"]
+
+[ext_resource type="PackedScene" path="res://scenes/world/doors/saida_oeste.tscn" id="saida"]
+
+[ext_resource type="PackedScene" path="res://scenes/world/doors/visuais/porta_o.tscn" id="visual_O"]
+[ext_resource type="Material" path="res://assets/materials/doors/ouro.tres" id="cor_porta"]
+
+[node name="S14" instance=ExtResource("1_base")]
+
+[node name="ConteudoDaSala" type="Node2D" parent="."]
+y_sort_enabled = true
+
+[node name="Decoracao" type="Node2D" parent="ConteudoDaSala"]
+y_sort_enabled = true
+
+[node name="Obstaculos" type="Node2D" parent="ConteudoDaSala"]
+y_sort_enabled = true
+
+[node name="Interacoes" type="Node2D" parent="ConteudoDaSala"]
+y_sort_enabled = true
+
+; Expansão: estado inicial das conexões visível no editor 2D.
+
+[node name="GradeFechada" parent="Passagens/Porta_Sul"]
+visible = false
+
+[node name="Forma" parent="Passagens/Porta_Sul/PlanoDaPorta/BloqueioFechado"]
+disabled = true
+
+; Saída externa: identificação dourada e marcador de interação editáveis.
+[node name="Saida" parent="." instance=ExtResource("saida")]
+
+
+; Estilo especial: sobreposição sem colisão; a porta original mantém o bloqueio.
+
+[node name="GradeFechada" parent="Passagens/Porta_Oeste"]
+self_modulate = Color(1, 1, 1, 0)
+
+[node name="VisualEspecial" parent="Passagens/Porta_Oeste" instance=ExtResource("visual_O")]
+material = ExtResource("cor_porta")

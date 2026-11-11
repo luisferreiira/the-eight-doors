@@ -105,3 +105,10 @@ func _update_volume_icon(button: TextureButton) -> void:
 
 func register_volume_control(button: TextureButton) -> void:
 	button.add_to_group("volume_controls")
+
+## Conecta um controle de volume já desenhado na cena, preservando tamanho e layout.
+func bind_volume_control(button: TextureButton) -> void:
+	register_volume_control(button)
+	button.button_down.connect(play_button_sound)
+	button.pressed.connect(_cycle_volume)
+	_update_volume_icon(button)

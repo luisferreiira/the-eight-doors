@@ -1,0 +1,195 @@
+[gd_scene format=3 uid="uid://dkkyrhj5fkwqa"]
+
+[ext_resource type="Texture2D" uid="uid://cfnitus3ntdjm" path="res://assets/ui/voltar.png" id="continuar"]
+[ext_resource type="Texture2D" uid="uid://bhis0pm0ca1gc" path="res://assets/ui/pausar.png" id="pausar"]
+[ext_resource type="Texture2D" uid="uid://ckwguyrix357o" path="res://assets/ui/moldura_pedra.svg" id="pedra"]
+[ext_resource type="Texture2D" uid="uid://5ebmixl8co1t" path="res://assets/ui/reiniciar.png" id="reiniciar"]
+[ext_resource type="Texture2D" uid="uid://dvdxigjhobw5f" path="res://assets/ui/volume_maximo.png" id="volume"]
+
+[sub_resource type="StyleBoxFlat" id="foco"]
+bg_color = Color(0, 0, 0, 0)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.79, 0.62, 0.34, 0.8)
+
+[sub_resource type="StyleBoxFlat" id="hover"]
+content_margin_top = 7.0
+content_margin_bottom = 7.0
+bg_color = Color(0.24, 0.19, 0.14, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.79, 0.62, 0.34, 1)
+
+[sub_resource type="StyleBoxFlat" id="botao"]
+content_margin_top = 7.0
+content_margin_bottom = 7.0
+bg_color = Color(0.12, 0.115, 0.1, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.47, 0.39, 0.27, 1)
+
+[sub_resource type="StyleBoxFlat" id="tooltip"]
+content_margin_left = 7.0
+content_margin_top = 4.0
+content_margin_right = 7.0
+content_margin_bottom = 4.0
+bg_color = Color(0.07, 0.065, 0.055, 0.98)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.47, 0.39, 0.27, 1)
+
+[sub_resource type="Theme" id="tema"]
+default_font_size = 13
+Button/colors/font_color = Color(0.875, 0.804, 0.647, 1)
+Button/styles/focus = SubResource("foco")
+Button/styles/hover = SubResource("hover")
+Button/styles/normal = SubResource("botao")
+Button/styles/pressed = SubResource("hover")
+Label/colors/font_color = Color(0.875, 0.804, 0.647, 1)
+Label/colors/font_shadow_color = Color(0.045, 0.04, 0.035, 1)
+Label/constants/shadow_offset_x = 1
+Label/constants/shadow_offset_y = 2
+TooltipLabel/colors/font_color = Color(0.875, 0.804, 0.647, 1)
+TooltipLabel/font_sizes/font_size = 10
+TooltipPanel/styles/panel = SubResource("tooltip")
+
+[sub_resource type="StyleBoxTexture" id="moldura"]
+content_margin_left = 26.0
+content_margin_top = 24.0
+content_margin_right = 26.0
+content_margin_bottom = 24.0
+texture = ExtResource("pedra")
+texture_margin_left = 32.0
+texture_margin_top = 32.0
+texture_margin_right = 32.0
+texture_margin_bottom = 32.0
+
+[node name="PauseControls" type="Control" unique_id=1258095054]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme = SubResource("tema")
+
+[node name="Pausar" type="TextureButton" parent="." unique_id=1296935462]
+layout_mode = 0
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -82.0
+offset_top = 8.0
+offset_right = -8.0
+offset_bottom = 53.0
+tooltip_text = "Pausar"
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("pausar")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Sombra" type="ColorRect" parent="." unique_id=1998148302]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0.015, 0.012, 0.01, 0.64)
+
+[node name="VolumeControl" type="TextureButton" parent="Sombra" unique_id=369449404]
+layout_mode = 0
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -74.0
+offset_top = 8.0
+offset_right = -8.0
+offset_bottom = 40.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("volume")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="PauseMenu" type="PanelContainer" parent="." unique_id=160389500]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -160.0
+offset_top = -115.0
+offset_right = 160.0
+offset_bottom = 115.0
+theme_override_styles/panel = SubResource("moldura")
+
+[node name="Conteudo" type="VBoxContainer" parent="PauseMenu" unique_id=616335024]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 10
+alignment = 1
+
+[node name="Titulo" type="Label" parent="PauseMenu/Conteudo" unique_id=1524026892]
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "Jogo pausado"
+horizontal_alignment = 1
+
+[node name="Botoes" type="HBoxContainer" parent="PauseMenu/Conteudo" unique_id=274223327]
+layout_mode = 2
+theme_override_constants/separation = 28
+alignment = 1
+
+[node name="Continuar" type="VBoxContainer" parent="PauseMenu/Conteudo/Botoes" unique_id=1726837409]
+layout_mode = 2
+theme_override_constants/separation = 3
+
+[node name="Botao" type="TextureButton" parent="PauseMenu/Conteudo/Botoes/Continuar" unique_id=1024231827]
+custom_minimum_size = Vector2(74, 45)
+layout_mode = 2
+tooltip_text = "Continuar"
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("continuar")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Legenda" type="Label" parent="PauseMenu/Conteudo/Botoes/Continuar" unique_id=2027354578]
+layout_mode = 2
+theme_override_font_sizes/font_size = 11
+text = "Continuar"
+horizontal_alignment = 1
+
+[node name="Reiniciar" type="VBoxContainer" parent="PauseMenu/Conteudo/Botoes" unique_id=1071575851]
+layout_mode = 2
+theme_override_constants/separation = 3
+
+[node name="Botao" type="TextureButton" parent="PauseMenu/Conteudo/Botoes/Reiniciar" unique_id=1248472207]
+custom_minimum_size = Vector2(74, 45)
+layout_mode = 2
+tooltip_text = "Reiniciar"
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("reiniciar")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Legenda" type="Label" parent="PauseMenu/Conteudo/Botoes/Reiniciar" unique_id=1377632925]
+layout_mode = 2
+theme_override_font_sizes/font_size = 11
+text = "Reiniciar"
+horizontal_alignment = 1
+
+[node name="Menu" type="Button" parent="PauseMenu/Conteudo" unique_id=1528834889]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+text = "Voltar ao menu inicial"
+
+[node name="Atalho" type="Label" parent="PauseMenu/Conteudo" unique_id=288192252]
+layout_mode = 2
+theme_override_font_sizes/font_size = 10
+text = "Esc — continuar"
+horizontal_alignment = 1

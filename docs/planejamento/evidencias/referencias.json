@@ -1,0 +1,6 @@
+{
+  "checked": 87,
+  "scope": "Literal resource paths in project.godot, scenes, scripts, resources; excludes dynamic paths, tools, addons internals and docs",
+  "date": "2026-11-04",
+  "missing": []
+}

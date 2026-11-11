@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/world/doors/placa_saida.tscn" id="placa"]
+
+; Sinalização reutilizável: placa na grade e marcador de interação independente.
+[node name="Saida" type="Node2D"]
+
+[node name="Placa" parent="." instance=ExtResource("placa")]
+position = Vector2(560, 876)
+
+[node name="Interacao" type="Marker2D" parent="."]
+position = Vector2(560, 896)

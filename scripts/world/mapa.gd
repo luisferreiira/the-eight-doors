@@ -16,15 +16,45 @@ const ENVELOPE := Rect2(0,0,1120,1024)
 const CAMERA_BOUNDS := Rect2(32,16,1056,976)
 const CENTER_SPAWN := Vector2(560,640)
 
-## Retorna configurações independentes: coordenada lógica, segurança de spawn e destinos por direção.
+## Expansão aprovada: saídas externas não são ligações entre salas.
+const EXITS := {"S14":"O", "S21":"N"}
+## Inícios seguros aprovados: norte, leste e sul; nunca a sala central ou as saídas.
+const START_ROOMS: Array[String] = ["S22", "S23", "S29"]
+
+## Salas com segurança de nascimento marcada apenas nos três inícios aprovados.
+## IDs E0/D3–D9 reservam passagens futuras, sem ativar selos ou enigmas.
 static func create_rooms() -> Dictionary:
 	return {
-		"S01": {"coord":Vector2i(0,0), "safe":true, "links":{"N":"S02","NE":"S03","L":"S04","S":"S05","SO":"S06"}},
-		"S02": {"coord":Vector2i(0,-1), "safe":true, "links":{"S":"S01"}},
-		"S03": {"coord":Vector2i(1,-1), "safe":true, "links":{"SO":"S01"}},
-		"S04": {"coord":Vector2i(1,0), "safe":true, "links":{"O":"S01"}},
-		"S05": {"coord":Vector2i(0,1), "safe":true, "links":{"N":"S01"}},
-		"S06": {"coord":Vector2i(-1,1), "safe":true, "links":{"NE":"S01"}}
+		"S01": {"coord":Vector2i(0,0), "safe":false, "links":{"N":"S02","NE":"S03","L":"S04","S":"S05","SO":"S06","O":"S10","NO":"S07"}, "blocked":{"L":"E0"}},
+		"S02": {"coord":Vector2i(0,-1), "safe":false, "links":{"S":"S01","O":"S07","N":"S15","L":"S03","NE":"S16"}, "blocked":{"NE":"D6"}},
+		"S03": {"coord":Vector2i(1,-1), "safe":false, "links":{"SO":"S01","S":"S04","L":"S18","N":"S16","O":"S02","NE":"S17"}, "blocked":{"NE":"D7"}},
+		"S04": {"coord":Vector2i(1,0), "safe":false, "links":{"O":"S01","N":"S03","L":"S23","SE":"S26"}, "blocked":{"O":"E0","SE":"D8"}},
+		"S05": {"coord":Vector2i(0,1), "safe":false, "links":{"N":"S01","S":"S29","SE":"S28","O":"S06","SO":"S30"}},
+		"S06": {"coord":Vector2i(-1,1), "safe":false, "links":{"NE":"S01","O":"S11","N":"S10","S":"S30","L":"S05","NO":"S09"}, "blocked":{"S":"D4"}},
+		"S07": {"coord":Vector2i(-1,-1), "safe":false, "links":{"L":"S02","O":"S08","S":"S10","SE":"S01","SO":"S09","NE":"S15"}, "blocked":{"SO":"D5"}},
+		"S08": {"coord":Vector2i(-2,-1), "safe":false, "links":{"L":"S07","S":"S09"}},
+		"S09": {"coord":Vector2i(-2,0), "safe":false, "links":{"N":"S08","L":"S10","S":"S11","SE":"S06","NE":"S07","SO":"S12"}, "blocked":{"NE":"D5"}},
+		"S10": {"coord":Vector2i(-1,0), "safe":false, "links":{"O":"S09","L":"S01","S":"S06","N":"S07"}},
+		"S11": {"coord":Vector2i(-2,1), "safe":false, "links":{"N":"S09","O":"S12","L":"S06"}},
+		"S12": {"coord":Vector2i(-3,1), "safe":false, "links":{"L":"S11","N":"S13","NE":"S09"}},
+		"S13": {"coord":Vector2i(-3,0), "safe":false, "links":{"S":"S12","N":"S14"}},
+		"S14": {"coord":Vector2i(-3,-1), "safe":false, "links":{"S":"S13"}},
+		"S15": {"coord":Vector2i(0,-2), "safe":false, "links":{"S":"S02","L":"S16","SO":"S07"}},
+		"S16": {"coord":Vector2i(1,-2), "safe":false, "links":{"O":"S15","L":"S17","N":"S22","S":"S03","SO":"S02"}, "blocked":{"SO":"D6"}},
+		"S17": {"coord":Vector2i(2,-2), "safe":false, "links":{"O":"S16","S":"S18","SO":"S03"}, "blocked":{"SO":"D7"}},
+		"S18": {"coord":Vector2i(2,-1), "safe":false, "links":{"N":"S17","L":"S19","O":"S03"}},
+		"S19": {"coord":Vector2i(3,-1), "safe":false, "links":{"O":"S18","N":"S20"}},
+		"S20": {"coord":Vector2i(3,-2), "safe":false, "links":{"S":"S19","N":"S21"}},
+		"S21": {"coord":Vector2i(3,-3), "safe":false, "links":{"S":"S20"}},
+		"S22": {"coord":Vector2i(1,-3), "safe":true, "links":{"S":"S16"}},
+		"S23": {"coord":Vector2i(2,0), "safe":true, "links":{"O":"S04","L":"S24","S":"S26"}, "blocked":{"S":"D3"}},
+		"S24": {"coord":Vector2i(3,0), "safe":false, "links":{"O":"S23","S":"S25","SO":"S26"}},
+		"S25": {"coord":Vector2i(3,1), "safe":false, "links":{"N":"S24","O":"S26","SO":"S27"}, "blocked":{"SO":"D9"}},
+		"S26": {"coord":Vector2i(2,1), "safe":false, "links":{"L":"S25","S":"S27","NE":"S24","N":"S23","NO":"S04"}, "blocked":{"N":"D3","NO":"D8"}},
+		"S27": {"coord":Vector2i(2,2), "safe":false, "links":{"N":"S26","O":"S28","NE":"S25"}, "blocked":{"NE":"D9"}},
+		"S28": {"coord":Vector2i(1,2), "safe":false, "links":{"L":"S27","O":"S29","NO":"S05"}},
+		"S29": {"coord":Vector2i(0,2), "safe":true, "links":{"L":"S28","O":"S30","N":"S05"}},
+		"S30": {"coord":Vector2i(-1,2), "safe":false, "links":{"L":"S29","N":"S06","NE":"S05"}, "blocked":{"N":"D4"}},
 	}
 
 ## Converte a coordenada lógica em pixels pelo passo físico, preservando alinhamento e espaço entre salas.
@@ -49,6 +79,13 @@ static func validate(rooms: Dictionary) -> Array[String]:
 		var config: Dictionary = rooms[id]
 		if occupied.has(config.coord): errors.append("Coordenada duplicada: " + id)
 		occupied[config.coord] = id
+		# Expansão: um bloqueio precisa corresponder a uma conexão nas duas faces.
+		for direction: String in config.get("blocked", {}):
+			if not config.links.has(direction):
+				errors.append("Bloqueio sem conexao: " + id + direction)
+		# Saídas externas não podem disputar a mesma porta com uma ligação interna.
+		if EXITS.has(id) and config.links.has(EXITS[id]):
+			errors.append("Saida ocupada por conexao interna: " + id)
 		for direction: String in config.links:
 			var target: String = config.links[direction]
 			if not DIRECTIONS.has(direction):
@@ -59,6 +96,9 @@ static func validate(rooms: Dictionary) -> Array[String]:
 				continue
 			if rooms[target].coord != config.coord + DIRECTIONS[direction]: errors.append("Direcao incompativel: " + id + direction)
 			if rooms[target].links.get(OPPOSITE[direction], "") != id: errors.append("Sem retorno: " + id + direction)
+			# A grade fechada deve impedir ida e volta do mesmo atalho.
+			if config.get("blocked", {}).get(direction, "") != rooms[target].get("blocked", {}).get(OPPOSITE[direction], ""):
+				errors.append("Bloqueio sem correspondencia: " + id + direction)
 			var a: Vector2 = origin(config) + PORTALS[direction]
 			var b: Vector2 = origin(rooms[target]) + PORTALS[OPPOSITE[direction]]
 			var normal := Vector2(DIRECTIONS[direction]).normalized()

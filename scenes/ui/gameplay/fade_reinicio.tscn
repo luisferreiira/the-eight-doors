@@ -1,0 +1,35 @@
+[gd_scene load_steps=4 format=3]
+
+; Fade persistente no autoload: a troca da partida ocorre sob preto completo.
+[sub_resource type="Animation" id="escurecer"]
+resource_name = "escurecer"
+length = 0.45
+tracks/0/type = "value"
+tracks/0/path = NodePath("Tela:color:a")
+tracks/0/interp = 1
+tracks/0/keys = {"times": PackedFloat32Array(0, 0.45), "transitions": PackedFloat32Array(1, 1), "update": 0, "values": [0.0, 1.0]}
+
+[sub_resource type="Animation" id="revelar"]
+resource_name = "revelar"
+length = 0.7
+tracks/0/type = "value"
+tracks/0/path = NodePath("Tela:color:a")
+tracks/0/interp = 1
+tracks/0/keys = {"times": PackedFloat32Array(0, 0.2, 0.7), "transitions": PackedFloat32Array(1, 1, 1), "update": 0, "values": [1.0, 1.0, 0.0]}
+
+[sub_resource type="AnimationLibrary" id="animacoes"]
+_data = {"escurecer": SubResource("escurecer"), "revelar": SubResource("revelar")}
+
+[node name="FadeReinicio" type="CanvasLayer"]
+process_mode = 3
+layer = 110
+
+[node name="Tela" type="ColorRect" parent="."]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0, 0, 0, 0)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {&"": SubResource("animacoes")}

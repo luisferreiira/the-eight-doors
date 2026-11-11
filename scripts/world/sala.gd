@@ -22,11 +22,14 @@ func _ready() -> void:
 		shape.polygon = PackedVector2Array([a+outward*18,b+outward*18,b+outward*50,a+outward*50])
 		boundary.add_child(shape)
 
-## Aplica ID, posição física e destino de cada porta; ausência de conexão significa porta selada.
-func configure(id: String, config: Dictionary) -> void:
+## Reaplica os desafios resolvidos sem alterar os visuais definidos na cena.
+func configure(id: String, config: Dictionary, solved: Dictionary = {}) -> void:
 	room_id = id
 	position = Map.origin(config)
-	for direction: String in doors: doors[direction].configure(id, config.links.get(direction,""))
+	var blocked: Dictionary = config.get("blocked", {})
+	for direction: String in doors:
+		var challenge: String = blocked.get(direction, "")
+		doors[direction].configure(id, config.links.get(direction, ""), challenge, solved.has(challenge))
 
 ## Reparenta o corpo existente para compartilhar a ordenação por Y com os pilares, preservando sua identidade.
 func attach_player(player: CharacterBody2D) -> void:

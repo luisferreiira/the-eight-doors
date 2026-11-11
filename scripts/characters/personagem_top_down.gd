@@ -4,6 +4,8 @@ extends CharacterBody2D
 @export_range(20.0, 400.0, 1.0) var speed: float = 144.0
 @export var idle_prefix: String = "parada"
 @export var controls_enabled: bool = true
+## A sala ativa inverte os dois eixos; o labirinto restaura ao sair.
+@export var inverted_controls: bool = false
 var facing: String = "frente"
 @onready var sprite: AnimatedSprite2D = $AnimatedSprite2D
 
@@ -15,6 +17,8 @@ func _ready() -> void:
 ## Lê WASD normalizado, aplica velocidade e move com colisões. O bloqueio de controles produz vetor zero.
 func _physics_process(_delta: float) -> void:
 	var direction := Input.get_vector("move_left", "move_right", "move_up", "move_down") if controls_enabled else Vector2.ZERO
+	# A animação acompanha o deslocamento real, inclusive na sala invertida.
+	if inverted_controls: direction = -direction
 	velocity = direction * speed
 	move_and_slide()
 	_update_animation(direction)

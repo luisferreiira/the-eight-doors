@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/world/doors/saida.tscn" id="base"]
+
+; Placa ancorada à grade, acompanhando a orientação da porta.
+[node name="Saida" instance=ExtResource("base")]
+
+[node name="Placa" parent="."]
+position = Vector2(62, 560)
+rotation = -1.5707963
+
+[node name="Interacao" parent="."]
+position = Vector2(128, 576)

@@ -372,7 +372,3 @@ func _fade_out() -> void:
 	var tween := create_tween()
 	tween.tween_property(transicao, "modulate:a", 1.0, 0.32)
 	await tween.finished
-
-
-
-

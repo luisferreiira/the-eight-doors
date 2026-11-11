@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/efeito_sala.gd" id="script"]
+
+[node name="EfeitoSala" type="Node2D"]
+script = ExtResource("script")
+tipo = 1
+dica = "Se o passo negar tua intenção,\nbusca no contrário a direção."

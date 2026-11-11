@@ -1,0 +1,42 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/world/labyrinth/sala_octogonal_base.tscn" id="1_base"]
+
+[ext_resource type="PackedScene" path="res://scenes/world/doors/visuais/porta_ne.tscn" id="visual_NE"]
+[ext_resource type="Material" path="res://assets/materials/doors/vinho.tres" id="cor_porta"]
+
+[node name="S27" instance=ExtResource("1_base")]
+
+[node name="ConteudoDaSala" type="Node2D" parent="."]
+y_sort_enabled = true
+
+[node name="Decoracao" type="Node2D" parent="ConteudoDaSala"]
+y_sort_enabled = true
+
+[node name="Obstaculos" type="Node2D" parent="ConteudoDaSala"]
+y_sort_enabled = true
+
+[node name="Interacoes" type="Node2D" parent="ConteudoDaSala"]
+y_sort_enabled = true
+
+; Expansão: estado inicial das conexões visível no editor 2D.
+
+[node name="GradeFechada" parent="Passagens/Porta_Norte"]
+visible = false
+
+[node name="Forma" parent="Passagens/Porta_Norte/PlanoDaPorta/BloqueioFechado"]
+disabled = true
+
+[node name="GradeFechada" parent="Passagens/Porta_Oeste"]
+visible = false
+
+[node name="Forma" parent="Passagens/Porta_Oeste/PlanoDaPorta/BloqueioFechado"]
+disabled = true
+
+; Estilo especial: sobreposição sem colisão; a porta original mantém o bloqueio.
+
+[node name="GradeFechada" parent="Passagens/Porta_Nordeste"]
+self_modulate = Color(1, 1, 1, 0)
+
+[node name="VisualEspecial" parent="Passagens/Porta_Nordeste" instance=ExtResource("visual_NE")]
+material = ExtResource("cor_porta")

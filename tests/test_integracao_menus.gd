@@ -24,6 +24,13 @@ func frames(count: int = 4) -> void:
 func wait_seconds(seconds: float) -> void:
 	await create_timer(seconds).timeout
 
+## O reinício agora inclui escurecimento, carregamento e revelação da partida.
+func wait_for_transition() -> void:
+	var deadline := Time.get_ticks_msec() + 5000
+	while overlay._changing_scene and Time.get_ticks_msec() < deadline:
+		await process_frame
+	check(not overlay._changing_scene, "Transição da pausa não terminou")
+
 func click(button: BaseButton) -> void:
 	# Envia mouse pelo viewport para validar hit testing e sobreposições reais.
 	var point := button.get_global_rect().get_center()
@@ -112,7 +119,7 @@ func run() -> void:
 		var game := current_scene
 		check(game.player.name == expected, "Instanciou personagem errado: " + expected)
 		check(root.content_scale_size == Vector2i(640,360), "Câmera perdeu resolução de gameplay")
-		check(game.current_room == "S01", "Início fora da sala S01")
+		check(game.current_room in game.Map.START_ROOMS, "Início fora das salas seguras")
 		check(game.find_children("*", "CharacterBody2D", true, false).size() == 1, "Jogador duplicado")
 		check(overlay._ui.visible, "Pausa ausente no gameplay")
 		await capture("04_jogo_" + expected)
@@ -137,24 +144,31 @@ func run() -> void:
 		Input.action_release("move_right")
 		check(game.player.position.distance_to(initial) > 10.0, "Movimento não retomou")
 		var player_id: int = game.player.get_instance_id()
-		game.request_transition(game.room.doors["N"], game.player)
+		# Atravessa uma porta aberta da sala sorteada.
+		var start_door: Area2D
+		for door: Area2D in game.room.doors.values():
+			if door.opened:
+				start_door = door
+				break
+		var expected_room: String = start_door.destination
+		game.request_transition(start_door, game.player)
 		overlay._pause_game()
 		check(not paused, "Pausa interrompeu fade")
 		check(game.fade.layer > overlay.layer, "Pausa sobrepõe fade")
 		await wait_seconds(2.2)
-		check(game.current_room == "S02", "Travessia não concluiu")
+		check(game.current_room == expected_room, "Travessia não concluiu")
 		check(game.player.get_instance_id() == player_id, "Travessia recriou personagem")
 		overlay._pause_game()
 		overlay._restart_current_scene()
 		overlay._restart_current_scene()
-		await wait_seconds(0.6)
-		check(not paused and current_scene.current_room == "S01", "Reinício não restabeleceu partida")
+		await wait_for_transition()
+		check(not paused and current_scene.current_room in current_scene.Map.START_ROOMS, "Reinício não restabeleceu partida")
 		check(current_scene.player.name == expected, "Reinício perdeu personagem")
 		check(current_scene.player.get_instance_id() != player_id, "Reinício reutilizou partida antiga")
 		check(state._music_player.get_instance_id() == music_id, "Música duplicada")
 		overlay._pause_game()
 		overlay._return_to_menu()
-		await wait_seconds(1.3)
+		await wait_for_transition()
 		check(not paused and not overlay._ui.visible, "Pausa vazou ao menu")
 		current_scene.play.pressed.emit()
 		await wait_seconds(1.1)

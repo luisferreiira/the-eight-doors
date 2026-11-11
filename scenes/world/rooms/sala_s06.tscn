@@ -1,6 +1,11 @@
-[gd_scene load_steps=2 format=3]
+[gd_scene load_steps=5 format=3]
 
 [ext_resource type="PackedScene" path="res://scenes/world/labyrinth/sala_octogonal_base.tscn" id="1_base"]
+
+[ext_resource type="PackedScene" path="res://scenes/world/doors/visuais/porta_s.tscn" id="visual_S"]
+[ext_resource type="Material" path="res://assets/materials/doors/vinho.tres" id="cor_porta"]
+
+[ext_resource type="PackedScene" path="res://scenes/world/effects/controles_invertidos.tscn" id="efeito_sala"]
 
 [node name="S06" instance=ExtResource("1_base")]
 
@@ -15,3 +20,46 @@ y_sort_enabled = true
 
 [node name="Interacoes" type="Node2D" parent="ConteudoDaSala"]
 y_sort_enabled = true
+
+; Expansão: estado inicial das conexões visível no editor 2D.
+
+[node name="GradeFechada" parent="Passagens/Porta_Nordeste"]
+visible = false
+
+[node name="Forma" parent="Passagens/Porta_Nordeste/PlanoDaPorta/BloqueioFechado"]
+disabled = true
+
+[node name="GradeFechada" parent="Passagens/Porta_Oeste"]
+visible = false
+
+[node name="Forma" parent="Passagens/Porta_Oeste/PlanoDaPorta/BloqueioFechado"]
+disabled = true
+
+[node name="GradeFechada" parent="Passagens/Porta_Norte"]
+visible = false
+
+[node name="Forma" parent="Passagens/Porta_Norte/PlanoDaPorta/BloqueioFechado"]
+disabled = true
+
+[node name="GradeFechada" parent="Passagens/Porta_Leste"]
+visible = false
+
+[node name="Forma" parent="Passagens/Porta_Leste/PlanoDaPorta/BloqueioFechado"]
+disabled = true
+
+[node name="GradeFechada" parent="Passagens/Porta_Noroeste"]
+visible = false
+
+[node name="Forma" parent="Passagens/Porta_Noroeste/PlanoDaPorta/BloqueioFechado"]
+disabled = true
+
+; Estilo especial: sobreposição sem colisão; a porta original mantém o bloqueio.
+
+[node name="GradeFechada" parent="Passagens/Porta_Sul"]
+self_modulate = Color(1, 1, 1, 0)
+
+[node name="VisualEspecial" parent="Passagens/Porta_Sul" instance=ExtResource("visual_S")]
+material = ExtResource("cor_porta")
+
+; Efeito local editável e pista rimada desta sala.
+[node name="EfeitoSala" parent="." instance=ExtResource("efeito_sala")]

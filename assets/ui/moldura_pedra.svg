@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="300" viewBox="0 0 480 300">
+<defs><linearGradient id="s" x2=".3" y2="1"><stop stop-color="#716553"/><stop offset=".3" stop-color="#4c453b"/><stop offset="1" stop-color="#302d28"/></linearGradient><pattern id="grain" width="19" height="17" patternUnits="userSpaceOnUse"><path d="M2 4h3M12 11h2M5 15h1" stroke="#b09a72" opacity=".17"/></pattern></defs>
+<path d="M26 3H454L478 27V273L454 297H26L2 273V27Z" fill="#111212" stroke="#181511" stroke-width="4"/>
+<path d="M29 9H451L471 29V271L451 291H29L9 271V29Z" fill="url(#s)" stroke="#817057" stroke-width="2"/>
+<path d="M35 25H445L455 35V265L445 275H35L25 265V35Z" fill="#17191a" stroke="#0e0e0e" stroke-width="6"/>
+<path d="M35 25H445L455 35V265L445 275H35L25 265V35Z" fill="url(#grain)"/>
+<g stroke="#171511" stroke-width="4" fill="none"><path d="M74 8L78 24M143 8L139 24M215 8L219 24M288 8L284 24M365 8L369 24M415 8L411 24M9 74H25M9 135H25M9 204H25M455 81H471M455 151H471M455 221H471M70 275L74 291M152 275L148 291M229 275L233 291M308 275L304 291M382 275L386 291M430 275L426 291"/></g>
+<g stroke="#9a815b" fill="none" opacity=".6"><path d="M30 11H68M82 11H134M150 11H209M224 11H279M294 11H360M375 11H409M29 279H66M156 279H222M312 279H378"/></g>
+<g stroke="#16130f" stroke-width="2" fill="none"><path d="M106 9L112 16L105 22M340 276L331 283L335 290M12 174L19 180L14 191M460 110L468 118"/></g>
+<g fill="#bf893e" stroke="#322318" stroke-width="2"><path d="M16 26L22 32L16 38L10 32Z"/><path d="M464 262L470 268L464 274L458 268Z"/></g>
+</svg>

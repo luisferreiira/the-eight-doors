@@ -1,0 +1,264 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" path="res://assets/environments/generated/dungeon_central/atlas_sala_central.png" id="atlas"]
+
+[sub_resource type="AtlasTexture" id="fragmento"]
+atlas = ExtResource("atlas")
+region = Rect2(256, 208, 48, 48)
+
+; Desgaste discreto sobre o piso existente; cada conjunto pode ser movido no 2D.
+[node name="DetalhesPiso" type="Node2D"]
+z_index = -15
+
+[node name="Fissura01" type="Node2D" parent="."]
+position = Vector2(470, 300)
+rotation = 0.000000
+
+[node name="Principal" type="Line2D" parent="Fissura01"]
+points = PackedVector2Array(0, 0, 8, 3, 13, 0, 17, 7, 25, 10, 31, 8)
+width = 1.0
+default_color = Color(0.055, 0.047, 0.04, 0.68)
+
+[node name="Ramo" type="Line2D" parent="Fissura01"]
+points = PackedVector2Array(17, 7, 14, 15, 18, 20)
+width = 1.0
+default_color = Color(0.055, 0.047, 0.04, 0.68)
+
+[node name="Fissura02" type="Node2D" parent="."]
+position = Vector2(820, 555)
+rotation = 1.570796
+
+[node name="Principal" type="Line2D" parent="Fissura02"]
+points = PackedVector2Array(0, 0, 8, 3, 13, 0, 17, 7, 25, 10, 31, 8)
+width = 1.0
+default_color = Color(0.055, 0.047, 0.04, 0.68)
+
+[node name="Ramo" type="Line2D" parent="Fissura02"]
+points = PackedVector2Array(17, 7, 14, 15, 18, 20)
+width = 1.0
+default_color = Color(0.055, 0.047, 0.04, 0.68)
+
+[node name="Fissura03" type="Node2D" parent="."]
+position = Vector2(270, 545)
+rotation = 3.141592
+
+[node name="Principal" type="Line2D" parent="Fissura03"]
+points = PackedVector2Array(0, 0, 8, 3, 13, 0, 17, 7, 25, 10, 31, 8)
+width = 1.0
+default_color = Color(0.055, 0.047, 0.04, 0.68)
+
+[node name="Ramo" type="Line2D" parent="Fissura03"]
+points = PackedVector2Array(17, 7, 14, 15, 18, 20)
+width = 1.0
+default_color = Color(0.055, 0.047, 0.04, 0.68)
+
+[node name="Fissura04" type="Node2D" parent="."]
+position = Vector2(610, 715)
+rotation = 4.712388
+
+[node name="Principal" type="Line2D" parent="Fissura04"]
+points = PackedVector2Array(0, 0, 8, 3, 13, 0, 17, 7, 25, 10, 31, 8)
+width = 1.0
+default_color = Color(0.055, 0.047, 0.04, 0.68)
+
+[node name="Ramo" type="Line2D" parent="Fissura04"]
+points = PackedVector2Array(17, 7, 14, 15, 18, 20)
+width = 1.0
+default_color = Color(0.055, 0.047, 0.04, 0.68)
+
+[node name="Fissura05" type="Node2D" parent="."]
+position = Vector2(375, 875)
+rotation = 0.000000
+
+[node name="Principal" type="Line2D" parent="Fissura05"]
+points = PackedVector2Array(0, 0, 8, 3, 13, 0, 17, 7, 25, 10, 31, 8)
+width = 1.0
+default_color = Color(0.055, 0.047, 0.04, 0.68)
+
+[node name="Ramo" type="Line2D" parent="Fissura05"]
+points = PackedVector2Array(17, 7, 14, 15, 18, 20)
+width = 1.0
+default_color = Color(0.055, 0.047, 0.04, 0.68)
+
+[node name="Fissura06" type="Node2D" parent="."]
+position = Vector2(744, 280)
+rotation = 1.570796
+
+[node name="Principal" type="Line2D" parent="Fissura06"]
+points = PackedVector2Array(0, 0, 8, 3, 13, 0, 17, 7, 25, 10, 31, 8)
+width = 1.0
+default_color = Color(0.055, 0.047, 0.04, 0.68)
+
+[node name="Ramo" type="Line2D" parent="Fissura06"]
+points = PackedVector2Array(17, 7, 14, 15, 18, 20)
+width = 1.0
+default_color = Color(0.055, 0.047, 0.04, 0.68)
+
+[node name="Fissura07" type="Node2D" parent="."]
+position = Vector2(205, 739)
+rotation = 3.141592
+
+[node name="Principal" type="Line2D" parent="Fissura07"]
+points = PackedVector2Array(0, 0, 8, 3, 13, 0, 17, 7, 25, 10, 31, 8)
+width = 1.0
+default_color = Color(0.055, 0.047, 0.04, 0.68)
+
+[node name="Ramo" type="Line2D" parent="Fissura07"]
+points = PackedVector2Array(17, 7, 14, 15, 18, 20)
+width = 1.0
+default_color = Color(0.055, 0.047, 0.04, 0.68)
+
+[node name="Fissura08" type="Node2D" parent="."]
+position = Vector2(925, 514)
+rotation = 4.712388
+
+[node name="Principal" type="Line2D" parent="Fissura08"]
+points = PackedVector2Array(0, 0, 8, 3, 13, 0, 17, 7, 25, 10, 31, 8)
+width = 1.0
+default_color = Color(0.055, 0.047, 0.04, 0.68)
+
+[node name="Ramo" type="Line2D" parent="Fissura08"]
+points = PackedVector2Array(17, 7, 14, 15, 18, 20)
+width = 1.0
+default_color = Color(0.055, 0.047, 0.04, 0.68)
+
+[node name="Fissura09" type="Node2D" parent="."]
+position = Vector2(470, 615)
+rotation = 0.000000
+
+[node name="Principal" type="Line2D" parent="Fissura09"]
+points = PackedVector2Array(0, 0, 8, 3, 13, 0, 17, 7, 25, 10, 31, 8)
+width = 1.0
+default_color = Color(0.055, 0.047, 0.04, 0.68)
+
+[node name="Ramo" type="Line2D" parent="Fissura09"]
+points = PackedVector2Array(17, 7, 14, 15, 18, 20)
+width = 1.0
+default_color = Color(0.055, 0.047, 0.04, 0.68)
+
+[node name="Fissura10" type="Node2D" parent="."]
+position = Vector2(625, 850)
+rotation = 1.570796
+
+[node name="Principal" type="Line2D" parent="Fissura10"]
+points = PackedVector2Array(0, 0, 8, 3, 13, 0, 17, 7, 25, 10, 31, 8)
+width = 1.0
+default_color = Color(0.055, 0.047, 0.04, 0.68)
+
+[node name="Ramo" type="Line2D" parent="Fissura10"]
+points = PackedVector2Array(17, 7, 14, 15, 18, 20)
+width = 1.0
+default_color = Color(0.055, 0.047, 0.04, 0.68)
+
+[node name="Fissura11" type="Node2D" parent="."]
+position = Vector2(341, 390)
+rotation = 3.141592
+
+[node name="Principal" type="Line2D" parent="Fissura11"]
+points = PackedVector2Array(0, 0, 8, 3, 13, 0, 17, 7, 25, 10, 31, 8)
+width = 1.0
+default_color = Color(0.055, 0.047, 0.04, 0.68)
+
+[node name="Ramo" type="Line2D" parent="Fissura11"]
+points = PackedVector2Array(17, 7, 14, 15, 18, 20)
+width = 1.0
+default_color = Color(0.055, 0.047, 0.04, 0.68)
+
+[node name="Fissura12" type="Node2D" parent="."]
+position = Vector2(755, 745)
+rotation = 4.712388
+
+[node name="Principal" type="Line2D" parent="Fissura12"]
+points = PackedVector2Array(0, 0, 8, 3, 13, 0, 17, 7, 25, 10, 31, 8)
+width = 1.0
+default_color = Color(0.055, 0.047, 0.04, 0.68)
+
+[node name="Ramo" type="Line2D" parent="Fissura12"]
+points = PackedVector2Array(17, 7, 14, 15, 18, 20)
+width = 1.0
+default_color = Color(0.055, 0.047, 0.04, 0.68)
+
+; Cascalho rente ao chão, sem bloqueio de movimento.
+[node name="Cascalho01" type="Sprite2D" parent="."]
+position = Vector2(350, 295)
+scale = Vector2(0.16, 0.10)
+modulate = Color(0.8, 0.74, 0.65, 0.65)
+texture = SubResource("fragmento")
+
+; Cascalho rente ao chão, sem bloqueio de movimento.
+[node name="Cascalho02" type="Sprite2D" parent="."]
+position = Vector2(752, 340)
+scale = Vector2(0.16, 0.10)
+modulate = Color(0.8, 0.74, 0.65, 0.65)
+texture = SubResource("fragmento")
+
+; Cascalho rente ao chão, sem bloqueio de movimento.
+[node name="Cascalho03" type="Sprite2D" parent="."]
+position = Vector2(288, 470)
+scale = Vector2(0.16, 0.10)
+modulate = Color(0.8, 0.74, 0.65, 0.65)
+texture = SubResource("fragmento")
+
+; Cascalho rente ao chão, sem bloqueio de movimento.
+[node name="Cascalho04" type="Sprite2D" parent="."]
+position = Vector2(833, 490)
+scale = Vector2(0.16, 0.10)
+modulate = Color(0.8, 0.74, 0.65, 0.65)
+texture = SubResource("fragmento")
+
+; Cascalho rente ao chão, sem bloqueio de movimento.
+[node name="Cascalho05" type="Sprite2D" parent="."]
+position = Vector2(183, 704)
+scale = Vector2(0.16, 0.10)
+modulate = Color(0.8, 0.74, 0.65, 0.65)
+texture = SubResource("fragmento")
+
+; Cascalho rente ao chão, sem bloqueio de movimento.
+[node name="Cascalho06" type="Sprite2D" parent="."]
+position = Vector2(925, 713)
+scale = Vector2(0.16, 0.10)
+modulate = Color(0.8, 0.74, 0.65, 0.65)
+texture = SubResource("fragmento")
+
+; Cascalho rente ao chão, sem bloqueio de movimento.
+[node name="Cascalho07" type="Sprite2D" parent="."]
+position = Vector2(372, 841)
+scale = Vector2(0.16, 0.10)
+modulate = Color(0.8, 0.74, 0.65, 0.65)
+texture = SubResource("fragmento")
+
+; Cascalho rente ao chão, sem bloqueio de movimento.
+[node name="Cascalho08" type="Sprite2D" parent="."]
+position = Vector2(763, 877)
+scale = Vector2(0.16, 0.10)
+modulate = Color(0.8, 0.74, 0.65, 0.65)
+texture = SubResource("fragmento")
+
+; Cascalho rente ao chão, sem bloqueio de movimento.
+[node name="Cascalho09" type="Sprite2D" parent="."]
+position = Vector2(503, 789)
+scale = Vector2(0.16, 0.10)
+modulate = Color(0.8, 0.74, 0.65, 0.65)
+texture = SubResource("fragmento")
+
+; Cascalho rente ao chão, sem bloqueio de movimento.
+[node name="Cascalho10" type="Sprite2D" parent="."]
+position = Vector2(650, 445)
+scale = Vector2(0.16, 0.10)
+modulate = Color(0.8, 0.74, 0.65, 0.65)
+texture = SubResource("fragmento")
+
+; Cascalho rente ao chão, sem bloqueio de movimento.
+[node name="Cascalho11" type="Sprite2D" parent="."]
+position = Vector2(425, 336)
+scale = Vector2(0.16, 0.10)
+modulate = Color(0.8, 0.74, 0.65, 0.65)
+texture = SubResource("fragmento")
+
+; Cascalho rente ao chão, sem bloqueio de movimento.
+[node name="Cascalho12" type="Sprite2D" parent="."]
+position = Vector2(705, 862)
+scale = Vector2(0.16, 0.10)
+modulate = Color(0.8, 0.74, 0.65, 0.65)
+texture = SubResource("fragmento")
+

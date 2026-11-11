@@ -1,7 +1,10 @@
-[gd_scene load_steps=3 format=3]
+[gd_scene load_steps=5 format=3]
 
 [ext_resource type="Script" path="res://scripts/world/labirinto.gd" id="1"]
 [ext_resource type="PackedScene" path="res://scenes/world/environments/atmosfera.tscn" id="2"]
+
+[ext_resource type="PackedScene" path="res://scenes/ui/gameplay/pergaminho.tscn" id="3"]
+[ext_resource type="PackedScene" path="res://scenes/ui/gameplay/painel_selo.tscn" id="4"]
 
 [node name="Labirinto" type="Node2D"]
 script = ExtResource("1")
@@ -20,3 +23,12 @@ theme_override_constants/shadow_offset_x = 1
 theme_override_constants/shadow_offset_y = 1
 theme_override_font_sizes/font_size = 14
 text = "S01  ·  WASD"
+
+[node name="Pergaminho" parent="HUD" instance=ExtResource("3")]
+; Expansão: sem dica antiga no HUD; o comando E aparece somente perto da saída.
+visible = false
+
+[node name="Texto" parent="HUD/Pergaminho"]
+text = ""
+
+[node name="PainelSelo" parent="." instance=ExtResource("4")]
