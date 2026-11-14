@@ -64,3 +64,7 @@ self_modulate = Color(1, 1, 1, 0)
 
 [node name="VisualEspecial" parent="Passagens/Porta_Leste" instance=ExtResource("visual_L")]
 material = ExtResource("cor_porta")
+
+; O batente original era desenhado sobre a cópia vinho. Mantém apenas a arte especial.
+[node name="BatenteSuperior" parent="Passagens/Porta_Leste"]
+visible = false

@@ -13,7 +13,9 @@ atlas = ExtResource("1_kb8nc")
 region = Rect2(496, 0, 96, 192)
 
 ; Sobreposição editável: origem coincide com o centro da Area2D da porta.
+; Sobreposição acima dos tiles originais; personagem ganha prioridade ao cruzá-la.
 [node name="VisualEspecial" type="Node2D"]
+z_index = 0
 texture_filter = 1
 material = ExtResource("cor")
 

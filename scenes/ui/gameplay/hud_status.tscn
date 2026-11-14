@@ -1,0 +1,67 @@
+[gd_scene load_steps=5 format=3]
+[ext_resource type="Script" path="res://scripts/ui/hud_status.gd" id="script"]
+[ext_resource type="Texture2D" path="res://assets/ui/hud/moldura_status.svg" id="frame"]
+[ext_resource type="Texture2D" path="res://assets/ui/hud/coracao_cheio.svg" id="full"]
+[ext_resource type="Texture2D" path="res://assets/ui/hud/coracao_vazio.svg" id="empty"]
+; HUD compacto com prévia de três vidas; editar no 2D.
+[node name="Status" type="Control"]
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 224.0
+offset_bottom = 44.0
+mouse_filter = 2
+texture_filter = 1
+script = ExtResource("script")
+coracao_cheio = ExtResource("full")
+coracao_vazio = ExtResource("empty")
+[node name="Moldura" type="TextureRect" parent="."]
+offset_right = 216.0
+offset_bottom = 36.0
+texture = ExtResource("frame")
+expand_mode = 1
+mouse_filter = 2
+
+[node name="Coracao1" type="TextureRect" parent="."]
+offset_left = 14.0
+offset_top = 10.0
+offset_right = 30.0
+offset_bottom = 26.0
+texture = ExtResource("full")
+expand_mode = 1
+mouse_filter = 2
+
+[node name="Coracao2" type="TextureRect" parent="."]
+offset_left = 36.0
+offset_top = 10.0
+offset_right = 52.0
+offset_bottom = 26.0
+texture = ExtResource("full")
+expand_mode = 1
+mouse_filter = 2
+
+[node name="Coracao3" type="TextureRect" parent="."]
+offset_left = 58.0
+offset_top = 10.0
+offset_right = 74.0
+offset_bottom = 26.0
+texture = ExtResource("full")
+expand_mode = 1
+mouse_filter = 2
+
+[node name="Divisor" type="ColorRect" parent="."]
+offset_left = 83.0
+offset_top = 9.0
+offset_right = 84.0
+offset_bottom = 27.0
+color = Color(0.65,0.54,0.37,1)
+mouse_filter = 2
+[node name="Pontos" type="Label" parent="."]
+offset_left = 94.0
+offset_top = 7.0
+offset_right = 206.0
+offset_bottom = 29.0
+theme_override_font_sizes/font_size = 14
+theme_override_colors/font_color = Color(0.88,0.81,0.66,1)
+vertical_alignment = 1
+text = "Pontos: 0"
+mouse_filter = 2

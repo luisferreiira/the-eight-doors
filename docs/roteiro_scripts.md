@@ -188,7 +188,7 @@ A cena guarda moldura, inscrição, sequência, botões de pedras e botões de a
 
 Fluxo: E perto de E0 → painel → escolha → sinal `confirmed` → `_confirm_challenge()` do labirinto → `open_passage()` da porta → registro em `solved_challenges`.
 
-**Implementação atual:** somente E0 tem enigma funcional. Os outros bloqueios cadastrados permanecem fechados. Erros mostram uma mensagem; ainda não descontam vida. Acertos ainda não concedem pontuação. O progresso é compartilhado pelos dois lados de E0 durante a partida e é perdido ao reiniciar.
+**Implementação atual:** E0, D3, D7, D8 e D9 possuem desafios. Cada três erros por porta custam uma vida; acertos rendem 300, 200 ou 100 pontos conforme o histórico. Consulte `docs/planejamento/pontuacao_e_vidas.md`. O progresso é compartilhado pelos dois lados de E0 durante a partida e é perdido ao reiniciar.
 
 ## 9. HUD e pergaminho
 

@@ -12,6 +12,8 @@ var _shade: ColorRect
 var _pause_panel: PanelContainer
 var _resume_button: TextureButton
 var _changing_scene := false
+## Recupera o campo de resposta após continuar, sem apagar a tentativa.
+var _previous_focus: Control
 
 func _ready() -> void:
 	process_mode = Node.PROCESS_MODE_ALWAYS
@@ -61,9 +63,10 @@ func _refresh_for_scene(_scene_root: Node = null) -> void:
 func _pause_game() -> void:
 	if not _is_gameplay() or _changing_scene or get_tree().paused:
 		return
-	# O painel de runas e a vitória recebem seus próprios comandos.
-	if get_tree().current_scene.blocks_pause():
+	# Enigmas aceitam pausa; apenas operações transitórias e vitória a bloqueiam.
+	if get_tree().current_scene.blocks_pause_menu():
 		return
+	_previous_focus = get_viewport().gui_get_focus_owner()
 	get_tree().paused = true
 	_pause_button.visible = false
 	_shade.visible = true
@@ -75,6 +78,7 @@ func _resume_game() -> void:
 	get_tree().paused = false
 	_refresh_for_scene()
 	_resume_button.release_focus()
+	if is_instance_valid(_previous_focus): _previous_focus.grab_focus()
 
 func _restart_current_scene() -> void:
 	if not _is_gameplay() or _changing_scene: return
@@ -115,8 +119,8 @@ func _input(event: InputEvent) -> void:
 		get_viewport().set_input_as_handled()
 		return
 	if not _is_gameplay(): return
-	# Entrega Esc ao painel quando o desafio está aberto.
-	if not get_tree().paused and get_tree().current_scene.blocks_pause(): return
+	# Esc abre a pausa também sobre a inscrição; Fechar cancela o enigma.
+	if not get_tree().paused and get_tree().current_scene.blocks_pause_menu(): return
 	if event.is_action_pressed("ui_cancel") and not event.is_echo():
 		if get_tree().paused:
 			_resume_game()

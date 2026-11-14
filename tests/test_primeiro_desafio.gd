@@ -38,6 +38,8 @@ func run() -> void:
 	root.add_child(game)
 	await frames()
 	var door: Area2D = game.room.doors.L
+	# O batente original não deve cobrir a moldura vinho.
+	check(not door.get_node("BatenteSuperior").visible, "Batente leste original sobrepõe vinho")
 	await action("interact")
 	check(not game.seal_panel.visible, "Painel abriu longe da porta")
 	game.player.global_position = door.spawn_position()
@@ -81,6 +83,7 @@ func run() -> void:
 	await frames()
 	check(not game.room.doors.L.opened and game.solved_challenges.is_empty(), "Nova partida herdou progresso")
 	game.load_room("S04")
+	check(not game.room.doors.O.get_node("BatenteSuperior").visible, "Batente oeste original sobrepõe vinho")
 	await frames()
 	game.player.global_position = game.room.doors.O.spawn_position()
 	await action("interact")

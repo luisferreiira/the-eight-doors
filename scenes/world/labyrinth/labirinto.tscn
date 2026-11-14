@@ -6,6 +6,12 @@
 [ext_resource type="PackedScene" path="res://scenes/ui/gameplay/pergaminho.tscn" id="3"]
 [ext_resource type="PackedScene" path="res://scenes/ui/gameplay/painel_selo.tscn" id="4"]
 
+[ext_resource type="PackedScene" path="res://scenes/ui/gameplay/enigmas/d3.tscn" id="D3"]
+[ext_resource type="PackedScene" path="res://scenes/ui/gameplay/enigmas/d7.tscn" id="D7"]
+[ext_resource type="PackedScene" path="res://scenes/ui/gameplay/enigmas/d8.tscn" id="D8"]
+[ext_resource type="PackedScene" path="res://scenes/ui/gameplay/enigmas/d9.tscn" id="D9"]
+[ext_resource type="PackedScene" path="res://scenes/ui/gameplay/vitoria.tscn" id="resultado"]
+[ext_resource type="PackedScene" path="res://scenes/ui/gameplay/hud_status.tscn" id="status"]
 [node name="Labirinto" type="Node2D"]
 script = ExtResource("1")
 
@@ -15,14 +21,14 @@ script = ExtResource("1")
 layer = 11
 
 [node name="Sala" type="Label" parent="HUD"]
-offset_left = 16.0
-offset_top = 12.0
+offset_left = 12.0
+offset_top = 46.0
 theme_override_colors/font_color = Color(0.86,0.83,0.72,1)
 theme_override_colors/font_shadow_color = Color(0,0,0,1)
 theme_override_constants/shadow_offset_x = 1
 theme_override_constants/shadow_offset_y = 1
 theme_override_font_sizes/font_size = 14
-text = "S01  ·  WASD"
+text = "S01 · Aelin"
 
 [node name="Pergaminho" parent="HUD" instance=ExtResource("3")]
 ; Expansão: sem dica antiga no HUD; o comando E aparece somente perto da saída.
@@ -32,3 +38,17 @@ visible = false
 text = ""
 
 [node name="PainelSelo" parent="." instance=ExtResource("4")]
+
+[node name="D3" parent="." instance=ExtResource("D3")]
+
+[node name="D7" parent="." instance=ExtResource("D7")]
+
+[node name="D8" parent="." instance=ExtResource("D8")]
+
+[node name="D9" parent="." instance=ExtResource("D9")]
+
+; Corações e pontos usam uma cena visual própria.
+[node name="Status" parent="HUD" instance=ExtResource("status")]
+[node name="Resultado" parent="." instance=ExtResource("resultado")]
+visible = false
+layer = 90

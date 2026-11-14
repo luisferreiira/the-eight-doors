@@ -1,0 +1,378 @@
+[gd_scene load_steps=3 format=3]
+[ext_resource type="Script" path="res://scripts/ui/enigma_direcoes.gd" id="script"]
+[ext_resource type="Texture2D" path="res://assets/ui/moldura_pedra.svg" id="frame"]
+[ext_resource type="Theme" path="res://assets/ui/enigmas/tema_inscricao.tres" id="tema"]
+[node name="Enigma" type="CanvasLayer"]
+layer = 30
+script = ExtResource("script")
+resposta = "leste"
+[node name="Fundo" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0,0,0,0.7)
+theme = ExtResource("tema")
+[node name="Painel" type="TextureRect" parent="Fundo"]
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -255.0
+offset_right = 255.0
+offset_top = -170.0
+offset_bottom = 170.0
+texture = ExtResource("frame")
+expand_mode = 1
+
+[node name="Titulo" type="Label" parent="Fundo/Painel"]
+offset_left = 24.0
+offset_top = 18.0
+offset_right = 486.0
+offset_bottom = 48.0
+text = "Os passos do viajante"
+theme_override_font_sizes/font_size = 20
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+theme_override_colors/font_color = Color(0.88,0.80,0.65,1)
+
+[node name="Inscricao" type="Label" parent="Fundo/Painel"]
+offset_left = 28.0
+offset_top = 44.0
+offset_right = 482.0
+offset_bottom = 108.0
+text = "Três passos ao norte, dois ao nascente vou dar;\ntrês passos ao sul, sem jamais recuar.\nDo ponto onde parti, em que direção vou estar?"
+theme_override_font_sizes/font_size = 13
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+theme_override_colors/font_color = Color(0.88,0.80,0.65,1)
+
+[node name="Norte" type="Label" parent="Fundo/Painel"]
+offset_left = 350.0
+offset_top = 112.0
+offset_right = 420.0
+offset_bottom = 137.0
+text = "N ↑"
+theme_override_font_sizes/font_size = 14
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+theme_override_colors/font_color = Color(0.88,0.80,0.65,1)
+
+[node name="Casa0_0" type="Button" parent="Fundo/Painel"]
+offset_left = 150.0
+offset_top = 120.0
+offset_right = 175.0
+offset_bottom = 145.0
+theme_override_font_sizes/font_size = 14
+toggle_mode = true
+
+[node name="Casa1_0" type="Button" parent="Fundo/Painel"]
+offset_left = 175.0
+offset_top = 120.0
+offset_right = 200.0
+offset_bottom = 145.0
+theme_override_font_sizes/font_size = 14
+toggle_mode = true
+
+[node name="Casa2_0" type="Button" parent="Fundo/Painel"]
+offset_left = 200.0
+offset_top = 120.0
+offset_right = 225.0
+offset_bottom = 145.0
+theme_override_font_sizes/font_size = 14
+toggle_mode = true
+
+[node name="Casa3_0" type="Button" parent="Fundo/Painel"]
+offset_left = 225.0
+offset_top = 120.0
+offset_right = 250.0
+offset_bottom = 145.0
+theme_override_font_sizes/font_size = 14
+toggle_mode = true
+
+[node name="Casa4_0" type="Button" parent="Fundo/Painel"]
+offset_left = 250.0
+offset_top = 120.0
+offset_right = 275.0
+offset_bottom = 145.0
+theme_override_font_sizes/font_size = 14
+toggle_mode = true
+
+[node name="Casa5_0" type="Button" parent="Fundo/Painel"]
+offset_left = 275.0
+offset_top = 120.0
+offset_right = 300.0
+offset_bottom = 145.0
+theme_override_font_sizes/font_size = 14
+toggle_mode = true
+
+[node name="Casa6_0" type="Button" parent="Fundo/Painel"]
+offset_left = 300.0
+offset_top = 120.0
+offset_right = 325.0
+offset_bottom = 145.0
+theme_override_font_sizes/font_size = 14
+toggle_mode = true
+
+[node name="Casa0_1" type="Button" parent="Fundo/Painel"]
+offset_left = 150.0
+offset_top = 145.0
+offset_right = 175.0
+offset_bottom = 170.0
+theme_override_font_sizes/font_size = 14
+toggle_mode = true
+
+[node name="Casa1_1" type="Button" parent="Fundo/Painel"]
+offset_left = 175.0
+offset_top = 145.0
+offset_right = 200.0
+offset_bottom = 170.0
+theme_override_font_sizes/font_size = 14
+toggle_mode = true
+
+[node name="Casa2_1" type="Button" parent="Fundo/Painel"]
+offset_left = 200.0
+offset_top = 145.0
+offset_right = 225.0
+offset_bottom = 170.0
+theme_override_font_sizes/font_size = 14
+toggle_mode = true
+
+[node name="Casa3_1" type="Button" parent="Fundo/Painel"]
+offset_left = 225.0
+offset_top = 145.0
+offset_right = 250.0
+offset_bottom = 170.0
+theme_override_font_sizes/font_size = 14
+toggle_mode = true
+
+[node name="Casa4_1" type="Button" parent="Fundo/Painel"]
+offset_left = 250.0
+offset_top = 145.0
+offset_right = 275.0
+offset_bottom = 170.0
+theme_override_font_sizes/font_size = 14
+toggle_mode = true
+
+[node name="Casa5_1" type="Button" parent="Fundo/Painel"]
+offset_left = 275.0
+offset_top = 145.0
+offset_right = 300.0
+offset_bottom = 170.0
+theme_override_font_sizes/font_size = 14
+toggle_mode = true
+
+[node name="Casa6_1" type="Button" parent="Fundo/Painel"]
+offset_left = 300.0
+offset_top = 145.0
+offset_right = 325.0
+offset_bottom = 170.0
+theme_override_font_sizes/font_size = 14
+toggle_mode = true
+
+[node name="Casa0_2" type="Button" parent="Fundo/Painel"]
+offset_left = 150.0
+offset_top = 170.0
+offset_right = 175.0
+offset_bottom = 195.0
+theme_override_font_sizes/font_size = 14
+toggle_mode = true
+
+[node name="Casa1_2" type="Button" parent="Fundo/Painel"]
+offset_left = 175.0
+offset_top = 170.0
+offset_right = 200.0
+offset_bottom = 195.0
+theme_override_font_sizes/font_size = 14
+toggle_mode = true
+
+[node name="Casa2_2" type="Button" parent="Fundo/Painel"]
+offset_left = 200.0
+offset_top = 170.0
+offset_right = 225.0
+offset_bottom = 195.0
+theme_override_font_sizes/font_size = 14
+toggle_mode = true
+
+[node name="Casa3_2" type="Button" parent="Fundo/Painel"]
+offset_left = 225.0
+offset_top = 170.0
+offset_right = 250.0
+offset_bottom = 195.0
+theme_override_font_sizes/font_size = 14
+toggle_mode = true
+
+[node name="Casa4_2" type="Button" parent="Fundo/Painel"]
+offset_left = 250.0
+offset_top = 170.0
+offset_right = 275.0
+offset_bottom = 195.0
+theme_override_font_sizes/font_size = 14
+toggle_mode = true
+
+[node name="Casa5_2" type="Button" parent="Fundo/Painel"]
+offset_left = 275.0
+offset_top = 170.0
+offset_right = 300.0
+offset_bottom = 195.0
+theme_override_font_sizes/font_size = 14
+toggle_mode = true
+
+[node name="Casa6_2" type="Button" parent="Fundo/Painel"]
+offset_left = 300.0
+offset_top = 170.0
+offset_right = 325.0
+offset_bottom = 195.0
+theme_override_font_sizes/font_size = 14
+toggle_mode = true
+
+[node name="Casa0_3" type="Button" parent="Fundo/Painel"]
+offset_left = 150.0
+offset_top = 195.0
+offset_right = 175.0
+offset_bottom = 220.0
+theme_override_font_sizes/font_size = 14
+toggle_mode = true
+
+[node name="Casa1_3" type="Button" parent="Fundo/Painel"]
+offset_left = 175.0
+offset_top = 195.0
+offset_right = 200.0
+offset_bottom = 220.0
+theme_override_font_sizes/font_size = 14
+toggle_mode = true
+
+[node name="Casa2_3" type="Button" parent="Fundo/Painel"]
+offset_left = 200.0
+offset_top = 195.0
+offset_right = 225.0
+offset_bottom = 220.0
+theme_override_font_sizes/font_size = 14
+toggle_mode = true
+
+[node name="Casa3_3" type="Button" parent="Fundo/Painel"]
+offset_left = 225.0
+offset_top = 195.0
+offset_right = 250.0
+offset_bottom = 220.0
+theme_override_font_sizes/font_size = 14
+toggle_mode = true
+
+[node name="Casa4_3" type="Button" parent="Fundo/Painel"]
+offset_left = 250.0
+offset_top = 195.0
+offset_right = 275.0
+offset_bottom = 220.0
+theme_override_font_sizes/font_size = 14
+toggle_mode = true
+
+[node name="Casa5_3" type="Button" parent="Fundo/Painel"]
+offset_left = 275.0
+offset_top = 195.0
+offset_right = 300.0
+offset_bottom = 220.0
+theme_override_font_sizes/font_size = 14
+toggle_mode = true
+
+[node name="Casa6_3" type="Button" parent="Fundo/Painel"]
+offset_left = 300.0
+offset_top = 195.0
+offset_right = 325.0
+offset_bottom = 220.0
+theme_override_font_sizes/font_size = 14
+toggle_mode = true
+
+[node name="Casa0_4" type="Button" parent="Fundo/Painel"]
+offset_left = 150.0
+offset_top = 220.0
+offset_right = 175.0
+offset_bottom = 245.0
+theme_override_font_sizes/font_size = 14
+toggle_mode = true
+
+[node name="Casa1_4" type="Button" parent="Fundo/Painel"]
+offset_left = 175.0
+offset_top = 220.0
+offset_right = 200.0
+offset_bottom = 245.0
+theme_override_font_sizes/font_size = 14
+toggle_mode = true
+
+[node name="Casa2_4" type="Button" parent="Fundo/Painel"]
+offset_left = 200.0
+offset_top = 220.0
+offset_right = 225.0
+offset_bottom = 245.0
+text = "●"
+theme_override_font_sizes/font_size = 14
+toggle_mode = true
+
+[node name="Casa3_4" type="Button" parent="Fundo/Painel"]
+offset_left = 225.0
+offset_top = 220.0
+offset_right = 250.0
+offset_bottom = 245.0
+theme_override_font_sizes/font_size = 14
+toggle_mode = true
+
+[node name="Casa4_4" type="Button" parent="Fundo/Painel"]
+offset_left = 250.0
+offset_top = 220.0
+offset_right = 275.0
+offset_bottom = 245.0
+theme_override_font_sizes/font_size = 14
+toggle_mode = true
+
+[node name="Casa5_4" type="Button" parent="Fundo/Painel"]
+offset_left = 275.0
+offset_top = 220.0
+offset_right = 300.0
+offset_bottom = 245.0
+theme_override_font_sizes/font_size = 14
+toggle_mode = true
+
+[node name="Casa6_4" type="Button" parent="Fundo/Painel"]
+offset_left = 300.0
+offset_top = 220.0
+offset_right = 325.0
+offset_bottom = 245.0
+theme_override_font_sizes/font_size = 14
+toggle_mode = true
+
+[node name="Resposta" type="LineEdit" parent="Fundo/Painel"]
+offset_left = 38.0
+offset_top = 257.0
+offset_right = 288.0
+offset_bottom = 287.0
+theme_override_font_sizes/font_size = 14
+placeholder_text = "Digite uma direção..."
+max_length = 40
+
+[node name="Confirmar" type="Button" parent="Fundo/Painel"]
+offset_left = 300.0
+offset_top = 257.0
+offset_right = 394.0
+offset_bottom = 287.0
+text = "Confirmar"
+theme_override_font_sizes/font_size = 14
+
+[node name="Fechar" type="Button" parent="Fundo/Painel"]
+offset_left = 400.0
+offset_top = 257.0
+offset_right = 473.0
+offset_bottom = 287.0
+text = "Fechar"
+theme_override_font_sizes/font_size = 14
+
+[node name="Feedback" type="Label" parent="Fundo/Painel"]
+offset_left = 30.0
+offset_top = 295.0
+offset_right = 480.0
+offset_bottom = 318.0
+text = "Escreva uma direção."
+theme_override_font_sizes/font_size = 12
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+theme_override_colors/font_color = Color(0.88,0.80,0.65,1)

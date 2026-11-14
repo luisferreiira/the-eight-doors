@@ -258,7 +258,7 @@ func run() -> void:
 		await frames(3)
 		game.player.global_position = game.room.get_node("Saida/Interacao").global_position
 		await interact()
-		check(game.escaped and game.seal_panel.visible, "Exit did not reach victory: " + id)
+		check(game.escaped and game.get_node("Resultado").visible, "Exit did not reach victory: " + id)
 		game.free()
 		game = Game.instantiate()
 		# Mantém a nova partida dentro do laço de verificação das saídas.

@@ -25,6 +25,15 @@ var fade: CanvasLayer
 const INTERACTION_RANGE := 70.0
 var seal_panel: CanvasLayer
 var escaped := false
+## Estado exclusivo da partida: erros são compartilhados pelas duas faces de cada porta.
+var finished := false
+var lives := 3
+var score := 0
+var challenge_errors: Dictionary = {}
+var fall_count := 0
+var notice := ""
+## Avisos temporários compartilham o pergaminho, deixando o topo só para o status.
+var notice_until := 0
 var interaction_label: Label
 var hint_scroll: TextureRect
 ## Primeiro desafio: E0 compartilha progresso entre S01/leste e S04/oeste.
@@ -54,6 +63,10 @@ func _ready() -> void:
 	add_child(fade)
 	# Referências às instâncias editáveis presentes na cena do labirinto.
 	seal_panel = $PainelSelo
+	# Os quatro painéis direcionais compartilham o fluxo de abertura das grades.
+	for id in ["D3", "D7", "D8", "D9"]:
+		get_node(id).confirmed.connect(_confirm_challenge)
+		get_node(id).dismissed.connect(_close_challenge)
 	# Conecta o painel editável ao desafio da porta próxima.
 	seal_panel.confirmed.connect(_confirm_challenge)
 	seal_panel.dismissed.connect(_close_challenge)
@@ -77,6 +90,12 @@ func _ready() -> void:
 	camera.set_script(CameraScript)
 	player.add_child(camera)
 	load_room(choose_start_room())
+	# Resultado persistido na cena atende vitória e derrota.
+	$Resultado.hide()
+	var actions = $Resultado/Overlay/Centro/Moldura/Conteudo/Acoes
+	actions.get_node("Reiniciar").pressed.connect(func(): get_tree().reload_current_scene())
+	actions.get_node("Menu").pressed.connect(func(): get_tree().change_scene_to_file("res://scenes/ui/menus/MenuInicial.tscn"))
+	_refresh_score()
 
 ## Sorteio uniforme independente: cada início tem 1/3 de chance, podendo se repetir.
 ## Semente diferente de zero reproduz a escolha para testes no Inspector.
@@ -99,7 +118,7 @@ func _physics_process(_delta: float) -> void:
 		_update_interaction_hint()
 		hint_scroll.visible = not interaction_label.text.is_empty()
 		# Consulta os tiles sob os pés somente durante exploração livre.
-		if not blocks_pause() and not escaped and is_instance_valid(room_effect) and room_effect.is_false_floor(player.global_position):
+		if not blocks_pause() and not finished and is_instance_valid(room_effect) and room_effect.is_false_floor(player.global_position):
 			falling = true
 			_lock_player()
 			call_deferred("_recover_from_fall")
@@ -121,11 +140,18 @@ func _recover_from_fall() -> void:
 	camera.reset_smoothing()
 	await get_tree().create_timer(0.2).timeout
 	falling = false
-	player.controls_enabled = true
+	# Primeira queda avisa; as seguintes custam uma vida em qualquer sala.
+	fall_count += 1
+	if fall_count == 1:
+		notice = "Primeira queda sem dano. As próximas custam 1 vida."
+	else:
+		_lose_life("A queda custou uma vida.")
+	_refresh_score()
+	player.controls_enabled = not finished
 
 ## E examina a primeira inscrição ou ativa a saída; Esc cancela o enigma.
 func _unhandled_input(event: InputEvent) -> void:
-	if escaped or transitioning or unlocking or falling or not is_instance_valid(room):
+	if finished or transitioning or unlocking or falling or not is_instance_valid(room):
 		return
 	# Esc fecha a inscrição; outras ações não abrem outro painel enquanto ela está ativa.
 	if seal_panel.visible:
@@ -135,49 +161,64 @@ func _unhandled_input(event: InputEvent) -> void:
 		return
 	if not event.is_action_pressed("interact") or event.is_echo():
 		return
-	# Apenas E0 tem enigma nesta etapa; os demais atalhos permanecem fechados.
+	# E0 e os quatro enigmas de orientação podem ser examinados.
 	var door := _near_challenge()
 	if door != null:
 		get_viewport().set_input_as_handled()
 		active_challenge = door
+		seal_panel = $PainelSelo if door.blocked_id == FIRST_CHALLENGE else get_node(door.blocked_id)
 		_lock_player()
 		seal_panel.show_challenge()
+		_refresh_attempts()
 	elif _near_exit():
+		seal_panel = $PainelSelo
 		get_viewport().set_input_as_handled()
-		escaped = true
-		_lock_player()
-		seal_panel.show_victory(
-			func(): get_tree().reload_current_scene(),
-			func(): get_tree().change_scene_to_file("res://scenes/ui/menus/MenuInicial.tscn"))
+		_finish_run(true)
 
 ## Usa o marcador interno para examinar a porta sem encostar na colisão da grade.
 func _near_challenge() -> Area2D:
 	for door: Area2D in room.doors.values():
-		if door.blocked_id == FIRST_CHALLENGE and not door.opened and not door.opening:
+		if door.blocked_id in [FIRST_CHALLENGE, "D3", "D7", "D8", "D9"] and not door.opened and not door.opening:
 			if player.global_position.distance_to(door.spawn_position()) <= INTERACTION_RANGE:
 				return door
 	return null
 
 ## Cancelar não altera a porta nem registra progresso.
 func _close_challenge() -> void:
-	if unlocking or escaped: return
+	if unlocking or finished: return
 	active_challenge = null
 	seal_panel.hide()
 	player.controls_enabled = true
 
 ## Confirmação válida abre a grade e registra o resultado somente ao terminar.
 func _confirm_challenge(sequence: Array[String]) -> void:
-	if unlocking or not seal_panel.visible or not is_instance_valid(active_challenge): return
+	if finished or get_tree().paused or unlocking or not seal_panel.visible or not is_instance_valid(active_challenge): return
 	if active_challenge != _near_challenge(): return
-	if sequence != STONE_SOLUTION:
-		seal_panel.show_incorrect()
+	# E0 usa pedras; os demais validam a direção exportada no painel.
+	var correct: bool = sequence == STONE_SOLUTION if active_challenge.blocked_id == FIRST_CHALLENGE else sequence.size() == 1 and sequence[0] == seal_panel.resposta
+	if not correct:
+		var id: String = active_challenge.blocked_id
+		challenge_errors[id] = challenge_errors.get(id, 0) + 1
+		if int(challenge_errors[id]) % 3 == 0:
+			_close_challenge()
+			_lose_life("Tentativas esgotadas: -1 vida. A porta permite tentar novamente.")
+		else:
+			seal_panel.show_incorrect()
+			_refresh_attempts(true)
 		return
 	unlocking = true
 	var door := active_challenge
 	active_challenge = null
 	seal_panel.hide()
 	await door.open_passage()
+	# Pontua somente uma vez por ID; reiniciar tentativas não apaga erros.
+	if not solved_challenges.has(door.blocked_id):
+		var errors: int = challenge_errors.get(door.blocked_id, 0)
+		var earned := 300 if errors == 0 else (200 if errors == 1 else 100)
+		score += earned
+		notice = "Desafio concluído: +%s pontos." % earned
 	solved_challenges[door.blocked_id] = true
+	_refresh_score()
 	unlocking = false
 	player.controls_enabled = true
 
@@ -191,13 +232,15 @@ func _near_exit() -> bool:
 ## Comandos contextuais de inscrição e saída, sem dicas de navegação nesta etapa.
 func _update_interaction_hint() -> void:
 	interaction_label.text = ""
-	if transitioning or seal_panel.visible or unlocking:
+	if finished or transitioning or seal_panel.visible or unlocking:
 		return
 	if _near_exit():
 		interaction_label.text = "E — Escapar"
 	elif _near_challenge() != null:
 		interaction_label.text = "E — Examinar inscrição"
 	# A pista rimada permanece disponível; comandos próximos têm prioridade.
+	elif Time.get_ticks_msec() < notice_until:
+		interaction_label.text = notice
 	elif is_instance_valid(room_effect):
 		interaction_label.text = room_effect.dica
 
@@ -206,8 +249,12 @@ func _lock_player() -> void:
 	player.controls_enabled = false
 	player.velocity = Vector2.ZERO
 
+## Pausa sobre enigmas é permitida; travessias, queda e abertura continuam protegidas.
+func blocks_pause_menu() -> bool:
+	return transitioning or unlocking or falling or finished
+
 func blocks_pause() -> bool:
-	return transitioning or unlocking or falling or (is_instance_valid(seal_panel) and seal_panel.visible)
+	return finished or transitioning or unlocking or falling or (is_instance_valid(seal_panel) and seal_panel.visible)
 
 ## Recebe porta e corpo; rejeita destinos inválidos e concorrência antes de bloquear o movimento.
 func request_transition(door: Area2D, body: CharacterBody2D) -> void:
@@ -276,4 +323,43 @@ func load_room(id: String, entry: String = "") -> void:
 	camera.limit_bottom = roundi(bounds.end.y)
 	camera.reset_smoothing()
 	camera.force_update_scroll()
-	$HUD/Sala.text = "%s · %s · WASD · Esc: pausa" % [id, player.name]
+	$HUD/Sala.text = "%s · %s" % [id, player.name]
+
+## Mantém o placar nos nós editáveis do HUD.
+func _refresh_score() -> void:
+	$HUD/Status.update_status(lives, score)
+	if not notice.is_empty():
+		notice_until = Time.get_ticks_msec() + 6000
+
+## O total de erros preserva o bônus; o módulo conta a rodada de três tentativas.
+func _refresh_attempts(wrong := false) -> void:
+	if not is_instance_valid(active_challenge): return
+	var errors: int = challenge_errors.get(active_challenge.blocked_id, 0)
+	var remaining := 3 - errors % 3
+	var label: Label = seal_panel.feedback if seal_panel == $PainelSelo else seal_panel.get_node("Fundo/Painel/Feedback")
+	label.text = ("Resposta incorreta. " if wrong else "") + "Tentativas: %s/3" % remaining
+	if remaining == 1: label.text += " — Outro erro custará 1 vida."
+
+## Perda de vida nunca sela o atalho permanentemente.
+func _lose_life(reason: String) -> void:
+	if finished: return
+	lives = maxi(0, lives - 1)
+	notice = reason
+	_refresh_score()
+	if lives == 0: _finish_run(false)
+
+## Trava a partida e calcula o bônus de fuga uma única vez.
+func _finish_run(won: bool) -> void:
+	if finished: return
+	finished = true
+	escaped = won
+	_lock_player()
+	seal_panel.hide()
+	active_challenge = null
+	if won: score += 500 + lives * 100
+	_refresh_score()
+	var content = $Resultado/Overlay/Centro/Moldura/Conteudo
+	content.get_node("Titulo").text = "Você escapou!" if won else "Fim da partida"
+	content.get_node("Inscricao").text = ("Bônus de fuga: 500 + %s pelas vidas.\n" % (lives * 100) if won else "Suas vidas se esgotaram.\n") + "Pontuação final: %s   ·   Vidas: %s/3" % [score, lives]
+	$Resultado.show()
+	content.get_node("Acoes/Reiniciar").grab_focus()
