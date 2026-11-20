@@ -11,3 +11,7 @@ rotation = 0
 
 [node name="Interacao" parent="."]
 position = Vector2(560, 256)
+
+; Marco além do batente: a finalização só começa depois de cruzar o vão.
+[node name="Passagem" type="Marker2D" parent="."]
+position = Vector2(560, 152)

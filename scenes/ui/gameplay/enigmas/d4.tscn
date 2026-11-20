@@ -1,0 +1,53 @@
+[gd_scene load_steps=6 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/ui/gameplay/painel_selo.tscn" id="base"]
+[ext_resource type="Texture2D" path="res://assets/ui/enigmas/d4_rosa.svg" id="rosa"]
+[ext_resource type="Texture2D" path="res://assets/ui/enigmas/d4_torre.svg" id="torre"]
+[ext_resource type="Texture2D" path="res://assets/ui/enigmas/d4_poco.svg" id="poco"]
+[ext_resource type="Texture2D" path="res://assets/ui/enigmas/d4_viajante.svg" id="viajante"]
+
+[node name="DesafioD4" instance=ExtResource("base")]
+challenge_title = "A rosa dos ventos"
+inscription = "Escolha o símbolo que representa todos os rumos, conforme a inscrição encontrada na S29."
+choice_names = PackedStringArray("Rosa", "Torre", "Poço", "Viajante")
+solution = PackedStringArray("Rosa")
+choice_icons = Array[Texture2D]([ExtResource("rosa"), ExtResource("torre"), ExtResource("poco"), ExtResource("viajante")])
+initial_message = "Escolha um símbolo."
+incorrect_message = "Esse símbolo não aponta o caminho. Tente novamente."
+panel_width = 430.0
+; D4 uses local visual overrides to keep E0 unchanged.
+[node name="Conteudo" parent="Overlay/Centro/Moldura" index="0"]
+theme_override_constants/separation = 4
+
+[node name="Titulo" parent="Overlay/Centro/Moldura/Conteudo" index="0"]
+theme_override_font_sizes/font_size = 20
+
+[node name="Inscricao" parent="Overlay/Centro/Moldura/Conteudo" index="1"]
+theme_override_font_sizes/font_size = 14
+
+[node name="Sequencia" parent="Overlay/Centro/Moldura/Conteudo" index="2"]
+theme_override_font_sizes/font_size = 14
+
+[node name="Sol" parent="Overlay/Centro/Moldura/Conteudo/Pedras" index="0"]
+custom_minimum_size = Vector2(76, 26)
+
+[node name="Estrela" parent="Overlay/Centro/Moldura/Conteudo/Pedras" index="1"]
+custom_minimum_size = Vector2(76, 26)
+
+[node name="Lua" parent="Overlay/Centro/Moldura/Conteudo/Pedras" index="2"]
+custom_minimum_size = Vector2(76, 26)
+
+[node name="Viajante" parent="Overlay/Centro/Moldura/Conteudo/Pedras" index="3"]
+custom_minimum_size = Vector2(76, 26)
+
+[node name="Feedback" parent="Overlay/Centro/Moldura/Conteudo" index="4"]
+theme_override_font_sizes/font_size = 13
+
+[node name="Limpar" parent="Overlay/Centro/Moldura/Conteudo/Acoes" index="0"]
+custom_minimum_size = Vector2(76, 26)
+
+[node name="Confirmar" parent="Overlay/Centro/Moldura/Conteudo/Acoes" index="1"]
+custom_minimum_size = Vector2(76, 26)
+
+[node name="Fechar" parent="Overlay/Centro/Moldura/Conteudo/Acoes" index="2"]
+custom_minimum_size = Vector2(76, 26)

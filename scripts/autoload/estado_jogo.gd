@@ -93,6 +93,34 @@ func _apply_volume() -> void:
 		_music_player.volume_db = volume_db
 	if _button_player != null:
 		_button_player.volume_db = volume_db
+	for player in get_tree().get_nodes_in_group("sfx_players"):
+		if is_instance_valid(player):
+			(player as AudioStreamPlayer).volume_db = volume_db
+
+## Registra efeitos locais, incluindo passos, no mesmo nível global de volume.
+func register_sfx_player(player: AudioStreamPlayer) -> void:
+	if not player.is_in_group("sfx_players"):
+		player.add_to_group("sfx_players")
+	player.volume_db = VOLUME_DB[_volume_level]
+
+## Reproduz um efeito curto pelo nível global e remove seu player quando terminar.
+func play_sfx(stream: AudioStream) -> AudioStreamPlayer:
+	if stream == null:
+		return null
+	var player := AudioStreamPlayer.new()
+	player.name = "SFX_OneShot"
+	player.stream = stream
+	player.process_mode = Node.PROCESS_MODE_PAUSABLE
+	register_sfx_player(player)
+	add_child(player)
+	player.finished.connect(_release_sfx_player.bind(player))
+	player.play()
+	return player
+
+## Limpa a lista após um efeito curto terminar.
+func _release_sfx_player(player: AudioStreamPlayer) -> void:
+	if is_instance_valid(player):
+		player.queue_free()
 
 func _update_volume_icon(button: TextureButton) -> void:
 	if _volume_icons.size() != VOLUME_ICON_PATHS.size():

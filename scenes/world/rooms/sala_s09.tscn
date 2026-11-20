@@ -1,4 +1,5 @@
-[gd_scene load_steps=4 format=3]
+[gd_scene load_steps=5 format=3]
+[ext_resource type="PackedScene" path="res://scenes/world/effects/indicador_pista.tscn" id="inscricao_navegacao"]
 
 [ext_resource type="PackedScene" path="res://scenes/world/labyrinth/sala_octogonal_base.tscn" id="1_base"]
 
@@ -58,3 +59,7 @@ self_modulate = Color(1, 1, 1, 0)
 
 [node name="VisualEspecial" parent="Passagens/Porta_Nordeste" instance=ExtResource("visual_NE")]
 material = ExtResource("cor_porta")
+; Inscrição opcional de navegação, editável no centro da sala.
+[node name="InscricaoNavegacao" parent="ConteudoDaSala/Interacoes" instance=ExtResource("inscricao_navegacao")]
+position = Vector2(560, 640)
+texto = "Ao poente, avance sem receio;\na sudoeste, as pedras mostram o veio."

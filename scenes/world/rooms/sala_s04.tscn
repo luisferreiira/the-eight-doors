@@ -1,4 +1,5 @@
-[gd_scene load_steps=5 format=3]
+[gd_scene load_steps=6 format=3]
+[ext_resource type="PackedScene" path="res://scenes/world/effects/indicador_pista.tscn" id="inscricao_navegacao"]
 
 [ext_resource type="PackedScene" path="res://scenes/world/labyrinth/sala_octogonal_base.tscn" id="1_base"]
 
@@ -52,3 +53,7 @@ material = ExtResource("cor_porta")
 ; O batente original era desenhado sobre a cópia vinho. Mantém apenas a arte especial.
 [node name="BatenteSuperior" parent="Passagens/Porta_Oeste"]
 visible = false
+; Inscrição opcional de navegação, editável no centro da sala.
+[node name="InscricaoNavegacao" parent="ConteudoDaSala/Interacoes" instance=ExtResource("inscricao_navegacao")]
+position = Vector2(560, 640)
+texto = "Ao norte, uma passagem segue a leste;\npor ela, o rumo se tece."

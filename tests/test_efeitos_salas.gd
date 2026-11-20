@@ -1,17 +1,48 @@
-extends SceneTree
-## Verifica inversão, restauração e remoção do chão falso nas salas reais.
+extends Node
+## Verifica escuridão, zoom, inversão e remoção do chão falso nas salas reais.
 var failures: Array[String] = []
-func _initialize() -> void:
+## Inicia a validação automatizada dos efeitos com as cenas reais do labirinto.
+func _ready() -> void:
 	call_deferred("run")
 func check(ok: bool, message: String) -> void:
 	if not ok: failures.append(message)
 func frames(n: int = 3) -> void:
-	for i in n: await physics_frame
+	for i in n: await get_tree().physics_frame
 func run() -> void:
 	var game = load("res://scenes/world/labyrinth/labirinto.tscn").instantiate()
 	game.random_spawn = false
-	root.add_child(game)
+	get_tree().root.add_child(game)
 	await frames()
+	# Confirma que a luz móvel acompanha dois personagens em salas diferentes.
+	for entry in [{"room":"S11", "character":"aelin"}, {"room":"S17", "character":"dorian"}]:
+		if entry.character == "dorian":
+			game.free()
+			game = load("res://scenes/world/labyrinth/labirinto.tscn").instantiate()
+			game.random_spawn = false
+			game.character_scene = load("res://scenes/characters/players/dorian.tscn")
+			get_tree().root.add_child(game)
+			await frames()
+		game.load_room(entry.room)
+		await frames()
+		var light_node: Node2D = game.room.get_node("EfeitoEscuridao")
+		var light: PointLight2D = light_node.get_node("Luz")
+		check(game.room.get_node("Iluminacao/Ambiente").color.r < 0.2, entry.room + " não escureceu o ambiente")
+		var light_before := light.global_position
+		game.player.global_position += Vector2(16, 0)
+		for process_step in 2:
+			await get_tree().process_frame
+		check(light.global_position.distance_to(light_before) > 1.0, entry.room + " luz não acompanhou o personagem")
+		game.load_room("S01")
+		await frames()
+		check(game.room.get_node_or_null("EfeitoEscuridao") == null, entry.room + " manteve a escuridão após sair")
+	# Confirma a aproximação e restauração ao mudar de sala em cada caso.
+	for id in ["S13", "S19"]:
+		game.load_room(id)
+		await frames()
+		check(is_equal_approx(game.camera.zoom.x, 2.2), id + " não aplicou super zoom")
+		game.load_room("S01")
+		await frames()
+		check(game.camera.zoom.is_equal_approx(Vector2.ONE), id + " manteve zoom após sair")
 	for id in ["S06", "S07"]:
 		game.load_room(id)
 		check(game.player.inverted_controls, id + " não inverte")
@@ -39,10 +70,10 @@ func run() -> void:
 		game.player.global_position = dirt
 		await frames()
 		check(game.falling, "Terra não provoca queda")
-		await create_timer(0.8).timeout
+		await get_tree().create_timer(0.8).timeout
 		check(not game.falling and game.player.controls_enabled, "Recuperação falhou")
 		check(game.player.global_position.distance_to(game.return_position)<1, "Retorno incorreto")
 	game.free()
 	await frames()
 	print("EFEITOS_RESULT falhas=", failures)
-	quit(0 if failures.is_empty() else 1)
+	get_tree().quit(0 if failures.is_empty() else 1)
