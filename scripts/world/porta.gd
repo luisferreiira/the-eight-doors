@@ -13,6 +13,8 @@ var blocked_id: String = ""
 ## A grade sobe antes de liberar a passagem; valores ajustáveis no Inspector.
 @export var opening_duration := 0.65
 @export var opening_height := 48.0
+## Som opcional atribuído às grades no Inspector; nulo até haver um áudio próprio.
+@export var opening_sound: AudioStream
 var opening := false
 
 ## Identifica a direção e conecta a detecção física à passagem existente.
@@ -44,6 +46,8 @@ func configure(id: String, target: String, blocked: String = "", solved: bool = 
 func open_passage() -> void:
 	if opened or opening or destination.is_empty(): return
 	opening = true
+	# O efeito começa no mesmo instante da animação e só é solicitado uma vez.
+	EstadoJogo.play_sfx(opening_sound)
 	var grade := get_node_or_null("VisualEspecial/Grade") as Sprite2D
 	if grade == null: grade = $GradeFechada
 	var tween := create_tween().set_parallel()
@@ -53,6 +57,24 @@ func open_passage() -> void:
 	opened = true
 	opening = false
 	grade.hide()
+	$GradeFechada.hide()
+	$PlanoDaPorta/BloqueioFechado/Forma.set_deferred("disabled", true)
+
+## Abre uma saída externa em sua direção de passagem e deixa a grade aberta.
+func open_escape_passage() -> void:
+	if opened or opening:
+		return
+	opening = true
+	var gate := get_node_or_null("VisualEspecial/Grade") as Sprite2D
+	if gate == null:
+		gate = $GradeFechada
+	var travel := Vector2.LEFT * opening_height if direction == "O" else Vector2.UP * opening_height
+	var tween := create_tween()
+	tween.tween_property(gate, "position", gate.position + travel, opening_duration).set_trans(Tween.TRANS_QUART).set_ease(Tween.EASE_IN)
+	await tween.finished
+	opened = true
+	opening = false
+	gate.hide()
 	$GradeFechada.hide()
 	$PlanoDaPorta/BloqueioFechado/Forma.set_deferred("disabled", true)
 

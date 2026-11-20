@@ -1,6 +1,8 @@
-[gd_scene load_steps=2 format=3]
+[gd_scene load_steps=3 format=3]
 
 [ext_resource type="PackedScene" path="res://scenes/world/labyrinth/sala_octogonal_base.tscn" id="1_base"]
+
+[ext_resource type="Script" path="res://scripts/world/efeito_zoom_sala.gd" id="efeito_zoom"]
 
 [node name="S19" instance=ExtResource("1_base")]
 
@@ -29,3 +31,8 @@ visible = false
 
 [node name="Forma" parent="Passagens/Porta_Norte/PlanoDaPorta/BloqueioFechado"]
 disabled = true
+
+; Guarda o fator de super zoom editável no Inspector da sala.
+[node name="EfeitoZoom" type="Node2D" parent="."]
+script = ExtResource("efeito_zoom")
+fator_zoom = 2.2

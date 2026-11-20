@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3]
+[gd_scene load_steps=9 format=3]
 
 [ext_resource type="Script" path="res://scripts/world/labirinto.gd" id="1"]
 [ext_resource type="PackedScene" path="res://scenes/world/environments/atmosfera.tscn" id="2"]
@@ -7,10 +7,14 @@
 [ext_resource type="PackedScene" path="res://scenes/ui/gameplay/painel_selo.tscn" id="4"]
 
 [ext_resource type="PackedScene" path="res://scenes/ui/gameplay/enigmas/d3.tscn" id="D3"]
+[ext_resource type="PackedScene" path="res://scenes/ui/gameplay/enigmas/d4.tscn" id="D4"]
+[ext_resource type="PackedScene" path="res://scenes/ui/gameplay/enigmas/d5.tscn" id="D5"]
+[ext_resource type="PackedScene" path="res://scenes/ui/gameplay/enigmas/d6.tscn" id="D6"]
 [ext_resource type="PackedScene" path="res://scenes/ui/gameplay/enigmas/d7.tscn" id="D7"]
 [ext_resource type="PackedScene" path="res://scenes/ui/gameplay/enigmas/d8.tscn" id="D8"]
 [ext_resource type="PackedScene" path="res://scenes/ui/gameplay/enigmas/d9.tscn" id="D9"]
 [ext_resource type="PackedScene" path="res://scenes/ui/gameplay/vitoria.tscn" id="resultado"]
+[ext_resource type="PackedScene" path="res://scenes/ui/gameplay/sequencia_vitoria.tscn" id="sequencia_vitoria"]
 [ext_resource type="PackedScene" path="res://scenes/ui/gameplay/hud_status.tscn" id="status"]
 [node name="Labirinto" type="Node2D"]
 script = ExtResource("1")
@@ -41,6 +45,12 @@ text = ""
 
 [node name="D3" parent="." instance=ExtResource("D3")]
 
+[node name="D4" parent="." instance=ExtResource("D4")]
+
+[node name="D5" parent="." instance=ExtResource("D5")]
+
+[node name="D6" parent="." instance=ExtResource("D6")]
+
 [node name="D7" parent="." instance=ExtResource("D7")]
 
 [node name="D8" parent="." instance=ExtResource("D8")]
@@ -52,3 +62,5 @@ text = ""
 [node name="Resultado" parent="." instance=ExtResource("resultado")]
 visible = false
 layer = 90
+
+[node name="SequenciaVitoria" parent="." instance=ExtResource("sequencia_vitoria")]
