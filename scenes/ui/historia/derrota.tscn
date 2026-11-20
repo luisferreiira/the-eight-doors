@@ -1,0 +1,81 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/ui/historia/cena_historia.tscn" id="1"]
+
+[node name="Derrota" instance=ExtResource("1")]
+duracao_fade = 0.65
+texto_final = "Ver resultado"
+
+[node name="Quadros" type="Control" parent="." index="4"]
+layout_mode = 1
+anchor_left = 0.10
+anchor_right = 0.90
+anchor_bottom = 1.0
+offset_top = 40.0
+offset_bottom = -69.0
+mouse_filter = 2
+
+[node name="Quadro1" type="Control" parent="Quadros"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+
+[node name="Titulo" type="Label" parent="Quadros/Quadro1"]
+layout_mode = 1
+anchor_right = 1.0
+offset_bottom = 86.0
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.88, 0.72, 0.46, 1)
+theme_override_font_sizes/font_size = 20
+text = "Seu próprio nome"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Texto" type="Label" parent="Quadros/Quadro1"]
+layout_mode = 1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 96.0
+offset_bottom = 0.0
+mouse_filter = 2
+theme_override_constants/line_spacing = -2
+theme_override_font_sizes/font_size = 14
+text = "Você tentou dizer seu nome em voz alta.\n\nA primeira vez, ele saiu num sussurro. Na segunda, você só conseguiu pensar na primeira letra.\n\nEntão, de algum lugar no escuro, sua própria voz disse o nome inteiro.\n\nVocê reconheceu a voz. Por um instante, quase respondeu."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Quadro2" type="Control" parent="Quadros"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+
+[node name="Titulo" type="Label" parent="Quadros/Quadro2"]
+layout_mode = 1
+anchor_right = 1.0
+offset_bottom = 86.0
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.88, 0.72, 0.46, 1)
+theme_override_font_sizes/font_size = 20
+text = "Na primeira página"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Texto" type="Label" parent="Quadros/Quadro2"]
+layout_mode = 1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 96.0
+offset_bottom = 0.0
+mouse_filter = 2
+theme_override_constants/line_spacing = -2
+theme_override_font_sizes/font_size = 14
+text = "O caderno ainda estava aberto no chão da caverna. Sua assinatura continuava na primeira página.\n\nAbaixo dela, a promessa ainda estava legível.\n\nSe eu descobrir o que aconteceu, vou contar."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3

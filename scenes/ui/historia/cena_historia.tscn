@@ -1,0 +1,198 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/cena_historia.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/ui/ui/next_button.png" id="placa"]
+[ext_resource type="Texture2D" path="res://assets/ui/voltar.png" id="play"]
+[ext_resource type="Texture2D" path="res://assets/ui/historia/pular.svg" id="skip"]
+[ext_resource type="Shader" path="res://assets/shaders/placa_historia.gdshader" id="pedra"]
+
+[sub_resource type="Theme" id="Theme"]
+default_font_size = 16
+Label/colors/font_color = Color(0.66, 0.62, 0.55, 1)
+
+[sub_resource type="ShaderMaterial" id="Titulo"]
+shader = ExtResource("pedra")
+
+[sub_resource type="ShaderMaterial" id="Pular"]
+shader = ExtResource("pedra")
+shader_parameter/area_central = Vector4(0.314, 0.15, 0.708, 0.825)
+shader_parameter/coluna_pedra = 0.31
+
+[sub_resource type="StyleBoxEmpty" id="SemFundo"]
+
+[node name="CenaHistoria" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme")
+script = ExtResource("1")
+
+; A seção narrativa cobre todo o viewport com preto.
+[node name="Fundo" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+; A placa compartilha a textura do menu e deixa apenas o centro livre para o título.
+[node name="Moldura" type="TextureRect" parent="."]
+material = SubResource("Titulo")
+layout_mode = 1
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -180.0
+offset_right = 180.0
+offset_top = 40.0
+offset_bottom = 126.0
+mouse_filter = 2
+texture_filter = 1
+texture = ExtResource("placa")
+expand_mode = 1
+
+; Só a arte dos botões aparece. O foco e o hover iluminam a própria pedra.
+[node name="Acoes" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+
+; Voltar espelha a arte de avançar e aparece a partir do segundo quadro.
+[node name="Voltar" type="Button" parent="Acoes"]
+visible = false
+layout_mode = 1
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 16.0
+offset_top = -63.0
+offset_right = 94.0
+offset_bottom = -15.0
+focus_neighbor_right = NodePath("../Avancar")
+focus_next = NodePath("../Avancar")
+mouse_default_cursor_shape = 2
+theme_override_styles/normal = SubResource("SemFundo")
+theme_override_styles/hover = SubResource("SemFundo")
+theme_override_styles/pressed = SubResource("SemFundo")
+theme_override_styles/focus = SubResource("SemFundo")
+tooltip_text = "Voltar ao quadro anterior"
+accessibility_name = "Voltar ao quadro anterior"
+
+[node name="Arte" type="TextureRect" parent="Acoes/Voltar"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = -2.0
+offset_bottom = -2.0
+mouse_filter = 2
+texture_filter = 1
+texture = ExtResource("play")
+expand_mode = 1
+stretch_mode = 5
+flip_h = true
+
+[node name="Avancar" type="Button" parent="Acoes"]
+layout_mode = 1
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = -94.0
+offset_top = -63.0
+offset_right = -16.0
+offset_bottom = -15.0
+focus_neighbor_left = NodePath("../Voltar")
+focus_neighbor_top = NodePath("../Pular")
+focus_next = NodePath("../Pular")
+mouse_default_cursor_shape = 2
+theme_override_styles/normal = SubResource("SemFundo")
+theme_override_styles/hover = SubResource("SemFundo")
+theme_override_styles/pressed = SubResource("SemFundo")
+theme_override_styles/focus = SubResource("SemFundo")
+tooltip_text = "Continuar"
+accessibility_name = "Continuar"
+
+[node name="Arte" type="TextureRect" parent="Acoes/Avancar"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = -2.0
+offset_bottom = -2.0
+mouse_filter = 2
+texture_filter = 1
+texture = ExtResource("play")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Pular" type="Button" parent="Acoes"]
+layout_mode = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -77.0
+offset_top = 15.0
+offset_right = -16.0
+offset_bottom = 53.0
+focus_neighbor_bottom = NodePath("../Avancar")
+focus_next = NodePath("../Avancar")
+mouse_default_cursor_shape = 2
+theme_override_styles/normal = SubResource("SemFundo")
+theme_override_styles/hover = SubResource("SemFundo")
+theme_override_styles/pressed = SubResource("SemFundo")
+theme_override_styles/focus = SubResource("SemFundo")
+tooltip_text = "Pular história"
+accessibility_name = "Pular história"
+
+[node name="Arte" type="TextureRect" parent="Acoes/Pular"]
+material = SubResource("Pular")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = -2.0
+offset_bottom = -2.0
+mouse_filter = 2
+texture_filter = 1
+texture = ExtResource("play")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Icone" type="TextureRect" parent="Acoes/Pular"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -11.0
+offset_top = -8.0
+offset_right = 11.0
+offset_bottom = 8.0
+mouse_filter = 2
+texture = ExtResource("skip")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Cortina" type="ColorRect" parent="."]
+z_index = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 0)

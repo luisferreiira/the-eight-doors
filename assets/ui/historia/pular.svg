@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 40" width="60" height="40">
+  <defs>
+    <linearGradient id="bronze" x2="0" y2="1">
+      <stop stop-color="#f1d6a1"/>
+      <stop offset="1" stop-color="#8c673f"/>
+    </linearGradient>
+  </defs>
+  <path d="M5 6L25 20 5 34ZM25 6L45 20 25 34ZM47 6H55V34H47Z"
+        fill="url(#bronze)" stroke="#20150c" stroke-width="3" stroke-linejoin="bevel"/>
+</svg>

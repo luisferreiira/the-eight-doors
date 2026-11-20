@@ -12,6 +12,8 @@
 [ext_resource type="PackedScene" path="res://scenes/ui/gameplay/enigmas/d9.tscn" id="D9"]
 [ext_resource type="PackedScene" path="res://scenes/ui/gameplay/vitoria.tscn" id="resultado"]
 [ext_resource type="PackedScene" path="res://scenes/ui/gameplay/hud_status.tscn" id="status"]
+[ext_resource type="PackedScene" path="res://scenes/ui/historia/fuga.tscn" id="fuga"]
+[ext_resource type="PackedScene" path="res://scenes/ui/historia/derrota.tscn" id="derrota"]
 [node name="Labirinto" type="Node2D"]
 script = ExtResource("1")
 
@@ -52,3 +54,13 @@ text = ""
 [node name="Resultado" parent="." instance=ExtResource("resultado")]
 visible = false
 layer = 90
+
+; Desfechos editáveis, exibidos antes do placar e acima dos painéis da partida.
+[node name="Historia" type="CanvasLayer" parent="."]
+layer = 101
+
+[node name="Fuga" parent="Historia" instance=ExtResource("fuga")]
+visible = false
+
+[node name="Derrota" parent="Historia" instance=ExtResource("derrota")]
+visible = false

@@ -1,0 +1,262 @@
+[gd_scene format=3 uid="uid://dgf0dqpj15t4p"]
+
+[ext_resource type="PackedScene" path="res://scenes/ui/historia/cena_historia.tscn" id="1"]
+
+[sub_resource type="Animation" id="RevelarObjetivo"]
+resource_name = "revelar"
+length = 3.82
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Objetivo:visible_characters")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.5, 1.58, 1.66, 1.74, 1.82, 1.9, 1.98, 2.06, 2.14, 2.22, 2.3, 2.38, 2.46, 2.54, 2.62, 2.7, 2.78, 2.86, 2.94, 3.02, 3.1, 3.18, 3.26, 3.34, 3.42, 3.5, 3.58, 3.66, 3.74, 3.82),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30]
+}
+
+[sub_resource type="AnimationLibrary" id="Animacoes"]
+_data = {
+&"revelar": SubResource("RevelarObjetivo")
+}
+
+[node name="Abertura" unique_id=787797232 instance=ExtResource("1")]
+abrir_gameplay = true
+texto_final = "Entrar na caverna"
+
+[node name="Moldura" parent="." index="1"]
+anchors_preset = 5
+offset_top = 33.0
+offset_bottom = 119.0
+grow_horizontal = 2
+
+[node name="Acoes" parent="." index="2"]
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Voltar" parent="Acoes" index="0"]
+anchors_preset = 2
+offset_left = 0.0
+offset_top = -48.0
+offset_right = 78.0
+offset_bottom = 0.0
+grow_vertical = 0
+
+[node name="Arte" parent="Acoes/Voltar" index="0"]
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Avancar" parent="Acoes" index="1"]
+anchors_preset = 3
+offset_left = -78.0
+offset_top = -48.0
+offset_right = 0.0
+offset_bottom = 0.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="Arte" parent="Acoes/Avancar" index="0"]
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Pular" parent="Acoes" index="2"]
+anchors_preset = 1
+offset_left = -61.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 38.0
+grow_horizontal = 0
+
+[node name="Arte" parent="Acoes/Pular" index="0"]
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Icone" parent="Acoes/Pular" index="1"]
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Quadros" type="Control" parent="." index="4" unique_id=464187119]
+layout_mode = 1
+anchor_left = 0.06
+anchor_right = 0.94
+anchor_bottom = 1.0
+offset_top = 24.0
+offset_bottom = -69.0
+mouse_filter = 2
+
+[node name="Quadro1" type="Control" parent="Quadros" index="0" unique_id=1927565560]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Titulo" type="Label" parent="Quadros/Quadro1" index="0" unique_id=1388537027]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 2.6000023
+offset_top = 8.0
+offset_right = 2.5999756
+offset_bottom = 94.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.88, 0.72, 0.46, 1)
+theme_override_font_sizes/font_size = 20
+text = "As oito portas"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Texto" type="Label" parent="Quadros/Quadro1" index="1" unique_id=1400051779]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 104.0
+offset_bottom = 8.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/line_spacing = -2
+theme_override_font_sizes/font_size = 14
+text = "Antes da guerra, o rei mandou abrir oito portas sob a capital.
+
+Delas saíram criaturas sem corpo. Entravam na mente dos vivos, falavam com suas vozes e faziam da magia deles a sua arma. Alguns possuídos voltavam a si dias depois, sem lembrar do que tinham feito.
+
+Foi assim que a guerra começou. Na última noite, os ataques cessaram de repente. Ao amanhecer, o castelo anunciou que as portas haviam sido fechadas e que as criaturas tinham sido devolvidas ao lugar de onde vieram."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Quadro2" type="Control" parent="Quadros" index="1" unique_id=863548994]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Titulo" type="Label" parent="Quadros/Quadro2" index="0" unique_id=73551730]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 43.600002
+offset_top = 9.0
+offset_right = -42.599976
+offset_bottom = 95.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.88, 0.72, 0.46, 1)
+theme_override_font_sizes/font_size = 15
+text = "O que ficou fora dos relatos"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Conteudo" type="VBoxContainer" parent="Quadros/Quadro2" index="1" unique_id=1620897156]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 82.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_constants/separation = 5
+alignment = 1
+
+[node name="TextoAelin" type="Label" parent="Quadros/Quadro2/Conteudo" index="0" unique_id=1920616148]
+custom_minimum_size = Vector2(1, 0)
+layout_mode = 2
+theme_override_constants/line_spacing = -2
+theme_override_font_sizes/font_size = 13
+text = "Sob um nome falso, você aceitou um trabalho para o castelo. Sua tarefa era fazer desaparecer os documentos que ligavam o rei à guerra.
+
+Entre os papéis, encontrou uma lista de quem havia descido aos túneis na última noite da batalha. Os nomes dos seus pais estavam ali. Até então, tudo o que você sabia era que eles tinham morrido naquela noite.
+
+Você copiou o caminho até a entrada antes de entregar os papéis."
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="TextoDorian" type="Label" parent="Quadros/Quadro2/Conteudo" index="1" unique_id=1959492552]
+visible = false
+custom_minimum_size = Vector2(1, 0)
+layout_mode = 2
+theme_override_constants/line_spacing = -2
+theme_override_font_sizes/font_size = 13
+text = "Na biblioteca do castelo, você encontrou uma ordem antiga escondida entre as páginas de um livro. Reconheceu a assinatura do seu pai. Ele mandava preparar a abertura das oito portas e manter os túneis sob guarda.
+
+A ordem era anterior ao primeiro ataque. Você copiou a data e o caminho de acesso aos túneis. Queria descobrir o que seu pai esperava encontrar lá embaixo."
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="Quadro3" type="Control" parent="Quadros" index="2" unique_id=1893582041]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Titulo" type="Label" parent="Quadros/Quadro3" index="0" unique_id=1643497804]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 8.0
+offset_bottom = 94.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.88, 0.72, 0.46, 1)
+theme_override_font_sizes/font_size = 20
+text = "Sob o castelo"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Texto" type="Label" parent="Quadros/Quadro3" index="1" unique_id=119042782]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1.3999977
+offset_top = 96.0
+offset_right = -1.4000244
+offset_bottom = 9.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/line_spacing = -3
+theme_override_font_sizes/font_size = 12
+text = "Na primeira página do caderno, você assinou seu nome e escreveu:
+Se eu descobrir o que aconteceu, vou contar.
+
+Você entrou nos túneis e fez marcas na rocha para encontrar o caminho de volta. Depois de uma curva, o túnel se abriu numa caverna. Havia palavras gravadas na parede. Você reconheceu a data da última noite da guerra.
+
+Abriu o caderno, escreveu a data e começou a copiar. Então tudo ficou escuro.
+
+Quando abriu os olhos, estava numa sala que nunca tinha visto."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Objetivo" type="Label" parent="Quadros/Quadro3" index="2" unique_id=544040445]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 145.6
+offset_top = 28.0
+offset_right = -147.99994
+offset_bottom = 52.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0.88, 0.72, 0.46, 1)
+text = "Encontre uma saída da caverna."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Animacao" type="AnimationPlayer" parent="Quadros/Quadro3" index="3" unique_id=777145176]
+libraries/ = SubResource("Animacoes")

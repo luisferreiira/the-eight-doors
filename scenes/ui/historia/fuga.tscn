@@ -1,0 +1,311 @@
+[gd_scene format=3 uid="uid://bmr3i2od161g1"]
+
+[ext_resource type="PackedScene" path="res://scenes/ui/historia/cena_historia.tscn" id="1"]
+
+[sub_resource type="Animation" id="Revelar"]
+resource_name = "revelar"
+length = 11.93
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Mensagem:visible_characters")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 4.5, 4.64, 4.78, 4.92, 5.06, 5.2, 5.34, 5.48, 5.62, 5.76, 5.9, 6.04, 6.18, 6.32, 6.46, 7.25, 7.39, 7.53, 7.67, 7.81, 7.95, 8.09, 8.23, 8.37, 8.51, 8.65, 8.79, 8.93, 9.07, 9.21, 9.35, 9.49, 9.63, 9.77, 9.91, 10.05, 10.19, 10.33, 10.47, 10.61, 10.75, 10.89, 11.03),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Fim:modulate:a")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 11.48, 11.93),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, 0.0, 1.0]
+}
+
+[sub_resource type="AnimationLibrary" id="Animacoes"]
+_data = {
+&"revelar": SubResource("Revelar")
+}
+
+[node name="Fuga" unique_id=708481028 instance=ExtResource("1")]
+texto_final = "Ver resultado"
+
+[node name="Moldura" parent="." index="1"]
+anchors_preset = 5
+
+[node name="Acoes" parent="." index="2"]
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Voltar" parent="Acoes" index="0"]
+anchors_preset = 2
+
+[node name="Arte" parent="Acoes/Voltar" index="0"]
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Avancar" parent="Acoes" index="1"]
+anchors_preset = 3
+
+[node name="Arte" parent="Acoes/Avancar" index="0"]
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Pular" parent="Acoes" index="2"]
+anchors_preset = 1
+
+[node name="Arte" parent="Acoes/Pular" index="0"]
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Icone" parent="Acoes/Pular" index="1"]
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Quadros" type="Control" parent="." index="4" unique_id=2056694182]
+layout_mode = 1
+anchor_left = 0.06
+anchor_right = 0.94
+anchor_bottom = 1.0
+offset_left = 0.6000023
+offset_top = 23.0
+offset_right = 0.5999756
+offset_bottom = -70.0
+mouse_filter = 2
+
+[node name="Quadro1" type="Control" parent="Quadros" index="0" unique_id=372778358]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Titulo" type="Label" parent="Quadros/Quadro1" index="0" unique_id=1304179268]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 14.0
+offset_bottom = 100.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.88, 0.72, 0.46, 1)
+theme_override_font_sizes/font_size = 20
+text = "De volta à caverna"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Texto" type="Label" parent="Quadros/Quadro1" index="1" unique_id=1582715643]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 96.0
+theme_override_constants/line_spacing = -2
+theme_override_font_sizes/font_size = 14
+text = "Você abriu os olhos no chão, diante da inscrição. O lápis estava caído junto à parede, com a ponta gasta.
+
+No caderno, havia uma página inteira escrita na sua letra. Você só se lembrava de ter escrito a data."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Quadro2" type="Control" parent="Quadros" index="1" unique_id=1179249424]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Titulo" type="Label" parent="Quadros/Quadro2" index="0" unique_id=2122535778]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 15.0
+offset_bottom = 101.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.88, 0.72, 0.46, 1)
+theme_override_font_sizes/font_size = 17
+text = "A última noite da guerra"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Texto" type="Label" parent="Quadros/Quadro2" index="1" unique_id=1502417229]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 96.0
+offset_bottom = 33.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/line_spacing = -2
+theme_override_font_sizes/font_size = 12
+text = "O rei abriu as portas por ordem própria. Buscava uma magia com a qual pudesse tirar de qualquer pessoa o poder de lhe dizer não. Os primeiros ataques começaram naquela mesma noite.
+
+Na última noite da guerra, dois dos nossos lançaram um feitiço para fechar as oito passagens de uma só vez. O esforço consumiu as forças dos dois. Vi quando foram arrastados para o outro lado, pouco antes de a última porta se fechar. Nenhum deles voltou.
+
+O feitiço ainda iluminava a pedra quando deixei a caverna. A luz foi enfraquecendo aos poucos, até sumir. Ao amanhecer, os ataques haviam cessado.
+
+Deixo aqui os nomes dos dois."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Quadro3" type="Control" parent="Quadros" index="2" unique_id=1490139796]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Titulo" type="Label" parent="Quadros/Quadro3" index="0" unique_id=836787273]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 17.0
+offset_bottom = 103.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.88, 0.72, 0.46, 1)
+theme_override_font_sizes/font_size = 20
+text = "O despertar"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Conteudo" type="VBoxContainer" parent="Quadros/Quadro3" index="1" unique_id=187174222]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 130.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_constants/separation = 5
+
+[node name="TextoComum" type="Label" parent="Quadros/Quadro3/Conteudo" index="0" unique_id=804922272]
+custom_minimum_size = Vector2(1, 0)
+layout_mode = 2
+theme_override_constants/line_spacing = -2
+theme_override_font_sizes/font_size = 12
+text = "Ao olhar para a página, você lembrou do instante em que tudo escureceu. Tentou largar o lápis, mas sua mão continuou escrevendo.
+
+A caverna que você acabara de percorrer tinha sido feita com suas lembranças. Enquanto procurava uma saída lá dentro, seu corpo continuava no chão do túnel.
+
+Quando encontrou a saída, conseguiu abrir a mão. O lápis caiu na pedra."
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="TextoAelin" type="Label" parent="Quadros/Quadro3/Conteudo" index="1" unique_id=1599215027]
+custom_minimum_size = Vector2(1, 0)
+layout_mode = 2
+theme_override_constants/line_spacing = -2
+theme_override_font_sizes/font_size = 12
+text = "Você se aproximou da parede e leu os dois nomes. Eram os mesmos que tinha encontrado na lista do castelo. Seus pais haviam fechado as portas que o rei mandara abrir.
+
+Na primeira página, abaixo da promessa, você escreveu:
+Por vocês, eu vou derrubar o rei."
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="TextoDorian" type="Label" parent="Quadros/Quadro3/Conteudo" index="2" unique_id=1328274908]
+visible = false
+custom_minimum_size = Vector2(1, 0)
+layout_mode = 2
+theme_override_constants/line_spacing = -2
+theme_override_font_sizes/font_size = 12
+text = "Na biblioteca, você tinha encontrado a ordem do seu pai. Agora sabia o que ele esperava ganhar ao abrir as portas.
+
+Na primeira página, abaixo da promessa, você escreveu:
+Vou contar o que você fez, pai. E vou tirar você do trono."
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="Quadro4" type="Control" parent="Quadros" index="3" unique_id=40331725]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Titulo" type="Label" parent="Quadros/Quadro4" index="0" unique_id=655861679]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 16.0
+offset_bottom = 102.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.88, 0.72, 0.46, 1)
+theme_override_font_sizes/font_size = 18
+text = "No rodapé do caderno"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Texto" type="Label" parent="Quadros/Quadro4" index="1" unique_id=1479212702]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 110.0
+offset_bottom = -58.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/line_spacing = -2
+theme_override_font_sizes/font_size = 14
+text = "Você seguiu as marcas na rocha até avistar a luz da superfície.
+
+Antes de subir, abriu o caderno para guardar o lápis. Sua mão estava parada. Mesmo assim, uma frase começou a aparecer no rodapé, traço por traço, numa letra que você não reconhecia."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Mensagem" type="Label" parent="Quadros/Quadro4" index="2" unique_id=759292631]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -49.0
+offset_bottom = 7.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 18
+text = "Nunca partimos.
+Nosso retorno está próximo."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Fim" type="Label" parent="Quadros/Quadro4" index="3" unique_id=246010102]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 9.0
+offset_bottom = 48.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 26
+text = "FIM"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Animacao" type="AnimationPlayer" parent="Quadros/Quadro4" index="4" unique_id=899018674]
+libraries/ = SubResource("Animacoes")

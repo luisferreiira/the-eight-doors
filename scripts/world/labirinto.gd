@@ -95,6 +95,9 @@ func _ready() -> void:
 	var actions = $Resultado/Overlay/Centro/Moldura/Conteudo/Acoes
 	actions.get_node("Reiniciar").pressed.connect(func(): get_tree().reload_current_scene())
 	actions.get_node("Menu").pressed.connect(func(): get_tree().change_scene_to_file("res://scenes/ui/menus/MenuInicial.tscn"))
+	# Ambos os desfechos devolvem o foco ao resultado da partida.
+	$Historia/Fuga.concluida.connect(_mostrar_resultado)
+	$Historia/Derrota.concluida.connect(_mostrar_resultado)
 	_refresh_score()
 
 ## Sorteio uniforme independente: cada início tem 1/3 de chance, podendo se repetir.
@@ -361,5 +364,11 @@ func _finish_run(won: bool) -> void:
 	var content = $Resultado/Overlay/Centro/Moldura/Conteudo
 	content.get_node("Titulo").text = "Você escapou!" if won else "Fim da partida"
 	content.get_node("Inscricao").text = ("Bônus de fuga: 500 + %s pelas vidas.\n" % (lives * 100) if won else "Suas vidas se esgotaram.\n") + "Pontuação final: %s   ·   Vidas: %s/3" % [score, lives]
+	# A fuga revela a história completa em ambas as saídas; zero vidas abre o desfecho de derrota.
+	var historia = $Historia/Fuga if won else $Historia/Derrota
+	historia.iniciar()
+
+## Exibe o placar e prioriza jogar de novo depois do último quadro ou de pular.
+func _mostrar_resultado() -> void:
 	$Resultado.show()
-	content.get_node("Acoes/Reiniciar").grab_focus()
+	$Resultado/Overlay/Centro/Moldura/Conteudo/Acoes/Reiniciar.grab_focus()

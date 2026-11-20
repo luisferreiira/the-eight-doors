@@ -67,6 +67,14 @@ func run():
    var expected = hud.coracao_cheio if heart < game.lives else hud.coracao_vazio
    check(hud.get_node("Coracao" + str(heart+1)).texture == expected, "Coração incorreto")
   check(hud.get_node("Pontos").text == "Pontos: %s" % game.score, "Placar desatualizado")
+ # A derrota bloqueia a partida e mostra a história antes do resultado.
+ var story = game.get_node("Historia/Derrota")
+ check(story.visible and not game.get_node("Resultado").visible, "História de derrota ausente")
+ var advance: Button = story.get_node("Acoes/Avancar")
+ advance.pressed.emit()
+ await create_timer(1.1).timeout
+ check(story.get_node("Quadros/Quadro2").visible, "Segundo quadro da derrota ausente")
+ advance.pressed.emit()
  check(game.finished and not game.escaped and not game.player.controls_enabled and game.get_node("Resultado").visible, "Derrota não encerrou")
  game.free()
  new_game()

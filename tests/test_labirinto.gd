@@ -258,6 +258,10 @@ func run() -> void:
 		await frames(3)
 		game.player.global_position = game.room.get_node("Saida/Interacao").global_position
 		await interact()
+		# As duas saídas abrem a mesma história, que antecede o placar.
+		var story = game.get_node("Historia/Fuga")
+		check(story.visible and not game.get_node("Resultado").visible, "Missing escape story: " + id)
+		story.get_node("Acoes/Pular").pressed.emit()
 		check(game.escaped and game.get_node("Resultado").visible, "Exit did not reach victory: " + id)
 		game.free()
 		game = Game.instantiate()

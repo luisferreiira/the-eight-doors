@@ -345,7 +345,8 @@ func _on_confirmar() -> void:
 	if gameplay.is_empty() or not ResourceLoader.exists(gameplay):
 		status.text = "Escolha salva, mas não há cena de gameplay neste projeto."
 		return
-	await _change_scene(gameplay)
+	# A seleção confirmada abre a história antes de sortear a Sala de Nascimento.
+	await _change_scene("res://scenes/ui/historia/abertura.tscn")
 
 func _on_voltar() -> void:
 	if transitioning: return

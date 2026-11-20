@@ -1,54 +1,64 @@
-[gd_scene load_steps=3 format=3]
-[ext_resource type="Script" path="res://scripts/ui/enigma_direcoes.gd" id="script"]
-[ext_resource type="Texture2D" path="res://assets/ui/moldura_pedra.svg" id="frame"]
-[ext_resource type="Theme" path="res://assets/ui/enigmas/tema_inscricao.tres" id="tema"]
-[ext_resource type="Texture2D" path="res://assets/ui/enigmas/rosa.svg" id="arte"]
-[node name="Enigma" type="CanvasLayer"]
+[gd_scene format=3 uid="uid://gqwrhgkjuprm"]
+
+[ext_resource type="Texture2D" uid="uid://b13mnqwmdmpoo" path="res://assets/ui/enigmas/rosa.svg" id="arte"]
+[ext_resource type="Texture2D" uid="uid://ckwguyrix357o" path="res://assets/ui/moldura_pedra.svg" id="frame"]
+[ext_resource type="Script" uid="uid://cbm2abiqm6ubv" path="res://scripts/ui/enigma_direcoes.gd" id="script"]
+[ext_resource type="Theme" uid="uid://kequq231xqjd" path="res://assets/ui/enigmas/tema_inscricao.tres" id="tema"]
+
+[node name="Enigma" type="CanvasLayer" unique_id=1393576076]
 layer = 30
 script = ExtResource("script")
 resposta = "noroeste"
-[node name="Fundo" type="ColorRect" parent="."]
+
+[node name="Fundo" type="ColorRect" parent="." unique_id=2116352202]
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-color = Color(0,0,0,0.7)
 theme = ExtResource("tema")
-[node name="Painel" type="TextureRect" parent="Fundo"]
+color = Color(0, 0, 0, 0.7)
+
+[node name="Painel" type="TextureRect" parent="Fundo" unique_id=1854430779]
+layout_mode = 0
 anchor_left = 0.5
-anchor_right = 0.5
 anchor_top = 0.5
+anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -255.0
-offset_right = 255.0
 offset_top = -170.0
+offset_right = 255.0
 offset_bottom = 170.0
 texture = ExtResource("frame")
 expand_mode = 1
 
-[node name="Titulo" type="Label" parent="Fundo/Painel"]
+[node name="Titulo" type="Label" parent="Fundo/Painel" unique_id=396074616]
+layout_mode = 0
 offset_left = 24.0
-offset_top = 18.0
+offset_top = 28.0
 offset_right = 486.0
-offset_bottom = 48.0
-text = "Entre dois rumos"
+offset_bottom = 58.0
+theme_override_colors/font_color = Color(0.88, 0.8, 0.65, 1)
 theme_override_font_sizes/font_size = 20
+text = "Entre dois rumos"
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
-theme_override_colors/font_color = Color(0.88,0.80,0.65,1)
 
-[node name="Inscricao" type="Label" parent="Fundo/Painel"]
+[node name="Inscricao" type="Label" parent="Fundo/Painel" unique_id=1560869147]
+layout_mode = 0
 offset_left = 28.0
-offset_top = 44.0
+offset_top = 49.0
 offset_right = 482.0
-offset_bottom = 108.0
-text = "Não sou o norte, nem onde o sol vai deitar;\nentre esses dois caminhos, meu rumo vais achar."
+offset_bottom = 113.0
+theme_override_colors/font_color = Color(0.88, 0.8, 0.65, 1)
 theme_override_font_sizes/font_size = 13
+text = "Não sou o norte, nem onde o sol vai deitar;
+entre esses dois caminhos, meu rumo vais achar."
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
-theme_override_colors/font_color = Color(0.88,0.80,0.65,1)
 
-[node name="Resposta" type="LineEdit" parent="Fundo/Painel"]
+[node name="Resposta" type="LineEdit" parent="Fundo/Painel" unique_id=852095981]
+layout_mode = 0
 offset_left = 38.0
 offset_top = 257.0
 offset_right = 288.0
@@ -57,59 +67,65 @@ theme_override_font_sizes/font_size = 14
 placeholder_text = "Digite uma direção..."
 max_length = 40
 
-[node name="Confirmar" type="Button" parent="Fundo/Painel"]
+[node name="Confirmar" type="Button" parent="Fundo/Painel" unique_id=1077387487]
+layout_mode = 0
 offset_left = 300.0
 offset_top = 257.0
 offset_right = 394.0
 offset_bottom = 287.0
-text = "Confirmar"
 theme_override_font_sizes/font_size = 14
+text = "Confirmar"
 
-[node name="Fechar" type="Button" parent="Fundo/Painel"]
+[node name="Fechar" type="Button" parent="Fundo/Painel" unique_id=631840087]
+layout_mode = 0
 offset_left = 400.0
 offset_top = 257.0
 offset_right = 473.0
 offset_bottom = 287.0
-text = "Fechar"
 theme_override_font_sizes/font_size = 14
+text = "Fechar"
 
-[node name="Feedback" type="Label" parent="Fundo/Painel"]
+[node name="Feedback" type="Label" parent="Fundo/Painel" unique_id=2099481379]
+layout_mode = 0
 offset_left = 30.0
-offset_top = 295.0
+offset_top = 288.0
 offset_right = 480.0
-offset_bottom = 318.0
-text = "Escreva uma direção."
+offset_bottom = 311.0
+theme_override_colors/font_color = Color(0.88, 0.8, 0.65, 1)
 theme_override_font_sizes/font_size = 12
+text = "Escreva uma direção."
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
-theme_override_colors/font_color = Color(0.88,0.80,0.65,1)
 
-[node name="Ilustracao" type="TextureRect" parent="Fundo/Painel"]
+[node name="Ilustracao" type="TextureRect" parent="Fundo/Painel" unique_id=1228339294]
+layout_mode = 0
 offset_left = 45.0
 offset_top = 111.0
 offset_right = 465.0
 offset_bottom = 241.0
+mouse_filter = 2
 texture = ExtResource("arte")
 expand_mode = 1
-mouse_filter = 2
 
-[node name="Legenda1" type="Label" parent="Fundo/Painel"]
+[node name="Legenda1" type="Label" parent="Fundo/Painel" unique_id=2129538973]
+layout_mode = 0
 offset_left = 215.0
 offset_top = 110.0
 offset_right = 315.0
 offset_bottom = 128.0
-text = "N"
+theme_override_colors/font_color = Color(0.88, 0.8, 0.65, 1)
 theme_override_font_sizes/font_size = 11
-theme_override_colors/font_color = Color(0.88,0.80,0.65,1)
+text = "N"
 horizontal_alignment = 1
 
-[node name="Legenda2" type="Label" parent="Fundo/Painel"]
+[node name="Legenda2" type="Label" parent="Fundo/Painel" unique_id=1904649666]
+layout_mode = 0
 offset_left = 90.0
 offset_top = 210.0
 offset_right = 190.0
 offset_bottom = 228.0
-text = "POENTE"
+theme_override_colors/font_color = Color(0.88, 0.8, 0.65, 1)
 theme_override_font_sizes/font_size = 11
-theme_override_colors/font_color = Color(0.88,0.80,0.65,1)
+text = "POENTE"
 horizontal_alignment = 1

@@ -2,9 +2,10 @@
 [ext_resource type="Shader" uid="uid://yoy8ram27asd" path="res://assets/shaders/vinheta.gdshader" id="10_vi4lx"]
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_ruge2"]
 shader = ExtResource("10_vi4lx")
-shader_parameter/intensidade = 0.4
-shader_parameter/raio = 0.32
-shader_parameter/suavidade = 0.58
+; Mantém o centro limpo e reforça um pouco a sombra das bordas e dos cantos.
+shader_parameter/intensidade = 0.8
+shader_parameter/raio = 0.37
+shader_parameter/suavidade = 0.67
 
 [node name="Atmosfera" type="CanvasLayer"]
 layer = 10

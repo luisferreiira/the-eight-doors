@@ -4,5 +4,10 @@
 		"Dorian"
 	],
 	"checks": 101,
-	"failures": []
+	"failures": [
+		"Pausa interrompeu fade",
+		"Travessia não concluiu",
+		"Pausa interrompeu fade",
+		"Travessia não concluiu"
+	]
 }

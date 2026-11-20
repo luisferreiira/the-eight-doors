@@ -116,6 +116,16 @@ func run() -> void:
 		await click(current_scene.next_button)
 		current_scene.next_button.pressed.emit()
 		await wait_seconds(0.8)
+		# A seleção abre a história antes de iniciar o jogo com o personagem escolhido.
+		check(current_scene.scene_file_path == "res://scenes/ui/historia/abertura.tscn", "Seleção não abriu a história")
+		var abertura := current_scene
+		var pular: Button = abertura.get_node("Acoes/Pular")
+		check(pular.tooltip_text == "Pular história", "Dica de pular incorreta")
+		# Um clique inicia o fade e mantém a história visível durante a transição.
+		await click(pular)
+		check(current_scene == abertura and abertura.trocando, "Pular abriu a caverna sem fade")
+		await wait_seconds(abertura.duracao_fade + 0.1)
+		await frames()
 		var game := current_scene
 		check(game.player.name == expected, "Instanciou personagem errado: " + expected)
 		check(root.content_scale_size == Vector2i(640,360), "Câmera perdeu resolução de gameplay")
@@ -151,6 +161,8 @@ func run() -> void:
 				start_door = door
 				break
 		var expected_room: String = start_door.destination
+		# O labirinto rejeita pedidos vindos de longe da porta.
+		game.player.global_position = start_door.spawn_position()
 		game.request_transition(start_door, game.player)
 		overlay._pause_game()
 		check(not paused, "Pausa interrompeu fade")

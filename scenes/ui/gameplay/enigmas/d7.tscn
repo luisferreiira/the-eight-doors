@@ -1,91 +1,104 @@
-[gd_scene load_steps=3 format=3]
-[ext_resource type="Script" path="res://scripts/ui/enigma_direcoes.gd" id="script"]
-[ext_resource type="Texture2D" path="res://assets/ui/moldura_pedra.svg" id="frame"]
-[ext_resource type="Texture2D" path="res://assets/ui/enigmas/torre.svg" id="torre"]
-[ext_resource type="Texture2D" path="res://assets/ui/enigmas/poco.svg" id="poco"]
-[ext_resource type="Theme" path="res://assets/ui/enigmas/tema_inscricao.tres" id="tema"]
-[node name="Enigma" type="CanvasLayer"]
+[gd_scene format=3 uid="uid://kk33xvvhiv52"]
+
+[ext_resource type="Texture2D" uid="uid://ckwguyrix357o" path="res://assets/ui/moldura_pedra.svg" id="frame"]
+[ext_resource type="Texture2D" uid="uid://u334jnlrecu5" path="res://assets/ui/enigmas/poco.svg" id="poco"]
+[ext_resource type="Script" uid="uid://cbm2abiqm6ubv" path="res://scripts/ui/enigma_direcoes.gd" id="script"]
+[ext_resource type="Theme" uid="uid://kequq231xqjd" path="res://assets/ui/enigmas/tema_inscricao.tres" id="tema"]
+[ext_resource type="Texture2D" uid="uid://bljf6u6pbjjsx" path="res://assets/ui/enigmas/torre.svg" id="torre"]
+
+[node name="Enigma" type="CanvasLayer" unique_id=353129704]
 layer = 30
 script = ExtResource("script")
 resposta = "sudoeste"
-[node name="Fundo" type="ColorRect" parent="."]
+
+[node name="Fundo" type="ColorRect" parent="." unique_id=123364490]
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-color = Color(0,0,0,0.7)
 theme = ExtResource("tema")
-[node name="Painel" type="TextureRect" parent="Fundo"]
+color = Color(0, 0, 0, 0.7)
+
+[node name="Painel" type="TextureRect" parent="Fundo" unique_id=1027591276]
+layout_mode = 0
 anchor_left = 0.5
-anchor_right = 0.5
 anchor_top = 0.5
+anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -255.0
-offset_right = 255.0
 offset_top = -170.0
+offset_right = 255.0
 offset_bottom = 170.0
 texture = ExtResource("frame")
 expand_mode = 1
 
-[node name="Titulo" type="Label" parent="Fundo/Painel"]
-offset_left = 24.0
-offset_top = 18.0
-offset_right = 486.0
-offset_bottom = 48.0
-text = "A torre e o poço"
+[node name="Titulo" type="Label" parent="Fundo/Painel" unique_id=615924520]
+layout_mode = 0
+offset_left = 22.0
+offset_top = 27.0
+offset_right = 484.0
+offset_bottom = 57.0
+theme_override_colors/font_color = Color(0.88, 0.8, 0.65, 1)
 theme_override_font_sizes/font_size = 20
+text = "A torre e o poço"
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
-theme_override_colors/font_color = Color(0.88,0.80,0.65,1)
 
-[node name="Inscricao" type="Label" parent="Fundo/Painel"]
+[node name="Inscricao" type="Label" parent="Fundo/Painel" unique_id=1097181627]
+layout_mode = 0
 offset_left = 28.0
-offset_top = 44.0
+offset_top = 47.0
 offset_right = 482.0
-offset_bottom = 108.0
-text = "Da torre avisto o poço, onde a sede vou saciar;\nseguindo em linha reta, que rumo devo tomar?"
+offset_bottom = 111.0
+theme_override_colors/font_color = Color(0.88, 0.8, 0.65, 1)
 theme_override_font_sizes/font_size = 13
+text = "Da torre avisto o poço, onde a sede vou saciar;
+seguindo em linha reta, que rumo devo tomar?"
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
-theme_override_colors/font_color = Color(0.88,0.80,0.65,1)
 
-[node name="Norte" type="Label" parent="Fundo/Painel"]
+[node name="Norte" type="Label" parent="Fundo/Painel" unique_id=1387652196]
+layout_mode = 0
 offset_left = 210.0
 offset_top = 110.0
 offset_right = 290.0
 offset_bottom = 135.0
-text = "N ↑"
+theme_override_colors/font_color = Color(0.88, 0.8, 0.65, 1)
 theme_override_font_sizes/font_size = 14
+text = "N ↑"
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
-theme_override_colors/font_color = Color(0.88,0.80,0.65,1)
 
-[node name="Torre" type="Label" parent="Fundo/Painel"]
+[node name="Torre" type="Label" parent="Fundo/Painel" unique_id=309524194]
+layout_mode = 0
 offset_left = 340.0
 offset_top = 170.0
 offset_right = 440.0
 offset_bottom = 195.0
-text = "TORRE"
+theme_override_colors/font_color = Color(0.88, 0.8, 0.65, 1)
 theme_override_font_sizes/font_size = 20
+text = "TORRE"
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
-theme_override_colors/font_color = Color(0.88,0.80,0.65,1)
 
-[node name="Poco" type="Label" parent="Fundo/Painel"]
+[node name="Poco" type="Label" parent="Fundo/Painel" unique_id=980695623]
+layout_mode = 0
 offset_left = 65.0
 offset_top = 220.0
 offset_right = 165.0
 offset_bottom = 245.0
-text = "POÇO"
+theme_override_colors/font_color = Color(0.88, 0.8, 0.65, 1)
 theme_override_font_sizes/font_size = 20
+text = "POÇO"
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
-theme_override_colors/font_color = Color(0.88,0.80,0.65,1)
 
-[node name="Resposta" type="LineEdit" parent="Fundo/Painel"]
+[node name="Resposta" type="LineEdit" parent="Fundo/Painel" unique_id=1173897258]
+layout_mode = 0
 offset_left = 38.0
 offset_top = 257.0
 offset_right = 288.0
@@ -94,48 +107,53 @@ theme_override_font_sizes/font_size = 14
 placeholder_text = "Digite uma direção..."
 max_length = 40
 
-[node name="Confirmar" type="Button" parent="Fundo/Painel"]
+[node name="Confirmar" type="Button" parent="Fundo/Painel" unique_id=644061756]
+layout_mode = 0
 offset_left = 300.0
 offset_top = 257.0
 offset_right = 394.0
 offset_bottom = 287.0
-text = "Confirmar"
 theme_override_font_sizes/font_size = 14
+text = "Confirmar"
 
-[node name="Fechar" type="Button" parent="Fundo/Painel"]
+[node name="Fechar" type="Button" parent="Fundo/Painel" unique_id=109628480]
+layout_mode = 0
 offset_left = 400.0
 offset_top = 257.0
 offset_right = 473.0
 offset_bottom = 287.0
-text = "Fechar"
 theme_override_font_sizes/font_size = 14
+text = "Fechar"
 
-[node name="Feedback" type="Label" parent="Fundo/Painel"]
-offset_left = 30.0
-offset_top = 295.0
-offset_right = 480.0
-offset_bottom = 318.0
-text = "Escreva uma direção."
+[node name="Feedback" type="Label" parent="Fundo/Painel" unique_id=1930494127]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 288.0
+offset_right = 482.0
+offset_bottom = 311.0
+theme_override_colors/font_color = Color(0.88, 0.8, 0.65, 1)
 theme_override_font_sizes/font_size = 12
+text = "Escreva uma direção."
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
-theme_override_colors/font_color = Color(0.88,0.80,0.65,1)
 
-[node name="Arte_torre" type="TextureRect" parent="Fundo/Painel"]
+[node name="Arte_torre" type="TextureRect" parent="Fundo/Painel" unique_id=67880754]
+layout_mode = 0
 offset_left = 360.0
 offset_top = 112.0
 offset_right = 418.0
 offset_bottom = 170.0
+mouse_filter = 2
 texture = ExtResource("torre")
 expand_mode = 1
-mouse_filter = 2
 
-[node name="Arte_poco" type="TextureRect" parent="Fundo/Painel"]
+[node name="Arte_poco" type="TextureRect" parent="Fundo/Painel" unique_id=1931460751]
+layout_mode = 0
 offset_left = 85.0
 offset_top = 165.0
 offset_right = 143.0
 offset_bottom = 223.0
+mouse_filter = 2
 texture = ExtResource("poco")
 expand_mode = 1
-mouse_filter = 2

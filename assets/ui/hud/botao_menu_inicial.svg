@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="174" height="46" viewBox="0 0 174 46" shape-rendering="crispEdges">
+  <!-- Silhueta e centro liso, com espaço para a legenda da Godot. -->
+  <path fill="#0c0a08" d="M16 0h142l16 11v24l-16 11H16L0 35V11z"/>
+  <path fill="#211d19" d="M19 8h136l10 8v14l-10 8H19L9 30V16z"/>
+
+  <!-- Blocos chanfrados com luz quente na borda superior. -->
+  <path fill="#564634" stroke="#1b150f" stroke-width="2" d="M16 2h142l14 10v22l-14 10H16L2 34V12zm3 6L9 16v14l10 8h136l10-8V16l-10-8z" fill-rule="evenodd"/>
+  <path fill="#746049" d="M17 3h140l12 9-4 2-11-8H20l-12 9-4-3z"/>
+  <path fill="#34291f" d="M3 32l5-2 12 9h134l11-9 6 2-14 11H17z"/>
+  <path fill="none" stroke="#201912" stroke-width="2" d="M32 2l3 6m46-6-2 6m50-6 4 6M3 23h6m156 0h6M28 38l-2 5m43-5 3 5m47-5-2 5m34-5 3 5"/>
+  <path fill="none" stroke="#a5865d" d="M17 3h13m6 0h41m6 0h44m7 0h22m3 2 9 7M5 13l10-8"/>
+</svg>
