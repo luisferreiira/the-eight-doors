@@ -1,4 +1,5 @@
 [gd_scene format=4]
+[ext_resource type="PackedScene" path="res://scenes/world/effects/indicador_pista.tscn" id="indicador_pista"]
 
 [ext_resource type="Script" path="res://scripts/world/sala.gd" id="1_bqths"]
 [ext_resource type="Texture2D" path="res://assets/environments/generated/dungeon_central/atlas_sala_central.png" id="2_ci2ba"]
@@ -9841,3 +9842,6 @@ y_sort_enabled = true
 script = ExtResource("efeito_restaurado")
 tipo = 0
 dica = "Onde a terra promete, desconfia do chão;\nna frieza da pedra, encontra sustentação."
+[node name="PistaDesafio" parent="ConteudoDaSala/Interacoes" instance=ExtResource("indicador_pista")]
+position = Vector2(560, 640)
+texto = "A espiral desperta; o olho observa; três talhos encerram o rito."

@@ -1,4 +1,4 @@
-extends SceneTree
+extends Node
 const Map = preload("res://scripts/world/mapa.gd")
 const Game = preload("res://scenes/world/labyrinth/labirinto.tscn")
 ## Relatório desta expansão fica no cache local, sem sobrescrever auditorias antigas.
@@ -7,7 +7,8 @@ var game: Node2D
 var failures: Array[String] = []
 var report := {"transitions":[],"sealed":[],"movement":[],"spawns":[],"camera":[],"perimeter":0,"invalid_maps":0}
 
-func _initialize() -> void: call_deferred("run")
+## Executa a verificação integrada de salas com os autoloads reais do projeto.
+func _ready() -> void: call_deferred("run")
 
 func check(ok: bool, message: String) -> void:
 	if not ok:
@@ -15,7 +16,7 @@ func check(ok: bool, message: String) -> void:
 		printerr(message)
 
 func frames(count: int) -> void:
-	for i in count: await physics_frame
+	for i in count: await get_tree().physics_frame
 
 func keys_for(direction: Vector2) -> Array:
 	# O navegador de teste pede direção no mundo, compensando o efeito da sala.
@@ -57,7 +58,7 @@ func traverse(direction: String, expected: String, character: String) -> void:
 	var fade_started := -1
 	var saw_black := false
 	while (game.current_room == from or game.transitioning) and ticks < 240:
-		await physics_frame
+		await get_tree().physics_frame
 		ticks += 1
 		if game.transitioning:
 			if fade_started < 0: fade_started = Time.get_ticks_msec()
@@ -91,7 +92,7 @@ func traverse(direction: String, expected: String, character: String) -> void:
 	input_keys(keys,true)
 	# Mede passos de física, não tempo de parede sob carga do editor.
 	for attempt in 90:
-		await physics_frame
+		await get_tree().physics_frame
 		if game.entry_lock == null: break
 	input_keys(keys,false)
 	await frames(3)
@@ -103,11 +104,11 @@ func interact() -> void:
 	var event := InputEventAction.new()
 	event.action = &"interact"
 	event.pressed = true
-	root.push_input(event)
+	get_tree().root.push_input(event)
 	await frames(2)
 	event = InputEventAction.new()
 	event.action = &"interact"
-	root.push_input(event)
+	get_tree().root.push_input(event)
 
 ## Expansão: mede acessibilidade pelas conexões abertas, sem resolver desafios.
 func distances(start: String, rooms: Dictionary) -> Dictionary:
@@ -171,7 +172,7 @@ func run() -> void:
 	game = Game.instantiate()
 	# Cenário fixo para testar navegação e E0; nascimentos têm teste próprio.
 	game.random_spawn = false
-	root.add_child(game)
+	get_tree().root.add_child(game)
 	await frames(4)
 	check(game.current_room=="S01","Default fixed spawn changed")
 	# Expansão: valida o esboço e percorre portas abertas em ambos os sentidos.
@@ -230,7 +231,7 @@ func run() -> void:
 		for p: Vector2 in [Map.CENTER_SPAWN,Vector2(560,256),Vector2(560,896),Vector2(128,576),Vector2(992,576),Vector2(870,370)]:
 			game.player.position = p
 			game.camera.force_update_scroll()
-			await process_frame
+			await get_tree().process_frame
 			var center: Vector2 = game.camera.get_screen_center_position()
 			var half_view: Vector2 = game.camera.get_viewport_rect().size/game.camera.zoom*0.5
 			var bounds := Rect2(game.room.position+Map.CAMERA_BOUNDS.position,Map.CAMERA_BOUNDS.size)
@@ -252,12 +253,29 @@ func run() -> void:
 		report.movement.append({"direction":str(direction),"speed":speed})
 	check(game.get_node("Atmosfera/Vinheta").size==Vector2(640,360),"Vignette not covering viewport")
 	check(game.camera.zoom==Vector2.ONE,"Zoom changed")
-	# Expansão: ambas as saídas encerram a partida; S04 perdeu sua saída antiga.
+	# As duas saídas exigem abertura visual e travessia física antes da vitória.
 	for id: String in ["S14", "S21"]:
 		game.load_room(id)
 		await frames(3)
 		game.player.global_position = game.room.get_node("Saida/Interacao").global_position
 		await interact()
+		var door: Area2D = game.victory_exit_door
+		var opening_wait := 0
+		while not door.opened and opening_wait < 90:
+			await get_tree().physics_frame
+			opening_wait += 1
+		check(door.opened and not game.finished, "Victory gate failed to open before crossing: " + id)
+		var move_action := "move_left" if id == "S14" else "move_up"
+		Input.action_press(move_action)
+		var victory_wait := 0
+		while not game.get("victory_crossed") and victory_wait < 180:
+			await get_tree().physics_frame
+			victory_wait += 1
+		Input.action_release(move_action)
+		check(game.get("victory_crossed"), "Player did not cross victory gate: " + id)
+		while not game.get_node("Historia/Fuga").visible and victory_wait < 500:
+			await get_tree().physics_frame
+			victory_wait += 1
 		# As duas saídas abrem a mesma história, que antecede o placar.
 		var story = game.get_node("Historia/Fuga")
 		check(story.visible and not game.get_node("Resultado").visible, "Missing escape story: " + id)
@@ -267,7 +285,7 @@ func run() -> void:
 		game = Game.instantiate()
 		# Mantém a nova partida dentro do laço de verificação das saídas.
 		game.random_spawn = false
-		root.add_child(game)
+		get_tree().root.add_child(game)
 		await frames(4)
 	# Dorian percorre também uma ligação nova, mantendo a escolha do personagem.
 	game.free()
@@ -275,11 +293,11 @@ func run() -> void:
 	# Cenário fixo para testar navegação e E0; nascimentos têm teste próprio.
 	game.random_spawn = false
 	game.character_scene = load("res://scenes/characters/players/dorian.tscn")
-	root.add_child(game)
+	get_tree().root.add_child(game)
 	await frames(4)
 	await traverse("O", "S10", "Dorian")
 	await traverse("L", "S01", "Dorian")
 	report["failures"] = failures
 	FileAccess.open(OUT+"testes_expansao.json",FileAccess.WRITE).store_string(JSON.stringify(report,"\t"))
 	print("LABIRINTO_RESULT transitions=%s sealed=%s perimeter=%s failures=%s" % [report.transitions.size(),report.sealed.size(),report.perimeter,failures])
-	quit(0 if failures.is_empty() else 1)
+	get_tree().quit(0 if failures.is_empty() else 1)

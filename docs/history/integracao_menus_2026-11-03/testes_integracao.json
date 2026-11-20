@@ -3,11 +3,6 @@
 		"Aelin",
 		"Dorian"
 	],
-	"checks": 101,
-	"failures": [
-		"Pausa interrompeu fade",
-		"Travessia não concluiu",
-		"Pausa interrompeu fade",
-		"Travessia não concluiu"
-	]
+	"checks": 107,
+	"failures": []
 }

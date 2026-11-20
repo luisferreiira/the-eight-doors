@@ -491,6 +491,16 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_wuqrt")
 theme_override_styles/disabled = SubResource("StyleBoxFlat_ghs2x")
 theme_override_styles/focus = SubResource("StyleBoxFlat_1ghr8")
 text = "Lua"
+[node name="Viajante" type="Button" parent="Overlay/Centro/Moldura/Conteudo/Pedras"]
+custom_minimum_size = Vector2(88, 29)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9098039, 0.8392157, 0.6745098, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_ungaf")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_pm18i")
+theme_override_styles/hover = SubResource("StyleBoxFlat_7rndj")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_u1pbr")
+theme_override_styles/focus = SubResource("StyleBoxFlat_fgq4b")
+text = "Viajante"
 
 [node name="Feedback" type="Label" parent="Overlay/Centro/Moldura/Conteudo" unique_id=1296249326]
 layout_mode = 2

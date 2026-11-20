@@ -38,8 +38,11 @@ _data = {
 [node name="Fuga" unique_id=708481028 instance=ExtResource("1")]
 texto_final = "Ver resultado"
 
+; Centraliza a placa na faixa dos títulos dos quatro quadros da fuga.
 [node name="Moldura" parent="." index="1"]
 anchors_preset = 5
+offset_top = 39.0
+offset_bottom = 125.0
 
 [node name="Acoes" parent="." index="2"]
 grow_horizontal = 2

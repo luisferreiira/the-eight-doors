@@ -4,17 +4,31 @@ extends CharacterBody2D
 @export_range(20.0, 400.0, 1.0) var speed: float = 144.0
 @export var idle_prefix: String = "parada"
 @export var controls_enabled: bool = true
+## Cada cena do personagem recebe seu próprio efeito curto de passos pelo Inspector.
+@export var footstep_stream: AudioStream
+@export_range(8.0, 120.0, 1.0) var footstep_distance := 38.0
 ## A sala ativa inverte os dois eixos; o labirinto restaura ao sair.
 @export var inverted_controls: bool = false
 ## Preserva a profundidade do Inspector fora das sobreposições de portas.
 var normal_z: int
 var facing: String = "frente"
 @onready var sprite: AnimatedSprite2D = $AnimatedSprite2D
+var _footstep_player: AudioStreamPlayer
+var _footstep_distance_accumulated := 0.0
 
 ## Inicializa movimento flutuante e animação parada ao entrar na árvore.
 func _ready() -> void:
 	normal_z = z_index
 	motion_mode = CharacterBody2D.MOTION_MODE_FLOATING
+	# O player local pode ser interrompido no mesmo passo que o deslocamento cessa.
+	if footstep_stream != null:
+		_footstep_player = AudioStreamPlayer.new()
+		_footstep_player.name = "Passos"
+		_footstep_player.stream = footstep_stream
+		_footstep_player.process_mode = Node.PROCESS_MODE_PAUSABLE
+		add_child(_footstep_player)
+		# Resolve o autoload ao entrar na árvore, inclusive nos testes com pré-carregamento.
+		get_node("/root/EstadoJogo").register_sfx_player(_footstep_player)
 	_update_animation(Vector2.ZERO)
 
 ## Lê WASD normalizado, aplica velocidade e move com colisões. O bloqueio de controles produz vetor zero.
@@ -23,15 +37,41 @@ func _physics_process(_delta: float) -> void:
 	# A animação acompanha o deslocamento real, inclusive na sala invertida.
 	if inverted_controls: direction = -direction
 	velocity = direction * speed
+	var previous_position := global_position
 	move_and_slide()
-	_update_animation(direction)
+	var actual_motion := global_position - previous_position
+	_update_footsteps(actual_motion.length())
+	# Usa o deslocamento resolvido pela física, não a tecla nem o vetor antes da inversão.
+	_update_animation(actual_motion)
 	_update_door_depth()
 
-## Seleciona caminhada ou parada conforme direção e orientação anterior, sem reiniciar quadros desnecessariamente.
+## Conta somente distância física percorrida; colisão, bloqueio ou pausa interrompem o áudio.
+func _update_footsteps(distance_moved: float) -> void:
+	if _footstep_player == null:
+		return
+	if not controls_enabled or get_tree().paused or distance_moved <= 0.01:
+		_footstep_distance_accumulated = 0.0
+		_footstep_player.stop()
+		return
+	_footstep_distance_accumulated += distance_moved
+	if _footstep_distance_accumulated >= footstep_distance:
+		_footstep_distance_accumulated = fmod(_footstep_distance_accumulated, footstep_distance)
+		if not _footstep_player.playing:
+			_footstep_player.play()
+
+## Corta o passo imediatamente quando o overlay pausa a árvore do jogo.
+func _notification(what: int) -> void:
+	if what == NOTIFICATION_PAUSED and is_instance_valid(_footstep_player):
+		_footstep_distance_accumulated = 0.0
+		_footstep_player.stop()
+
+
+## Seleciona corrida horizontal, direcao vertical ou parada; animacoes especiais mantem prioridade.
 func _update_animation(direction: Vector2) -> void:
+	var locomotion := [&"run_right", &"run_left", &"correndo_costas", &"correndo_frente", &"correndo_direita", &"correndo_esquerda", &"parada_costas", &"parada_frente", &"parada_direita", &"parada_esquerda", &"parado_costas", &"parado_frente", &"parado_direita", &"parado_esquerda"]
+	if not locomotion.has(sprite.animation) and sprite.is_playing():
+		return
 	if not direction.is_zero_approx():
-		# Em empate diagonal, manter a orientacao anterior se ela pertence ao par.
-		# Isso evita alternancia entre horizontal e vertical a cada frame.
 		if absf(direction.x) > absf(direction.y):
 			facing = "direita" if direction.x > 0 else "esquerda"
 		elif absf(direction.y) > absf(direction.x):
@@ -41,7 +81,12 @@ func _update_animation(direction: Vector2) -> void:
 			var vertical := "frente" if direction.y > 0 else "costas"
 			if facing != horizontal and facing != vertical:
 				facing = vertical
-	var animation_name := StringName(("correndo" if not direction.is_zero_approx() else idle_prefix) + "_" + facing)
+	var animation_name: StringName
+	if not direction.is_zero_approx() and absf(direction.x) > absf(direction.y):
+		animation_name = &"run_right" if direction.x > 0 else &"run_left"
+	else:
+		var prefix := "correndo" if not direction.is_zero_approx() else idle_prefix
+		animation_name = StringName(prefix + "_" + facing)
 	if sprite.animation != animation_name or not sprite.is_playing():
 		sprite.play(animation_name)
 

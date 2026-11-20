@@ -94,7 +94,9 @@ func run() -> void:
 	await frames()
 	game.player.global_position = game.room.doors.NE.spawn_position()
 	await action("interact")
-	check(not game.seal_panel.visible, "Outro atalho ativou o desafio E0")
+	# A face nordeste de S02 abre seu próprio desafio e mantém E0 oculto.
+	check(game.seal_panel == game.get_node("D6") and game.seal_panel.visible, "S02 não abriu D6")
+	check(not game.get_node("PainelSelo").visible, "Outro atalho ativou o desafio E0")
 	game.free()
 	print("PRIMEIRO_DESAFIO_RESULT falhas=", failures)
 	quit(0 if failures.is_empty() else 1)

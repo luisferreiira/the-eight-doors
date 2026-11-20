@@ -1,6 +1,8 @@
-[gd_scene load_steps=2 format=3]
+[gd_scene load_steps=3 format=3]
+[ext_resource type="PackedScene" path="res://scenes/world/effects/indicador_pista.tscn" id="indicador_pista"]
 
 [ext_resource type="PackedScene" path="res://scenes/world/labyrinth/sala_octogonal_base.tscn" id="1_base"]
+
 
 [node name="S15" instance=ExtResource("1_base")]
 
@@ -35,3 +37,6 @@ visible = false
 
 [node name="Forma" parent="Passagens/Porta_Sudoeste/PlanoDaPorta/BloqueioFechado"]
 disabled = true
+[node name="PistaDesafio" parent="ConteudoDaSala/Interacoes" instance=ExtResource("indicador_pista")]
+position = Vector2(560, 640)
+texto = "Da noite sem luz, a Lua cresce até a face plena; então mingua e desaparece."

@@ -7,8 +7,12 @@ var doors: Dictionary = {}
 ## Indexa as portas e acrescenta um limite físico externo: mesmo durante bloqueios de transição ninguém sai para o vazio.
 func _ready() -> void:
 	for door in $Passagens.get_children(): doors[door.direction] = door
-	# Last-resort boundary beyond the transition zones, including open doors.
-	# Keeps a player inside even if transition is locked or held against a doorway.
+
+## Mantém uma barreira no perímetro, deixando somente o vão da saída externa livre.
+func _build_safety_boundary() -> void:
+	var previous := get_node_or_null("LimiteSeguro")
+	if previous != null:
+		previous.queue_free()
 	var boundary := StaticBody2D.new()
 	boundary.name = "LimiteSeguro"
 	boundary.collision_layer = 1
@@ -17,15 +21,30 @@ func _ready() -> void:
 	for index in Map.CONTOUR.size():
 		var a: Vector2 = Map.CONTOUR[index]
 		var b: Vector2 = Map.CONTOUR[(index+1)%Map.CONTOUR.size()]
-		var outward := (b-a).orthogonal().normalized()
-		var shape := CollisionPolygon2D.new()
-		shape.polygon = PackedVector2Array([a+outward*18,b+outward*18,b+outward*50,a+outward*50])
-		boundary.add_child(shape)
+		var segments: Array[PackedVector2Array] = [PackedVector2Array([a, b])]
+		# As saídas externas ocupam o meio da borda oeste ou norte; preserva o restante do limite.
+		var exit_direction: String = Map.EXITS.get(room_id, "")
+		var is_exit_edge := (exit_direction == "O" and index == 6) or (exit_direction == "N" and index == 0)
+		if is_exit_edge:
+			var center := Vector2(64, 576) if exit_direction == "O" else Vector2(560, 192)
+			var half_gap := 52.0
+			var unit := (b-a).normalized()
+			var gap_start := center - unit * half_gap
+			var gap_end := center + unit * half_gap
+			segments = [PackedVector2Array([a, gap_start]), PackedVector2Array([gap_end, b])]
+		for segment in segments:
+			var start: Vector2 = segment[0]
+			var end: Vector2 = segment[1]
+			var outward := (end-start).orthogonal().normalized()
+			var shape := CollisionPolygon2D.new()
+			shape.polygon = PackedVector2Array([start+outward*18,end+outward*18,end+outward*50,start+outward*50])
+			boundary.add_child(shape)
 
 ## Reaplica os desafios resolvidos sem alterar os visuais definidos na cena.
 func configure(id: String, config: Dictionary, solved: Dictionary = {}) -> void:
 	room_id = id
 	position = Map.origin(config)
+	_build_safety_boundary()
 	var blocked: Dictionary = config.get("blocked", {})
 	for direction: String in doors:
 		var challenge: String = blocked.get(direction, "")

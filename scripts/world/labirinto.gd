@@ -39,9 +39,21 @@ var hint_scroll: TextureRect
 ## Primeiro desafio: E0 compartilha progresso entre S01/leste e S04/oeste.
 const FIRST_CHALLENGE := "E0"
 const STONE_SOLUTION: Array[String] = ["Estrela", "Lua", "Sol"]
+## Versos iniciais orientam a região sem enumerar as passagens até cada saída.
+const START_NAVIGATION_HINTS := {
+	"S22": "O arco do norte ecoa distante;\ndesça ao sul e siga adiante.",
+	"S23": "Pelo centro, a oeste abre-se o caminho;\nao norte, o alto guarda o destino.",
+	"S29": "Suba ao norte, sem perder a guia;\no poente se alcança pelas galerias."
+}
 var solved_challenges: Dictionary = {}
 var active_challenge: Area2D
 var unlocking := false
+## Estado intermediário: abre a saída, permite atravessá-la e só então encerra a partida.
+var victory_traversal_active := false
+var victory_passage_open := false
+var victory_crossed := false
+var victory_exit_direction := ""
+var victory_exit_door: Area2D
 ## A inversão e sua pista são lidas da cena da sala atual.
 var room_effect: Node2D
 ## Recuperação guarda a entrada da visita e bloqueia ações durante a queda.
@@ -64,7 +76,7 @@ func _ready() -> void:
 	# Referências às instâncias editáveis presentes na cena do labirinto.
 	seal_panel = $PainelSelo
 	# Os quatro painéis direcionais compartilham o fluxo de abertura das grades.
-	for id in ["D3", "D7", "D8", "D9"]:
+	for id in ["D3", "D4", "D5", "D6", "D7", "D8", "D9"]:
 		get_node(id).confirmed.connect(_confirm_challenge)
 		get_node(id).dismissed.connect(_close_challenge)
 	# Conecta o painel editável ao desafio da porta próxima.
@@ -72,7 +84,7 @@ func _ready() -> void:
 	seal_panel.dismissed.connect(_close_challenge)
 	hint_scroll = $HUD/Pergaminho
 	interaction_label = hint_scroll.get_node("Texto")
-	# Dicas de navegação serão implementadas em outra etapa.
+	# O mesmo pergaminho do HUD mostra avisos de interação e orientações breves.
 	interaction_label.text = ""
 	hint_scroll.hide()
 	validation_errors = Map.validate(rooms)
@@ -118,8 +130,15 @@ func _physics_process(_delta: float) -> void:
 			entry_lock = null
 	# O HUD indica a inscrição ou a saída somente dentro do alcance de interação.
 	if is_instance_valid(player) and is_instance_valid(room):
-		_update_interaction_hint()
+		if victory_traversal_active:
+			interaction_label.text = "A porta se abre…" if not victory_passage_open else "Atravesse a passagem"
+		else:
+			_update_interaction_hint()
 		hint_scroll.visible = not interaction_label.text.is_empty()
+		# Só iniciar a vitória depois de o corpo cruzar o marcador externo da saída.
+		if victory_traversal_active and victory_passage_open and not victory_crossed and _has_crossed_victory_exit():
+			victory_crossed = true
+			call_deferred("_finish_run", true)
 		# Consulta os tiles sob os pés somente durante exploração livre.
 		if not blocks_pause() and not finished and is_instance_valid(room_effect) and room_effect.is_false_floor(player.global_position):
 			falling = true
@@ -154,7 +173,7 @@ func _recover_from_fall() -> void:
 
 ## E examina a primeira inscrição ou ativa a saída; Esc cancela o enigma.
 func _unhandled_input(event: InputEvent) -> void:
-	if finished or transitioning or unlocking or falling or not is_instance_valid(room):
+	if finished or transitioning or unlocking or falling or victory_traversal_active or not is_instance_valid(room):
 		return
 	# Esc fecha a inscrição; outras ações não abrem outro painel enquanto ela está ativa.
 	if seal_panel.visible:
@@ -176,16 +195,43 @@ func _unhandled_input(event: InputEvent) -> void:
 	elif _near_exit():
 		seal_panel = $PainelSelo
 		get_viewport().set_input_as_handled()
-		_finish_run(true)
+		_begin_victory_traversal()
+	elif _near_clue() != null:
+		get_viewport().set_input_as_handled()
+		notice = String(_near_clue().get("texto"))
+		notice_until = Time.get_ticks_msec() + 8000
+		_update_interaction_hint()
+	# Inscrições de navegação são tratadas à parte das pistas das portas.
+	elif _near_navigation_inscription() != null:
+		get_viewport().set_input_as_handled()
+		notice = String(_near_navigation_inscription().get("texto"))
+		notice_until = Time.get_ticks_msec() + 8000
+		_update_interaction_hint()
 
 ## Usa o marcador interno para examinar a porta sem encostar na colisão da grade.
 func _near_challenge() -> Area2D:
 	for door: Area2D in room.doors.values():
-		if door.blocked_id in [FIRST_CHALLENGE, "D3", "D7", "D8", "D9"] and not door.opened and not door.opening:
+		if door.blocked_id in [FIRST_CHALLENGE, "D3", "D4", "D5", "D6", "D7", "D8", "D9"] and not door.opened and not door.opening:
 			if player.global_position.distance_to(door.spawn_position()) <= INTERACTION_RANGE:
 				return door
 	return null
 
+# Localiza a inscrição editável da sala dentro do alcance de interação.
+func _near_clue() -> Marker2D:
+	var interactions := room.get_node_or_null("ConteudoDaSala/Interacoes")
+	if interactions == null:
+		return null
+	var clue := interactions.get_node_or_null("PistaDesafio") as Marker2D
+	if clue != null and player.global_position.distance_to(clue.global_position) <= INTERACTION_RANGE:
+		return clue
+	return null
+
+# Localiza inscrições opcionais separadamente das pistas dos enigmas de portas.
+func _near_navigation_inscription() -> Marker2D:
+	var inscription := room.get_node_or_null("ConteudoDaSala/Interacoes/InscricaoNavegacao") as Marker2D
+	if inscription != null and player.global_position.distance_to(inscription.global_position) <= INTERACTION_RANGE:
+		return inscription
+	return null
 ## Cancelar não altera a porta nem registra progresso.
 func _close_challenge() -> void:
 	if unlocking or finished: return
@@ -197,8 +243,14 @@ func _close_challenge() -> void:
 func _confirm_challenge(sequence: Array[String]) -> void:
 	if finished or get_tree().paused or unlocking or not seal_panel.visible or not is_instance_valid(active_challenge): return
 	if active_challenge != _near_challenge(): return
-	# E0 usa pedras; os demais validam a direção exportada no painel.
-	var correct: bool = sequence == STONE_SOLUTION if active_challenge.blocked_id == FIRST_CHALLENGE else sequence.size() == 1 and sequence[0] == seal_panel.resposta
+	# E0 mantém sua sequência; os novos desafios definem seus gabaritos nas próprias cenas.
+	var correct := false
+	if active_challenge.blocked_id == FIRST_CHALLENGE:
+		correct = sequence == STONE_SOLUTION
+	elif seal_panel.has_method("get_solution"):
+		correct = sequence == seal_panel.get_solution()
+	else:
+		correct = sequence.size() == 1 and sequence[0] == seal_panel.resposta
 	if not correct:
 		var id: String = active_challenge.blocked_id
 		challenge_errors[id] = challenge_errors.get(id, 0) + 1
@@ -232,6 +284,34 @@ func _near_exit() -> bool:
 	var marker := room.get_node_or_null("Saida/Interacao") as Marker2D
 	return marker != null and player.global_position.distance_to(marker.global_position) <= INTERACTION_RANGE
 
+## Abre primeiro a grade externa; depois libera os controles para a travessia manual.
+func _begin_victory_traversal() -> void:
+	if finished or victory_traversal_active or not _near_exit():
+		return
+	victory_traversal_active = true
+	victory_exit_direction = Map.EXITS[current_room]
+	victory_exit_door = room.doors[victory_exit_direction]
+	player.controls_enabled = false
+	player.velocity = Vector2.ZERO
+	await victory_exit_door.open_escape_passage()
+	if finished or not victory_traversal_active:
+		return
+	victory_passage_open = true
+	player.controls_enabled = true
+
+## Detecta que os pés do personagem já cruzaram o limiar externo da porta aberta.
+func _has_crossed_victory_exit() -> bool:
+	var marker := room.get_node_or_null("Saida/Passagem") as Marker2D
+	if marker == null:
+		return false
+	var player_local := room.to_local(player.global_position)
+	var marker_local := room.to_local(marker.global_position)
+	if victory_exit_direction == "O":
+		return player_local.x <= marker_local.x
+	if victory_exit_direction == "N":
+		return player_local.y <= marker_local.y
+	return false
+
 ## Comandos contextuais de inscrição e saída, sem dicas de navegação nesta etapa.
 func _update_interaction_hint() -> void:
 	interaction_label.text = ""
@@ -241,9 +321,13 @@ func _update_interaction_hint() -> void:
 		interaction_label.text = "E — Escapar"
 	elif _near_challenge() != null:
 		interaction_label.text = "E — Examinar inscrição"
-	# A pista rimada permanece disponível; comandos próximos têm prioridade.
+	# Inscrições de navegação são opcionais e não substituem as pistas dos enigmas.
 	elif Time.get_ticks_msec() < notice_until:
 		interaction_label.text = notice
+	elif _near_clue() != null:
+		interaction_label.text = "E — Consultar pista"
+	elif _near_navigation_inscription() != null:
+		interaction_label.text = "E — Ler inscrição"
 	elif is_instance_valid(room_effect):
 		interaction_label.text = room_effect.dica
 
@@ -254,10 +338,10 @@ func _lock_player() -> void:
 
 ## Pausa sobre enigmas é permitida; travessias, queda e abertura continuam protegidas.
 func blocks_pause_menu() -> bool:
-	return transitioning or unlocking or falling or finished
+	return transitioning or unlocking or falling or finished or victory_traversal_active
 
 func blocks_pause() -> bool:
-	return finished or transitioning or unlocking or falling or (is_instance_valid(seal_panel) and seal_panel.visible)
+	return finished or transitioning or unlocking or falling or victory_traversal_active or (is_instance_valid(seal_panel) and seal_panel.visible)
 
 ## Recebe porta e corpo; rejeita destinos inválidos e concorrência antes de bloquear o movimento.
 func request_transition(door: Area2D, body: CharacterBody2D) -> void:
@@ -292,6 +376,9 @@ func finish_transition(target: String, entry: String) -> void:
 
 ## Remove apenas a sala antiga. Reparenta o jogador persistente, configura portas, entrada e limites globais da câmera.
 func load_room(id: String, entry: String = "") -> void:
+	# Cada troca encerra avisos da sala anterior antes de selecionar uma dica inicial.
+	notice = ""
+	notice_until = 0
 	if is_instance_valid(room):
 		player.reparent(self,true)
 		remove_child(room)
@@ -303,6 +390,10 @@ func load_room(id: String, entry: String = "") -> void:
 	room.configure(id, rooms[id], solved_challenges)
 	room.attach_player(player)
 	current_room = id
+	# Somente o nascimento em um dos três inícios exibe orientação automaticamente.
+	if entry.is_empty() and START_NAVIGATION_HINTS.has(id):
+		notice = START_NAVIGATION_HINTS[id]
+		notice_until = Time.get_ticks_msec() + 10000
 	for door in room.doors.values(): door.requested.connect(request_transition)
 	# Nascimento é um marcador salvo na cena. Travessias continuam usando a porta oposta.
 	var spawn_marker := room.get_node_or_null("Nascimento") as Marker2D
@@ -319,6 +410,10 @@ func load_room(id: String, entry: String = "") -> void:
 	return_entry = entry_lock
 	player.inverted_controls = is_instance_valid(room_effect) and room_effect.tipo == 1
 	unlock_at = Time.get_ticks_msec()+250
+	# Restaura o enquadramento padrão em cada sala e aplica apenas o zoom declarado pela cena.
+	var zoom_effect := room.get_node_or_null("EfeitoZoom")
+	var zoom_factor := 1.0 if zoom_effect == null else float(zoom_effect.get("fator_zoom"))
+	camera.zoom = Vector2.ONE * zoom_factor
 	var bounds := Rect2(room.position+Map.CAMERA_BOUNDS.position,Map.CAMERA_BOUNDS.size)
 	camera.limit_left = roundi(bounds.position.x)
 	camera.limit_top = roundi(bounds.position.y)
@@ -339,7 +434,13 @@ func _refresh_attempts(wrong := false) -> void:
 	if not is_instance_valid(active_challenge): return
 	var errors: int = challenge_errors.get(active_challenge.blocked_id, 0)
 	var remaining := 3 - errors % 3
-	var label: Label = seal_panel.feedback if seal_panel == $PainelSelo else seal_panel.get_node("Fundo/Painel/Feedback")
+	var label: Label
+	if seal_panel.has_method("get_feedback_label"):
+		label = seal_panel.get_feedback_label()
+	elif seal_panel == $PainelSelo:
+		label = seal_panel.feedback
+	else:
+		label = seal_panel.get_node("Fundo/Painel/Feedback")
 	label.text = ("Resposta incorreta. " if wrong else "") + "Tentativas: %s/3" % remaining
 	if remaining == 1: label.text += " — Outro erro custará 1 vida."
 
@@ -364,6 +465,11 @@ func _finish_run(won: bool) -> void:
 	var content = $Resultado/Overlay/Centro/Moldura/Conteudo
 	content.get_node("Titulo").text = "Você escapou!" if won else "Fim da partida"
 	content.get_node("Inscricao").text = ("Bônus de fuga: 500 + %s pelas vidas.\n" % (lives * 100) if won else "Suas vidas se esgotaram.\n") + "Pontuação final: %s   ·   Vidas: %s/3" % [score, lives]
+	# A fuga só dissolve o cenário depois da travessia e conserva a tela final sobre o branco.
+	if won:
+		await $SequenciaVitoria.play()
+		$Resultado.layer = $SequenciaVitoria.layer + 1
+		$Resultado/Overlay.color = Color(0.04, 0.03, 0.07, 0.0)
 	# A fuga revela a história completa em ambas as saídas; zero vidas abre o desfecho de derrota.
 	var historia = $Historia/Fuga if won else $Historia/Derrota
 	historia.iniciar()
