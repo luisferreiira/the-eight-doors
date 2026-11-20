@@ -52,33 +52,10 @@ func check_panel_layout(challenge_id: String) -> void:
 	check(bounds.position.y >= 0.0 and bounds.end.y <= viewport.size.y, "%s ficou cortado verticalmente." % challenge_id)
 	var center_error := bounds.get_center().distance_to(viewport.get_center())
 	check(center_error <= 4.0, "%s deixou de ficar centralizado: erro de %s px." % [challenge_id, center_error])
-	check(frame.get_node_or_null("Conteudo/Dica") == null, "%s ainda mostra a dica dentro do painel." % challenge_id)
+	# A pista completa precisa estar legível dentro do próprio selo.
+	var clue: Label = frame.get_node("Conteudo/Inscricao")
+	check(clue.is_visible_in_tree() and clue.text == game.seal_panel.inscription, "Inscrição ausente em " + challenge_id)
 	print("LAYOUT_%s %s" % [challenge_id, bounds.size])
-
-# Confirma que cada pergaminho fica na sala da própria pista, longe das salas das portas.
-func test_clue_indicators() -> void:
-	var clue_rooms := {
-		"D4": ["S29", "Não sou flor, mas abro pétalas para mostrar todos os rumos."],
-		"D5": ["S08", "A espiral desperta; o olho observa; três talhos encerram o rito."],
-		"D6": ["S15", "Da noite sem luz, a Lua cresce até a face plena; então mingua e desaparece."]
-	}
-	for challenge_id: String in clue_rooms:
-		var clue_room_id: String = clue_rooms[challenge_id][0]
-		game.call("load_room", clue_room_id)
-		var clue: Marker2D = game.get("room").get_node("ConteudoDaSala/Interacoes/PistaDesafio")
-		check(clue.get("texto") == clue_rooms[challenge_id][1], "%s não tem sua pista na sala %s." % [challenge_id, clue_room_id])
-		check(clue.position.distance_to(Vector2(560, 640)) <= 100.0, "%s ficou fora do centro da sala da pista." % challenge_id)
-		check(clue.get_node_or_null("Pergaminho") is Sprite2D, "%s não tem pergaminho visual junto à pista." % clue_room_id)
-		check(clue.get_node_or_null("Interrogacao") is Label, "%s não tem símbolo no pergaminho." % clue_room_id)
-		if clue_room_id == "S08":
-			var effect: Node2D = game.get("room_effect")
-			check(not effect.is_false_floor(clue.global_position), "O pergaminho da S08 ficou sobre o chão falso.")
-		game.get("player").global_position = clue.global_position
-		interact()
-		check(String(game.get("notice")) == clue_rooms[challenge_id][1], "%s não revelou sua pista ao interagir com o pergaminho." % challenge_id)
-	for room_id: String in ["S02", "S06", "S07", "S09", "S16", "S30"]:
-		game.call("load_room", room_id)
-		check(game.get("room").get_node_or_null("ConteudoDaSala/Interacoes/IndicadorPista") == null, "%s ainda tem pergaminho na sala do desafio." % room_id)
 
 # Verifica que as duas saídas continuam alcançáveis sem abrir nenhum selo.
 func can_reach(start: String, destination: String) -> bool:
@@ -105,7 +82,6 @@ func _run() -> void:
 	game.set("random_spawn", false)
 	get_tree().root.add_child(game)
 	await get_tree().physics_frame
-	await test_clue_indicators()
 
 	# D4: três respostas erradas distribuídas pelas duas faces custam uma vida.
 	await open_challenge("S06", "S", "D4")

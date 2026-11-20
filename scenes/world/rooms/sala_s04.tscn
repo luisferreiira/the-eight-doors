@@ -1,5 +1,4 @@
 [gd_scene load_steps=6 format=3]
-[ext_resource type="PackedScene" path="res://scenes/world/effects/indicador_pista.tscn" id="inscricao_navegacao"]
 
 [ext_resource type="PackedScene" path="res://scenes/world/labyrinth/sala_octogonal_base.tscn" id="1_base"]
 
@@ -9,6 +8,8 @@
 [ext_resource type="Material" path="res://assets/materials/doors/vinho.tres" id="cor_porta"]
 
 [node name="S04" instance=ExtResource("1_base")]
+; Verso de navegação desta sala no mapa.
+verso = "Ao norte, dois arcos te chamam agora:\num busca o poente, o outro a aurora."
 
 [node name="ConteudoDaSala" type="Node2D" parent="."]
 y_sort_enabled = true
@@ -54,6 +55,3 @@ material = ExtResource("cor_porta")
 [node name="BatenteSuperior" parent="Passagens/Porta_Oeste"]
 visible = false
 ; Inscrição opcional de navegação, editável no centro da sala.
-[node name="InscricaoNavegacao" parent="ConteudoDaSala/Interacoes" instance=ExtResource("inscricao_navegacao")]
-position = Vector2(560, 640)
-texto = "Ao norte, uma passagem segue a leste;\npor ela, o rumo se tece."

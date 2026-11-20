@@ -34,17 +34,13 @@ var fall_count := 0
 var notice := ""
 ## Avisos temporários compartilham o pergaminho, deixando o topo só para o status.
 var notice_until := 0
+## Texto permanente da sala no pergaminho inferior.
+var orientacao := ""
 var interaction_label: Label
 var hint_scroll: TextureRect
 ## Primeiro desafio: E0 compartilha progresso entre S01/leste e S04/oeste.
 const FIRST_CHALLENGE := "E0"
 const STONE_SOLUTION: Array[String] = ["Estrela", "Lua", "Sol"]
-## Versos iniciais orientam a região sem enumerar as passagens até cada saída.
-const START_NAVIGATION_HINTS := {
-	"S22": "O arco do norte ecoa distante;\ndesça ao sul e siga adiante.",
-	"S23": "Pelo centro, a oeste abre-se o caminho;\nao norte, o alto guarda o destino.",
-	"S29": "Suba ao norte, sem perder a guia;\no poente se alcança pelas galerias."
-}
 var solved_challenges: Dictionary = {}
 var active_challenge: Area2D
 var unlocking := false
@@ -86,7 +82,6 @@ func _ready() -> void:
 	interaction_label = hint_scroll.get_node("Texto")
 	# O mesmo pergaminho do HUD mostra avisos de interação e orientações breves.
 	interaction_label.text = ""
-	hint_scroll.hide()
 	validation_errors = Map.validate(rooms)
 	# Adição: impede iniciar com uma sala do mapa sem cena visual cadastrada.
 	for id: String in rooms:
@@ -134,6 +129,9 @@ func _physics_process(_delta: float) -> void:
 			interaction_label.text = "A porta se abre…" if not victory_passage_open else "Atravesse a passagem"
 		else:
 			_update_interaction_hint()
+		# A interação ocupa o pergaminho inteiro; o verso retorna ao sair do alcance.
+		if interaction_label.text.is_empty():
+			interaction_label.text = orientacao
 		hint_scroll.visible = not interaction_label.text.is_empty()
 		# Só iniciar a vitória depois de o corpo cruzar o marcador externo da saída.
 		if victory_traversal_active and victory_passage_open and not victory_crossed and _has_crossed_victory_exit():
@@ -196,18 +194,6 @@ func _unhandled_input(event: InputEvent) -> void:
 		seal_panel = $PainelSelo
 		get_viewport().set_input_as_handled()
 		_begin_victory_traversal()
-	elif _near_clue() != null:
-		get_viewport().set_input_as_handled()
-		notice = String(_near_clue().get("texto"))
-		notice_until = Time.get_ticks_msec() + 8000
-		_update_interaction_hint()
-	# Inscrições de navegação são tratadas à parte das pistas das portas.
-	elif _near_navigation_inscription() != null:
-		get_viewport().set_input_as_handled()
-		notice = String(_near_navigation_inscription().get("texto"))
-		notice_until = Time.get_ticks_msec() + 8000
-		_update_interaction_hint()
-
 ## Usa o marcador interno para examinar a porta sem encostar na colisão da grade.
 func _near_challenge() -> Area2D:
 	for door: Area2D in room.doors.values():
@@ -216,22 +202,6 @@ func _near_challenge() -> Area2D:
 				return door
 	return null
 
-# Localiza a inscrição editável da sala dentro do alcance de interação.
-func _near_clue() -> Marker2D:
-	var interactions := room.get_node_or_null("ConteudoDaSala/Interacoes")
-	if interactions == null:
-		return null
-	var clue := interactions.get_node_or_null("PistaDesafio") as Marker2D
-	if clue != null and player.global_position.distance_to(clue.global_position) <= INTERACTION_RANGE:
-		return clue
-	return null
-
-# Localiza inscrições opcionais separadamente das pistas dos enigmas de portas.
-func _near_navigation_inscription() -> Marker2D:
-	var inscription := room.get_node_or_null("ConteudoDaSala/Interacoes/InscricaoNavegacao") as Marker2D
-	if inscription != null and player.global_position.distance_to(inscription.global_position) <= INTERACTION_RANGE:
-		return inscription
-	return null
 ## Cancelar não altera a porta nem registra progresso.
 func _close_challenge() -> void:
 	if unlocking or finished: return
@@ -289,6 +259,8 @@ func _begin_victory_traversal() -> void:
 	if finished or victory_traversal_active or not _near_exit():
 		return
 	victory_traversal_active = true
+	# Recolhe a placa inteira, inclusive o fundo, quando a grade começa a abrir.
+	room.get_node("Saida/Placa").hide()
 	victory_exit_direction = Map.EXITS[current_room]
 	victory_exit_door = room.doors[victory_exit_direction]
 	player.controls_enabled = false
@@ -324,10 +296,6 @@ func _update_interaction_hint() -> void:
 	# Inscrições de navegação são opcionais e não substituem as pistas dos enigmas.
 	elif Time.get_ticks_msec() < notice_until:
 		interaction_label.text = notice
-	elif _near_clue() != null:
-		interaction_label.text = "E — Consultar pista"
-	elif _near_navigation_inscription() != null:
-		interaction_label.text = "E — Ler inscrição"
 	elif is_instance_valid(room_effect):
 		interaction_label.text = room_effect.dica
 
@@ -390,10 +358,10 @@ func load_room(id: String, entry: String = "") -> void:
 	room.configure(id, rooms[id], solved_challenges)
 	room.attach_player(player)
 	current_room = id
-	# Somente o nascimento em um dos três inícios exibe orientação automaticamente.
-	if entry.is_empty() and START_NAVIGATION_HINTS.has(id):
-		notice = START_NAVIGATION_HINTS[id]
-		notice_until = Time.get_ticks_msec() + 10000
+	# Cada visita recupera o verso editado na cena da sala.
+	orientacao = room.verso
+	interaction_label.text = orientacao
+	hint_scroll.visible = not orientacao.is_empty()
 	for door in room.doors.values(): door.requested.connect(request_transition)
 	# Nascimento é um marcador salvo na cena. Travessias continuam usando a porta oposta.
 	var spawn_marker := room.get_node_or_null("Nascimento") as Marker2D
@@ -467,7 +435,10 @@ func _finish_run(won: bool) -> void:
 	content.get_node("Inscricao").text = ("Bônus de fuga: 500 + %s pelas vidas.\n" % (lives * 100) if won else "Suas vidas se esgotaram.\n") + "Pontuação final: %s   ·   Vidas: %s/3" % [score, lives]
 	# A fuga só dissolve o cenário depois da travessia e conserva a tela final sobre o branco.
 	if won:
-		await $SequenciaVitoria.play()
+		# Oculta os indicadores da partida durante o desmanche da sala.
+		$HUD.hide()
+		var arco := room.get_node_or_null("Saida/Interacao") as Marker2D
+		await $SequenciaVitoria.play(room, victory_exit_door if is_instance_valid(victory_exit_door) else arco)
 		$Resultado.layer = $SequenciaVitoria.layer + 1
 		$Resultado/Overlay.color = Color(0.04, 0.03, 0.07, 0.0)
 	# A fuga revela a história completa em ambas as saídas; zero vidas abre o desfecho de derrota.

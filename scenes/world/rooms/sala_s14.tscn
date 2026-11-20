@@ -38,5 +38,9 @@ disabled = true
 [node name="GradeFechada" parent="Passagens/Porta_Oeste"]
 self_modulate = Color(1, 1, 1, 0)
 
+; A moldura dourada substitui o batente comum que cobria a pilastra superior.
+[node name="BatenteSuperior" parent="Passagens/Porta_Oeste"]
+visible = false
+
 [node name="VisualEspecial" parent="Passagens/Porta_Oeste" instance=ExtResource("visual_O")]
 material = ExtResource("cor_porta")

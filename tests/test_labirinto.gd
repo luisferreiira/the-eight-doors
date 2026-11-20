@@ -177,7 +177,8 @@ func run() -> void:
 	check(game.current_room=="S01","Default fixed spawn changed")
 	# Expansão: valida o esboço e percorre portas abertas em ambos os sentidos.
 	check_expansion()
-	check(not game.hint_scroll.visible, "Old navigation hint still visible")
+	# S01 não tem verso de navegação no mapa.
+	check(not game.hint_scroll.visible, "Pergaminho inesperado na S01")
 	var original_id: int = game.player.get_instance_id()
 	for direction: String in ["N","NE","S","SO","O","NO"]:
 		var target: String = game.rooms.S01.links[direction]

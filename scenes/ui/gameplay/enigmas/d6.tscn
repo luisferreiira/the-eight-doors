@@ -3,8 +3,9 @@
 [ext_resource type="PackedScene" path="res://scenes/ui/gameplay/painel_selo.tscn" id="base"]
 
 [node name="DesafioD6" instance=ExtResource("base")]
+; A inscrição contém a pista completa nas duas faces da porta.
 challenge_title = "As quatro fases da Lua"
-inscription = "Reproduza a ordem das fases descrita na inscrição da S15."
+inscription = "Da noite sem luz, a Lua cresce até a face plena. Depois, mingua."
 choice_names = PackedStringArray("Lua Cheia", "Lua Nova", "Quarto Minguante", "Quarto Crescente")
 solution = PackedStringArray("Lua Nova", "Quarto Crescente", "Lua Cheia", "Quarto Minguante")
 initial_message = "Escolha as fases na ordem."

@@ -6,6 +6,8 @@
 [ext_resource type="Material" path="res://assets/materials/doors/vinho.tres" id="cor_porta"]
 
 [node name="S23" instance=ExtResource("1_base")]
+; Verso de navegação desta sala no mapa.
+verso = "A oeste, dois destinos vais sondar;\na leste, a pedra convida a vagar."
 
 ; P2: ponto seguro de nascimento, reposicionável no editor 2D.
 [node name="Nascimento" type="Marker2D" parent="."]

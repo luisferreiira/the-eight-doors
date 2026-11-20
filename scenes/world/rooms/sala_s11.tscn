@@ -5,6 +5,8 @@
 [ext_resource type="PackedScene" path="res://scenes/world/effects/luz_jogador.tscn" id="efeito_luz"]
 
 [node name="S11" instance=ExtResource("1_base")]
+; O pergaminho inferior anuncia o efeito enquanto o jogador estiver na sala.
+verso = "Se a treva engolir o chão,\nsegue a luz junto à tua mão."
 
 [node name="ConteudoDaSala" type="Node2D" parent="."]
 y_sort_enabled = true
@@ -40,6 +42,6 @@ disabled = true
 
 ; Escurece o ambiente e mantém uma área de exploração junto ao personagem.
 [node name="Ambiente" parent="Iluminacao" unique_id=871303574]
-color = Color(0.1, 0.11, 0.15, 1)
+color = Color(0.035, 0.04, 0.055, 1)
 
 [node name="EfeitoEscuridao" parent="." instance=ExtResource("efeito_luz")]

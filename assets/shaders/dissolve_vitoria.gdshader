@@ -1,19 +1,16 @@
 shader_type canvas_item;
+render_mode unshaded;
 
 uniform float progress : hint_range(0.0, 1.0) = 0.0;
-uniform vec2 cell_count = vec2(42.0, 24.0);
+uniform vec2 origem = vec2(0.5);
 
-// Gera o mosaico determinístico que faz o cenário desaparecer em fragmentos.
-float cell_noise(vec2 cell) {
-	return fract(sin(dot(cell, vec2(127.1, 311.7))) * 43758.5453);
-}
-
+// A frente luminosa parte do vão real e alcança até o canto mais distante.
 void fragment() {
-	vec2 cell = floor(UV * cell_count);
-	float threshold = cell_noise(cell);
-	float wave = progress * 1.18;
-	float coverage = smoothstep(threshold - 0.045, threshold + 0.045, wave);
-	float rim = 1.0 - smoothstep(0.0, 0.09, abs(wave - threshold));
-	float alpha = max(coverage, rim * 0.42 * (1.0 - coverage));
-	COLOR = vec4(vec3(1.0), alpha);
+	vec2 proporcao = vec2(SCREEN_PIXEL_SIZE.y / SCREEN_PIXEL_SIZE.x, 1.0);
+	float distancia = length((UV - origem) * proporcao);
+	float alcance = length(max(abs(origem), abs(vec2(1.0) - origem)) * proporcao);
+	float frente = mix(-0.10, alcance + 0.10, progress);
+	float preenchimento = 1.0 - smoothstep(frente - 0.075, frente + 0.075, distancia);
+	float eco = 1.0 - smoothstep(0.0, 0.024, abs(distancia - frente - 0.055));
+	COLOR = vec4(vec3(1.0), max(preenchimento, eco * 0.55));
 }

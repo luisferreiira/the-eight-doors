@@ -3,8 +3,9 @@
 [ext_resource type="PackedScene" path="res://scenes/ui/gameplay/painel_selo.tscn" id="base"]
 
 [node name="DesafioD5" instance=ExtResource("base")]
+; A inscrição contém a pista completa nas duas faces da porta.
 challenge_title = "Marcas na pedra"
-inscription = "Reproduza a ordem das três marcas reveladas pela inscrição na S08."
+inscription = "A espiral desperta, o olho observa e três talhos encerram o rito."
 choice_names = PackedStringArray("Olho", "Três talhos", "Espiral")
 solution = PackedStringArray("Espiral", "Olho", "Três talhos")
 initial_message = "Escolha as marcas na ordem."

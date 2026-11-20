@@ -71,10 +71,12 @@ func _update_animation(direction: Vector2) -> void:
 	var locomotion := [&"run_right", &"run_left", &"correndo_costas", &"correndo_frente", &"correndo_direita", &"correndo_esquerda", &"parada_costas", &"parada_frente", &"parada_direita", &"parada_esquerda", &"parado_costas", &"parado_frente", &"parado_direita", &"parado_esquerda"]
 	if not locomotion.has(sprite.animation) and sprite.is_playing():
 		return
-	if not direction.is_zero_approx():
-		if absf(direction.x) > absf(direction.y):
+	var moving := direction.length_squared() > 0.0001
+	# Pequenas diferenças de precisão na diagonal preservam o rumo anterior.
+	if moving:
+		if absf(direction.x) > absf(direction.y) * 1.05:
 			facing = "direita" if direction.x > 0 else "esquerda"
-		elif absf(direction.y) > absf(direction.x):
+		elif absf(direction.y) > absf(direction.x) * 1.05:
 			facing = "frente" if direction.y > 0 else "costas"
 		else:
 			var horizontal := "direita" if direction.x > 0 else "esquerda"
@@ -82,10 +84,10 @@ func _update_animation(direction: Vector2) -> void:
 			if facing != horizontal and facing != vertical:
 				facing = vertical
 	var animation_name: StringName
-	if not direction.is_zero_approx() and absf(direction.x) > absf(direction.y):
-		animation_name = &"run_right" if direction.x > 0 else &"run_left"
+	if moving and facing in ["direita", "esquerda"]:
+		animation_name = &"run_right" if facing == "direita" else &"run_left"
 	else:
-		var prefix := "correndo" if not direction.is_zero_approx() else idle_prefix
+		var prefix := "correndo" if moving else idle_prefix
 		animation_name = StringName(prefix + "_" + facing)
 	if sprite.animation != animation_name or not sprite.is_playing():
 		sprite.play(animation_name)

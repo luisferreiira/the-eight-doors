@@ -1,6 +1,8 @@
 ## Sala controla o nó raiz da sala-base. Usa Mapa e as portas existentes, sem criar personagem ou câmera.
 extends Node2D
 const Map = preload("res://scripts/world/mapa.gd")
+## Verso das salas marcadas com dica no mapa.
+@export_multiline var verso := ""
 var room_id: String = ""
 var doors: Dictionary = {}
 

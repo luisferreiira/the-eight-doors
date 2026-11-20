@@ -4,6 +4,8 @@
 [ext_resource type="Shader" path="res://assets/shaders/dissolve_vitoria.gdshader" id="dissolve"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_dissolve"]
+; Cada partida controla seu próprio eco.
+resource_local_to_scene = true
 shader = ExtResource("dissolve")
 
 [node name="SequenciaVitoria" type="CanvasLayer"]

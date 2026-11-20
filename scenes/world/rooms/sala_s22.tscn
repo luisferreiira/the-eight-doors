@@ -3,6 +3,8 @@
 [ext_resource type="PackedScene" path="res://scenes/world/labyrinth/sala_octogonal_base.tscn" id="1_base"]
 
 [node name="S22" instance=ExtResource("1_base")]
+; Verso de navegação desta sala no mapa.
+verso = "O arco do norte ecoa distante;\ndesça ao sul e siga adiante."
 
 ; P1: ponto seguro de nascimento, reposicionável no editor 2D.
 [node name="Nascimento" type="Marker2D" parent="."]

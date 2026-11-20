@@ -7,8 +7,9 @@
 [ext_resource type="Texture2D" path="res://assets/ui/enigmas/d4_viajante.svg" id="viajante"]
 
 [node name="DesafioD4" instance=ExtResource("base")]
-challenge_title = "A rosa dos ventos"
-inscription = "Escolha o símbolo que representa todos os rumos, conforme a inscrição encontrada na S29."
+; A inscrição contém a pista completa nas duas faces da porta.
+challenge_title = "Os quatro rumos"
+inscription = "Não sou flor, mas abro pétalas para mostrar todos os rumos."
 choice_names = PackedStringArray("Rosa", "Torre", "Poço", "Viajante")
 solution = PackedStringArray("Rosa")
 choice_icons = Array[Texture2D]([ExtResource("rosa"), ExtResource("torre"), ExtResource("poco"), ExtResource("viajante")])

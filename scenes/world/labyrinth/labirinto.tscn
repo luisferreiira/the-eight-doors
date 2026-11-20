@@ -36,12 +36,13 @@ theme_override_constants/shadow_offset_y = 1
 theme_override_font_sizes/font_size = 14
 text = "S01 · Aelin"
 
+; O pergaminho inferior reúne o rumo da sala e os avisos de interação.
 [node name="Pergaminho" parent="HUD" instance=ExtResource("3")]
-; Expansão: sem dica antiga no HUD; o comando E aparece somente perto da saída.
-visible = false
+offset_top = 286.0
 
 [node name="Texto" parent="HUD/Pergaminho"]
-text = ""
+offset_bottom = 61.0
+text = "Suba ao norte, sem perder a guia;\no poente se alcança pelas galerias."
 
 [node name="PainelSelo" parent="." instance=ExtResource("4")]
 

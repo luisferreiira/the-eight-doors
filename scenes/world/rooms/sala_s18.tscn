@@ -1,9 +1,10 @@
 [gd_scene load_steps=3 format=3]
-[ext_resource type="PackedScene" path="res://scenes/world/effects/indicador_pista.tscn" id="inscricao_navegacao"]
 
 [ext_resource type="PackedScene" path="res://scenes/world/labyrinth/sala_octogonal_base.tscn" id="1_base"]
 
 [node name="S18" instance=ExtResource("1_base")]
+; Verso de navegação desta sala no mapa.
+verso = "O arco do norte chama à sua frente;\no corredor começa a leste, ascendente."
 
 [node name="ConteudoDaSala" type="Node2D" parent="."]
 y_sort_enabled = true
@@ -37,6 +38,3 @@ visible = false
 [node name="Forma" parent="Passagens/Porta_Oeste/PlanoDaPorta/BloqueioFechado"]
 disabled = true
 ; Inscrição opcional de navegação, editável no centro da sala.
-[node name="InscricaoNavegacao" parent="ConteudoDaSala/Interacoes" instance=ExtResource("inscricao_navegacao")]
-position = Vector2(560, 640)
-texto = "O arco do norte chama à sua frente;\no corredor começa a leste, ascendente."

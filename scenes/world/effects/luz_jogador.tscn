@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3]
+[gd_scene load_steps=6 format=3]
 
 [ext_resource type="Script" path="res://scripts/world/efeito_luz_jogador.gd" id="1_script"]
 
@@ -13,6 +13,21 @@ fill = 1
 fill_from = Vector2(0.5, 0.5)
 fill_to = Vector2(1, 0.5)
 
+; A máscara acompanha a luz no mundo, inclusive quando a câmera encosta na borda da sala.
+[sub_resource type="Shader" id="Shader_penumbra"]
+code = "shader_type canvas_item;
+render_mode unshaded;
+uniform float raio_claro : hint_range(16.0, 96.0) = 44.0;
+uniform float penumbra : hint_range(1.0, 96.0) = 40.0;
+varying vec2 ponto;
+// Mede a distância à luz em pixels do mundo.
+void vertex() { ponto = VERTEX; }
+// Escurece também as tochas e portas fora do campo de visão.
+void fragment() { COLOR = vec4(0.0, 0.0, 0.0, smoothstep(raio_claro, raio_claro + penumbra, length(ponto))); }"
+
+[sub_resource type="ShaderMaterial" id="Material_penumbra"]
+shader = SubResource("Shader_penumbra")
+
 [node name="LuzJogador" type="Node2D"]
 script = ExtResource("1_script")
 
@@ -20,4 +35,10 @@ script = ExtResource("1_script")
 color = Color(1, 0.9, 0.72, 1)
 energy = 0.95
 texture = SubResource("GradientTexture2D_luz")
-texture_scale = 0.9
+texture_scale = 0.42
+
+; Cobre a sala inteira, preservando a interface em sua própria camada.
+[node name="Penumbra" type="Polygon2D" parent="Luz"]
+z_index = 4095
+material = SubResource("Material_penumbra")
+polygon = PackedVector2Array(-2048, -2048, 2048, -2048, 2048, 2048, -2048, 2048)

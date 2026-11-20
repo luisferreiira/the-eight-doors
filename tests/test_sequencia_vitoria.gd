@@ -32,6 +32,10 @@ func test_exit(room_id: String, action: String) -> void:
 	check(not game.get("finished") and not sequence.visible, "%s iniciou a finalização antes de abrir e atravessar." % room_id)
 	check(not game.get("player").controls_enabled, "%s permitiu movimento durante a abertura." % room_id)
 	check(game.get("score") == 1000, "%s pontuou antes da travessia." % room_id)
+	# A placa inteira recolhe no início, sem encobrir o vão com o fundo.
+	check(not game.room.get_node("Saida/Placa").visible, "Placa permaneceu sobre a saída.")
+	if room_id == "S14":
+		check(not game.room.get_node("Passagens/Porta_Oeste/BatenteSuperior").visible, "Batente comum cobre o ouro.")
 	var door: Area2D = game.get("victory_exit_door")
 	var open_wait := 0
 	while not door.opened and open_wait < 90:
@@ -74,6 +78,9 @@ func test_exit(room_id: String, action: String) -> void:
 	check(game.get_node("Resultado").visible, "%s não mostrou o resultado final." % room_id)
 	check(game.get_node("Resultado/Overlay/Centro/Moldura/Conteudo/Titulo").text == "Você escapou!", "%s não mostrou a mensagem de vitória." % room_id)
 	check(game.get_node("Resultado/Overlay/Centro/Moldura/Conteudo/Inscricao").text.contains("1700"), "%s perdeu a pontuação final." % room_id)
+	# O desmanche consome as células reais da instância desta partida.
+	for camada: TileMapLayer in game.room.find_children("*", "TileMapLayer", true, false):
+		check(camada.get_used_cells().is_empty(), "Restaram tiles em " + camada.name)
 	var dissolve: ShaderMaterial = sequence.get_node("VeloBranco").material
 	check(is_equal_approx(dissolve.get_shader_parameter("progress"), 1.0), "%s não concluiu o desmanche em branco." % room_id)
 	check(game.get_node("Resultado/Overlay/Centro/Moldura/Conteudo/Acoes/Reiniciar").pressed.get_connections().size() > 0, "Botão de reinício desconectado.")

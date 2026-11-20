@@ -5,6 +5,8 @@
 [ext_resource type="Script" path="res://scripts/world/efeito_zoom_sala.gd" id="efeito_zoom"]
 
 [node name="S13" instance=ExtResource("1_base")]
+; O pergaminho inferior anuncia o efeito enquanto o jogador estiver na sala.
+verso = "Se a pedra parece crescer,\nvai devagar para o rumo entender."
 
 [node name="ConteudoDaSala" type="Node2D" parent="."]
 y_sort_enabled = true
